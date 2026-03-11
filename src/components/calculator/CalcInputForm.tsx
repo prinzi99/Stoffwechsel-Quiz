@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Calculator, RotateCcw } from "lucide-react";
+import { Calculator, RotateCcw, Info } from "lucide-react";
 import type { Gender, Goal, ProteinFactor, FatMode, CalcInput } from "@/lib/calorieCalculator";
+import { calcBMI } from "@/lib/calorieCalculator";
 
 const activityOptions = [
   { value: "1.2", label: "Sesshaftigkeit", desc: "Primär Schreibtischtätigkeit, wenig Bewegung, kein Training." },
@@ -24,17 +25,26 @@ const CalcInputForm = ({ onCalculate }: Props) => {
   const [age, setAge] = useState("");
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
+  const [targetWeight, setTargetWeight] = useState("");
   const [activity, setActivity] = useState("1.55");
   const [goal, setGoal] = useState<Goal>("moderate");
   const [proteinFactor, setProteinFactor] = useState<ProteinFactor>(2.0);
   const [fatMode, setFatMode] = useState<FatMode>("standard");
   const [error, setError] = useState("");
 
+  const showTargetWeight = useMemo(() => {
+    const w = parseFloat(weight);
+    const h = parseFloat(height);
+    if (!w || !h || h < 100) return false;
+    return calcBMI(w, h) >= 30;
+  }, [weight, height]);
+
   const reset = () => {
     setGender("male");
     setAge("");
     setWeight("");
     setHeight("");
+    setTargetWeight("");
     setActivity("1.55");
     setGoal("moderate");
     setProteinFactor(2.0);
@@ -56,12 +66,19 @@ const CalcInputForm = ({ onCalculate }: Props) => {
       return;
     }
 
+    const tw = parseFloat(targetWeight);
+    if (showTargetWeight && (!targetWeight || tw < 30 || tw > 300 || tw >= w)) {
+      setError("Bitte gib ein realistisches Wunschgewicht an (unter deinem aktuellen Gewicht).");
+      return;
+    }
+
     setError("");
     onCalculate({
       gender,
       age: a,
       weight: w,
       height: h,
+      targetWeight: showTargetWeight && tw ? tw : undefined,
       activityFactor: parseFloat(activity),
       goal,
       proteinFactor,
@@ -115,10 +132,23 @@ const CalcInputForm = ({ onCalculate }: Props) => {
                 <Input type="number" placeholder="z. B. 178" value={height} onChange={(e) => setHeight(e.target.value)} min={100} max={250} />
               </div>
             </div>
+
+            {showTargetWeight && (
+              <div className="sm:col-span-3 space-y-2">
+                <div className="flex items-start gap-2 rounded-lg bg-primary/5 border border-primary/20 p-3">
+                  <Info className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Dein BMI liegt bei ≥ 30. Für eine realistischere Proteinberechnung wird dein <strong className="text-foreground">Wunschgewicht</strong> herangezogen.
+                  </p>
+                </div>
+                <Label className="text-xs text-muted-foreground">Wunschgewicht (kg)</Label>
+                <Input type="number" placeholder="z. B. 80" value={targetWeight} onChange={(e) => setTargetWeight(e.target.value)} min={30} max={300} />
+              </div>
+            )}
           </CardContent>
         </Card>
 
-        {/* Activity */}
+
         <Card className="border-border/50 shadow-sm">
           <CardContent className="p-5 md:p-6 space-y-4">
             <Label className="text-foreground font-semibold">Aktivitätsfaktor</Label>

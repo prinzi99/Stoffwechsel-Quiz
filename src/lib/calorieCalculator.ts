@@ -8,13 +8,22 @@ export interface CalcInput {
   age: number;
   weight: number;
   height: number;
+  targetWeight?: number;
   activityFactor: number;
   goal: Goal;
   proteinFactor: ProteinFactor;
   fatMode: FatMode;
 }
 
+export function calcBMI(weight: number, heightCm: number): number {
+  const heightM = heightCm / 100;
+  return weight / (heightM * heightM);
+}
+
 export interface CalcResult {
+  bmi: number;
+  usedProteinWeight: number;
+  useTargetWeight: boolean;
   bmr1: number;
   bmr2: number;
   bmrAvg: number;
@@ -46,7 +55,11 @@ export function calcBMR2(gender: Gender, weight: number, height: number, age: nu
 }
 
 export function calculateAll(input: CalcInput): CalcResult {
-  const { gender, age, weight, height, activityFactor, goal, proteinFactor, fatMode } = input;
+  const { gender, age, weight, height, targetWeight, activityFactor, goal, proteinFactor, fatMode } = input;
+
+  const bmi = calcBMI(weight, height);
+  const useTargetWeight = bmi >= 30 && targetWeight !== undefined && targetWeight > 0;
+  const proteinWeight = useTargetWeight ? targetWeight! : weight;
 
   const bmr1 = calcBMR1(gender, weight, height, age);
   const bmr2 = calcBMR2(gender, weight, height, age);
@@ -62,7 +75,7 @@ export function calculateAll(input: CalcInput): CalcResult {
     goal === "moderate" ? deficitModerate :
     deficitAggressive;
 
-  const proteinG = weight * proteinFactor;
+  const proteinG = proteinWeight * proteinFactor;
   const proteinKcal = proteinG * 4;
 
   let fatKcal: number;
@@ -80,6 +93,7 @@ export function calculateAll(input: CalcInput): CalcResult {
   const carbsG = carbsKcal / 4;
 
   return {
+    bmi, usedProteinWeight: proteinWeight, useTargetWeight,
     bmr1, bmr2, bmrAvg, tdee,
     deficitModerate, deficitAggressive, deficitMinus500,
     targetCalories, proteinG, proteinKcal, fatG, fatKcal, carbsG, carbsKcal,

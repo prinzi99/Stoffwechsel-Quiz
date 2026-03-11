@@ -15,6 +15,7 @@ interface Props {
 const CalcTransparency = ({ result, input }: Props) => {
   const { gender, age, weight, height, activityFactor, goal, proteinFactor, fatMode } = input;
   const isMale = gender === "male";
+  const { useTargetWeight, usedProteinWeight, bmi } = result;
 
   return (
     <section className="section-padding bg-muted/30">
@@ -77,7 +78,13 @@ const CalcTransparency = ({ result, input }: Props) => {
           </p>
           <div className="space-y-2 text-sm text-muted-foreground">
             <p>
-              <strong className="text-foreground">Protein:</strong> {weight} × {proteinFactor.toFixed(1)} = {r1(result.proteinG)} g → {r0(result.proteinKcal)} kcal
+              <strong className="text-foreground">Protein:</strong>{" "}
+              {useTargetWeight ? (
+                <span>{usedProteinWeight} (Wunschgewicht, BMI {bmi.toFixed(1)} ≥ 30)</span>
+              ) : (
+                <span>{weight}</span>
+              )}
+              {" "}× {proteinFactor.toFixed(1)} = {r1(result.proteinG)} g → {r0(result.proteinKcal)} kcal
             </p>
             <p>
               <strong className="text-foreground">Fett:</strong>{" "}

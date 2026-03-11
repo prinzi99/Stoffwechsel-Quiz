@@ -60,6 +60,12 @@ const CalcResults = ({ result, input }: Props) => (
             <MacroBox label="Fett" value={`${r(result.fatG)}`} unit="g" />
             <MacroBox label="Kohlenhydrate" value={`${r(result.carbsG)}`} unit="g" />
           </div>
+
+          {result.useTargetWeight && (
+            <p className="text-xs text-muted-foreground text-center leading-relaxed">
+              ℹ️ Dein BMI liegt bei {result.bmi.toFixed(1)} (≥ 30). Die Proteinberechnung basiert auf deinem Wunschgewicht von {result.usedProteinWeight} kg.
+            </p>
+          )}
         </CardContent>
       </Card>
 
