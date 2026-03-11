@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
+import bookCoverMockup from "@/assets/book-cover-mockup.jpeg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -118,6 +119,15 @@ const BuchBonusIntern = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
               Willkommen im Bonusbereich
             </h1>
+
+            <div className="max-w-[160px] md:max-w-[200px] mx-auto">
+              <img
+                src={bookCoverMockup}
+                alt="Du bist nicht das Problem – Buchcover"
+                className="w-full h-auto rounded-lg shadow-md"
+                loading="eager"
+              />
+            </div>
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">
               Hier findest du zusätzliche Tools, Empfehlungen und Materialien, die dich bei der
