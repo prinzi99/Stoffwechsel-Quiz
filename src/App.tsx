@@ -21,6 +21,7 @@ import Buch from "./pages/Buch";
 import BuchBonus from "./pages/BuchBonus";
 import BuchBonusIntern from "./pages/BuchBonusIntern";
 import KalorienRechner from "./pages/KalorienRechner";
+import StoffwechselCheck from "./pages/StoffwechselCheck";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -51,6 +52,7 @@ const App = () => {
             <Route path="/buch/bonus" element={<BuchBonus />} />
             <Route path="/buch/bonus/intern" element={<BuchBonusIntern />} />
             <Route path="/buch/bonus/intern/kalorienrechner" element={<KalorienRechner />} />
+            <Route path="/buch/bonus/intern/stoffwechsel-check" element={<StoffwechselCheck />} />
             <Route path="/tools" element={<Navigate to="/buch/bonus" replace />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
