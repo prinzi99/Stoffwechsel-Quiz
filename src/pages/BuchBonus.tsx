@@ -69,85 +69,76 @@ const BuchBonus = () => {
       <Header />
 
       <main className="flex-grow">
-        {/* Hero */}
         <section className="section-padding pb-8 md:pb-12">
-          <div className="container-narrow text-center space-y-5">
-            <Badge variant="secondary" className="text-xs tracking-wide uppercase px-3 py-1">
-              Bonusbereich zum Buch
-            </Badge>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              Die Stoffwechsel-Tools zum Buch
-            </h1>
-
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">
-              Dieser Bereich enthält zusätzliche Tools, Rechner und Ressourcen, die das Buch{" "}
-              <span className="text-foreground font-medium">&bdquo;Du bist nicht das Problem&ldquo;</span>{" "}
-              ergänzen. Der Zugang ist ausschließlich für Leser des Buches gedacht.
-            </p>
-
-            <div className="max-w-[200px] md:max-w-[240px] mx-auto">
-              <img
-                src={bookCoverMockup}
-                alt="Du bist nicht das Problem – Buchcover"
-                className="w-full h-auto rounded-lg shadow-md"
-                loading="eager"
-              />
-            </div>
-
-            <p className="text-sm text-muted-foreground">
-              Bitte gib das Passwort aus dem Buch ein, um fortzufahren.
-            </p>
-          </div>
-        </section>
-
-        {/* Password Card */}
-        <section className="px-5 md:px-8 pb-16 md:pb-24">
           <div className="container-narrow">
-            <Card className="max-w-md mx-auto border-border/60 shadow-sm">
-              <CardContent className="p-6 md:p-8">
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Lock className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-sm font-medium text-foreground">Passwortgeschützt</span>
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-center">
+              {/* Left: Text + Password */}
+              <div className="space-y-5 text-center md:text-left">
+                <Badge variant="secondary" className="text-xs tracking-wide uppercase px-3 py-1">
+                  Bonusbereich zum Buch
+                </Badge>
 
-                  <Input
-                    type="password"
-                    placeholder="Passwort eingeben"
-                    value={password}
-                    onChange={(e) => {
-                      setPassword(e.target.value);
-                      setError("");
-                    }}
-                    className="h-12"
-                  />
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                  Die Stoffwechsel-Tools zum Buch
+                </h1>
 
-                  {error && (
-                    <p className="text-sm text-destructive">{error}</p>
-                  )}
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
+                  Dieser Bereich enthält zusätzliche Tools, Rechner und Ressourcen, die das Buch{" "}
+                  <span className="text-foreground font-medium">&bdquo;Du bist nicht das Problem&ldquo;</span>{" "}
+                  ergänzen. Der Zugang ist ausschließlich für Leser des Buches gedacht.
+                </p>
 
-                  {loading && (
-                    <p className="text-sm text-secondary font-medium">Zugang wird geöffnet…</p>
-                  )}
+                <Card className="border-border/60 shadow-sm max-w-md mx-auto md:mx-0">
+                  <CardContent className="p-5 md:p-6">
+                    <form onSubmit={handleSubmit} className="space-y-4">
+                      <div className="flex items-center gap-2 mb-1">
+                        <Lock className="w-4 h-4 text-muted-foreground" />
+                        <span className="text-sm font-medium text-foreground">Passwortgeschützt</span>
+                      </div>
 
-                  <Button
-                    type="submit"
-                    variant="cta"
-                    size="lg"
-                    className="w-full"
-                    disabled={loading || !password.trim()}
-                  >
-                    {loading ? "Zugang wird geöffnet…" : "Bonusbereich öffnen"}
-                    {!loading && <ArrowRight className="w-4 h-4 ml-1" />}
-                  </Button>
+                      <Input
+                        type="password"
+                        placeholder="Passwort eingeben"
+                        value={password}
+                        onChange={(e) => {
+                          setPassword(e.target.value);
+                          setError("");
+                        }}
+                        className="h-12"
+                      />
 
-                  <p className="text-xs text-muted-foreground text-center">
-                    Das Passwort findest du im Buch.
-                  </p>
-                </form>
-              </CardContent>
-            </Card>
+                      {error && <p className="text-sm text-destructive">{error}</p>}
+                      {loading && <p className="text-sm text-secondary font-medium">Zugang wird geöffnet…</p>}
+
+                      <Button
+                        type="submit"
+                        variant="cta"
+                        size="lg"
+                        className="w-full"
+                        disabled={loading || !password.trim()}
+                      >
+                        {loading ? "Zugang wird geöffnet…" : "Bonusbereich öffnen"}
+                        {!loading && <ArrowRight className="w-4 h-4 ml-1" />}
+                      </Button>
+
+                      <p className="text-xs text-muted-foreground text-center">
+                        Das Passwort findest du im Buch.
+                      </p>
+                    </form>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Right: Book Mockup */}
+              <div className="hidden md:block max-w-[260px] lg:max-w-[300px]">
+                <img
+                  src={bookCoverMockup}
+                  alt="Du bist nicht das Problem – Buchcover"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                  loading="eager"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
