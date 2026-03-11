@@ -46,7 +46,8 @@ const toolCards: { icon: React.ElementType; title: string; text: string; button:
     title: "Biohacking & Tools",
     text: "Apps, Tracker und Geräte, die beim Messen und Verstehen des eigenen Systems helfen.",
     button: "Bereich öffnen",
-    badge: "Platzhalter",
+    badge: "Verfügbar",
+    link: "/buch/bonus/intern/biohacking-tools",
   },
   {
     icon: FileDown,
