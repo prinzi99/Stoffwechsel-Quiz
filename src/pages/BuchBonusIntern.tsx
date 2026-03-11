@@ -37,7 +37,8 @@ const toolCards = [
     title: "Kalorien- & Makro-Rechner",
     text: "Berechne deinen Kalorienbedarf und eine mögliche Makroverteilung.",
     button: "Tool öffnen",
-    badge: "Platzhalter",
+    badge: "Verfügbar",
+    link: "/buch/bonus/intern/kalorienrechner",
   },
   {
     icon: Wrench,
