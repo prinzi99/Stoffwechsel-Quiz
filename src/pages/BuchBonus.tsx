@@ -81,7 +81,7 @@ const BuchBonus = () => {
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">
               Dieser Bereich enthält zusätzliche Tools, Rechner und Ressourcen, die das Buch{" "}
-              <span className="text-foreground font-medium">„Du bist nicht das Problem"</span>{" "}
+              <span className="text-foreground font-medium">&bdquo;Du bist nicht das Problem&ldquo;</span>{" "}
               ergänzen. Der Zugang ist ausschließlich für Leser des Buches gedacht.
             </p>
 
