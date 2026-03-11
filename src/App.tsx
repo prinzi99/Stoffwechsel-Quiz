@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import { CookieConsentProvider } from "./contexts/CookieConsentContext";
 import ScrollToTop from "./components/ScrollToTop";
@@ -17,6 +17,8 @@ import ResultPageB from "./pages/ResultPageB";
 import ResultPageC from "./pages/ResultPageC";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
+import Buch from "./pages/Buch";
+import BuchBonus from "./pages/BuchBonus";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,6 +45,9 @@ const App = () => {
             <Route path="/x7q9p2" element={<ResultPageC />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
+            <Route path="/buch" element={<Buch />} />
+            <Route path="/buch/bonus" element={<BuchBonus />} />
+            <Route path="/tools" element={<Navigate to="/buch/bonus" replace />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
