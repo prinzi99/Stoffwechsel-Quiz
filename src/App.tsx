@@ -48,6 +48,7 @@ const App = () => {
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/buch" element={<Buch />} />
             <Route path="/buch/bonus" element={<BuchBonus />} />
+            <Route path="/buch/bonus/intern" element={<BuchBonusIntern />} />
             <Route path="/tools" element={<Navigate to="/buch/bonus" replace />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
