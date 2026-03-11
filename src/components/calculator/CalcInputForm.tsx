@@ -44,6 +44,7 @@ const CalcInputForm = ({ onCalculate }: Props) => {
     setAge("");
     setWeight("");
     setHeight("");
+    setTargetWeight("");
     setActivity("1.55");
     setGoal("moderate");
     setProteinFactor(2.0);
