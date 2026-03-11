@@ -20,6 +20,7 @@ import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
 import BuchBonus from "./pages/BuchBonus";
 import BuchBonusIntern from "./pages/BuchBonusIntern";
+import BiohackingTools from "./pages/BiohackingTools";
 import KalorienRechner from "./pages/KalorienRechner";
 import StoffwechselCheck from "./pages/StoffwechselCheck";
 import NotFound from "./pages/NotFound";
