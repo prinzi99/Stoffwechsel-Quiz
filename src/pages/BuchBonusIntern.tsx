@@ -120,6 +120,15 @@ const BuchBonusIntern = () => {
               Willkommen im Bonusbereich
             </h1>
 
+            <div className="max-w-[160px] md:max-w-[200px] mx-auto">
+              <img
+                src={bookCoverMockup}
+                alt="Du bist nicht das Problem – Buchcover"
+                className="w-full h-auto rounded-lg shadow-md"
+                loading="eager"
+              />
+            </div>
+
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">
               Hier findest du zusätzliche Tools, Empfehlungen und Materialien, die dich bei der
               praktischen Umsetzung der Inhalte aus dem Buch unterstützen.

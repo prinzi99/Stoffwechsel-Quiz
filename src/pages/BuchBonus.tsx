@@ -86,6 +86,15 @@ const BuchBonus = () => {
               ergänzen. Der Zugang ist ausschließlich für Leser des Buches gedacht.
             </p>
 
+            <div className="max-w-[200px] md:max-w-[240px] mx-auto">
+              <img
+                src={bookCoverMockup}
+                alt="Du bist nicht das Problem – Buchcover"
+                className="w-full h-auto rounded-lg shadow-md"
+                loading="eager"
+              />
+            </div>
+
             <p className="text-sm text-muted-foreground">
               Bitte gib das Passwort aus dem Buch ein, um fortzufahren.
             </p>
