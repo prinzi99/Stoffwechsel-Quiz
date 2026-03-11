@@ -19,6 +19,7 @@ import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
 import BuchBonus from "./pages/BuchBonus";
+import BuchBonusIntern from "./pages/BuchBonusIntern";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
