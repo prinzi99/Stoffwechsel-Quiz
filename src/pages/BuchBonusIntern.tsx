@@ -22,8 +22,9 @@ import bookCoverMockup from "@/assets/book-cover-mockup.jpeg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
-const toolCards = [
+const toolCards: { icon: React.ElementType; title: string; text: string; button: string; badge: string; link?: string }[] = [
   {
     icon: Activity,
     title: "Stoffwechsel-Reset Check",
@@ -36,7 +37,8 @@ const toolCards = [
     title: "Kalorien- & Makro-Rechner",
     text: "Berechne deinen Kalorienbedarf und eine mögliche Makroverteilung.",
     button: "Tool öffnen",
-    badge: "Platzhalter",
+    badge: "Verfügbar",
+    link: "/buch/bonus/intern/kalorienrechner",
   },
   {
     icon: Wrench,
@@ -167,15 +169,29 @@ const BuchBonusIntern = () => {
                       <p className="text-sm text-muted-foreground leading-relaxed">{card.text}</p>
                     </div>
 
-                    <Button
-                      variant="ctaSecondary"
-                      size="sm"
-                      className="w-full mt-auto"
-                      disabled
-                    >
-                      {card.button}
-                      <ArrowRight className="w-3.5 h-3.5 ml-1" />
-                    </Button>
+                    {card.link ? (
+                      <Button
+                        variant="cta"
+                        size="sm"
+                        className="w-full mt-auto"
+                        asChild
+                      >
+                        <Link to={card.link}>
+                          {card.button}
+                          <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                        </Link>
+                      </Button>
+                    ) : (
+                      <Button
+                        variant="ctaSecondary"
+                        size="sm"
+                        className="w-full mt-auto"
+                        disabled
+                      >
+                        {card.button}
+                        <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}

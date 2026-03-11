@@ -1,0 +1,58 @@
+import { useState, useRef } from "react";
+import { Helmet } from "react-helmet-async";
+import Header from "@/components/Header";
+import Footer from "@/components/landing/Footer";
+import CalcHero from "@/components/calculator/CalcHero";
+import CalcInputForm from "@/components/calculator/CalcInputForm";
+import CalcResults from "@/components/calculator/CalcResults";
+import CalcTransparency from "@/components/calculator/CalcTransparency";
+import CalcInfoSections from "@/components/calculator/CalcInfoSections";
+import { calculateAll, type CalcInput, type CalcResult } from "@/lib/calorieCalculator";
+
+const KalorienRechner = () => {
+  const [result, setResult] = useState<CalcResult | null>(null);
+  const [input, setInput] = useState<CalcInput | null>(null);
+  const resultsRef = useRef<HTMLDivElement>(null);
+
+  const handleCalculate = (calcInput: CalcInput) => {
+    const res = calculateAll(calcInput);
+    setResult(res);
+    setInput(calcInput);
+    setTimeout(() => {
+      resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>Kalorien- & Makro-Rechner | Philipp's Biohack</title>
+        <meta
+          name="description"
+          content="Berechne deinen Kalorienbedarf und eine sinnvolle Makroverteilung – transparent, verständlich und mobil optimiert."
+        />
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+
+      <Header />
+
+      <main className="flex-grow">
+        <CalcHero />
+        <CalcInputForm onCalculate={handleCalculate} />
+
+        {result && input && (
+          <div ref={resultsRef}>
+            <CalcResults result={result} input={input} />
+            <CalcTransparency result={result} input={input} />
+          </div>
+        )}
+
+        <CalcInfoSections />
+      </main>
+
+      <Footer />
+    </>
+  );
+};
+
+export default KalorienRechner;
