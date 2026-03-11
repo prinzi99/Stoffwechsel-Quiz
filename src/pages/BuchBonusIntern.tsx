@@ -169,15 +169,29 @@ const BuchBonusIntern = () => {
                       <p className="text-sm text-muted-foreground leading-relaxed">{card.text}</p>
                     </div>
 
-                    <Button
-                      variant="ctaSecondary"
-                      size="sm"
-                      className="w-full mt-auto"
-                      disabled
-                    >
-                      {card.button}
-                      <ArrowRight className="w-3.5 h-3.5 ml-1" />
-                    </Button>
+                    {card.link ? (
+                      <Button
+                        variant="cta"
+                        size="sm"
+                        className="w-full mt-auto"
+                        asChild
+                      >
+                        <Link to={card.link}>
+                          {card.button}
+                          <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                        </Link>
+                      </Button>
+                    ) : (
+                      <Button
+                        variant="ctaSecondary"
+                        size="sm"
+                        className="w-full mt-auto"
+                        disabled
+                      >
+                        {card.button}
+                        <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))}
