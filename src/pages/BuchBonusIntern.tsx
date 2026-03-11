@@ -111,28 +111,32 @@ const BuchBonusIntern = () => {
       <main className="flex-grow">
         {/* Hero */}
         <section className="section-padding pb-8 md:pb-12">
-          <div className="container-narrow text-center space-y-5">
-            <Badge variant="secondary" className="text-xs tracking-wide uppercase px-3 py-1">
-              Bonusbereich zum Buch
-            </Badge>
+          <div className="container-narrow">
+            <div className="flex flex-col md:flex-row md:items-center md:gap-10">
+              <div className="flex-1 text-center md:text-left space-y-5">
+                <Badge variant="secondary" className="text-xs tracking-wide uppercase px-3 py-1">
+                  Bonusbereich zum Buch
+                </Badge>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              Willkommen im Bonusbereich
-            </h1>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                  Willkommen im Bonusbereich
+                </h1>
 
-            <div className="max-w-[160px] md:max-w-[200px] mx-auto">
-              <img
-                src={bookCoverMockup}
-                alt="Du bist nicht das Problem – Buchcover"
-                className="w-full h-auto rounded-lg shadow-md"
-                loading="eager"
-              />
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
+                  Hier findest du zusätzliche Tools, Empfehlungen und Materialien, die dich bei der
+                  praktischen Umsetzung der Inhalte aus dem Buch unterstützen.
+                </p>
+              </div>
+
+              <div className="hidden md:block shrink-0">
+                <img
+                  src={bookCoverMockup}
+                  alt="Du bist nicht das Problem – Buchcover"
+                  className="w-[120px] lg:w-[140px] h-auto rounded-lg shadow-sm opacity-90"
+                  loading="eager"
+                />
+              </div>
             </div>
-
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">
-              Hier findest du zusätzliche Tools, Empfehlungen und Materialien, die dich bei der
-              praktischen Umsetzung der Inhalte aus dem Buch unterstützen.
-            </p>
           </div>
         </section>
 
