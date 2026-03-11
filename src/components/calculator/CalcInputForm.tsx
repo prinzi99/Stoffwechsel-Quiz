@@ -66,12 +66,19 @@ const CalcInputForm = ({ onCalculate }: Props) => {
       return;
     }
 
+    const tw = parseFloat(targetWeight);
+    if (showTargetWeight && (!targetWeight || tw < 30 || tw > 300 || tw >= w)) {
+      setError("Bitte gib ein realistisches Wunschgewicht an (unter deinem aktuellen Gewicht).");
+      return;
+    }
+
     setError("");
     onCalculate({
       gender,
       age: a,
       weight: w,
       height: h,
+      targetWeight: showTargetWeight && tw ? tw : undefined,
       activityFactor: parseFloat(activity),
       goal,
       proteinFactor,
