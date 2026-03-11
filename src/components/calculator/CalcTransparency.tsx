@@ -15,6 +15,7 @@ interface Props {
 const CalcTransparency = ({ result, input }: Props) => {
   const { gender, age, weight, height, activityFactor, goal, proteinFactor, fatMode } = input;
   const isMale = gender === "male";
+  const { useTargetWeight, usedProteinWeight, bmi } = result;
 
   return (
     <section className="section-padding bg-muted/30">
