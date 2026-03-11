@@ -38,7 +38,7 @@ const DownloadCategory = ({ icon: Icon, title, intro, items }: DownloadCategoryP
               <p className="text-xs text-muted-foreground leading-relaxed flex-grow">{item.description}</p>
               {item.url ? (
                 <Button variant="cta" size="sm" className="w-full mt-auto" asChild>
-                  <a href={item.url} download>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
                     <FileDown className="w-3.5 h-3.5 mr-1" />
                     PDF herunterladen
                   </a>
