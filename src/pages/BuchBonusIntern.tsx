@@ -54,7 +54,8 @@ const toolCards: { icon: React.ElementType; title: string; text: string; button:
     title: "Downloads & Checklisten",
     text: "Praktische Materialien und Ergänzungen zum Buch.",
     button: "Bereich öffnen",
-    badge: "Platzhalter",
+    badge: "Verfügbar",
+    link: "/buch/bonus/intern/downloads",
   },
   {
     icon: Utensils,
