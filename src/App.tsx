@@ -17,6 +17,8 @@ import ResultPageB from "./pages/ResultPageB";
 import ResultPageC from "./pages/ResultPageC";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
+import Buch from "./pages/Buch";
+import BuchBonus from "./pages/BuchBonus";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
