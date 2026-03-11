@@ -145,8 +145,10 @@ const CalcInputForm = ({ onCalculate }: Props) => {
                 <Input type="number" placeholder="z. B. 80" value={targetWeight} onChange={(e) => setTargetWeight(e.target.value)} min={30} max={300} />
               </div>
             )}
+          </CardContent>
+        </Card>
 
-        {/* Activity */}
+
         <Card className="border-border/50 shadow-sm">
           <CardContent className="p-5 md:p-6 space-y-4">
             <Label className="text-foreground font-semibold">Aktivitätsfaktor</Label>
