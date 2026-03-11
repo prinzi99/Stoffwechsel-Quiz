@@ -53,7 +53,7 @@ const CheckInfoSections = () => (
         </h2>
         <div className="space-y-3 max-w-xl mx-auto">
           {[
-            "Es geht nicht darum, ob du „gut" oder „schlecht" abschneidest.",
+            "Es geht nicht darum, ob du gut oder schlecht abschneidest.",
             "Es geht darum, ob dein Körper eher auf Kooperation oder auf Schutzmodus eingestellt ist.",
             "Mehrere Ja-Antworten bedeuten nicht automatisch ein Problem, aber sie können ein Muster sichtbar machen.",
             "Entscheidend ist nicht nur die Anzahl, sondern auch in welchen Bereichen sich die Hinweise häufen.",

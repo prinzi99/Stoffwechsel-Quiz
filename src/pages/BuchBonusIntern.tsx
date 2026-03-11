@@ -30,7 +30,8 @@ const toolCards: { icon: React.ElementType; title: string; text: string; button:
     title: "Stoffwechsel-Reset Check",
     text: "Prüfe, ob dein Stoffwechsel aktuell eher unter Stress, Anpassung oder Stabilität läuft.",
     button: "Tool öffnen",
-    badge: "Platzhalter",
+    badge: "Verfügbar",
+    link: "/buch/bonus/intern/stoffwechsel-check",
   },
   {
     icon: Calculator,
