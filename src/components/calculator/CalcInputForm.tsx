@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Calculator, RotateCcw } from "lucide-react";
+import { Calculator, RotateCcw, Info } from "lucide-react";
 import type { Gender, Goal, ProteinFactor, FatMode, CalcInput } from "@/lib/calorieCalculator";
+import { calcBMI } from "@/lib/calorieCalculator";
 
 const activityOptions = [
   { value: "1.2", label: "Sesshaftigkeit", desc: "Primär Schreibtischtätigkeit, wenig Bewegung, kein Training." },
@@ -24,11 +25,19 @@ const CalcInputForm = ({ onCalculate }: Props) => {
   const [age, setAge] = useState("");
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
+  const [targetWeight, setTargetWeight] = useState("");
   const [activity, setActivity] = useState("1.55");
   const [goal, setGoal] = useState<Goal>("moderate");
   const [proteinFactor, setProteinFactor] = useState<ProteinFactor>(2.0);
   const [fatMode, setFatMode] = useState<FatMode>("standard");
   const [error, setError] = useState("");
+
+  const showTargetWeight = useMemo(() => {
+    const w = parseFloat(weight);
+    const h = parseFloat(height);
+    if (!w || !h || h < 100) return false;
+    return calcBMI(w, h) >= 30;
+  }, [weight, height]);
 
   const reset = () => {
     setGender("male");
