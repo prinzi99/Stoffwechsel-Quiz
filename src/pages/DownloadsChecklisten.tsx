@@ -36,10 +36,19 @@ const DownloadCategory = ({ icon: Icon, title, intro, items }: DownloadCategoryP
             <CardContent className="p-5 flex flex-col h-full space-y-3">
               <h3 className="font-semibold text-foreground text-sm">{item.title}</h3>
               <p className="text-xs text-muted-foreground leading-relaxed flex-grow">{item.description}</p>
-              <Button variant="cta" size="sm" className="w-full mt-auto" disabled={!item.url}>
-                <FileDown className="w-3.5 h-3.5 mr-1" />
-                PDF herunterladen
-              </Button>
+              {item.url ? (
+                <Button variant="cta" size="sm" className="w-full mt-auto" asChild>
+                  <a href={item.url} download>
+                    <FileDown className="w-3.5 h-3.5 mr-1" />
+                    PDF herunterladen
+                  </a>
+                </Button>
+              ) : (
+                <Button variant="cta" size="sm" className="w-full mt-auto" disabled>
+                  <FileDown className="w-3.5 h-3.5 mr-1" />
+                  PDF herunterladen
+                </Button>
+              )}
             </CardContent>
           </Card>
         ))}
@@ -54,7 +63,7 @@ const categories: DownloadCategoryProps[] = [
     title: "Checklisten",
     intro: "Kurze Übersichten, die dir helfen können, wichtige Faktoren im Blick zu behalten.",
     items: [
-      { title: "Stoffwechsel Reset Checkliste", description: "Wichtige Punkte, die in einer Reset-Phase sinnvoll sein können." },
+      { title: "Stoffwechsel Reset Checkliste", description: "Wichtige Punkte, die in einer Reset-Phase sinnvoll sein können.", url: "/downloads/Stoffwechsel-Reset-Checkliste.pdf" },
       { title: "Defizit-Phase Checkliste", description: "Eine Übersicht der wichtigsten Faktoren während einer Fettverlustphase." },
       { title: "Alltags-Checkliste", description: "Einfache Erinnerungspunkte für Ernährung, Schlaf und Bewegung." },
     ],
