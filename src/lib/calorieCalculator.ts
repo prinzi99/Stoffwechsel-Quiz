@@ -21,6 +21,9 @@ export function calcBMI(weight: number, heightCm: number): number {
 }
 
 export interface CalcResult {
+  bmi: number;
+  usedProteinWeight: number;
+  useTargetWeight: boolean;
   bmr1: number;
   bmr2: number;
   bmrAvg: number;
