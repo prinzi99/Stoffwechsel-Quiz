@@ -132,8 +132,19 @@ const CalcInputForm = ({ onCalculate }: Props) => {
                 <Input type="number" placeholder="z. B. 178" value={height} onChange={(e) => setHeight(e.target.value)} min={100} max={250} />
               </div>
             </div>
-          </CardContent>
-        </Card>
+
+            {showTargetWeight && (
+              <div className="sm:col-span-3 space-y-2">
+                <div className="flex items-start gap-2 rounded-lg bg-primary/5 border border-primary/20 p-3">
+                  <Info className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Dein BMI liegt bei ≥ 30. Für eine realistischere Proteinberechnung wird dein <strong className="text-foreground">Wunschgewicht</strong> herangezogen.
+                  </p>
+                </div>
+                <Label className="text-xs text-muted-foreground">Wunschgewicht (kg)</Label>
+                <Input type="number" placeholder="z. B. 80" value={targetWeight} onChange={(e) => setTargetWeight(e.target.value)} min={30} max={300} />
+              </div>
+            )}
 
         {/* Activity */}
         <Card className="border-border/50 shadow-sm">
