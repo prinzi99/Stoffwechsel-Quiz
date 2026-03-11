@@ -60,7 +60,7 @@ const BuchBonus = () => {
         <title>Bonusbereich zum Buch | Philipp's Biohack</title>
         <meta
           name="description"
-          content="Exklusive Bonustools zum Buch „Du bist nicht das Problem" – Stoffwechsel-Tools, Rechner und Ressourcen für Leser."
+          content="Exklusive Bonustools zum Buch - Stoffwechsel-Tools, Rechner und Ressourcen für Leser."
         />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
