@@ -8,10 +8,16 @@ export interface CalcInput {
   age: number;
   weight: number;
   height: number;
+  targetWeight?: number;
   activityFactor: number;
   goal: Goal;
   proteinFactor: ProteinFactor;
   fatMode: FatMode;
+}
+
+export function calcBMI(weight: number, heightCm: number): number {
+  const heightM = heightCm / 100;
+  return weight / (heightM * heightM);
 }
 
 export interface CalcResult {
