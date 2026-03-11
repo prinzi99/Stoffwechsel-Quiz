@@ -1,0 +1,160 @@
+import { Helmet } from "react-helmet-async";
+import Header from "@/components/Header";
+import Footer from "@/components/landing/Footer";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, FileDown, FileText, ClipboardList, LayoutGrid } from "lucide-react";
+import { Link } from "react-router-dom";
+
+interface DownloadItem {
+  title: string;
+  description: string;
+  url?: string;
+}
+
+interface DownloadCategoryProps {
+  icon: React.ElementType;
+  title: string;
+  intro: string;
+  items: DownloadItem[];
+}
+
+const DownloadCategory = ({ icon: Icon, title, intro, items }: DownloadCategoryProps) => (
+  <section className="px-5 md:px-8 pb-12 md:pb-16">
+    <div className="container-narrow space-y-5">
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0">
+          <Icon className="w-5 h-5 text-secondary" />
+        </div>
+        <h2 className="text-lg md:text-xl font-bold text-foreground">{title}</h2>
+      </div>
+      <p className="text-sm text-muted-foreground leading-relaxed">{intro}</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {items.map((item) => (
+          <Card key={item.title} className="border-border/40 shadow-sm hover:shadow-md transition-shadow">
+            <CardContent className="p-5 flex flex-col h-full space-y-3">
+              <h3 className="font-semibold text-foreground text-sm">{item.title}</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed flex-grow">{item.description}</p>
+              <Button variant="cta" size="sm" className="w-full mt-auto" disabled={!item.url}>
+                <FileDown className="w-3.5 h-3.5 mr-1" />
+                PDF herunterladen
+              </Button>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+const categories: DownloadCategoryProps[] = [
+  {
+    icon: ClipboardList,
+    title: "Checklisten",
+    intro: "Kurze Übersichten, die dir helfen können, wichtige Faktoren im Blick zu behalten.",
+    items: [
+      { title: "Stoffwechsel Reset Checkliste", description: "Wichtige Punkte, die in einer Reset-Phase sinnvoll sein können." },
+      { title: "Defizit-Phase Checkliste", description: "Eine Übersicht der wichtigsten Faktoren während einer Fettverlustphase." },
+      { title: "Alltags-Checkliste", description: "Einfache Erinnerungspunkte für Ernährung, Schlaf und Bewegung." },
+    ],
+  },
+  {
+    icon: FileText,
+    title: "Arbeitsblätter",
+    intro: "Vorlagen, die dir helfen können, Beobachtungen festzuhalten und Muster zu erkennen.",
+    items: [
+      { title: "Ernährungs-Beobachtungsblatt", description: "Ein einfaches Formular zur Beobachtung von Mahlzeiten, Hunger und Energie." },
+      { title: "Wochenübersicht Training & Energie", description: "Hilft dabei, Training, Energielevel und Belastung zu reflektieren." },
+      { title: "Schlaf- und Erholungsprotokoll", description: "Eine einfache Vorlage zur Beobachtung von Schlafdauer und Erholung." },
+    ],
+  },
+  {
+    icon: LayoutGrid,
+    title: "Vorlagen & Übersichten",
+    intro: "Kompakte Übersichten, die wichtige Zusammenhänge schnell sichtbar machen.",
+    items: [
+      { title: "Makronährstoff-Übersicht", description: "Eine einfache Übersicht zur Orientierung bei Protein, Fett und Kohlenhydraten." },
+      { title: "Kalorien-Startpunkt Übersicht", description: "Eine visuelle Übersicht der Berechnungslogik für Kalorienbedarf." },
+      { title: "Stoffwechsel-System Übersicht", description: "Ein Überblick über die wichtigsten Einflussfaktoren auf Energie und Regulation." },
+    ],
+  },
+];
+
+const DownloadsChecklisten = () => (
+  <>
+    <Helmet>
+      <title>Downloads & Checklisten | Philipp's Biohack</title>
+      <meta name="description" content="Praktische Materialien zur Umsetzung der Inhalte aus dem Buch." />
+      <meta name="robots" content="noindex, nofollow" />
+    </Helmet>
+
+    <Header />
+
+    <main className="flex-grow">
+      {/* Hero */}
+      <section className="section-padding pb-8 md:pb-12">
+        <div className="container-narrow space-y-6 text-center md:text-left">
+          <Badge variant="secondary" className="text-xs tracking-wide uppercase px-3 py-1">
+            Bonusbereich – Ressourcen
+          </Badge>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+            Downloads & Checklisten
+          </h1>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
+            Praktische Materialien zur Umsetzung der Inhalte aus dem Buch.
+          </p>
+          <p className="text-sm text-muted-foreground/80 leading-relaxed max-w-lg">
+            Manche Dinge werden klarer, wenn man sie aufschreibt oder strukturiert beobachtet.
+            Diese Materialien sollen dir helfen, die Konzepte aus dem Buch einfacher im Alltag umzusetzen.
+          </p>
+        </div>
+      </section>
+
+      {/* Categories */}
+      {categories.map((cat) => (
+        <DownloadCategory key={cat.title} {...cat} />
+      ))}
+
+      {/* Hint */}
+      <section className="section-padding pt-8 md:pt-12">
+        <div className="container-narrow">
+          <Card className="border-border/40 bg-card/80 shadow-none">
+            <CardContent className="p-5 md:p-6 space-y-2 text-center">
+              <h3 className="font-semibold text-foreground text-sm">Einfach statt perfekt</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed max-w-lg mx-auto">
+                Diese Materialien sind bewusst einfach gehalten. Sie sollen dir helfen,
+                Zusammenhänge sichtbar zu machen – nicht deinen Alltag komplizierter.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Back */}
+      <section className="px-5 md:px-8 pb-8 md:pb-12">
+        <div className="container-narrow flex justify-center">
+          <Button variant="ctaSecondary" asChild>
+            <Link to="/buch/bonus/intern">
+              <ArrowLeft className="w-4 h-4 mr-1" />
+              Zurück zum Bonusbereich
+            </Link>
+          </Button>
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="px-5 md:px-8 pb-16 md:pb-20">
+        <div className="container-narrow">
+          <p className="text-xs text-muted-foreground text-center leading-relaxed max-w-lg mx-auto">
+            Die Materialien dienen der praktischen Unterstützung und ersetzen keine individuelle Beratung.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+  </>
+);
+
+export default DownloadsChecklisten;
