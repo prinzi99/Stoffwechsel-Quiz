@@ -215,7 +215,7 @@ const ResultPageA2 = () => {
               {/* Offer Box */}
               <div className="mt-6 bg-primary/5 border border-primary/10 rounded-xl p-5 text-center">
                 <p className="text-sm text-muted-foreground mb-2">
-                  Sonderpreis für Teilnehmer des Stoffwechsel-Quiz
+                  Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz
                 </p>
                 <div className="flex items-center justify-center gap-3 mb-1">
                   <span className="text-lg text-muted-foreground/50 line-through">24,99 €</span>
