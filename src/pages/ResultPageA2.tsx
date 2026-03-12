@@ -111,10 +111,13 @@ const ResultPageA2 = () => {
 
           {/* 6b. Book Offer Section */}
           <section className="mb-12">
-            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+            <h2 className="text-xl font-bold text-foreground mb-2 flex items-center gap-2">
               <BookOpen className="w-5 h-5 text-primary" />
               Wie Du Deinen Stoffwechsel wieder in Bewegung bringen kannst
             </h2>
+            <p className="text-sm text-muted-foreground mb-6">
+              Gerade wenn Dein Stoffwechsel aktuell im Stressmodus läuft
+            </p>
 
             <h3 className="text-lg font-semibold text-foreground mb-4">
               Für Menschen mit einem gestressten Stoffwechsel
