@@ -25,7 +25,7 @@ const ThankYou = () => {
 
             {/* Fortschrittsanzeige */}
             <p className="text-xs text-muted-foreground/70 mb-5">
-              Schritt 1 von 2 – Bitte bestätige kurz Deine E-Mail-Adresse
+              Schritt 1 von 2 – E-Mail bestätigen
             </p>
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-md mx-auto">
@@ -70,15 +70,16 @@ const ThankYou = () => {
             </div>
           </section>
 
-          {/* Tipp-Hinweis */}
-          <p className="text-xs text-muted-foreground/60 text-center">
-            💡 Tipp: Lass diese Seite geöffnet, während Du Deine E-Mails prüfst.
-          </p>
+          {/* Zusatzzeilen */}
+          <div className="text-center space-y-1">
+            <p className="text-xs text-muted-foreground/60">Dauer: weniger als 10 Sekunden.</p>
+            <p className="text-xs text-muted-foreground/60">💡 Tipp: Lass diese Seite geöffnet, während Du Deine E-Mails prüfst.</p>
+          </div>
 
           {/* SECTION 3 – Erwartungsaufbau */}
           <section className="bg-card border border-border rounded-2xl p-6 md:p-8">
             <h3 className="text-base md:text-lg font-bold text-foreground mb-4">
-              Das erhältst Du nach der Bestätigung:
+              Das wartet nach der Bestätigung auf Dich:
             </h3>
 
             <ul className="space-y-3">
