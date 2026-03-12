@@ -13,6 +13,7 @@ import Index from "./pages/Index";
 import Quiz from "./pages/Quiz";
 import ThankYou from "./pages/ThankYou";
 import ResultPage from "./pages/ResultPage";
+import ResultPageA2 from "./pages/ResultPageA2";
 import ResultPageB from "./pages/ResultPageB";
 import ResultPageC from "./pages/ResultPageC";
 import Impressum from "./pages/Impressum";
@@ -46,6 +47,7 @@ const App = () => {
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/danke" element={<ThankYou />} />
             <Route path="/dfgk34k" element={<ResultPage />} />
+            <Route path="/dfgk34k-2" element={<ResultPageA2 />} />
             <Route path="/k93fda" element={<ResultPageB />} />
             <Route path="/x7q9p2" element={<ResultPageC />} />
             <Route path="/impressum" element={<Impressum />} />
