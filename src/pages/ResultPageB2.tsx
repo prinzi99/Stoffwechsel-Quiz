@@ -56,7 +56,7 @@ const ResultPageB2 = () => {
             <p className="text-muted-foreground leading-relaxed">
               Dein Fettstoffwechsel ist aktuell unterversorgt. Zu wenig Energie, Fett oder 
               Protein über längere Zeit führen dazu, dass der Körper Fettreserven schützt – 
-              anstatt sie freizugeben.
+              anstatt sie freizugeben. Der Körper reagiert darauf, indem er Energie spart und Fettreserven eher schützt, statt sie freizugeben.
             </p>
           </section>
 
