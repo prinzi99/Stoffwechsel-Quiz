@@ -34,7 +34,7 @@ const ResultPageB2 = () => {
               Dein Stoffwechsel-Profil: <strong className="text-foreground">Unterversorgter Stoffwechsel</strong>
             </p>
             <p className="text-sm text-muted-foreground mt-2">
-              Das bedeutet: Dein Körper bekommt aktuell zu wenig Energie und schützt deshalb seine Reserven.
+              Das bedeutet: Dein Körper bekommt aktuell zu wenig Energie und schaltet deshalb eher in einen Sparmodus als in Fettverbrennung.
             </p>
           </header>
 
