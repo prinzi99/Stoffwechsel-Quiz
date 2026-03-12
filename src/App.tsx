@@ -15,6 +15,7 @@ import ThankYou from "./pages/ThankYou";
 import ResultPage from "./pages/ResultPage";
 import ResultPageA2 from "./pages/ResultPageA2";
 import ResultPageB from "./pages/ResultPageB";
+import ResultPageB2 from "./pages/ResultPageB2";
 import ResultPageC from "./pages/ResultPageC";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
@@ -49,6 +50,7 @@ const App = () => {
             <Route path="/dfgk34k" element={<ResultPage />} />
             <Route path="/dfgk34k-2" element={<ResultPageA2 />} />
             <Route path="/k93fda" element={<ResultPageB />} />
+            <Route path="/k93fda-2" element={<ResultPageB2 />} />
             <Route path="/x7q9p2" element={<ResultPageC />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
