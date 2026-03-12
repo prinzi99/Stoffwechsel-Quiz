@@ -1,8 +1,7 @@
 import { Helmet } from 'react-helmet-async';
-import { Mail, Info } from 'lucide-react';
+import { Info } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/landing/Footer';
-import bookCover from '@/assets/book-cover-mockup2.jpeg';
 
 const ThankYou = () => {
   return (
@@ -40,14 +39,6 @@ const ThankYou = () => {
               Mit dem Klick bestätigst Du gleichzeitig, dass ich Dir weitere hilfreiche Tipps rund um Deinen Stoffwechsel zusenden darf. Ohne diese Bestätigung ist es mir leider nicht möglich, Dir Deine Ergebnisse und Infos zuzuschicken. Du kannst Dich selbstverständlich jederzeit mit einem Klick wieder abmelden.
             </p>
 
-            {/* Book Cover */}
-            <div className="flex justify-center mb-8">
-              <img
-                src={bookCover}
-                alt="Du bist nicht das Problem – Buchcover"
-                className="w-48 md:w-56 h-auto rounded-lg shadow-xl"
-              />
-            </div>
 
             {/* Privacy Note */}
             <div className="flex items-start justify-center gap-2 text-sm text-muted-foreground">
