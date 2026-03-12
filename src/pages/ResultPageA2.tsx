@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, AlertCircle, XCircle, Lightbulb } from 'lucide-react';
+import { ArrowRight, AlertCircle, XCircle, Lightbulb, BookOpen } from 'lucide-react';
 import Header from '@/components/Header';
+import bookCover from '@/assets/book-cover-mockup3.jpeg';
 
 const ResultPageA2 = () => {
   const typicalSigns = [
