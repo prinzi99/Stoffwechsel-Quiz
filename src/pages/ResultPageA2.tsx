@@ -152,7 +152,7 @@ const ResultPageA2 = () => {
 
             {/* Social Proof */}
             <p className="text-xs text-muted-foreground/70 text-center mb-4">
-              Viele Teilnehmer des Stoffwechsel-Quiz gehen an dieser Stelle einen Schritt weiter.
+              Viele Teilnehmer mit einem gestressten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihr System wieder zu stabilisieren.
             </p>
 
             {/* Book Showcase */}
