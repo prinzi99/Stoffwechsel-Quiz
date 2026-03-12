@@ -167,10 +167,23 @@ const ResultPageA2 = () => {
                     Warum Dein Stoffwechsel blockiert –<br />
                     und wie Du ihn wieder in Bewegung bringst.
                   </p>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
                     Dieses Buch erklärt verständlich, wie Stoffwechselblockaden entstehen 
                     und welche einfachen Schritte helfen können, das System wieder zu stabilisieren.
                   </p>
+                  <p className="text-sm text-muted-foreground mb-2">Du erfährst:</p>
+                  <ul className="space-y-1.5">
+                    {[
+                      'warum Dein Stoffwechsel blockiert',
+                      'welche Fehler viele Menschen unbewusst machen',
+                      'wie Du Dein System Schritt für Schritt wieder in Bewegung bringen kannst',
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
 
