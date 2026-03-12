@@ -70,6 +70,11 @@ const ThankYou = () => {
             </div>
           </section>
 
+          {/* Tipp-Hinweis */}
+          <p className="text-xs text-muted-foreground/60 text-center">
+            💡 Tipp: Lass diese Seite geöffnet, während Du Deine E-Mails prüfst.
+          </p>
+
           {/* SECTION 3 – Erwartungsaufbau */}
           <section className="bg-card border border-border rounded-2xl p-6 md:p-8">
             <h3 className="text-base md:text-lg font-bold text-foreground mb-4">
