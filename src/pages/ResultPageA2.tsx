@@ -229,7 +229,7 @@ const ResultPageA2 = () => {
                   asChild
                 >
                   <a href="/buch">
-                    Zum Buch & Bonus
+                    Mehr zum Buch & Bonus erfahren
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
