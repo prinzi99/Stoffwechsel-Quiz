@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
@@ -7,7 +8,20 @@ import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804";
 
+const useCountdown = (startSeconds: number) => {
+  const [seconds, setSeconds] = useState(startSeconds);
+  useEffect(() => {
+    if (seconds <= 0) return;
+    const id = setInterval(() => setSeconds((s) => Math.max(0, s - 1)), 1000);
+    return () => clearInterval(id);
+  }, [seconds]);
+  const mm = String(Math.floor(seconds / 60)).padStart(2, "0");
+  const ss = String(seconds % 60).padStart(2, "0");
+  return `${mm}:${ss}`;
+};
+
 const BuchAnbot = () => {
+  const countdown = useCountdown(15 * 60);
   return (
     <>
       <Helmet>
