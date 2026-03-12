@@ -234,6 +234,7 @@ const ResultPageA2 = () => {
                   </a>
                 </Button>
                 <p className="text-xs text-muted-foreground/50 mt-2">Sofort verfügbar als E-Book.</p>
+                <p className="text-xs text-muted-foreground/50 mt-1">Bereits von vielen Lesern genutzt, um ihren Stoffwechsel besser zu verstehen.</p>
               </div>
             </div>
           </section>
