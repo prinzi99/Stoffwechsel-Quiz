@@ -1,57 +1,88 @@
 import { Helmet } from 'react-helmet-async';
-import { Info } from 'lucide-react';
-import Header from '@/components/Header';
-import Footer from '@/components/landing/Footer';
+import { CheckCircle2, Mail, FileText, Search, ShieldCheck, Sparkles } from 'lucide-react';
 
 const ThankYou = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-muted/30">
+    <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>Vielen Dank! | Philipp's Biohack</title>
-        <meta name="description" content="Deine Stoffwechsel-Auswertung ist unterwegs. Prüfe jetzt Deinen Posteingang." />
+        <title>Fast geschafft! | Philipp's Biohack</title>
+        <meta name="description" content="Deine Stoffwechsel-Auswertung ist unterwegs. Bestätige jetzt Deine E-Mail." />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <Header />
+      <main className="flex-grow flex items-center justify-center px-4 py-10 md:py-16">
+        <div className="w-full max-w-xl space-y-6">
 
-      <main className="flex-grow flex items-center justify-center py-12 md:py-20">
-        <div className="container max-w-2xl mx-auto px-4">
-          <div className="bg-card border border-border rounded-2xl shadow-lg p-8 md:p-12 text-center animate-fade-in-up">
+          {/* SECTION 1 – Erfolgsanzeige */}
+          <section className="text-center">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-secondary/15 mb-6">
+              <CheckCircle2 className="w-10 h-10 text-secondary" />
+            </div>
 
-            {/* Headline */}
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-8">
-              <span className="text-primary">Vielen Dank!</span> So geht es weiter…
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4">
+              Fast geschafft – Deine Stoffwechsel-Auswertung wartet auf Dich
             </h1>
 
-            {/* Step 1 */}
-            <p className="text-base md:text-lg text-foreground/80 mb-2">
-              <span className="font-bold">1.</span> Öffne die E-Mail, die du soeben in <strong>DEINEM</strong>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-md mx-auto">
+              In wenigen Sekunden findest Du die E-Mail mit dem Link zu Deiner persönlichen Stoffwechsel-Analyse in Deinem Postfach.
             </p>
-            <p className="text-base md:text-lg text-primary font-semibold mb-6">
-              E-Mail Postfach von Absender "Philipp@PhilippsBiohack" erhalten hast.
-            </p>
+          </section>
 
-            {/* Step 2 */}
-            <p className="text-base md:text-lg text-foreground/80 mb-2">
-              <span className="font-bold">2.</span> <strong>Klicke auf den Download-Link in der E-Mail,</strong> um Deine persönliche Auswertung zu erhalten.
-            </p>
-            <p className="text-sm text-muted-foreground mb-8">
-              Mit dem Klick bestätigst Du gleichzeitig, dass ich Dir weitere hilfreiche Tipps rund um Deinen Stoffwechsel zusenden darf. Ohne diese Bestätigung ist es mir leider nicht möglich, Dir Deine Ergebnisse und Infos zuzuschicken. Du kannst Dich selbstverständlich jederzeit mit einem Klick wieder abmelden.
-            </p>
+          {/* SECTION 2 – Handlungsschritt */}
+          <section className="bg-primary/5 border border-primary/15 rounded-2xl p-6 md:p-8">
+            <div className="flex flex-col items-center text-center">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 mb-4">
+                <Mail className="w-7 h-7 text-primary" />
+              </div>
 
+              <h2 className="text-lg md:text-xl font-bold text-foreground mb-2">
+                Öffne jetzt die E-Mail und klicke auf den Bestätigungslink
+              </h2>
 
-            {/* Privacy Note */}
-            <div className="flex items-start justify-center gap-2 text-sm text-muted-foreground">
-              <Info className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-              <p>
-                Hinweis: Ich hasse Spam und Deine Daten sind bei mir jederzeit sicher und werden niemals an Dritte weitergegeben.
+              <p className="text-muted-foreground mb-4">
+                Sobald Du auf den Link klickst, erhältst Du sofort Zugriff auf Deine persönliche Stoffwechsel-Auswertung.
               </p>
+
+              <div className="flex items-center gap-2 text-sm text-muted-foreground/80">
+                <Search className="w-4 h-4 flex-shrink-0" />
+                <p>Falls die E-Mail nicht sofort ankommt, prüfe bitte auch Deinen Spam- oder Werbeordner.</p>
+              </div>
             </div>
+          </section>
+
+          {/* SECTION 3 – Erwartungsaufbau */}
+          <section className="bg-card border border-border rounded-2xl p-6 md:p-8">
+            <h3 className="text-base md:text-lg font-bold text-foreground mb-4">
+              Das erwartet Dich nach dem Klick:
+            </h3>
+
+            <ul className="space-y-3">
+              {[
+                { icon: Sparkles, text: 'Deine vollständige Stoffwechsel-Analyse' },
+                { icon: FileText, text: 'Konkrete Hinweise, was Deinen Stoffwechsel aktuell blockieren könnte' },
+                { icon: FileText, text: 'Ein kostenloses PDF mit Deinem persönlichen Stoffwechsel-Profil' },
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">{item.text}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* SECTION 4 – Micro Disclosure */}
+          <p className="text-xs text-muted-foreground/70 text-center leading-relaxed max-w-md mx-auto">
+            Mit dem Klick bestätigst Du Deine E-Mail-Adresse, damit ich Dir Deine persönliche Stoffwechsel-Auswertung und gelegentlich hilfreiche Tipps rund um Ernährung und Stoffwechsel senden darf. Du kannst Dich selbstverständlich jederzeit wieder abmelden.
+          </p>
+
+          {/* SECTION 5 – Vertrauenshinweis */}
+          <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground pt-2">
+            <ShieldCheck className="w-4 h-4 text-secondary flex-shrink-0" />
+            <p>Kein Spam. Deine Daten sind sicher und werden nicht an Dritte weitergegeben.</p>
           </div>
+
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 };
