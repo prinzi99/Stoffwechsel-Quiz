@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Brain, Zap, ListChecks, Wrench } from "lucide-react";
+import { CheckCircle2, Brain, Zap, ListChecks, Wrench, UserCheck } from "lucide-react";
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804";
@@ -34,10 +34,19 @@ const BuchAnbot = () => {
               </div>
 
               <div className="text-center md:text-left max-w-xl">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-4">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-3">
                   Du bist nicht
                   <span className="text-primary"> das Problem.</span>
                 </h1>
+
+                <p className="text-sm md:text-base text-primary font-medium mb-2">
+                  Basierend auf Deinem Stoffwechsel-Quiz.
+                </p>
+
+                <p className="text-base md:text-lg text-foreground font-medium mb-6">
+                  Dein Ergebnis zeigt:<br />
+                  Dein Stoffwechsel arbeitet aktuell gegen Dich.
+                </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
                   Warum Dein Stoffwechsel blockiert –<br />
@@ -61,10 +70,14 @@ const BuchAnbot = () => {
                   </p>
                 </div>
 
-                <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
+                <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
                   <span className="text-lg text-muted-foreground/50 line-through">34,99 €</span>
                   <span className="text-3xl font-bold text-foreground">19,99 €</span>
                 </div>
+
+                <p className="text-sm text-muted-foreground mb-4">
+                  Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz.
+                </p>
 
                 <Button variant="cta" size="xl" asChild className="w-full sm:w-auto mb-3">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
@@ -73,7 +86,7 @@ const BuchAnbot = () => {
                 </Button>
 
                 <p className="text-sm text-primary font-medium">
-                  Quiz-Teilnehmer Sonderpreis
+                  Dieses Angebot gilt nur für Teilnehmer des Stoffwechsel-Quiz.
                 </p>
               </div>
             </div>
@@ -101,7 +114,8 @@ const BuchAnbot = () => {
                 <p>Er spart Energie.</p>
                 <p>Er schützt Fettreserven.</p>
                 <p className="text-lg md:text-xl font-semibold text-primary pt-4">
-                  Genau hier entsteht die Stoffwechselblockade.
+                  Genau hier entsteht die Stoffwechselblockade –<br />
+                  und genau hier setzt dieses Buch an.
                 </p>
               </div>
             </div>
@@ -118,10 +132,10 @@ const BuchAnbot = () => {
 
               <div className="space-y-4">
                 {[
-                  "warum Dein Stoffwechsel blockieren kann",
+                  "warum Dein Stoffwechsel blockiert – und wie Du ihn wieder aktivierst",
                   "welche Fehler viele Menschen unbewusst machen",
                   "warum weniger essen oft das Gegenteil bewirkt",
-                  "wie Du Deinen Stoffwechsel wieder stabilisieren kannst",
+                  "wie Du Deinen Stoffwechsel Schritt für Schritt stabilisieren kannst",
                   "welche Signale Dein Körper wirklich braucht",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-card border border-border">
@@ -139,10 +153,10 @@ const BuchAnbot = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                Zusätzlich erhältst Du Zugriff auf Bonus-Tools
+                Zusätzlich erhältst Du Zugriff auf exklusive Bonus-Tools
               </h2>
               <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-10">
-                Zum Buch bekommst Du Zugang zu einem Bonusbereich mit zusätzlichen Tools.
+                Diese Tools helfen Dir, die Strategien aus dem Buch direkt umzusetzen.
               </p>
 
               <div className="grid gap-4 sm:grid-cols-2 text-left">
@@ -162,19 +176,55 @@ const BuchAnbot = () => {
           </div>
         </section>
 
-        {/* 5. Preisbox + 6. Social Proof */}
-        <section id="kaufen" className="section-padding bg-background">
+        {/* 5. Für wen dieses Buch ist */}
+        <section className="section-padding bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-4">
+                Für wen dieses Buch besonders hilfreich ist
+              </h2>
+              <p className="text-base md:text-lg text-foreground/80 text-center leading-relaxed mb-8">
+                Dieses Buch ist besonders für Dich, wenn …
+              </p>
+
+              <div className="space-y-4">
+                {[
+                  "Dein Gewicht trotz Disziplin stagniert",
+                  "Du schon mehrere Diäten ausprobiert hast",
+                  "Du Deinen Stoffwechsel endlich verstehen willst",
+                  "Du nachhaltige Strategien statt kurzfristiger Lösungen suchst",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-card border border-border">
+                    <UserCheck className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-base md:text-lg text-foreground/90 leading-snug">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Preisbox + 7. Social Proof */}
+        <section id="kaufen" className="section-padding bg-section-alt">
           <div className="container mx-auto px-4">
             <div className="max-w-lg mx-auto">
+              <p className="text-base md:text-lg text-foreground/80 text-center leading-relaxed mb-8">
+                Viele Teilnehmer des Stoffwechsel-Quiz gehen an dieser Stelle den nächsten Schritt.
+              </p>
+
               <div className="bg-card border border-border rounded-2xl p-8 md:p-10 text-center shadow-lg">
                 <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                   Exklusiver Preis für Teilnehmer des Stoffwechsel-Quiz
                 </p>
 
-                <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="flex items-center justify-center gap-3 mb-4">
                   <span className="text-xl text-muted-foreground/50 line-through">34,99 €</span>
                   <span className="text-4xl md:text-5xl font-bold text-foreground">19,99 €</span>
                 </div>
+
+                <p className="text-sm text-muted-foreground mb-8">
+                  Der Quiz-Teilnehmerpreis ist nur auf dieser Seite verfügbar.
+                </p>
 
                 <Button variant="cta" size="xl" asChild className="w-full mb-6">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
@@ -190,7 +240,8 @@ const BuchAnbot = () => {
                 <div className="border-t border-border pt-6">
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                     Bereits von vielen Quiz-Teilnehmern genutzt,<br />
-                    um ihren Stoffwechsel besser zu verstehen.
+                    um ihren Stoffwechsel besser zu verstehen<br />
+                    und nachhaltige Fortschritte zu machen.
                   </p>
                 </div>
               </div>
