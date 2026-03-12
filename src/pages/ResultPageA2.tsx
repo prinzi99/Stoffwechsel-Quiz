@@ -156,7 +156,7 @@ const ResultPageA2 = () => {
             </p>
 
             {/* Book Showcase */}
-            <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-md">
               <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
                 {/* Book Mockup */}
                 <div className="w-48 md:w-56 flex-shrink-0">
