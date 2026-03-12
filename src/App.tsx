@@ -15,6 +15,7 @@ import ThankYou from "./pages/ThankYou";
 import ResultPage from "./pages/ResultPage";
 import ResultPageA2 from "./pages/ResultPageA2";
 import ResultPageB from "./pages/ResultPageB";
+import ResultPageB2 from "./pages/ResultPageB2";
 import ResultPageC from "./pages/ResultPageC";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
