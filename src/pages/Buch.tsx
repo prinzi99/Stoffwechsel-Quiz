@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, BookOpen, Brain, Battery, Dumbbell, TrendingDown, RotateCcw, CheckCircle2 } from "lucide-react";
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
-const DIGISTORE_URL = "#kaufen"; // TODO: Replace with actual Digistore checkout URL
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804";
 
 const Buch = () => {
   const scrollToKauf = () => {
