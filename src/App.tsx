@@ -17,6 +17,7 @@ import ResultPageA2 from "./pages/ResultPageA2";
 import ResultPageB from "./pages/ResultPageB";
 import ResultPageB2 from "./pages/ResultPageB2";
 import ResultPageC from "./pages/ResultPageC";
+import ResultPageC2 from "./pages/ResultPageC2";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
@@ -52,6 +53,7 @@ const App = () => {
             <Route path="/k93fda" element={<ResultPageB />} />
             <Route path="/k93fda-2" element={<ResultPageB2 />} />
             <Route path="/x7q9p2" element={<ResultPageC />} />
+            <Route path="/x7q9p2-2" element={<ResultPageC2 />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/buch" element={<Buch />} />
