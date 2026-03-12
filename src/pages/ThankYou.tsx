@@ -79,7 +79,7 @@ const ThankYou = () => {
           {/* SECTION 3 – Erwartungsaufbau */}
           <section className="bg-card border border-border rounded-2xl p-6 md:p-8">
             <h3 className="text-base md:text-lg font-bold text-foreground mb-4">
-              Das erhältst Du nach der Bestätigung:
+              Das wartet nach der Bestätigung auf Dich:
             </h3>
 
             <ul className="space-y-3">
