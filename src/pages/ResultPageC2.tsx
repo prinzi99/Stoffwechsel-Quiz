@@ -31,7 +31,7 @@ const ResultPageC2 = () => {
               Was bei Deinem Stoffwechsel <span className="text-primary">aktuell passiert</span>
             </h1>
             <p className="text-base md:text-lg text-muted-foreground">
-              Dein Stoffwechsel-Profil: <strong className="text-foreground">Angepasster Stoffwechsel</strong>
+              Dein Stoffwechsel-Profil: <strong className="text-foreground">Überangepasster Diät-Stoffwechsel</strong>
             </p>
             <p className="text-sm text-muted-foreground mt-2">
               Dein Körper hat sich an wiederholte Diäten angepasst und schützt seine Reserven besonders stark.
