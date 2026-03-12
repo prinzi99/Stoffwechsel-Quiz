@@ -73,7 +73,7 @@ const Datenschutz = () => {
                 IP-Adresse, Öffnungsraten, Klickverhalten.
               </p>
               <p>
-                Abmeldung jederzeit über den Link im Newsletter oder per E-Mail an info@inovomarket.at.
+                Abmeldung jederzeit über den Link im Newsletter oder per E-Mail an philippsbiohack@gmail.com.
               </p>
 
               <h2>7. Webinar-Software (Webinaris)</h2>
