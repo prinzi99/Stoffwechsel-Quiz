@@ -156,9 +156,14 @@ const ResultPageB2 = () => {
               </p>
             </div>
 
+            {/* Transition */}
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Wenn Du verstehen möchtest, warum Dein Stoffwechsel aktuell blockiert ist und wie Du ihn Schritt für Schritt wieder stabilisieren kannst, habe ich dazu einen einfachen Leitfaden entwickelt.
+            </p>
+
             {/* Social Proof */}
             <p className="text-xs text-muted-foreground/70 text-center mb-4">
-              Viele Teilnehmer mit einem unterversorgten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihren Energiehaushalt wieder zu stabilisieren.
+              Viele Teilnehmer mit einem unterversorgten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihren Energiehaushalt wieder zu stabilisieren und ihren Stoffwechsel wieder in Bewegung zu bringen.
             </p>
 
             {/* Book Showcase */}
