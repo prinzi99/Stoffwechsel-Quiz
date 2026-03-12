@@ -244,9 +244,12 @@ const BuchAnbot = () => {
                   </a>
                 </Button>
 
-                <div className="flex items-center justify-center gap-2 text-sm md:text-base text-foreground/70 mb-6">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span>Sofort als E-Book verfügbar</span>
+                <div className="text-center text-sm md:text-base text-foreground/70 mb-6 space-y-1">
+                  <div className="flex items-center justify-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-primary" />
+                    <span>Sofort als E-Book verfügbar</span>
+                  </div>
+                  <p className="text-muted-foreground text-sm">Direkt nach dem Kauf lesen.</p>
                 </div>
 
                 <div className="border-t border-border pt-6">
