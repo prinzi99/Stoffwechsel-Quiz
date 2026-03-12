@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { CheckCircle2, Mail, FileText, Search, ShieldCheck, Sparkles } from 'lucide-react';
+import { CheckCircle2, Mail, Search, ShieldCheck, Sparkles, FileText, Clock } from 'lucide-react';
 
 const ThankYou = () => {
   return (
@@ -26,6 +26,12 @@ const ThankYou = () => {
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-md mx-auto">
               In wenigen Sekunden findest Du die E-Mail mit dem Link zu Deiner persönlichen Stoffwechsel-Analyse in Deinem Postfach.
             </p>
+
+            {/* Geduld-Hinweis */}
+            <div className="flex items-center justify-center gap-1.5 mt-3 text-xs text-muted-foreground/60">
+              <Clock className="w-3.5 h-3.5 flex-shrink-0" />
+              <span>Die E-Mail kann bis zu 60 Sekunden dauern. Bitte lasse diese Seite kurz geöffnet.</span>
+            </div>
           </section>
 
           {/* SECTION 2 – Handlungsschritt */}
@@ -36,16 +42,16 @@ const ThankYou = () => {
               </div>
 
               <h2 className="text-lg md:text-xl font-bold text-foreground mb-2">
-                Öffne jetzt die E-Mail und klicke auf den Bestätigungslink
+                Öffne jetzt die E-Mail und bestätige Deine Auswertung
               </h2>
 
               <p className="text-muted-foreground mb-4">
-                Sobald Du auf den Link klickst, erhältst Du sofort Zugriff auf Deine persönliche Stoffwechsel-Auswertung.
+                Sobald Du auf den Link klickst, erhältst Du sofort Zugriff auf Deine persönliche Stoffwechsel-Analyse.
               </p>
 
               <div className="flex items-center gap-2 text-sm text-muted-foreground/80">
                 <Search className="w-4 h-4 flex-shrink-0" />
-                <p>Falls die E-Mail nicht sofort ankommt, prüfe bitte auch Deinen Spam- oder Werbeordner.</p>
+                <p>Falls die E-Mail nicht sofort ankommt, prüfe bitte auch Deinen Spam-, Werbe- oder „Promotions"-Ordner (Gmail).</p>
               </div>
             </div>
           </section>
@@ -53,18 +59,18 @@ const ThankYou = () => {
           {/* SECTION 3 – Erwartungsaufbau */}
           <section className="bg-card border border-border rounded-2xl p-6 md:p-8">
             <h3 className="text-base md:text-lg font-bold text-foreground mb-4">
-              Das erwartet Dich nach dem Klick:
+              Das erhältst Du nach der Bestätigung:
             </h3>
 
             <ul className="space-y-3">
               {[
-                { icon: Sparkles, text: 'Deine vollständige Stoffwechsel-Analyse' },
-                { icon: FileText, text: 'Konkrete Hinweise, was Deinen Stoffwechsel aktuell blockieren könnte' },
-                { icon: FileText, text: 'Ein kostenloses PDF mit Deinem persönlichen Stoffwechsel-Profil' },
-              ].map((item, i) => (
+                'Deine vollständige Stoffwechsel-Analyse',
+                'Konkrete Hinweise, was Deinen Stoffwechsel aktuell blockieren könnte',
+                'Ein kostenloses PDF mit Deinem persönlichen Stoffwechsel-Profil',
+              ].map((text, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">{item.text}</span>
+                  <span className="text-foreground">{text}</span>
                 </li>
               ))}
             </ul>
@@ -72,7 +78,7 @@ const ThankYou = () => {
 
           {/* SECTION 4 – Micro Disclosure */}
           <p className="text-xs text-muted-foreground/70 text-center leading-relaxed max-w-md mx-auto">
-            Mit dem Klick bestätigst Du Deine E-Mail-Adresse, damit ich Dir Deine persönliche Stoffwechsel-Auswertung und gelegentlich hilfreiche Tipps rund um Ernährung und Stoffwechsel senden darf. Du kannst Dich selbstverständlich jederzeit wieder abmelden.
+            Mit dem Klick bestätigst Du Deine E-Mail-Adresse, damit ich Dir Deine persönliche Stoffwechsel-Auswertung sowie gelegentlich hilfreiche Tipps rund um Ernährung und Stoffwechsel senden darf. Du kannst Dich selbstverständlich jederzeit wieder abmelden.
           </p>
 
           {/* SECTION 5 – Vertrauenshinweis */}
