@@ -194,6 +194,21 @@ const ResultPageA2 = () => {
                       </li>
                     ))}
                   </ul>
+
+                  <p className="text-sm font-medium text-foreground mt-5 mb-2">Viele Leser berichten bereits nach kurzer Zeit von:</p>
+                  <ul className="space-y-1.5">
+                    {[
+                      'weniger Heißhunger in stressigen Phasen',
+                      'stabilerer Energie über den Tag',
+                      'klareren Entscheidungen bei Ernährung und Training',
+                      'weniger Frust beim Abnehmen',
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
 
