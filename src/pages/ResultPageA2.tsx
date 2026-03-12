@@ -33,7 +33,10 @@ const ResultPageA2 = () => {
             <p className="text-base md:text-lg text-muted-foreground">
               Dein Stoffwechsel-Profil: <strong className="text-foreground">Gestresster Stoffwechsel</strong>
             </p>
-          </header>
+            <p className="text-sm text-muted-foreground mt-2">
+              Das bedeutet: Dein Körper befindet sich aktuell eher im Stressmodus als im Fettverbrennungsmodus.
+            </p>
+           </header>
 
           {/* 2. Validation */}
           <section className="mb-10">
