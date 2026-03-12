@@ -231,8 +231,11 @@ const BuchAnbot = () => {
                   <span className="text-4xl md:text-5xl font-bold text-foreground">19,99 €</span>
                 </div>
 
-                <p className="text-sm text-muted-foreground mb-8">
+                <p className="text-sm text-muted-foreground mb-2">
                   Der Quiz-Teilnehmerpreis ist nur auf dieser Seite verfügbar.
+                </p>
+                <p className="text-sm text-muted-foreground mb-8">
+                  Dieses Angebot ist ausschließlich für Teilnehmer des Stoffwechsel-Quiz verfügbar.
                 </p>
 
                 <Button variant="cta" size="xl" asChild className="w-full mb-6">
