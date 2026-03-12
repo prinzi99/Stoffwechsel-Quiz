@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, AlertCircle, XCircle, Lightbulb } from 'lucide-react';
 import Header from '@/components/Header';
 
-const ResultPageB = () => {
+const ResultPageB2 = () => {
   const typicalSigns = [
     'Starke Müdigkeit',
     'Frieren',
