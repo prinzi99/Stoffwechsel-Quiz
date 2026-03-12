@@ -148,4 +148,4 @@ const ResultPageB2 = () => {
   );
 };
 
-export default ResultPageB;
+export default ResultPageB2;
