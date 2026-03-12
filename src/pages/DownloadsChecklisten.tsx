@@ -65,7 +65,7 @@ const categories: DownloadCategoryProps[] = [
     items: [
       { title: "Stoffwechsel Reset Checkliste", description: "Wichtige Punkte, die in einer Reset-Phase sinnvoll sein können.", url: "/downloads/Stoffwechsel-Reset-Checkliste.pdf" },
       { title: "Defizit-Phase Checkliste", description: "Eine Übersicht der wichtigsten Faktoren während einer Fettverlustphase.", url: "/downloads/Defizit-Phase-Checkliste.pdf" },
-      { title: "Alltags-Checkliste", description: "Einfache Erinnerungspunkte für Ernährung, Schlaf und Bewegung." },
+      { title: "Alltags-Checkliste", description: "Einfache Erinnerungspunkte für Ernährung, Schlaf und Bewegung.", url: "/downloads/Alltags-Checkliste.pdf" },
     ],
   },
   {
