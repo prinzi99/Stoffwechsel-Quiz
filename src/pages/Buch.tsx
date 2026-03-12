@@ -18,7 +18,7 @@ const Buch = () => {
     { icon: Brain, text: "Wie dein Stoffwechsel wirklich funktioniert" },
     { icon: Battery, text: "Welche Rolle Stress und Schlaf spielen" },
     { icon: Dumbbell, text: "Warum mehr Training nicht automatisch mehr Fettverlust bedeutet" },
-    { icon: RotateCcw, text: "Wie der sogenannte „Sparmodus" entsteht" },
+    { icon: RotateCcw, text: "Wie der sogenannte \u201ESparmodus\u201C entsteht" },
     { icon: BookOpen, text: "Wie du dein System wieder stabilisieren kannst" },
   ];
 
