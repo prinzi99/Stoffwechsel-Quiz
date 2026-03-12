@@ -145,6 +145,11 @@ const ResultPageA2 = () => {
               </ul>
             </div>
 
+            {/* Social Proof */}
+            <p className="text-xs text-muted-foreground/70 text-center mb-4">
+              Viele Teilnehmer des Stoffwechsel-Quiz gehen an dieser Stelle einen Schritt weiter.
+            </p>
+
             {/* Book Showcase */}
             <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
               <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
