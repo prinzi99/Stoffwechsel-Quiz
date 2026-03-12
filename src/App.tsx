@@ -21,6 +21,7 @@ import ResultPageC2 from "./pages/ResultPageC2";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
+import BuchAnbot from "./pages/BuchAnbot";
 import BuchBonus from "./pages/BuchBonus";
 import BuchBonusIntern from "./pages/BuchBonusIntern";
 import BiohackingTools from "./pages/BiohackingTools";
