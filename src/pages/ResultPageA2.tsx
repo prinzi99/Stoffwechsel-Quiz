@@ -27,9 +27,12 @@ const ResultPageA2 = () => {
           
           {/* 1. Headline */}
           <header className="text-center mb-12">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-3">
               Was bei Deinem <span className="text-primary">Stoffwechsel</span> aktuell passiert
             </h1>
+            <p className="text-base md:text-lg text-muted-foreground">
+              Dein Stoffwechsel-Profil: <strong className="text-foreground">Gestresster Stoffwechsel</strong>
+            </p>
           </header>
 
           {/* 2. Validation */}
