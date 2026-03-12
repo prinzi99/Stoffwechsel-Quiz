@@ -145,6 +145,11 @@ const ResultPageA2 = () => {
               </ul>
             </div>
 
+            {/* Social Proof */}
+            <p className="text-xs text-muted-foreground/70 text-center mb-4">
+              Viele Teilnehmer des Stoffwechsel-Quiz gehen an dieser Stelle einen Schritt weiter.
+            </p>
+
             {/* Book Showcase */}
             <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
               <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
@@ -196,7 +201,7 @@ const ResultPageA2 = () => {
                   <span className="text-lg text-muted-foreground/50 line-through">24,99 €</span>
                   <span className="text-2xl font-bold text-foreground">19,99 €</span>
                 </div>
-                <p className="text-xs text-muted-foreground/60 mb-4">Nur auf dieser Seite verfügbar.</p>
+                <p className="text-xs text-muted-foreground/60 mb-4">Dieses Angebot gilt nur für Teilnehmer des Stoffwechsel-Quiz.</p>
                 <Button
                   variant="cta"
                   size="lg"
@@ -208,6 +213,7 @@ const ResultPageA2 = () => {
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
+                <p className="text-xs text-muted-foreground/50 mt-2">Sofort verfügbar als E-Book.</p>
               </div>
             </div>
           </section>
