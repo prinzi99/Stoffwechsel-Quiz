@@ -14,7 +14,7 @@ const ResultPageC2 = () => {
   const commonMistakes = [
     'Neue Diät starten',
     'Erneutes Kaloriendefizit',
-    'Keto als Dauerlösung',
+    'immer neue Diäten ausprobieren',
     'Angst vor Erhöhungen',
   ];
 
