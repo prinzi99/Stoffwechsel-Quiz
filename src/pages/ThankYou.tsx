@@ -1,8 +1,7 @@
 import { Helmet } from 'react-helmet-async';
-import { Mail, Info } from 'lucide-react';
+import { Info } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/landing/Footer';
-import bookCover from '@/assets/book-cover-mockup2.jpeg';
 
 const ThankYou = () => {
   return (
