@@ -74,7 +74,7 @@ const categories: DownloadCategoryProps[] = [
     intro: "Vorlagen, die dir helfen können, Beobachtungen festzuhalten und Muster zu erkennen.",
     items: [
       { title: "Ernährungs-Beobachtungsblatt", description: "Ein einfaches Formular zur Beobachtung von Mahlzeiten, Hunger und Energie.", url: "/downloads/Ernahrungs-Beobachtungsblatt.pdf" },
-      { title: "Wochenübersicht Training & Energie", description: "Hilft dabei, Training, Energielevel und Belastung zu reflektieren." },
+      { title: "Wochenübersicht Training & Energie", description: "Hilft dabei, Training, Energielevel und Belastung zu reflektieren.", url: "/downloads/Wochenubersicht-Training-und-Energie.pdf" },
       { title: "Schlaf- und Erholungsprotokoll", description: "Eine einfache Vorlage zur Beobachtung von Schlafdauer und Erholung." },
     ],
   },
