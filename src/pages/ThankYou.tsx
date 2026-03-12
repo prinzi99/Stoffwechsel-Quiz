@@ -86,7 +86,7 @@ const ThankYou = () => {
               {[
                 'Deine vollständige Stoffwechsel-Analyse',
                 'Konkrete Hinweise, was Deinen Stoffwechsel aktuell blockieren könnte',
-                'Ein kostenloses PDF mit Deinem persönlichen Stoffwechsel-Profil',
+                'Ein zusätzlicher Bonus nach Deiner Auswertung',
               ].map((text, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
