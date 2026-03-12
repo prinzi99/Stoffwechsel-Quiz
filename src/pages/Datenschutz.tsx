@@ -29,7 +29,7 @@ const Datenschutz = () => {
                 Schulgasse 7<br />
                 2100 Korneuburg<br />
                 Österreich<br />
-                E-Mail: info@inovomarket.at<br />
+                E-Mail: philippsbiohack@gmail.com<br />
                 Telefon: +43 677 64113808
               </p>
 
