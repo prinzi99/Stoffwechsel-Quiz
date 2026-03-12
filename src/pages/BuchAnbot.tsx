@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
@@ -7,7 +8,20 @@ import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804";
 
+const useCountdown = (startSeconds: number) => {
+  const [seconds, setSeconds] = useState(startSeconds);
+  useEffect(() => {
+    if (seconds <= 0) return;
+    const id = setInterval(() => setSeconds((s) => Math.max(0, s - 1)), 1000);
+    return () => clearInterval(id);
+  }, [seconds]);
+  const mm = String(Math.floor(seconds / 60)).padStart(2, "0");
+  const ss = String(seconds % 60).padStart(2, "0");
+  return `${mm}:${ss}`;
+};
+
 const BuchAnbot = () => {
+  const countdown = useCountdown(15 * 60);
   return (
     <>
       <Helmet>
@@ -84,8 +98,11 @@ const BuchAnbot = () => {
                   <span className="text-3xl font-bold text-foreground">19,99 €</span>
                 </div>
 
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-muted-foreground mb-1">
                   Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz.
+                </p>
+                <p className="text-xs text-muted-foreground/70 mb-4">
+                  Kurz erklärt. Verständlich aufgebaut. Direkt umsetzbar.
                 </p>
 
                 <Button variant="cta" size="xl" asChild className="w-full sm:w-auto mb-3">
@@ -231,12 +248,20 @@ const BuchAnbot = () => {
                   <span className="text-4xl md:text-5xl font-bold text-foreground">19,99 €</span>
                 </div>
 
+                <p className="text-sm text-muted-foreground mb-1">
+                  Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz.
+                </p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Dieses Angebot ist nicht öffentlich verfügbar.
+                </p>
                 <p className="text-sm text-muted-foreground mb-2">
                   Der Quiz-Teilnehmerpreis ist nur auf dieser Seite verfügbar.
                 </p>
-                <p className="text-sm text-muted-foreground mb-8">
-                  Dieses Angebot ist ausschließlich für Teilnehmer des Stoffwechsel-Quiz verfügbar.
-                </p>
+
+                <div className="bg-muted/50 rounded-lg py-3 px-4 mb-6">
+                  <p className="text-sm text-muted-foreground mb-1">⏳ Dieser Sonderpreis ist nur für kurze Zeit verfügbar.</p>
+                  <p className="text-lg font-semibold text-foreground tracking-wider">⏳ Angebot endet in {countdown}</p>
+                </div>
 
                 <Button variant="cta" size="xl" asChild className="w-full mb-6">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
