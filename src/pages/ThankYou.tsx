@@ -33,8 +33,11 @@ const ThankYou = () => {
             </p>
 
             {/* Step 2 */}
-            <p className="text-base md:text-lg text-foreground/80 mb-8">
+            <p className="text-base md:text-lg text-foreground/80 mb-2">
               <span className="font-bold">2.</span> <strong>Klicke auf den Download-Link in der E-Mail,</strong> um Deine persönliche Auswertung und den kostenlosen Stoffwechsel-Code zu erhalten.
+            </p>
+            <p className="text-sm text-muted-foreground mb-8">
+              Mit dem Klick bestätigst Du gleichzeitig, dass ich Dir weitere hilfreiche Tipps rund um Deinen Stoffwechsel zusenden darf. Ohne diese Bestätigung ist es mir leider nicht möglich, Dir Deine Ergebnisse und Infos zuzuschicken.
             </p>
 
             {/* Book Cover */}
