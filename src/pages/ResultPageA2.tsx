@@ -33,7 +33,10 @@ const ResultPageA2 = () => {
             <p className="text-base md:text-lg text-muted-foreground">
               Dein Stoffwechsel-Profil: <strong className="text-foreground">Gestresster Stoffwechsel</strong>
             </p>
-          </header>
+            <p className="text-sm text-muted-foreground mt-2">
+              Das bedeutet: Dein Körper befindet sich aktuell eher im Stressmodus als im Fettverbrennungsmodus.
+            </p>
+           </header>
 
           {/* 2. Validation */}
           <section className="mb-10">
@@ -108,10 +111,13 @@ const ResultPageA2 = () => {
 
           {/* 6b. Book Offer Section */}
           <section className="mb-12">
-            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+            <h2 className="text-xl font-bold text-foreground mb-2 flex items-center gap-2">
               <BookOpen className="w-5 h-5 text-primary" />
               Wie Du Deinen Stoffwechsel wieder in Bewegung bringen kannst
             </h2>
+            <p className="text-sm text-muted-foreground mb-6">
+              Gerade wenn Dein Stoffwechsel aktuell im Stressmodus läuft
+            </p>
 
             <h3 className="text-lg font-semibold text-foreground mb-4">
               Für Menschen mit einem gestressten Stoffwechsel
@@ -139,15 +145,18 @@ const ResultPageA2 = () => {
                   </li>
                 ))}
               </ul>
+              <p className="mt-4">
+                Der Leitfaden richtet sich speziell an Menschen, deren Stoffwechsel durch Stress oder Dauerbelastung blockiert ist.
+              </p>
             </div>
 
             {/* Social Proof */}
             <p className="text-xs text-muted-foreground/70 text-center mb-4">
-              Viele Teilnehmer des Stoffwechsel-Quiz gehen an dieser Stelle einen Schritt weiter.
+              Viele Teilnehmer mit einem gestressten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihr System wieder zu stabilisieren.
             </p>
 
             {/* Book Showcase */}
-            <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-md">
               <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
                 {/* Book Mockup */}
                 <div className="w-48 md:w-56 flex-shrink-0">
@@ -185,13 +194,28 @@ const ResultPageA2 = () => {
                       </li>
                     ))}
                   </ul>
+
+                  <p className="text-sm font-medium text-foreground mt-5 mb-2">Viele Leser berichten bereits nach kurzer Zeit von:</p>
+                  <ul className="space-y-1.5">
+                    {[
+                      'weniger Heißhunger in stressigen Phasen',
+                      'stabilerer Energie über den Tag',
+                      'klareren Entscheidungen bei Ernährung und Training',
+                      'weniger Frust beim Abnehmen',
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
 
               {/* Offer Box */}
               <div className="mt-6 bg-primary/5 border border-primary/10 rounded-xl p-5 text-center">
                 <p className="text-sm text-muted-foreground mb-2">
-                  Sonderpreis für Teilnehmer des Stoffwechsel-Quiz
+                  Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz
                 </p>
                 <div className="flex items-center justify-center gap-3 mb-1">
                   <span className="text-lg text-muted-foreground/50 line-through">24,99 €</span>
@@ -205,11 +229,12 @@ const ResultPageA2 = () => {
                   asChild
                 >
                   <a href="/buch">
-                    Zum Buch & Bonus
+                    Mehr zum Buch & Bonus erfahren
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
                 <p className="text-xs text-muted-foreground/50 mt-2">Sofort verfügbar als E-Book.</p>
+                <p className="text-xs text-muted-foreground/50 mt-1">Bereits von vielen Lesern genutzt, um ihren Stoffwechsel besser zu verstehen.</p>
               </div>
             </div>
           </section>
