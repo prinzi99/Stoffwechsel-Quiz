@@ -34,7 +34,7 @@ const ThankYou = () => {
 
             {/* Step 2 */}
             <p className="text-base md:text-lg text-foreground/80 mb-8">
-              <span className="font-bold">2.</span> <strong>Klicke auf den Bestätigungslink in der E-Mail,</strong> um deine E-Mail-Adresse zu bestätigen und gleichzeitig Deine kostenlose Auswertung zu erhalten.
+              <span className="font-bold">2.</span> <strong>Klicke auf den Download-Link in der E-Mail,</strong> um Deine persönliche Auswertung und den kostenlosen Stoffwechsel-Code zu erhalten.
             </p>
 
             {/* Book Cover */}
