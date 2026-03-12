@@ -193,6 +193,9 @@ const ResultPageA2 = () => {
                 </Button>
               </div>
             </div>
+          </section>
+
+          {/* 7. CTA */}
           <section className="text-center">
             <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-lg">
               <h3 className="text-xl font-bold text-foreground mb-3">
