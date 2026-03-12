@@ -27,9 +27,12 @@ const ResultPageA2 = () => {
           
           {/* 1. Headline */}
           <header className="text-center mb-12">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-3">
               Was bei Deinem <span className="text-primary">Stoffwechsel</span> aktuell passiert
             </h1>
+            <p className="text-base md:text-lg text-muted-foreground">
+              Dein Stoffwechsel-Profil: <strong className="text-foreground">Gestresster Stoffwechsel</strong>
+            </p>
           </header>
 
           {/* 2. Validation */}
@@ -107,7 +110,7 @@ const ResultPageA2 = () => {
           <section className="mb-12">
             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
               <BookOpen className="w-5 h-5 text-primary" />
-              Wie Du Deinen Stoffwechsel wieder stabilisieren kannst
+              Wie Du Deinen Stoffwechsel wieder in Bewegung bringen kannst
             </h2>
 
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
@@ -164,10 +167,23 @@ const ResultPageA2 = () => {
                     Warum Dein Stoffwechsel blockiert –<br />
                     und wie Du ihn wieder in Bewegung bringst.
                   </p>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
                     Dieses Buch erklärt verständlich, wie Stoffwechselblockaden entstehen 
                     und welche einfachen Schritte helfen können, das System wieder zu stabilisieren.
                   </p>
+                  <p className="text-sm text-muted-foreground mb-2">Du erfährst:</p>
+                  <ul className="space-y-1.5">
+                    {[
+                      'warum Dein Stoffwechsel blockiert',
+                      'welche Fehler viele Menschen unbewusst machen',
+                      'wie Du Dein System Schritt für Schritt wieder in Bewegung bringen kannst',
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
 
@@ -176,10 +192,11 @@ const ResultPageA2 = () => {
                 <p className="text-sm text-muted-foreground mb-2">
                   Sonderpreis für Teilnehmer des Stoffwechsel-Quiz
                 </p>
-                <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="flex items-center justify-center gap-3 mb-1">
                   <span className="text-lg text-muted-foreground/50 line-through">24,99 €</span>
                   <span className="text-2xl font-bold text-foreground">19,99 €</span>
                 </div>
+                <p className="text-xs text-muted-foreground/60 mb-4">Nur auf dieser Seite verfügbar.</p>
                 <Button
                   variant="cta"
                   size="lg"
@@ -187,7 +204,7 @@ const ResultPageA2 = () => {
                   asChild
                 >
                   <a href="/buch">
-                    Mehr zum Buch erfahren
+                    Zum Buch & Bonus
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
@@ -195,36 +212,6 @@ const ResultPageA2 = () => {
             </div>
           </section>
 
-          {/* 7. CTA */}
-          <section className="text-center">
-            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                Dein nächster Schritt
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Erhalte eine ausführliche Auswertung mit konkreten Empfehlungen, 
-                die zu Deinem Stoffwechsel-Typ passen.
-              </p>
-              <Button
-                variant="cta"
-                size="xl"
-                className="w-full sm:w-auto group"
-                asChild
-              >
-                <a 
-                  href="https://drive.google.com/file/d/14yKWsTsyruBggxHCcYNs6lqHpKPf8EYH/view?usp=drive_link" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Der Stoffwechsel-Code
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
-              <p className="text-xs text-muted-foreground mt-4">
-                Kein Spam. Kein Abo. Nur Deine persönliche Auswertung.
-              </p>
-            </div>
-          </section>
 
         </div>
       </main>
