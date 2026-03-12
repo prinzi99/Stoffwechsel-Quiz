@@ -28,13 +28,13 @@ const ResultPageB2 = () => {
           {/* 1. Headline */}
           <header className="text-center mb-12">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-3">
-              Warum Dein Körper <span className="text-primary">Energie zurückhält</span>
+              Was bei Deinem Stoffwechsel <span className="text-primary">aktuell passiert</span>
             </h1>
             <p className="text-base md:text-lg text-muted-foreground">
               Dein Stoffwechsel-Profil: <strong className="text-foreground">Unterversorgter Stoffwechsel</strong>
             </p>
             <p className="text-sm text-muted-foreground mt-2">
-              Das bedeutet: Dein Körper bekommt aktuell zu wenig Energie und schützt deshalb seine Reserven.
+              Das bedeutet: Dein Körper bekommt aktuell zu wenig Energie und schaltet deshalb eher in einen Sparmodus als in Fettverbrennung.
             </p>
           </header>
 
@@ -56,7 +56,7 @@ const ResultPageB2 = () => {
             <p className="text-muted-foreground leading-relaxed">
               Dein Fettstoffwechsel ist aktuell unterversorgt. Zu wenig Energie, Fett oder 
               Protein über längere Zeit führen dazu, dass der Körper Fettreserven schützt – 
-              anstatt sie freizugeben.
+              anstatt sie freizugeben. Der Körper reagiert darauf, indem er Energie spart und Fettreserven eher schützt, statt sie freizugeben.
             </p>
           </section>
 
@@ -152,7 +152,7 @@ const ResultPageB2 = () => {
 
             {/* Social Proof */}
             <p className="text-xs text-muted-foreground/70 text-center mb-4">
-              Viele Teilnehmer mit einem unterversorgten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihr System wieder zu stabilisieren.
+              Viele Teilnehmer mit einem unterversorgten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihren Energiehaushalt wieder zu stabilisieren.
             </p>
 
             {/* Book Showcase */}
