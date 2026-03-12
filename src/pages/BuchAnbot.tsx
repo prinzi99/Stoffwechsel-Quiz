@@ -44,8 +44,8 @@ const BuchAnbot = () => {
                 </p>
 
                 <p className="text-base md:text-lg text-foreground font-medium mb-6">
-                  Dein Ergebnis zeigt:<br />
-                  Dein Stoffwechsel arbeitet aktuell gegen Dich.
+                  Dein Ergebnis zeigt,<br />
+                  dass Dein Stoffwechsel aktuell blockiert ist.
                 </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -68,6 +68,15 @@ const BuchAnbot = () => {
                     Vielleicht liegt das Problem nicht bei Dir –<br />
                     sondern im System.
                   </p>
+                </div>
+
+                <div className="text-sm md:text-base text-foreground/70 mb-6 leading-relaxed">
+                  <p className="font-medium text-foreground/80 mb-2">Dieses Buch passt besonders gut zu Deinem Ergebnis, weil es erklärt:</p>
+                  <ul className="space-y-1 ml-1">
+                    <li>• warum Dein Stoffwechsel blockiert</li>
+                    <li>• welche Fehler viele Menschen unbewusst machen</li>
+                    <li>• wie Du Dein System wieder stabilisieren kannst</li>
+                  </ul>
                 </div>
 
                 <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
@@ -209,7 +218,7 @@ const BuchAnbot = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-lg mx-auto">
               <p className="text-base md:text-lg text-foreground/80 text-center leading-relaxed mb-8">
-                Viele Teilnehmer des Stoffwechsel-Quiz gehen an dieser Stelle den nächsten Schritt.
+                Viele Teilnehmer des Stoffwechsel-Quiz gehen an dieser Stelle den nächsten Schritt und sichern sich den exklusiven Quiz-Preis.
               </p>
 
               <div className="bg-card border border-border rounded-2xl p-8 md:p-10 text-center shadow-lg">
@@ -222,8 +231,11 @@ const BuchAnbot = () => {
                   <span className="text-4xl md:text-5xl font-bold text-foreground">19,99 €</span>
                 </div>
 
-                <p className="text-sm text-muted-foreground mb-8">
+                <p className="text-sm text-muted-foreground mb-2">
                   Der Quiz-Teilnehmerpreis ist nur auf dieser Seite verfügbar.
+                </p>
+                <p className="text-sm text-muted-foreground mb-8">
+                  Dieses Angebot ist ausschließlich für Teilnehmer des Stoffwechsel-Quiz verfügbar.
                 </p>
 
                 <Button variant="cta" size="xl" asChild className="w-full mb-6">
@@ -232,9 +244,12 @@ const BuchAnbot = () => {
                   </a>
                 </Button>
 
-                <div className="flex items-center justify-center gap-2 text-sm md:text-base text-foreground/70 mb-6">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span>Sofort als E-Book verfügbar</span>
+                <div className="text-center text-sm md:text-base text-foreground/70 mb-6 space-y-1">
+                  <div className="flex items-center justify-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-primary" />
+                    <span>Sofort als E-Book verfügbar</span>
+                  </div>
+                  <p className="text-muted-foreground text-sm">Direkt nach dem Kauf lesen.</p>
                 </div>
 
                 <div className="border-t border-border pt-6">
