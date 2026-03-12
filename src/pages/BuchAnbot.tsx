@@ -70,6 +70,15 @@ const BuchAnbot = () => {
                   </p>
                 </div>
 
+                <div className="text-sm md:text-base text-foreground/70 mb-6 leading-relaxed">
+                  <p className="font-medium text-foreground/80 mb-2">Dieses Buch passt besonders gut zu Deinem Ergebnis, weil es erklärt:</p>
+                  <ul className="space-y-1 ml-1">
+                    <li>• warum Dein Stoffwechsel blockiert</li>
+                    <li>• welche Fehler viele Menschen unbewusst machen</li>
+                    <li>• wie Du Dein System wieder stabilisieren kannst</li>
+                  </ul>
+                </div>
+
                 <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
                   <span className="text-lg text-muted-foreground/50 line-through">34,99 €</span>
                   <span className="text-3xl font-bold text-foreground">19,99 €</span>
