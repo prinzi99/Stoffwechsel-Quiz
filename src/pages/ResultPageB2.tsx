@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, AlertCircle, XCircle, Lightbulb } from 'lucide-react';
+import { ArrowRight, AlertCircle, XCircle, Lightbulb, BookOpen } from 'lucide-react';
 import Header from '@/components/Header';
+import bookCover from '@/assets/book-cover-mockup3.jpeg';
 
 const ResultPageB2 = () => {
   const typicalSigns = [
@@ -26,9 +27,15 @@ const ResultPageB2 = () => {
           
           {/* 1. Headline */}
           <header className="text-center mb-12">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-3">
               Warum Dein Körper <span className="text-primary">Energie zurückhält</span>
             </h1>
+            <p className="text-base md:text-lg text-muted-foreground">
+              Dein Stoffwechsel-Profil: <strong className="text-foreground">Unterversorgter Stoffwechsel</strong>
+            </p>
+            <p className="text-sm text-muted-foreground mt-2">
+              Das bedeutet: Dein Körper bekommt aktuell zu wenig Energie und schützt deshalb seine Reserven.
+            </p>
           </header>
 
           {/* 2. Validation */}
@@ -102,34 +109,133 @@ const ResultPageB2 = () => {
             </div>
           </section>
 
-          {/* 7. CTA */}
-          <section className="text-center">
-            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                Dein nächster Schritt
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Erhalte eine ausführliche Auswertung mit konkreten Empfehlungen, 
-                die zu Deinem Stoffwechsel-Typ passen.
+          {/* 6b. Book Offer Section */}
+          <section className="mb-12">
+            <h2 className="text-xl font-bold text-foreground mb-2 flex items-center gap-2">
+              <BookOpen className="w-5 h-5 text-primary" />
+              Wie Du Deinen Stoffwechsel wieder in Bewegung bringen kannst
+            </h2>
+            <p className="text-sm text-muted-foreground mb-6">
+              Gerade wenn Dein Körper aktuell auf Sparflamme läuft
+            </p>
+
+            <h3 className="text-lg font-semibold text-foreground mb-4">
+              Für Menschen mit einem unterversorgten Stoffwechsel
+            </h3>
+
+            <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
+              <p>
+                Gerade wenn Dein Körper dauerhaft zu wenig Energie bekommt, können typische 
+                Strategien wie noch weniger essen oder noch mehr Verzicht das Problem sogar verstärken.
               </p>
-              <Button
-                variant="cta"
-                size="xl"
-                className="w-full sm:w-auto group"
-                asChild
-              >
-                <a 
-                  href="https://drive.google.com/file/d/14yKWsTsyruBggxHCcYNs6lqHpKPf8EYH/view?usp=drive_link" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+              <p>
+                Viele Menschen verstehen nach der Analyse zwar, warum ihr Stoffwechsel blockiert, 
+                wissen aber nicht, wie sie das konkret verändern können.
+              </p>
+              <p>Deshalb habe ich einen klaren Leitfaden entwickelt, der erklärt:</p>
+              <ul className="space-y-2 pl-1">
+                {[
+                  'warum der Stoffwechsel blockiert',
+                  'welche Fehler viele Menschen unbewusst machen',
+                  'wie man das System Schritt für Schritt wieder stabilisieren kann',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="w-2 h-2 rounded-full bg-secondary mt-2.5 flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4">
+                Der Leitfaden richtet sich speziell an Menschen, deren Stoffwechsel durch Unterversorgung oder zu strenge Einschränkungen blockiert ist.
+              </p>
+            </div>
+
+            {/* Social Proof */}
+            <p className="text-xs text-muted-foreground/70 text-center mb-4">
+              Viele Teilnehmer mit einem unterversorgten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihr System wieder zu stabilisieren.
+            </p>
+
+            {/* Book Showcase */}
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-md">
+              <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
+                {/* Book Mockup */}
+                <div className="w-48 md:w-56 flex-shrink-0">
+                  <img
+                    src={bookCover}
+                    alt="Buchcover: Du bist nicht das Problem"
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Book Info */}
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-1">
+                    Du bist nicht das Problem
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    Warum Dein Stoffwechsel blockiert –<br />
+                    und wie Du ihn wieder in Bewegung bringst.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Dieses Buch erklärt verständlich, wie Stoffwechselblockaden entstehen 
+                    und welche einfachen Schritte helfen können, das System wieder zu stabilisieren.
+                  </p>
+                  <p className="text-sm text-muted-foreground mb-2">Du erfährst:</p>
+                  <ul className="space-y-1.5">
+                    {[
+                      'warum Dein Stoffwechsel blockiert',
+                      'welche Fehler viele Menschen unbewusst machen',
+                      'wie Du Dein System Schritt für Schritt wieder in Bewegung bringen kannst',
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <p className="text-sm font-medium text-foreground mt-5 mb-2">Viele Leser berichten bereits nach kurzer Zeit von:</p>
+                  <ul className="space-y-1.5">
+                    {[
+                      'mehr Energie im Alltag',
+                      'weniger Frieren und Müdigkeit',
+                      'klareren Entscheidungen bei Ernährung und Training',
+                      'weniger Frust beim Abnehmen',
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* Offer Box */}
+              <div className="mt-6 bg-primary/5 border border-primary/10 rounded-xl p-5 text-center">
+                <p className="text-sm text-muted-foreground mb-2">
+                  Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz
+                </p>
+                <div className="flex items-center justify-center gap-3 mb-1">
+                  <span className="text-lg text-muted-foreground/50 line-through">24,99 €</span>
+                  <span className="text-2xl font-bold text-foreground">19,99 €</span>
+                </div>
+                <p className="text-xs text-muted-foreground/60 mb-4">Dieses Angebot gilt nur für Teilnehmer des Stoffwechsel-Quiz.</p>
+                <Button
+                  variant="cta"
+                  size="lg"
+                  className="group"
+                  asChild
                 >
-                  Der Stoffwechsel-Code
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
-              <p className="text-xs text-muted-foreground mt-4">
-                Kein Spam. Kein Abo. Nur Deine persönliche Auswertung.
-              </p>
+                  <a href="/buch">
+                    Mehr zum Buch & Bonus erfahren
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </Button>
+                <p className="text-xs text-muted-foreground/50 mt-2">Sofort verfügbar als E-Book.</p>
+                <p className="text-xs text-muted-foreground/50 mt-1">Bereits von vielen Lesern genutzt, um ihren Stoffwechsel besser zu verstehen.</p>
+              </div>
             </div>
           </section>
 
