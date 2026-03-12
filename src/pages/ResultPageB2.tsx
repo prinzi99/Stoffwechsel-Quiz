@@ -152,7 +152,7 @@ const ResultPageB2 = () => {
 
             {/* Social Proof */}
             <p className="text-xs text-muted-foreground/70 text-center mb-4">
-              Viele Teilnehmer mit einem unterversorgten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihr System wieder zu stabilisieren.
+              Viele Teilnehmer mit einem unterversorgten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihren Energiehaushalt wieder zu stabilisieren.
             </p>
 
             {/* Book Showcase */}
