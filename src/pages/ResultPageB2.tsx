@@ -235,7 +235,7 @@ const ResultPageB2 = () => {
                   asChild
                 >
                   <a href="/buch">
-                    Mehr zum Buch & Bonus erfahren
+                    Zum Buch & exklusiven Quiz-Bonus
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
