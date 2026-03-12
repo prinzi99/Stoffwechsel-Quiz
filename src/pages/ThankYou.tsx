@@ -33,14 +33,18 @@ const ThankYou = () => {
             </p>
 
             {/* Absender-Hinweis */}
-            <p className="text-sm text-muted-foreground mt-3">
-              Halte Ausschau nach einer E-Mail von: <strong className="text-foreground">Philipps Biohack</strong>
-            </p>
+            <div className="mt-4 text-center">
+              <p className="text-sm text-muted-foreground">Halte Ausschau nach einer E-Mail von</p>
+              <p className="text-lg md:text-xl font-bold text-foreground mt-1">Philipps Biohack</p>
+            </div>
 
             {/* Geduld-Hinweis */}
-            <div className="flex items-center justify-center gap-1.5 mt-3 text-xs text-muted-foreground/60">
-              <Clock className="w-3.5 h-3.5 flex-shrink-0" />
-              <span>Die E-Mail kann bis zu 60 Sekunden dauern. Bitte lasse diese Seite kurz geöffnet.</span>
+            <div className="flex flex-col items-center mt-3 text-xs text-muted-foreground/60 gap-0.5">
+              <div className="flex items-center gap-1.5">
+                <Clock className="w-3.5 h-3.5 flex-shrink-0" />
+                <span>Die E-Mail kommt normalerweise innerhalb von wenigen Sekunden an.</span>
+              </div>
+              <span>In seltenen Fällen kann es bis zu 60 Sekunden dauern. Bitte lasse diese Seite kurz geöffnet.</span>
             </div>
           </section>
 
@@ -65,6 +69,11 @@ const ThankYou = () => {
               </div>
             </div>
           </section>
+
+          {/* Tipp-Hinweis */}
+          <p className="text-xs text-muted-foreground/60 text-center">
+            💡 Tipp: Lass diese Seite geöffnet, während Du Deine E-Mails prüfst.
+          </p>
 
           {/* SECTION 3 – Erwartungsaufbau */}
           <section className="bg-card border border-border rounded-2xl p-6 md:p-8">
