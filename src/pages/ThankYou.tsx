@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { CheckCircle2, Mail, Search, ShieldCheck, Sparkles, FileText, Clock } from 'lucide-react';
+import { CheckCircle2, Mail, Search, ShieldCheck, Clock } from 'lucide-react';
 
 const ThankYou = () => {
   return (
@@ -19,12 +19,22 @@ const ThankYou = () => {
               <CheckCircle2 className="w-10 h-10 text-secondary" />
             </div>
 
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-3">
               Fast geschafft – Deine Stoffwechsel-Auswertung wartet auf Dich
             </h1>
 
+            {/* Fortschrittsanzeige */}
+            <p className="text-xs text-muted-foreground/70 mb-5">
+              Schritt 1 von 2 – Bitte bestätige kurz Deine E-Mail-Adresse
+            </p>
+
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-md mx-auto">
               In wenigen Sekunden findest Du die E-Mail mit dem Link zu Deiner persönlichen Stoffwechsel-Analyse in Deinem Postfach.
+            </p>
+
+            {/* Absender-Hinweis */}
+            <p className="text-sm text-muted-foreground mt-3">
+              Halte Ausschau nach einer E-Mail von: <strong className="text-foreground">Philipps Biohack</strong>
             </p>
 
             {/* Geduld-Hinweis */}
