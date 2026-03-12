@@ -113,22 +113,18 @@ const ResultPageA2 = () => {
               Wie Du Deinen Stoffwechsel wieder in Bewegung bringen kannst
             </h2>
 
+            <h3 className="text-lg font-semibold text-foreground mb-4">
+              Für Menschen mit einem gestressten Stoffwechsel
+            </h3>
+
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
+              <p>
+                Gerade wenn Dein Stoffwechsel dauerhaft unter Stress steht, können typische 
+                Strategien wie noch weniger essen oder noch mehr Training das Problem sogar verstärken.
+              </p>
               <p>
                 Viele Menschen verstehen nach der Analyse zwar, warum ihr Stoffwechsel blockiert, 
                 wissen aber nicht, wie sie das konkret verändern können.
-              </p>
-              <p>Oft entsteht dann der gleiche Kreislauf:</p>
-              <ul className="space-y-2 pl-1">
-                {['noch weniger essen', 'noch härter trainieren', 'noch strengere Regeln'].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-destructive/60 mt-2.5 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p>
-                Doch genau diese Strategien können den Stoffwechsel zusätzlich unter Druck setzen.
               </p>
               <p>Deshalb habe ich einen klaren Leitfaden entwickelt, der erklärt:</p>
               <ul className="space-y-2 pl-1">
