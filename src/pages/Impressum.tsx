@@ -34,7 +34,7 @@ const Impressum = () => {
               <h2>Kontakt</h2>
               <p>
                 Telefon: +43 677 64113808<br />
-                E-Mail: info@inovomarket.at<br />
+                E-Mail: philippsbiohack@gmail.com<br />
                 Website: https://stoffwechsel.philippsbiohack.de
               </p>
 
