@@ -98,8 +98,11 @@ const BuchAnbot = () => {
                   <span className="text-3xl font-bold text-foreground">19,99 €</span>
                 </div>
 
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-muted-foreground mb-1">
                   Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz.
+                </p>
+                <p className="text-xs text-muted-foreground/70 mb-4">
+                  Kurz erklärt. Verständlich aufgebaut. Direkt umsetzbar.
                 </p>
 
                 <Button variant="cta" size="xl" asChild className="w-full sm:w-auto mb-3">
