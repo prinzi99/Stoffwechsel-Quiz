@@ -145,6 +145,9 @@ const ResultPageA2 = () => {
                   </li>
                 ))}
               </ul>
+              <p className="mt-4">
+                Der Leitfaden richtet sich speziell an Menschen, deren Stoffwechsel durch Stress oder Dauerbelastung blockiert ist.
+              </p>
             </div>
 
             {/* Social Proof */}
