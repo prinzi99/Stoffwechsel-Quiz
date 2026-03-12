@@ -42,8 +42,14 @@ const ResultPageB2 = () => {
           <section className="mb-10">
             <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-8">
               <p className="text-lg text-foreground leading-relaxed">
-                Dein Ergebnis zeigt kein Willensproblem, sondern <strong className="text-primary">einen Körper, 
-                der auf Mangel reagiert.</strong>
+                Dein Ergebnis zeigt <strong className="text-primary">kein Willensproblem.</strong>
+              </p>
+              <p className="text-lg text-foreground leading-relaxed mt-3">
+                Dein Körper reagiert aktuell auf Energiemangel.
+              </p>
+              <p className="text-lg text-foreground leading-relaxed mt-3">
+                Viele Menschen versuchen in dieser Situation noch weniger zu essen –
+                <br />doch genau das kann den Stoffwechsel <strong className="text-primary">weiter blockieren.</strong>
               </p>
             </div>
           </section>
