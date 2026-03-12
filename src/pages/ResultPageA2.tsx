@@ -192,10 +192,11 @@ const ResultPageA2 = () => {
                 <p className="text-sm text-muted-foreground mb-2">
                   Sonderpreis für Teilnehmer des Stoffwechsel-Quiz
                 </p>
-                <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="flex items-center justify-center gap-3 mb-1">
                   <span className="text-lg text-muted-foreground/50 line-through">24,99 €</span>
                   <span className="text-2xl font-bold text-foreground">19,99 €</span>
                 </div>
+                <p className="text-xs text-muted-foreground/60 mb-4">Nur auf dieser Seite verfügbar.</p>
                 <Button
                   variant="cta"
                   size="lg"
@@ -203,7 +204,7 @@ const ResultPageA2 = () => {
                   asChild
                 >
                   <a href="/buch">
-                    Mehr zum Buch erfahren
+                    Zum Buch & Bonus
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
