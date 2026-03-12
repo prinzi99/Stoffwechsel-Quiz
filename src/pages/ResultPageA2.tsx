@@ -212,36 +212,6 @@ const ResultPageA2 = () => {
             </div>
           </section>
 
-          {/* 7. CTA */}
-          <section className="text-center">
-            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                Dein nächster Schritt
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Erhalte eine ausführliche Auswertung mit konkreten Empfehlungen, 
-                die zu Deinem Stoffwechsel-Typ passen.
-              </p>
-              <Button
-                variant="cta"
-                size="xl"
-                className="w-full sm:w-auto group"
-                asChild
-              >
-                <a 
-                  href="https://drive.google.com/file/d/14yKWsTsyruBggxHCcYNs6lqHpKPf8EYH/view?usp=drive_link" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Der Stoffwechsel-Code
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
-              <p className="text-xs text-muted-foreground mt-4">
-                Kein Spam. Kein Abo. Nur Deine persönliche Auswertung.
-              </p>
-            </div>
-          </section>
 
         </div>
       </main>
