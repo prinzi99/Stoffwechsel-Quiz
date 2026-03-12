@@ -240,12 +240,13 @@ const ResultPageB2 = () => {
                   asChild
                 >
                   <a href="/buch">
-                    Zum Buch & exklusiven Quiz-Bonus
+                    Zum Buch & exklusiven Quiz-Bonus sichern
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
-                <p className="text-xs text-muted-foreground/50 mt-2">Sofort verfügbar als E-Book.</p>
-                <p className="text-xs text-muted-foreground/50 mt-1">Bereits von vielen Lesern genutzt, um ihren Stoffwechsel besser zu verstehen.</p>
+                <p className="text-xs text-muted-foreground/50 mt-2">Sofort verfügbar als E-Book</p>
+                <p className="text-xs text-muted-foreground/50 mt-1">Direkt nach dem Kauf lesen</p>
+                <p className="text-xs text-muted-foreground/50 mt-2">Bereits von vielen Quiz-Teilnehmern genutzt, um ihren Stoffwechsel besser zu verstehen.</p>
               </div>
             </div>
           </section>
