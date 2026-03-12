@@ -5,7 +5,7 @@ import bookCover from '@/assets/book-cover-mockup3.jpeg';
 
 const ResultPageC2 = () => {
   const typicalSigns = [
-    'Abnehmen extrem schwierig',
+    'Abnehmen wird trotz Disziplin immer schwieriger',
     'Schnelle Gewichtszunahme nach Diäten',
     'Kaum Spielraum bei Ernährung',
     'Frust trotz Kontrolle',
