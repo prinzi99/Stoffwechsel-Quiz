@@ -213,6 +213,7 @@ const ResultPageA2 = () => {
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
+                <p className="text-xs text-muted-foreground/50 mt-2">Sofort verfügbar als E-Book.</p>
               </div>
             </div>
           </section>
