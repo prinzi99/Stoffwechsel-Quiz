@@ -85,7 +85,7 @@ const categories: DownloadCategoryProps[] = [
     items: [
       { title: "Makronährstoff-Übersicht", description: "Eine einfache Übersicht zur Orientierung bei Protein, Fett und Kohlenhydraten.", url: "/downloads/Makronahrstoff-Ubersicht.pdf" },
       { title: "Kalorien-Startpunkt Übersicht", description: "Eine visuelle Übersicht der Berechnungslogik für Kalorienbedarf.", url: "/downloads/Kalorien-Startpunkt-Ubersicht.pdf" },
-      { title: "Stoffwechsel-System Übersicht", description: "Ein Überblick über die wichtigsten Einflussfaktoren auf Energie und Regulation." },
+      { title: "Stoffwechsel-System Übersicht", description: "Ein Überblick über die wichtigsten Einflussfaktoren auf Energie und Regulation.", url: "/downloads/Stoffwechsel-System-Ubersicht.pdf" },
     ],
   },
 ];
