@@ -110,7 +110,7 @@ const ResultPageA2 = () => {
           <section className="mb-12">
             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
               <BookOpen className="w-5 h-5 text-primary" />
-              Wie Du Deinen Stoffwechsel wieder stabilisieren kannst
+              Wie Du Deinen Stoffwechsel wieder in Bewegung bringen kannst
             </h2>
 
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
