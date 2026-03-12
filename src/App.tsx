@@ -17,6 +17,7 @@ import ResultPageA2 from "./pages/ResultPageA2";
 import ResultPageB from "./pages/ResultPageB";
 import ResultPageB2 from "./pages/ResultPageB2";
 import ResultPageC from "./pages/ResultPageC";
+import ResultPageC2 from "./pages/ResultPageC2";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
