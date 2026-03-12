@@ -248,12 +248,20 @@ const BuchAnbot = () => {
                   <span className="text-4xl md:text-5xl font-bold text-foreground">19,99 €</span>
                 </div>
 
+                <p className="text-sm text-muted-foreground mb-1">
+                  Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz.
+                </p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Dieses Angebot ist nicht öffentlich verfügbar.
+                </p>
                 <p className="text-sm text-muted-foreground mb-2">
                   Der Quiz-Teilnehmerpreis ist nur auf dieser Seite verfügbar.
                 </p>
-                <p className="text-sm text-muted-foreground mb-8">
-                  Dieses Angebot ist ausschließlich für Teilnehmer des Stoffwechsel-Quiz verfügbar.
-                </p>
+
+                <div className="bg-muted/50 rounded-lg py-3 px-4 mb-6">
+                  <p className="text-sm text-muted-foreground mb-1">⏳ Dieser Sonderpreis ist nur für kurze Zeit verfügbar.</p>
+                  <p className="text-lg font-semibold text-foreground tracking-wider">⏳ Angebot endet in {countdown}</p>
+                </div>
 
                 <Button variant="cta" size="xl" asChild className="w-full mb-6">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
