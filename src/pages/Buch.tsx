@@ -79,11 +79,12 @@ const Buch = () => {
                 <Button
                   variant="cta"
                   size="xl"
-                  onClick={scrollToKauf}
+                  asChild
                   className="w-full sm:w-auto mb-3"
                 >
-                  Jetzt Buch ansehen
-                  <ArrowDown className="w-5 h-5 ml-1" />
+                  <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
+                    Jetzt kaufen
+                  </a>
                 </Button>
 
                 <p className="text-sm text-muted-foreground">
