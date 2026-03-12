@@ -218,7 +218,7 @@ const BuchAnbot = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-lg mx-auto">
               <p className="text-base md:text-lg text-foreground/80 text-center leading-relaxed mb-8">
-                Viele Teilnehmer des Stoffwechsel-Quiz gehen an dieser Stelle den nächsten Schritt.
+                Viele Teilnehmer des Stoffwechsel-Quiz gehen an dieser Stelle den nächsten Schritt und sichern sich den exklusiven Quiz-Preis.
               </p>
 
               <div className="bg-card border border-border rounded-2xl p-8 md:p-10 text-center shadow-lg">
