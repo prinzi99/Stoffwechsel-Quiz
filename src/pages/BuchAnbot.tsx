@@ -44,8 +44,8 @@ const BuchAnbot = () => {
                 </p>
 
                 <p className="text-base md:text-lg text-foreground font-medium mb-6">
-                  Dein Ergebnis zeigt:<br />
-                  Dein Stoffwechsel arbeitet aktuell gegen Dich.
+                  Dein Ergebnis zeigt,<br />
+                  dass Dein Stoffwechsel aktuell blockiert ist.
                 </p>
 
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
