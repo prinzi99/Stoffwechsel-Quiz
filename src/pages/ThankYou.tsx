@@ -25,7 +25,7 @@ const ThankYou = () => {
 
             {/* Fortschrittsanzeige */}
             <p className="text-xs text-muted-foreground/70 mb-5">
-              Schritt 1 von 2 – Bitte bestätige kurz Deine E-Mail-Adresse
+              Schritt 1 von 2 – E-Mail bestätigen
             </p>
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-md mx-auto">
