@@ -17,11 +17,11 @@ const useCountdown = (startSeconds: number) => {
   }, [seconds]);
   const mm = String(Math.floor(seconds / 60)).padStart(2, "0");
   const ss = String(seconds % 60).padStart(2, "0");
-  return `${mm}:${ss}`;
+  return { countdown: `${mm}:${ss}`, seconds };
 };
 
 const BuchAnbot = () => {
-  const countdown = useCountdown(15 * 60);
+  const { countdown, seconds } = useCountdown(15 * 60);
   return (
     <>
       <Helmet>
@@ -101,9 +101,20 @@ const BuchAnbot = () => {
                 <p className="text-sm text-muted-foreground mb-1">
                   Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz.
                 </p>
-                <p className="text-xs text-muted-foreground/70 mb-4">
+                <p className="text-xs text-muted-foreground/70 mb-2">
                   Kurz erklärt. Verständlich aufgebaut. Direkt umsetzbar.
                 </p>
+
+                <div className="bg-muted/50 rounded-lg py-2 px-3 mb-4">
+                  {seconds > 0 ? (
+                    <>
+                      <p className="text-xs text-muted-foreground mb-0.5">⏳ Dieser Sonderpreis ist nur für kurze Zeit verfügbar.</p>
+                      <p className="text-base font-semibold text-foreground tracking-wider">⏳ Angebot endet in {countdown}</p>
+                    </>
+                  ) : (
+                    <p className="text-sm text-foreground/80">Der exklusive Quiz-Teilnehmerpreis ist aktuell noch verfügbar.</p>
+                  )}
+                </div>
 
                 <Button variant="cta" size="xl" asChild className="w-full sm:w-auto mb-3">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
@@ -259,8 +270,14 @@ const BuchAnbot = () => {
                 </p>
 
                 <div className="bg-muted/50 rounded-lg py-3 px-4 mb-6">
-                  <p className="text-sm text-muted-foreground mb-1">⏳ Dieser Sonderpreis ist nur für kurze Zeit verfügbar.</p>
-                  <p className="text-lg font-semibold text-foreground tracking-wider">⏳ Angebot endet in {countdown}</p>
+                  {seconds > 0 ? (
+                    <>
+                      <p className="text-sm text-muted-foreground mb-1">⏳ Dieser Sonderpreis ist nur für kurze Zeit verfügbar.</p>
+                      <p className="text-lg font-semibold text-foreground tracking-wider">⏳ Angebot endet in {countdown}</p>
+                    </>
+                  ) : (
+                    <p className="text-sm text-foreground/80">Der exklusive Quiz-Teilnehmerpreis ist aktuell noch verfügbar.</p>
+                  )}
                 </div>
 
                 <Button variant="cta" size="xl" asChild className="w-full mb-6">
