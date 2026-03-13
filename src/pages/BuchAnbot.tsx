@@ -76,16 +76,16 @@ const BuchAnbot = () => {
               </div>
 
               <div className="text-center md:text-left max-w-xl">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-3">
+                <h1 className="hidden md:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-3">
                   Du bist nicht
                   <span className="text-primary"> das Problem.</span>
                 </h1>
 
-                <p className="text-sm md:text-base text-primary font-medium mb-2">
+                <p className="hidden md:block text-sm md:text-base text-primary font-medium mb-2">
                   Basierend auf Deinem Stoffwechsel-Quiz.
                 </p>
 
-                <p className="text-base md:text-lg text-foreground font-medium mb-6">
+                <p className="hidden md:block text-base md:text-lg text-foreground font-medium mb-6">
                   Dein Ergebnis zeigt,<br />
                   dass Dein Stoffwechsel aktuell blockiert ist.
                 </p>
