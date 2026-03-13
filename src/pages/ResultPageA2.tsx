@@ -218,7 +218,7 @@ const ResultPageA2 = () => {
                   Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz
                 </p>
                 <div className="flex items-center justify-center gap-3 mb-1">
-                  <span className="text-lg text-muted-foreground/50 line-through">24,99 €</span>
+                  <span className="text-lg text-muted-foreground/50 line-through">34,99 €</span>
                   <span className="text-2xl font-bold text-foreground">19,99 €</span>
                 </div>
                 <p className="text-xs text-muted-foreground/60 mb-4">Dieses Angebot gilt nur für Teilnehmer des Stoffwechsel-Quiz.</p>
