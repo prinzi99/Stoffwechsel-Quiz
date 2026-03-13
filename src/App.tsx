@@ -67,6 +67,7 @@ const App = () => {
             <Route path="/buch/bonus/intern/kalorienrechner" element={<KalorienRechner />} />
             <Route path="/buch/bonus/intern/stoffwechsel-check" element={<StoffwechselCheck />} />
             <Route path="/tools" element={<Navigate to="/buch/bonus" replace />} />
+            <Route path="/analyse" element={<Analyse />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

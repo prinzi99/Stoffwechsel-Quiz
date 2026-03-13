@@ -11,6 +11,7 @@ import CalcInfoSections from "@/components/calculator/CalcInfoSections";
 import { calculateAll, type CalcInput, type CalcResult } from "@/lib/calorieCalculator";
 
 const KalorienRechner = () => {
+  useBonusPageView("/buch/bonus/intern/kalorienrechner", "Kalorien- & Makro-Rechner");
   const [result, setResult] = useState<CalcResult | null>(null);
   const [input, setInput] = useState<CalcInput | null>(null);
   const resultsRef = useRef<HTMLDivElement>(null);

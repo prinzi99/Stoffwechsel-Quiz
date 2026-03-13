@@ -100,7 +100,9 @@ const categories = [
   },
 ];
 
-const BiohackingTools = () => (
+const BiohackingTools = () => {
+  useBonusPageView("/buch/bonus/intern/biohacking-tools", "Biohacking & Tools");
+  return (
   <>
     <Helmet>
       <title>Biohacking & Tools | Philipp's Biohack</title>

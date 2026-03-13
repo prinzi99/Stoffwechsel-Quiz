@@ -10,6 +10,7 @@ import CheckInfoSections from "@/components/check/CheckInfoSections";
 import { evaluateCheck, questions, type CheckAnswers, type CheckResult } from "@/lib/metabolicCheck";
 
 const StoffwechselCheck = () => {
+  useBonusPageView("/buch/bonus/intern/stoffwechsel-check", "Stoffwechsel-Reset Check");
   const [answers, setAnswers] = useState<CheckAnswers>({});
   const [result, setResult] = useState<CheckResult | null>(null);
   const [error, setError] = useState<string | null>(null);

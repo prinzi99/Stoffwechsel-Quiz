@@ -91,7 +91,9 @@ const categories: DownloadCategoryProps[] = [
   },
 ];
 
-const DownloadsChecklisten = () => (
+const DownloadsChecklisten = () => {
+  useBonusPageView("/buch/bonus/intern/downloads", "Downloads & Checklisten");
+  return (
   <>
     <Helmet>
       <title>Downloads & Checklisten | Philipp's Biohack</title>
