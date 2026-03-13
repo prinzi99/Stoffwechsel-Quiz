@@ -228,7 +228,7 @@ const ResultPageA2 = () => {
                   className="group"
                   asChild
                 >
-                  <a href="/buch">
+                  <a href="/buch/anbot3g4a3e">
                     Mehr zum Buch & Bonus erfahren
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
