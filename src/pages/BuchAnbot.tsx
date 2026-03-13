@@ -270,8 +270,14 @@ const BuchAnbot = () => {
                 </p>
 
                 <div className="bg-muted/50 rounded-lg py-3 px-4 mb-6">
-                  <p className="text-sm text-muted-foreground mb-1">⏳ Dieser Sonderpreis ist nur für kurze Zeit verfügbar.</p>
-                  <p className="text-lg font-semibold text-foreground tracking-wider">⏳ Angebot endet in {countdown}</p>
+                  {seconds > 0 ? (
+                    <>
+                      <p className="text-sm text-muted-foreground mb-1">⏳ Dieser Sonderpreis ist nur für kurze Zeit verfügbar.</p>
+                      <p className="text-lg font-semibold text-foreground tracking-wider">⏳ Angebot endet in {countdown}</p>
+                    </>
+                  ) : (
+                    <p className="text-sm text-foreground/80">Der exklusive Quiz-Teilnehmerpreis ist aktuell noch verfügbar.</p>
+                  )}
                 </div>
 
                 <Button variant="cta" size="xl" asChild className="w-full mb-6">
