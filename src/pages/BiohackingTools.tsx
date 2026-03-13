@@ -173,5 +173,6 @@ const BiohackingTools = () => {
     <Footer />
   </>
 );
+};
 
 export default BiohackingTools;

@@ -168,5 +168,6 @@ const DownloadsChecklisten = () => {
     <Footer />
   </>
 );
+};
 
 export default DownloadsChecklisten;
