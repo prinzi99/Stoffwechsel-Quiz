@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useBonusPageView } from "@/hooks/useBonusTracking";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import BiohackingHero from "@/components/biohacking/BiohackingHero";
