@@ -101,6 +101,7 @@ const recommendedTools = [
 ];
 
 const BuchBonusIntern = () => {
+  useBonusPageView("/buch/bonus/intern", "Bonusbereich Hub");
   return (
     <>
       <Helmet>

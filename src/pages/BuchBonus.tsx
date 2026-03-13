@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { trackBonusLogin } from "@/hooks/useBonusTracking";
 import { ArrowRight, Lock, Calculator, Activity, Wrench, FileDown } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
