@@ -35,8 +35,36 @@ const BuchAnbot = () => {
         {/* 1. Hero */}
         <section className="min-h-[90dvh] flex items-center section-padding bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
-              <div className="w-64 sm:w-72 md:w-80 lg:w-96 flex-shrink-0">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-16">
+              {/* Mobile: 2-column with image + headline side by side */}
+              <div className="flex flex-row items-center gap-4 md:hidden w-full">
+                <div className="w-32 flex-shrink-0">
+                  <img
+                    src={bookCover}
+                    alt="Du bist nicht das Problem – Buchcover"
+                    className="w-full h-auto rounded-lg shadow-2xl"
+                    fetchPriority="high"
+                    width={800}
+                    height={1067}
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h1 className="text-2xl font-bold text-foreground leading-tight mb-2">
+                    Du bist nicht
+                    <span className="text-primary"> das Problem.</span>
+                  </h1>
+                  <p className="text-xs text-primary font-medium mb-1">
+                    Basierend auf Deinem Stoffwechsel-Quiz.
+                  </p>
+                  <p className="text-sm text-foreground font-medium">
+                    Dein Ergebnis zeigt,<br />
+                    dass Dein Stoffwechsel aktuell blockiert ist.
+                  </p>
+                </div>
+              </div>
+
+              {/* Desktop: large image */}
+              <div className="hidden md:block w-80 lg:w-96 flex-shrink-0">
                 <img
                   src={bookCover}
                   alt="Du bist nicht das Problem – Buchcover"
