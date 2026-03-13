@@ -14,7 +14,54 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      bonus_logins: {
+        Row: {
+          id: string
+          logged_in_at: string
+          referrer: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          id?: string
+          logged_in_at?: string
+          referrer?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          id?: string
+          logged_in_at?: string
+          referrer?: string | null
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
+      bonus_page_views: {
+        Row: {
+          id: string
+          page_path: string
+          page_title: string | null
+          referrer: string | null
+          user_agent: string | null
+          viewed_at: string
+        }
+        Insert: {
+          id?: string
+          page_path: string
+          page_title?: string | null
+          referrer?: string | null
+          user_agent?: string | null
+          viewed_at?: string
+        }
+        Update: {
+          id?: string
+          page_path?: string
+          page_title?: string | null
+          referrer?: string | null
+          user_agent?: string | null
+          viewed_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
