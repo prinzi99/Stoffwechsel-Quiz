@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useBonusPageView } from "@/hooks/useBonusTracking";
 import {
   Activity,
   Calculator,
@@ -100,6 +101,7 @@ const recommendedTools = [
 ];
 
 const BuchBonusIntern = () => {
+  useBonusPageView("/buch/bonus/intern", "Bonusbereich Hub");
   return (
     <>
       <Helmet>

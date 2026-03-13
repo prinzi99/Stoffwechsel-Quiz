@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useBonusPageView } from "@/hooks/useBonusTracking";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { Badge } from "@/components/ui/badge";
@@ -90,7 +91,9 @@ const categories: DownloadCategoryProps[] = [
   },
 ];
 
-const DownloadsChecklisten = () => (
+const DownloadsChecklisten = () => {
+  useBonusPageView("/buch/bonus/intern/downloads", "Downloads & Checklisten");
+  return (
   <>
     <Helmet>
       <title>Downloads & Checklisten | Philipp's Biohack</title>
@@ -165,5 +168,6 @@ const DownloadsChecklisten = () => (
     <Footer />
   </>
 );
+};
 
 export default DownloadsChecklisten;

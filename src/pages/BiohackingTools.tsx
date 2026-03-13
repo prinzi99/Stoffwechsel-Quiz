@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useBonusPageView } from "@/hooks/useBonusTracking";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import BiohackingHero from "@/components/biohacking/BiohackingHero";
@@ -99,7 +100,9 @@ const categories = [
   },
 ];
 
-const BiohackingTools = () => (
+const BiohackingTools = () => {
+  useBonusPageView("/buch/bonus/intern/biohacking-tools", "Biohacking & Tools");
+  return (
   <>
     <Helmet>
       <title>Biohacking & Tools | Philipp's Biohack</title>
@@ -170,5 +173,6 @@ const BiohackingTools = () => (
     <Footer />
   </>
 );
+};
 
 export default BiohackingTools;

@@ -23,6 +23,7 @@ import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
 import BuchAnbot from "./pages/BuchAnbot";
 import BuchBonus from "./pages/BuchBonus";
+import Analyse from "./pages/Analyse";
 import BuchBonusIntern from "./pages/BuchBonusIntern";
 import BiohackingTools from "./pages/BiohackingTools";
 import DownloadsChecklisten from "./pages/DownloadsChecklisten";
@@ -66,6 +67,7 @@ const App = () => {
             <Route path="/buch/bonus/intern/kalorienrechner" element={<KalorienRechner />} />
             <Route path="/buch/bonus/intern/stoffwechsel-check" element={<StoffwechselCheck />} />
             <Route path="/tools" element={<Navigate to="/buch/bonus" replace />} />
+            <Route path="/analyse" element={<Analyse />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

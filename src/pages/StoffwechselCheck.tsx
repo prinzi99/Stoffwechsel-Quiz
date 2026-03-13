@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { useBonusPageView } from "@/hooks/useBonusTracking";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
@@ -9,6 +10,7 @@ import CheckInfoSections from "@/components/check/CheckInfoSections";
 import { evaluateCheck, questions, type CheckAnswers, type CheckResult } from "@/lib/metabolicCheck";
 
 const StoffwechselCheck = () => {
+  useBonusPageView("/buch/bonus/intern/stoffwechsel-check", "Stoffwechsel-Reset Check");
   const [answers, setAnswers] = useState<CheckAnswers>({});
   const [result, setResult] = useState<CheckResult | null>(null);
   const [error, setError] = useState<string | null>(null);
