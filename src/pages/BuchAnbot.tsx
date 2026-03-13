@@ -21,7 +21,7 @@ const useCountdown = (startSeconds: number) => {
 };
 
 const BuchAnbot = () => {
-  const countdown = useCountdown(15 * 60);
+  const { countdown, seconds } = useCountdown(15 * 60);
   return (
     <>
       <Helmet>
