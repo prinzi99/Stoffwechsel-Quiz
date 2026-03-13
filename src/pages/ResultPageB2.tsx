@@ -239,7 +239,7 @@ const ResultPageB2 = () => {
                   className="group"
                   asChild
                 >
-                  <a href="/buch">
+                  <a href="/buch/anbot3g4a3e">
                     Zum Buch & exklusiven Quiz-Bonus sichern
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
