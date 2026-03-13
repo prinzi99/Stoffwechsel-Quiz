@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useBonusPageView } from "@/hooks/useBonusTracking";
 import {
   Activity,
   Calculator,
