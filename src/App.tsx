@@ -23,6 +23,7 @@ import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
 import BuchAnbot from "./pages/BuchAnbot";
 import BuchBonus from "./pages/BuchBonus";
+import Analyse from "./pages/Analyse";
 import BuchBonusIntern from "./pages/BuchBonusIntern";
 import BiohackingTools from "./pages/BiohackingTools";
 import DownloadsChecklisten from "./pages/DownloadsChecklisten";
