@@ -47,6 +47,7 @@ const BuchBonus = () => {
 
     if (password.trim().toLowerCase() === BONUS_PASSWORD) {
       setLoading(true);
+      trackBonusLogin();
       setTimeout(() => {
         navigate("/buch/bonus/intern");
       }, 800);
