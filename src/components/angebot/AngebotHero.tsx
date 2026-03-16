@@ -8,29 +8,24 @@ const AngebotHero = () => {
     <section className="section-padding bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          {/* Preheadline */}
           <p className="text-sm font-medium text-primary tracking-wide text-center mb-6 md:mb-8">
             Exklusiv für Teilnehmer des Stoffwechsel-Quiz
           </p>
 
-          {/* Headline */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-center mb-4 md:mb-6 max-w-3xl mx-auto">
-            Du bist nicht undiszipliniert.{" "}
+            Vielleicht fehlt Dir nicht Disziplin.{" "}
             <span className="text-primary">
-              Du kämpfst sehr wahrscheinlich gegen die falsche Ursache.
+              Vielleicht bek&auml;mpfst Du seit Monaten nur das falsche Problem.
             </span>
           </h1>
 
-          {/* Subheadline */}
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto mb-10 md:mb-14">
-            Wenn Dein Körper auf Stress, Unterversorgung oder frühere Diäten mit Sparmodus reagiert,
-            helfen Dir noch weniger Essen und noch mehr Kontrolle oft nicht weiter. Dieses Buch zeigt Dir,
-            warum Dein Stoffwechsel blockiert – und wie Du ihn Schritt für Schritt wieder in Bewegung bringst.
+            Wenn Dein K&ouml;rper auf Stress, Unterversorgung oder fr&uuml;here Di&auml;ten mit Schutz und Sparmodus reagiert,
+            bringen Dich noch mehr Kontrolle und noch weniger Essen oft nicht weiter. Dieses Buch hilft Dir zu verstehen,
+            was bei Dir gerade vermutlich schiefl&auml;uft &ndash; und wie Du daraus wieder herauskommst.
           </p>
 
-          {/* Main content: Book + Text */}
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14">
-            {/* Book Cover */}
             <div className="w-48 sm:w-56 md:w-72 lg:w-80 flex-shrink-0">
               <img
                 src={bookCover}
@@ -42,46 +37,44 @@ const AngebotHero = () => {
               />
             </div>
 
-            {/* Problem text + Price + CTA */}
             <div className="flex-1 text-center md:text-left">
               <div className="text-base md:text-lg text-foreground/80 space-y-4 leading-relaxed mb-8">
                 <p>
-                  Du gibst Dir Mühe.<br />
-                  Du achtest auf Ernährung.<br />
+                  Du gibst Dir M&uuml;he.<br />
+                  Du achtest auf Ern&auml;hrung.<br />
                   Du versuchst, alles richtig zu machen.
                 </p>
-                <p className="font-medium text-foreground">Und trotzdem:</p>
+                <p className="font-medium text-foreground">Und trotzdem geht es kaum voran.</p>
                 <p>
-                  Die Waage stagniert.<br />
-                  Die Energie sinkt.<br />
-                  Der Frust wächst.
+                  Die Waage bleibt stehen.<br />
+                  Die Energie wird weniger.<br />
+                  Der Frust wird gr&ouml;&szlig;er.
                 </p>
+                <p>Irgendwann beginnt man, an sich selbst zu zweifeln.</p>
                 <p>
-                  Vielleicht liegt das Problem nicht bei Deiner Disziplin.<br />
-                  Vielleicht reagiert Dein Körper einfach längst auf Mangel, Druck oder alte Diätmuster.
+                  Aber was, wenn das Problem nicht Dein Wille ist?<br />
+                  Was, wenn Dein K&ouml;rper l&auml;ngst auf Druck, Mangel oder alte Di&auml;tmuster reagiert?
                 </p>
               </div>
 
-              {/* Price box */}
               <div className="bg-card border border-border rounded-xl p-5 mb-6 shadow-sm">
                 <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
-                  <span className="text-lg text-muted-foreground/50 line-through">34,99 €</span>
-                  <span className="text-3xl font-bold text-foreground">19,99 €</span>
+                  <span className="text-lg text-muted-foreground/50 line-through">34,99 &euro;</span>
+                  <span className="text-3xl font-bold text-foreground">19,99 &euro;</span>
                 </div>
                 <Button variant="cta" size="xl" asChild className="w-full">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                    Jetzt Buch &amp; Bonus sichern
+                    Ich will verstehen, was meinen Stoffwechsel blockiert
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-3 text-center md:text-left">
-                  Sofort als E-Book verfügbar. Direkt nach dem Kauf lesen.
+                  Sofort als E-Book verf&uuml;gbar. Direkt nach dem Kauf lesen.
                 </p>
               </div>
 
-              {/* Zusatz-Hinweis */}
               <p className="text-sm text-foreground/60 leading-relaxed">
-                Kein Motivationsgerede. Kein neuer Diätplan.<br />
-                Sondern endlich eine verständliche Erklärung dafür, warum Dein Körper gerade nicht mitspielt.
+                Kein Motivationsgerede. Kein weiterer Standardplan.<br />
+                Sondern endlich eine Erkl&auml;rung, die sich nicht nur gut anh&ouml;rt, sondern f&uuml;r viele zum ersten Mal wirklich Sinn ergibt.
               </p>
             </div>
           </div>
