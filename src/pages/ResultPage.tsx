@@ -20,6 +20,7 @@ const ResultPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet><meta name="robots" content="noindex, nofollow" /></Helmet>
       <Header />
       {/* Main Content */}
       <main className="container-wide section-padding">
