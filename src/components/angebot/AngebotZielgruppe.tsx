@@ -1,12 +1,12 @@
 import { UserCheck } from "lucide-react";
 
 const points = [
-  "Dein Gewicht stagniert, obwohl Du Dich bemühst",
-  "Du schon mehrere Diäten gemacht hast und immer wieder am gleichen Punkt landest",
-  "Du Dich gesund ernährst, aber trotzdem oft müde oder frustriert bist",
-  "Du das Gefühl hast, dass Dein Körper auf Verzicht eher mit Widerstand reagiert",
-  "Du endlich verstehen willst, warum klassische Standardtipps bei Dir nicht sauber greifen",
-  "Du einen klaren, nachvollziehbaren Einstieg suchst statt noch mehr widersprüchlicher Ratschläge",
+  "Dein Gewicht stagniert, obwohl Du Dich bem\u00FChst",
+  "Du schon mehrere Di\u00E4ten gemacht hast",
+  "Du Dich gesund ern\u00E4hrst, aber trotzdem oft m\u00FCde oder frustriert bist",
+  "Dein K\u00F6rper auf Verzicht eher mit Widerstand reagiert",
+  "Du endlich verstehen willst, warum Standardtipps bei Dir nicht sauber greifen",
+  "Du einen klaren Einstieg suchst statt noch mehr widerspr\u00FCchlicher Ratschl\u00E4ge",
 ];
 
 const AngebotZielgruppe = () => {
@@ -14,14 +14,9 @@ const AngebotZielgruppe = () => {
     <section className="section-padding bg-section-alt">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-3">
-            Dieses Buch ist besonders wertvoll für Dich, wenn …
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-8">
+            Besonders hilfreich f&uuml;r Dich, wenn &hellip;
           </h2>
-
-          <p className="text-base md:text-lg text-muted-foreground text-center leading-relaxed mb-8">
-            Du musst kein Experte sein.<br />
-            Aber Du solltest Dich in einem oder mehreren dieser Punkte wiederfinden:
-          </p>
 
           <div className="space-y-3">
             {points.map((item, i) => (

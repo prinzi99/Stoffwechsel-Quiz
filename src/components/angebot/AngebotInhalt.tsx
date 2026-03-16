@@ -1,34 +1,34 @@
-import { Brain, Zap, ListChecks, Wrench } from "lucide-react";
+import { Brain, Zap, ListChecks, Wrench, CheckCircle2 } from "lucide-react";
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
 const bookPoints = [
-  "warum klassische Abnehmstrategien bei vielen genau dann nicht mehr greifen, wenn sie sich besonders anstrengen",
-  "wie Stress, Unterversorgung und wiederholte Di\u00E4ten den Stoffwechsel schleichend ausbremsen k\u00F6nnen",
-  "warum ein biologisches Problem nicht automatisch durch noch mehr Disziplin gel\u00F6st wird",
-  "wie ein sinnvoller Neustart aussehen kann, ohne wieder in alte Fehler zu rutschen",
-  "wie Du Entscheidungen triffst, die Deinem K\u00F6rper eher helfen als schaden",
+  "warum klassische Abnehmstrategien oft in die Sackgasse f\u00FChren",
+  "wie Stress, Mangel und wiederholte Di\u00E4ten den Stoffwechsel beeinflussen",
+  "warum mehr Disziplin ein biologisches Problem nicht automatisch l\u00F6st",
+  "wie ein sinnvoller Neustart aussehen kann",
+  "wie Du wieder mit Deinem K\u00F6rper arbeitest statt gegen ihn",
 ];
 
 const bonuses = [
   {
     icon: Brain,
     title: "Stoffwechsel-Reset-Check",
-    text: "Damit Du schneller erkennst, welche Muster bei Dir gerade am wahrscheinlichsten im Hintergrund laufen.",
+    text: "Damit Du schneller erkennst, welches Muster bei Dir wahrscheinlich im Hintergrund l\u00E4uft.",
   },
   {
     icon: Zap,
     title: "Kalorien-Startpunkt-Rechner",
-    text: "Damit Du nicht weiter im Blindflug zwischen zu viel und viel zu wenig pendelst.",
+    text: "Damit Du nicht weiter zwischen zu viel und viel zu wenig pendelst.",
   },
   {
     icon: ListChecks,
     title: "Checklisten & Vorlagen",
-    text: "Damit Du das Wissen aus dem Buch nicht nur verstehst, sondern im Alltag auch wirklich anwenden kannst.",
+    text: "Damit Du das Wissen aus dem Buch direkt im Alltag anwenden kannst.",
   },
   {
     icon: Wrench,
     title: "Biohacking-Tools",
-    text: "Damit Du hilfreiche Hebel an der Hand hast, um Deinen K\u00F6rper besser zu lesen und kl\u00FCger zu reagieren.",
+    text: "Damit Du Deinen K\u00F6rper besser lesen und kl\u00FCger reagieren kannst.",
   },
 ];
 
@@ -38,8 +38,8 @@ const AngebotInhalt = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-4 leading-tight">
-            Du kaufst hier nicht einfach nur Informationen.{" "}
-            <span className="text-primary">Du kaufst Dir endlich eine stimmige Erkl&auml;rung.</span>
+            Du bekommst nicht einfach nur ein E-Book.{" "}
+            <span className="text-primary">Du bekommst endlich ein klareres Bild.</span>
           </h2>
 
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14 mt-10 md:mt-14">
@@ -55,12 +55,9 @@ const AngebotInhalt = () => {
             </div>
 
             <div className="flex-1">
-              <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-2">
-                &bdquo;Du bist nicht das Problem&ldquo; hilft Dir, Zusammenh&auml;nge zu verstehen,
-                die vielen erst dann klar werden, wenn sie schon monatelang feststecken.
-              </p>
               <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-5">
-                Es zeigt Dir nachvollziehbar,
+                &bdquo;Du bist nicht das Problem&ldquo; hilft Dir zu verstehen,
+                warum Dein K&ouml;rper gerade nicht so reagiert, wie Du es erwartest.
               </p>
               <ul className="space-y-3">
                 {bookPoints.map((point, i) => (

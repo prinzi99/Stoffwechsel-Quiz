@@ -5,7 +5,7 @@ const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizra
 
 const included = [
   'E-Book \u201EDu bist nicht das Problem\u201C',
-  "Sofortiger digitaler Zugriff",
+  "sofortiger digitaler Zugriff",
   "Stoffwechsel-Reset-Check",
   "Kalorien-Startpunkt-Rechner",
   "Checklisten & Vorlagen",
@@ -23,13 +23,12 @@ const AngebotPreisbox = () => {
             </p>
 
             <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6 leading-snug">
-              Wenn Du verstehen willst, warum Dein K&ouml;rper gerade nicht mitspielt,
-              bekommst Du hier das komplette Buch inklusive Bonusbereich f&uuml;r nur 19,99&nbsp;&euro;
+              Heute erh&auml;ltst Du das komplette Buch inklusive Bonusbereich f&uuml;r nur 19,99&nbsp;&euro;
             </h2>
 
             <div className="flex items-center justify-center gap-3 mb-6">
-              <span className="text-xl text-muted-foreground/50 line-through">34,99 &euro;</span>
-              <span className="text-4xl md:text-5xl font-bold text-foreground">19,99 &euro;</span>
+              <span className="text-xl text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
+              <span className="text-4xl md:text-5xl font-bold text-foreground">19,99&nbsp;&euro;</span>
             </div>
 
             <div className="text-left space-y-2.5 mb-8">
@@ -43,7 +42,7 @@ const AngebotPreisbox = () => {
 
             <Button variant="cta" size="xl" asChild className="w-full mb-4">
               <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                Ich will verstehen, was meinen Stoffwechsel blockiert
+                Jetzt Buch &amp; Bonus sichern
               </a>
             </Button>
 

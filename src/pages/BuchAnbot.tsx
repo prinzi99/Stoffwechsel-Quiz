@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import AngebotHero from "@/components/angebot/AngebotHero";
 import AngebotDenken from "@/components/angebot/AngebotDenken";
-import AngebotMuster from "@/components/angebot/AngebotMuster";
 import AngebotAnders from "@/components/angebot/AngebotAnders";
+import AngebotMuster from "@/components/angebot/AngebotMuster";
+import AngebotBuchZeigt from "@/components/angebot/AngebotBuchZeigt";
 import AngebotInhalt from "@/components/angebot/AngebotInhalt";
 import AngebotZielgruppe from "@/components/angebot/AngebotZielgruppe";
 import AngebotNicht from "@/components/angebot/AngebotNicht";
@@ -29,8 +30,9 @@ const BuchAnbot = () => {
       <main className="pb-16 md:pb-0">
         <AngebotHero />
         <AngebotDenken />
-        <AngebotMuster />
         <AngebotAnders />
+        <AngebotMuster />
+        <AngebotBuchZeigt />
         <AngebotInhalt />
         <AngebotZielgruppe />
         <AngebotNicht />
