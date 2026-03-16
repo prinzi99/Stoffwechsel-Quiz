@@ -221,12 +221,12 @@ const ResultPageA2 = () => {
                 <Button
                   variant="cta"
                   size="xl"
-                  className="w-full whitespace-normal leading-snug text-xs sm:text-sm md:text-base py-6"
+                  className="w-full h-auto min-h-[5.5rem] whitespace-normal leading-snug text-xs sm:text-sm md:text-base py-4 px-4"
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
                     Ja &mdash; ich will verstehen, warum mein Stoffwechsel unter Stress blockiert
-                    <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0" />
+                    <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-3">Sofort verf&uuml;gbar als E-Book</p>
