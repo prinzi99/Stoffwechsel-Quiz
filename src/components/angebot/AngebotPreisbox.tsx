@@ -19,16 +19,17 @@ const AngebotPreisbox = () => {
         <div className="max-w-lg mx-auto">
           <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 md:p-10 text-center shadow-lg">
             <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
-              Exklusiver Sonderpreis für Quiz-Teilnehmer
+              Exklusiver Sonderpreis f&uuml;r Quiz-Teilnehmer
             </p>
 
             <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6 leading-snug">
-              Heute erhältst Du das komplette Buch inklusive Bonusbereich für nur 19,99 €
+              Wenn Du verstehen willst, warum Dein K&ouml;rper gerade nicht mitspielt,
+              bekommst Du hier das komplette Buch inklusive Bonusbereich f&uuml;r nur 19,99&nbsp;&euro;
             </h2>
 
             <div className="flex items-center justify-center gap-3 mb-6">
-              <span className="text-xl text-muted-foreground/50 line-through">34,99 €</span>
-              <span className="text-4xl md:text-5xl font-bold text-foreground">19,99 €</span>
+              <span className="text-xl text-muted-foreground/50 line-through">34,99 &euro;</span>
+              <span className="text-4xl md:text-5xl font-bold text-foreground">19,99 &euro;</span>
             </div>
 
             <div className="text-left space-y-2.5 mb-8">
@@ -42,15 +43,15 @@ const AngebotPreisbox = () => {
 
             <Button variant="cta" size="xl" asChild className="w-full mb-4">
               <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                Jetzt Buch &amp; Bonus sichern
+                Ich will verstehen, was meinen Stoffwechsel blockiert
               </a>
             </Button>
 
             <p className="text-sm text-muted-foreground mb-1">
-              Direkt nach dem Kauf verfügbar.
+              Direkt nach dem Kauf verf&uuml;gbar.
             </p>
             <p className="text-xs text-muted-foreground/70">
-              Dieses Angebot ist speziell für Teilnehmer des Stoffwechsel-Quiz gedacht.
+              Dieses Angebot ist exklusiv f&uuml;r Teilnehmer des Stoffwechsel-Quiz.
             </p>
           </div>
         </div>

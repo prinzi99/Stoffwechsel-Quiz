@@ -20,7 +20,7 @@ const AngebotStickyCTA = () => {
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-card/95 backdrop-blur-sm border-t border-border px-4 py-3 shadow-lg">
       <Button variant="cta" size="lg" asChild className="w-full">
         <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-          Jetzt für 19,99 € sichern
+          Jetzt f&uuml;r 19,99&nbsp;&euro; Klarheit sichern
         </a>
       </Button>
     </div>

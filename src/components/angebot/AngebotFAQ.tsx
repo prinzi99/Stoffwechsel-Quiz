@@ -7,24 +7,24 @@ import {
 
 const faqs = [
   {
-    q: "Ist das Buch auch für Anfänger geeignet?",
-    a: "Ja. Das Buch ist bewusst so geschrieben, dass Du keine Vorkenntnisse brauchst. Es erklärt Zusammenhänge verständlich, ohne Dich mit Fachbegriffen zu erschlagen.",
+    q: "Ist das Buch auch f\u00FCr Anf\u00E4nger geeignet?",
+    a: "Ja. Du brauchst keine Vorkenntnisse. Das Buch erkl\u00E4rt die wichtigsten Zusammenh\u00E4nge so, dass Du Deine eigene Situation besser einordnen kannst, ohne Dich durch Fachsprache k\u00E4mpfen zu m\u00FCssen.",
   },
   {
-    q: "Ist das einfach nur ein weiterer Diätplan?",
-    a: "Nein. Es geht nicht darum, Dir den nächsten starren Plan zu geben. Es geht darum, zu verstehen, warum Standardansätze oft scheitern – und worauf Du stattdessen achten solltest.",
+    q: "Ist das einfach nur ein weiterer Di\u00E4tplan?",
+    a: "Nein. Genau darum geht es gerade nicht. Dieses Buch soll Dir helfen zu verstehen, warum starre Standardpl\u00E4ne bei vielen irgendwann nicht mehr funktionieren \u2013 und worauf es stattdessen ankommt.",
   },
   {
     q: "Kann ich direkt nach dem Kauf loslegen?",
-    a: "Ja. Du erhältst sofort Zugriff auf das E-Book und die Bonus-Inhalte und kannst direkt anfangen zu lesen und die ersten Punkte für Dich einzuordnen.",
+    a: "Ja. Du erh\u00E4ltst sofort Zugriff auf das E-Book und alle Bonus-Inhalte und kannst direkt anfangen, Deine bisherige Situation klarer einzuordnen.",
   },
   {
     q: "Ist das nur Theorie?",
-    a: "Nein. Das Buch verbindet verständliche Erklärung mit konkreten nächsten Schritten, Beispielen und praktischen Hilfen für den Alltag.",
+    a: "Nein. Das Buch verbindet Erkl\u00E4rung mit konkreten Denkanst\u00F6\u00DFen und praktischen Hilfen, damit Du nicht nur mehr wei\u00DFt, sondern bessere Entscheidungen treffen kannst.",
   },
   {
     q: "Was unterscheidet dieses Buch von kostenlosen Infos im Internet?",
-    a: "Kostenlose Infos gibt es genug. Das Problem ist meist nicht fehlende Information, sondern fehlende Einordnung. Dieses Buch bündelt die entscheidenden Zusammenhänge so, dass Du Deine Situation endlich klarer verstehst und sinnvoller handeln kannst.",
+    a: "Im Internet findest Du unendlich viele Einzelinformationen. Was meist fehlt, ist eine stimmige Einordnung. Dieses Buch verbindet die entscheidenden Zusammenh\u00E4nge so, dass aus widerspr\u00FCchlichen Tipps endlich ein verst\u00E4ndliches Bild wird.",
   },
 ];
 
@@ -34,7 +34,7 @@ const AngebotFAQ = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-10">
-            Häufige Fragen
+            H&auml;ufige Fragen
           </h2>
 
           <Accordion type="single" collapsible className="space-y-3">
