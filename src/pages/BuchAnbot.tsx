@@ -16,6 +16,8 @@ import AngebotAbschluss from "@/components/angebot/AngebotAbschluss";
 import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
 
 const BuchAnbot = () => {
+  useBonusPageView("/buch/anbot3g4a3e", "Buch Angebot");
+
   return (
     <>
       <Helmet>

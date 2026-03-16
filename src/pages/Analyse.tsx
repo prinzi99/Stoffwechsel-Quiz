@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
-import { Lock, LogIn, Eye, TrendingUp, Calendar, BarChart3 } from "lucide-react";
+import { Lock, LogIn, Eye, TrendingUp, Calendar, BarChart3, ShoppingCart } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
