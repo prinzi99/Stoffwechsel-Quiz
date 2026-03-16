@@ -162,11 +162,13 @@ const Analyse = () => {
             ) : (
               <>
                 {/* KPI Cards */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   <KpiCard icon={LogIn} label="Logins gesamt" value={totalLogins} />
                   <KpiCard icon={Eye} label="Seitenaufrufe gesamt" value={totalPageViews} />
                   <KpiCard icon={TrendingUp} label="Logins heute" value={loginsToday} />
                   <KpiCard icon={Calendar} label="Aufrufe heute" value={viewsToday} />
+                  <KpiCard icon={ShoppingCart} label="Angebotsseite gesamt" value={anbotViews} />
+                  <KpiCard icon={ShoppingCart} label="Angebotsseite heute" value={anbotViewsToday} />
                 </div>
 
                 {/* Page Stats */}
