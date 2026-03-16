@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
+import { useBonusPageView } from "@/hooks/useBonusTracking";
 import AngebotHero from "@/components/angebot/AngebotHero";
 import AngebotDenken from "@/components/angebot/AngebotDenken";
 import AngebotAnders from "@/components/angebot/AngebotAnders";
@@ -15,6 +16,8 @@ import AngebotAbschluss from "@/components/angebot/AngebotAbschluss";
 import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
 
 const BuchAnbot = () => {
+  useBonusPageView("/buch/anbot3g4a3e", "Buch Angebot");
+
   return (
     <>
       <Helmet>

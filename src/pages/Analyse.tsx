@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
-import { Lock, LogIn, Eye, TrendingUp, Calendar, BarChart3 } from "lucide-react";
+import { Lock, LogIn, Eye, TrendingUp, Calendar, BarChart3, ShoppingCart } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
@@ -68,6 +68,10 @@ const Analyse = () => {
   const todayStr = new Date().toISOString().split("T")[0];
   const loginsToday = logins.filter((l) => l.logged_in_at.startsWith(todayStr)).length;
   const viewsToday = pageViews.filter((v) => v.viewed_at.startsWith(todayStr)).length;
+
+  // Angebot page stats
+  const anbotViews = pageViews.filter((v) => v.page_path.includes("anbot")).length;
+  const anbotViewsToday = pageViews.filter((v) => v.page_path.includes("anbot") && v.viewed_at.startsWith(todayStr)).length;
 
   const pageStats = useMemo(() => {
     const map: Record<string, { count: number; title: string }> = {};
@@ -158,11 +162,13 @@ const Analyse = () => {
             ) : (
               <>
                 {/* KPI Cards */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   <KpiCard icon={LogIn} label="Logins gesamt" value={totalLogins} />
                   <KpiCard icon={Eye} label="Seitenaufrufe gesamt" value={totalPageViews} />
                   <KpiCard icon={TrendingUp} label="Logins heute" value={loginsToday} />
                   <KpiCard icon={Calendar} label="Aufrufe heute" value={viewsToday} />
+                  <KpiCard icon={ShoppingCart} label="Angebotsseite gesamt" value={anbotViews} />
+                  <KpiCard icon={ShoppingCart} label="Angebotsseite heute" value={anbotViewsToday} />
                 </div>
 
                 {/* Page Stats */}
