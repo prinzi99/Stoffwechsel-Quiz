@@ -10,19 +10,20 @@ const AngebotHero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <p className="text-sm font-medium text-primary tracking-wide text-center mb-6 md:mb-8">
-            Exklusiv f&uuml;r Teilnehmer des Stoffwechsel-Quiz
+            Nur f&uuml;r Teilnehmer des Stoffwechsel-Quiz
           </p>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-center mb-4 md:mb-6 max-w-3xl mx-auto">
-            Du bist nicht undiszipliniert.{" "}
+            Du bist nicht das Problem.{" "}
             <span className="text-primary">
-              Du bek&auml;mpfst sehr wahrscheinlich nur die falsche Ursache.
+              Du folgst nur einem Plan, der bei Deinem K&ouml;rper nicht funktioniert.
             </span>
           </h1>
 
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto mb-10 md:mb-14">
-            Wenn Dein K&ouml;rper auf Stress, Unterversorgung oder alte Di&auml;tmuster mit Sparmodus reagiert,
-            helfen Dir noch mehr Kontrolle und noch weniger Essen oft nicht weiter.
+            Wenn Stress, Unterversorgung oder alte Di&auml;tmuster im Hintergrund wirken,
+            f&uuml;hren noch mehr Kontrolle und noch weniger Essen oft tiefer in denselben Stillstand.
+            Dieses Buch zeigt Dir, warum &mdash; und was Du stattdessen verstehen musst.
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14">
@@ -41,15 +42,15 @@ const AngebotHero = () => {
               <div className="space-y-2.5 mb-8">
                 <div className="flex items-center gap-3 justify-center md:justify-start">
                   <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span className="text-base text-foreground/85">verst&auml;ndlich statt widerspr&uuml;chlich</span>
+                  <span className="text-base text-foreground/85">endlich verstehen, warum nichts richtig greift</span>
                 </div>
                 <div className="flex items-center gap-3 justify-center md:justify-start">
                   <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span className="text-base text-foreground/85">alltagstauglich statt extrem</span>
+                  <span className="text-base text-foreground/85">die 3 h&auml;ufigsten Stoffwechsel-Blockaden klar erkennen</span>
                 </div>
                 <div className="flex items-center gap-3 justify-center md:justify-start">
                   <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span className="text-base text-foreground/85">sofort verf&uuml;gbar inklusive Bonusbereich</span>
+                  <span className="text-base text-foreground/85">sofort als E-Book + Bonusbereich verf&uuml;gbar</span>
                 </div>
               </div>
 
@@ -60,11 +61,11 @@ const AngebotHero = () => {
                 </div>
                 <Button variant="cta" size="xl" asChild className="w-full">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                    Ja, ich will verstehen, was meinen Stoffwechsel blockiert
+                    Ja &mdash; ich will endlich verstehen, was meinen Stoffwechsel blockiert
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-3 text-center md:text-left">
-                  Sofort als E-Book verf&uuml;gbar.
+                  Sofort verf&uuml;gbar als E-Book.
                 </p>
               </div>
             </div>
