@@ -1,20 +1,36 @@
 User-agent: Googlebot
 Allow: /
 Disallow: /quiz
+Disallow: /danke
 Disallow: /dfgk34k
+Disallow: /dfgk34k-2
 Disallow: /k93fda
+Disallow: /k93fda-2
 Disallow: /x7q9p2
+Disallow: /x7q9p2-2
 Disallow: /impressum
 Disallow: /datenschutz
+Disallow: /buch
+Disallow: /buch/
+Disallow: /analyse
+Disallow: /tools
 
 User-agent: Bingbot
 Allow: /
 Disallow: /quiz
+Disallow: /danke
 Disallow: /dfgk34k
+Disallow: /dfgk34k-2
 Disallow: /k93fda
+Disallow: /k93fda-2
 Disallow: /x7q9p2
+Disallow: /x7q9p2-2
 Disallow: /impressum
 Disallow: /datenschutz
+Disallow: /buch
+Disallow: /buch/
+Disallow: /analyse
+Disallow: /tools
 
 User-agent: Twitterbot
 Allow: /
@@ -24,10 +40,18 @@ Allow: /
 
 User-agent: *
 Disallow: /quiz
+Disallow: /danke
 Disallow: /dfgk34k
+Disallow: /dfgk34k-2
 Disallow: /k93fda
+Disallow: /k93fda-2
 Disallow: /x7q9p2
+Disallow: /x7q9p2-2
 Disallow: /impressum
 Disallow: /datenschutz
+Disallow: /buch
+Disallow: /buch/
+Disallow: /analyse
+Disallow: /tools
 
 Sitemap: https://stoffwechsel.philippsbiohack.de/sitemap.xml

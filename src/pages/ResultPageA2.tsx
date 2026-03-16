@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Button } from '@/components/ui/button';
 import { ArrowRight, AlertCircle, XCircle, Lightbulb, BookOpen } from 'lucide-react';
 import Header from '@/components/Header';
@@ -20,6 +21,7 @@ const ResultPageA2 = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet><meta name="robots" content="noindex, nofollow" /></Helmet>
       <Header />
       {/* Main Content */}
       <main className="container-wide section-padding">

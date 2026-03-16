@@ -27,6 +27,7 @@ const Buch = () => {
       <Helmet>
         <title>Du bist nicht das Problem – Das Buch | Philipp's Biohack</title>
         <meta name="description" content="Warum dein Stoffwechsel blockiert und wie du ihn wieder in Bewegung bringst. Das E-Book von Philipp Prinz." />
+        <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <Header />
 
