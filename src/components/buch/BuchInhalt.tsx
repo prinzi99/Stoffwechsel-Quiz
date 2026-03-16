@@ -1,12 +1,12 @@
 import { TrendingDown, Brain, Battery, Dumbbell, RotateCcw, BookOpen } from "lucide-react";
 
 const features = [
-  { icon: TrendingDown, text: "warum wiederholte Diäten den Stoffwechsel immer schwerer berechenbar machen" },
-  { icon: Brain, text: "wie Dein Körper auf Stress, Unterversorgung und Anpassung wirklich reagiert" },
+  { icon: TrendingDown, text: "warum wiederholte Diäten den Stoffwechsel immer unberechenbarer machen" },
+  { icon: Brain, text: "wie Dein Körper auf Stress, Unterversorgung und Anpassung tatsächlich reagiert" },
   { icon: Battery, text: "welche Rolle Schlaf, Anspannung und Erholung beim Fettverlust spielen" },
   { icon: Dumbbell, text: "warum mehr Training nicht automatisch mehr Fortschritt bringt" },
   { icon: RotateCcw, text: "wie der sogenannte Sparmodus tatsächlich entsteht" },
-  { icon: BookOpen, text: "was es braucht, um Dein System sinnvoll zu stabilisieren" },
+  { icon: BookOpen, text: "was es braucht, um Dein System wieder sinnvoll zu stabilisieren" },
 ];
 
 const BuchInhalt = () => {
@@ -20,7 +20,7 @@ const BuchInhalt = () => {
 
           <p className="text-base md:text-lg text-foreground/80 text-center leading-relaxed mb-8">
             Kein Motivationsgerede. Keine Fitness-Floskeln.<br />
-            Sondern ein verständlicher Blick auf die Mechanismen, die viele spüren, aber nie sauber erklärt bekommen.
+            Sondern ein klarer Blick auf die Mechanismen, die viele spüren, aber kaum jemand sauber erklärt.
           </p>
 
           <div className="grid gap-3 sm:grid-cols-2">

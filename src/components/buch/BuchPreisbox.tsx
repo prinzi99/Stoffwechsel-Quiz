@@ -21,11 +21,11 @@ const BuchPreisbox = () => {
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
 
             <p className="text-xs sm:text-sm text-muted-foreground mb-1.5 mt-1">
-              Bevor der Preis wieder auf 34,99&nbsp;€ steigt
+              Aktuell noch zum Einführungspreis erhältlich
             </p>
 
             <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4 leading-snug">
-              Hol Dir das Buch jetzt zum Einführungspreis
+              Hol Dir das Buch jetzt für 29,99&nbsp;€
             </h2>
 
             <div className="flex items-baseline justify-center gap-3 mb-5">
