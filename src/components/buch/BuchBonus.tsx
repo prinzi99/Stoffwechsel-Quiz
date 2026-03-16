@@ -4,7 +4,7 @@ const tools = [
   {
     icon: Shield,
     title: "Stoffwechsel-Reset-Check",
-    desc: "Woran Du erkennst, dass Dein Körper nicht noch mehr Druck, sondern ein anderes Signal braucht.",
+    desc: "Woran Du erkennst, dass Dein Körper nicht noch mehr Druck, sondern andere Signale braucht.",
   },
   {
     icon: AlertTriangle,
@@ -19,7 +19,7 @@ const tools = [
   {
     icon: RefreshCw,
     title: "Reflexions-Tool für Blockaden",
-    desc: "Damit Du klarer erkennst, warum Du Dich trotz Mühe immer wieder im Kreis drehst.",
+    desc: "Damit Du klarer erkennst, warum Du trotz Mühe immer wieder im Kreis drehst.",
   },
 ];
 
@@ -29,12 +29,12 @@ const BuchBonus = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-3">
-            Du bekommst nicht nur Wissen — Du bekommst Orientierung
+            Du bekommst nicht nur Wissen — Du bekommst Werkzeuge, mit denen Du Deine Lage klarer einordnen kannst
           </h2>
 
           <p className="text-base md:text-lg text-foreground/80 text-center leading-relaxed mb-8">
             Dieses Buch soll Dir nicht nur etwas erklären.<br />
-            Es soll Dir helfen, Deine eigene Situation besser einzuordnen und typische Fehler schneller zu erkennen.
+            Es soll Dir helfen, typische Denkfehler und Blockaden bei Dir selbst schneller zu erkennen.
           </p>
 
           <div className="grid gap-3 sm:grid-cols-2">

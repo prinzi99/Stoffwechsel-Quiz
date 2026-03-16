@@ -19,7 +19,8 @@ const BuchAutor = () => {
             <p className="font-semibold text-primary">
               Das eigentliche Problem wird oft komplett falsch erklärt.
             </p>
-            <p>Viele denken, sie müssten sich einfach noch stärker kontrollieren. Dabei arbeitet ihr Körper längst nach einer anderen Logik.</p>
+            <p>Viele denken, sie müssten sich einfach noch besser kontrollieren.</p>
+            <p className="font-semibold text-primary">Dabei arbeitet ihr Körper längst nach einer anderen Logik.</p>
             <p className="font-semibold text-foreground">
               Genau deshalb gibt es dieses Buch: Damit Du verstehst, was in Deinem System wirklich passiert — und aufhörst, Dich für etwas fertigzumachen, das bisher schlicht falsch eingeordnet wurde.
             </p>

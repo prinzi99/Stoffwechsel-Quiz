@@ -17,7 +17,7 @@ const BuchQuizHinweis = () => {
               Dort bekommst Du eine erste Einordnung, was Deinen Stoffwechsel aktuell am ehesten blockiert.
             </p>
             <p>
-              Und wenn Du danach tiefer einsteigen willst, kannst Du Dir das Buch über das Quiz sogar zu einem Sonderpreis sichern.
+              Und wenn Du danach tiefer einsteigen willst, kannst Du Dir das Buch über das Quiz sogar zum Sonderpreis sichern.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ const BuchQuizHinweis = () => {
           </Button>
 
           <p className="text-sm text-muted-foreground mt-2.5">
-            Erst Klarheit bekommen, dann gezielt entscheiden
+            Erst verstehen. Dann gezielt entscheiden.
           </p>
         </div>
       </div>
