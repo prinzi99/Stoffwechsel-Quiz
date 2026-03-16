@@ -24,7 +24,7 @@ const ResultPageA2 = () => {
       <Helmet><meta name="robots" content="noindex, nofollow" /></Helmet>
       <Header />
       {/* Main Content */}
-      <main className="container-wide section-padding">
+      <main className="container-wide px-3 sm:px-5 md:px-8 py-10 md:py-16 lg:py-24">
         <div className="max-w-2xl mx-auto">
           
           {/* 1. Headline */}
