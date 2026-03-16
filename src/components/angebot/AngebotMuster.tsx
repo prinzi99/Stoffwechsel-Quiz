@@ -1,7 +1,7 @@
 const patterns = [
   {
     title: "Der gestresste Stoffwechsel",
-    text: "Du funktionierst nach außen, aber Dein System läuft innerlich unter Daueranspannung. Schlaf, Druck, innere Unruhe oder permanentes „Durchziehen" halten Deinen Körper im Stressmodus. In diesem Zustand priorisiert er Sicherheit – nicht Fettverbrennung.",
+    text: 'Du funktionierst nach au\u00DFen, aber Dein System l\u00E4uft innerlich unter Daueranspannung. Schlaf, Druck, innere Unruhe oder permanentes \u201EDurchziehen\u201C halten Deinen K\u00F6rper im Stressmodus. In diesem Zustand priorisiert er Sicherheit \u2013 nicht Fettverbrennung.',
   },
   {
     title: "Der unterversorgte Fettstoffwechsel",
