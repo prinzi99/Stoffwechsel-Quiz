@@ -221,7 +221,7 @@ const ResultPageA2 = () => {
                 <Button
                   variant="cta"
                   size="xl"
-                  className="w-full max-w-md whitespace-normal leading-snug text-sm md:text-base py-6"
+                  className="w-full max-w-md whitespace-normal leading-snug text-xs sm:text-sm md:text-base py-6"
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
