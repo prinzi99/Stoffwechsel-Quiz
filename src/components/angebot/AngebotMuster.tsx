@@ -5,7 +5,7 @@ const patterns = [
   },
   {
     title: "Der unterversorgte Fettstoffwechsel",
-    text: "Du isst bewusst, kontrollierst viel und meinst es eigentlich gut. Aber über längere Zeit bekommt Dein Körper zu wenig von dem, was er braucht. Er reagiert darauf nicht mit mehr Freigabe – sondern mit Sparsamkeit, Müdigkeit und Stillstand.",
+    text: "Du isst bewusst, kontrollierst viel und meinst es eigentlich gut. Aber \u00FCber l\u00E4ngere Zeit bekommt Dein K\u00F6rper zu wenig von dem, was er braucht. Er reagiert darauf nicht mit mehr Freigabe \u2013 sondern mit Sparsamkeit, M\u00FCdigkeit und Stillstand.",
   },
   {
     title: "Der überangepasste Diät-Stoffwechsel",

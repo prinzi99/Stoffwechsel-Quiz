@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 
 const bullets = [
-  "warum viele Menschen ihren Stoffwechsel mit „gesunden" Strategien unbewusst weiter ausbremsen",
+  'warum viele Menschen ihren Stoffwechsel mit \u201Egesunden\u201C Strategien unbewusst weiter ausbremsen',
   "woran Du erkennst, ob bei Dir eher Stress, Unterversorgung oder frühere Diätmuster im Hintergrund arbeiten",
   "warum weniger Kalorien kurzfristig wirken können, langfristig aber oft genau das Problem verschärfen",
   "welche Fehler hochdisziplinierte Menschen besonders häufig machen, obwohl sie eigentlich alles richtig machen wollen",

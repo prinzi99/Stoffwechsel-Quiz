@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
 
 const included = [
-  "E-Book „Du bist nicht das Problem"",
+  'E-Book \u201EDu bist nicht das Problem\u201C',
   "Sofortiger digitaler Zugriff",
   "Stoffwechsel-Reset-Check",
   "Kalorien-Startpunkt-Rechner",

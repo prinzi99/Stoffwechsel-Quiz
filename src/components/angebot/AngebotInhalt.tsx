@@ -18,7 +18,7 @@ const bonuses = [
   {
     icon: Zap,
     title: "Kalorien-Startpunkt-Rechner",
-    text: "Damit Du nicht weiter zwischen „zu viel" und „viel zu wenig" pendelst, sondern einen sinnvollen Ausgangspunkt hast.",
+    text: 'Damit Du nicht weiter zwischen \u201Ezu viel\u201C und \u201Eviel zu wenig\u201C pendelst, sondern einen sinnvollen Ausgangspunkt hast.',
   },
   {
     icon: ListChecks,
