@@ -115,35 +115,29 @@ const ResultPageC2 = () => {
             </div>
           </section>
 
-          {/* 6b. Book Offer Section */}
-          <section className="mb-12">
+          {/* 6b. Wie Du Deinen Stoffwechsel aus dem Diätmodus herausholst */}
+          <section className="mb-10">
             <h2 className="text-xl font-bold text-foreground mb-2 flex items-center gap-2">
               <BookOpen className="w-5 h-5 text-primary" />
-              Wie Du Deinen Stoffwechsel wieder in Bewegung bringen kannst
+              Wie Du Deinen Stoffwechsel aus dem Di&auml;tmodus herausholst
             </h2>
-            <p className="text-sm text-muted-foreground mb-6">
-              Gerade wenn Dein Körper sich an wiederholte Diäten angepasst hat
+            <p className="text-sm text-muted-foreground mb-5">
+              Gerade wenn Dein K&ouml;rper sich an wiederholte Einschr&auml;nkung angepasst hat
             </p>
 
-            <h3 className="text-lg font-semibold text-foreground mb-4">
-              Für Menschen mit einem angepassten Stoffwechsel
-            </h3>
-
-            <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
+            <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">
               <p>
-                Gerade wenn Dein Körper durch wiederholte Diäten gelernt hat, mit immer weniger auszukommen, 
-                können typische Strategien wie eine neue Diät oder noch mehr Verzicht das Problem sogar verstärken.
+                Wenn Du schon mehrfach Di&auml;ten gemacht, Kalorien gesenkt oder nach R&uuml;ckschl&auml;gen wieder neu gestartet hast, reagiert Dein K&ouml;rper irgendwann nicht mehr so wie am Anfang. Was fr&uuml;her funktioniert hat, bringt heute oft kaum noch etwas. Nicht weil Du zu wenig willst, sondern weil Dein System gelernt hat, Energie vorsichtiger zu behandeln.
               </p>
               <p>
-                Viele Menschen verstehen nach der Analyse zwar, warum ihr Stoffwechsel blockiert, 
-                wissen aber nicht, wie sie das konkret verändern können.
+                Genau das macht den &uuml;berangepassten Di&auml;t-Stoffwechsel so frustrierend: Du gibst Dir M&uuml;he, bist kontrolliert, ziehst durch &mdash; und trotzdem bleibt der Fortschritt aus oder wird immer schwerer.
               </p>
-              <p>Deshalb habe ich einen klaren Leitfaden entwickelt, der erklärt:</p>
+              <p>Deshalb habe ich einen klaren Leitfaden entwickelt, der Dir verst&auml;ndlich zeigt,</p>
               <ul className="space-y-2 pl-1">
                 {[
-                  'warum der Stoffwechsel blockiert',
-                  'welche Fehler viele Menschen unbewusst machen',
-                  'wie man das System Schritt für Schritt wieder stabilisieren kann',
+                  'warum wiederholte Di\u00e4ten den Stoffwechsel ausbremsen k\u00f6nnen',
+                  'welche Denkfehler viele trotz Disziplin immer wieder machen',
+                  'wie Du aus diesem Muster Schritt f\u00fcr Schritt wieder herauskommst',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="w-2 h-2 rounded-full bg-secondary mt-2.5 flex-shrink-0" />
@@ -152,70 +146,66 @@ const ResultPageC2 = () => {
                 ))}
               </ul>
               <p className="mt-4">
-                Der Leitfaden richtet sich speziell an Menschen, deren Stoffwechsel durch wiederholte Diäten und zu strenge Einschränkungen blockiert ist.
+                Wenn Du verstehen willst, warum Dein K&ouml;rper trotz Einsatz nicht mehr normal reagiert und wie Du aus dieser Di&auml;tspirale wieder herausfindest, dann ist dieser Leitfaden der richtige n&auml;chste Schritt.
               </p>
             </div>
+          </section>
 
-            {/* Transition */}
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Wenn Du verstehen möchtest, warum Dein Stoffwechsel aktuell blockiert ist und wie Du ihn Schritt für Schritt wieder stabilisieren kannst, habe ich dazu einen einfachen Leitfaden entwickelt.
-            </p>
-
-            {/* Social Proof */}
-            <p className="text-xs text-muted-foreground/70 text-center mb-4">
-              Viele Teilnehmer mit einem angepassten Stoffwechsel nutzen an dieser Stelle den Leitfaden, um ihren Stoffwechsel wieder in Bewegung zu bringen.
-            </p>
-
-            {/* Book Showcase */}
-            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-md">
+          {/* 7. Buch-Teaser */}
+          <section className="mb-12">
+            <div className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
               <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
                 {/* Book Mockup */}
-                <div className="w-48 md:w-56 flex-shrink-0">
+                <div className="w-52 md:w-64 flex-shrink-0">
                   <img
                     src={bookCover}
                     alt="Buchcover: Du bist nicht das Problem"
-                    className="w-full h-auto rounded-lg shadow-lg"
+                    className="w-full h-auto rounded-lg shadow-xl"
                     loading="lazy"
                   />
                 </div>
 
                 {/* Book Info */}
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-1">
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
                     Du bist nicht das Problem
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                    Warum Dein Stoffwechsel blockiert –<br />
-                    und wie Du ihn wieder in Bewegung bringst.
+                  <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
+                    Warum wiederholte Di&auml;ten Deinen Stoffwechsel blockieren k&ouml;nnen &ndash;<br />
+                    und wie Du wieder in Bewegung kommst
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Dieses Buch erklärt verständlich, wie Stoffwechselblockaden entstehen 
-                    und welche einfachen Schritte helfen können, das System wieder zu stabilisieren.
+                    Dieses Buch hilft Dir zu verstehen, warum Dein K&ouml;rper nach vielen Di&auml;ten, viel Kontrolle und immer neuen Anl&auml;ufen oft nicht mehr so reagiert, wie Du es erwarten w&uuml;rdest.
                   </p>
-                  <p className="text-sm text-muted-foreground mb-2">Du erfährst:</p>
-                  <ul className="space-y-1.5">
+                  <p className="text-muted-foreground leading-relaxed mb-5">
+                    Gerade beim &uuml;berangepassten Di&auml;t-Stoffwechsel liegt das Problem oft nicht in fehlender Disziplin, sondern in einem System, das sich &uuml;ber l&auml;ngere Zeit an Mangel, Kontrolle und wiederholte Einschr&auml;nkung angepasst hat.
+                  </p>
+
+                  <p className="text-sm font-semibold text-foreground mb-3">Du erf&auml;hrst:</p>
+                  <ul className="space-y-2 mb-6">
                     {[
-                      'warum Dein Stoffwechsel blockiert',
-                      'welche Fehler viele Menschen unbewusst machen',
-                      'wie Du Dein System Schritt für Schritt wieder in Bewegung bringen kannst',
+                      'warum wiederholte Di\u00e4ten Deinen Fortschritt immer schwerer machen k\u00f6nnen',
+                      'welche typischen Fehler viele trotz Ehrgeiz immer wiederholen',
+                      'wie Du Deinen Stoffwechsel Schritt f\u00fcr Schritt wieder stabilisierst',
+                      'warum noch mehr Druck oft genau das falsche Signal ist',
                     ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0" />
+                      <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                        <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
 
-                  <p className="text-sm font-medium text-foreground mt-5 mb-2">Viele Leser berichten bereits nach kurzer Zeit von:</p>
-                  <ul className="space-y-1.5">
+                  <p className="text-sm font-semibold text-foreground mb-3">Viele Leser berichten schon nach kurzer Zeit von:</p>
+                  <ul className="space-y-2">
                     {[
-                      'mehr Spielraum bei der Ernährung',
-                      'weniger Frust trotz Kontrolle',
-                      'klareren Entscheidungen bei Ernährung und Training',
-                      'einem besseren Verständnis für den eigenen Körper',
+                      'mehr Ruhe im Kopf beim Essen',
+                      'weniger Frust nach R\u00fcckschl\u00e4gen',
+                      'klareren Entscheidungen im Alltag',
+                      'einem besseren Verst\u00e4ndnis f\u00fcr den eigenen K\u00f6rper',
                     ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                        <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -224,29 +214,26 @@ const ResultPageC2 = () => {
               </div>
 
               {/* Offer Box */}
-              <div className="mt-6 bg-primary/5 border border-primary/10 rounded-xl p-5 text-center">
+              <div className="mt-8 bg-primary/5 border-2 border-primary/15 rounded-xl p-6 text-center">
                 <p className="text-sm text-muted-foreground mb-2">
-                  Exklusiver Sonderpreis für Teilnehmer des Stoffwechsel-Quiz
+                  Exklusiver Sonderpreis f&uuml;r Teilnehmer des Stoffwechsel-Quiz
                 </p>
-                <div className="flex items-center justify-center gap-3 mb-1">
-                  <span className="text-lg text-muted-foreground/50 line-through">34,99 €</span>
-                  <span className="text-2xl font-bold text-foreground">19,99 €</span>
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
+                  <span className="text-3xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                 </div>
-                <p className="text-xs text-muted-foreground/60 mb-4">Dieses Angebot gilt nur für Teilnehmer des Stoffwechsel-Quiz.</p>
                 <Button
                   variant="cta"
-                  size="lg"
-                  className="group"
+                  size="xl"
+                  className="w-full h-auto min-h-[3.5rem] whitespace-normal leading-snug text-xs sm:text-sm md:text-base py-4 px-4"
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
-                    Zum Buch & exklusiven Quiz-Bonus sichern
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    Ja &mdash; ich will verstehen, warum mein Stoffwechsel nach vielen Di&auml;ten blockiert
+                    <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
-                <p className="text-xs text-muted-foreground/50 mt-2">Sofort verfügbar als E-Book</p>
-                <p className="text-xs text-muted-foreground/50 mt-1">Direkt nach dem Kauf lesen</p>
-                <p className="text-xs text-muted-foreground/50 mt-2">Bereits von vielen Quiz-Teilnehmern genutzt, um ihren Stoffwechsel besser zu verstehen.</p>
+                <p className="text-sm text-muted-foreground mt-3">Sofort verf&uuml;gbar als E-Book</p>
               </div>
             </div>
           </section>
