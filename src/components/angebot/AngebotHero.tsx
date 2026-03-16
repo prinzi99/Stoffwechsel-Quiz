@@ -52,7 +52,7 @@ const AngebotHero = () => {
                 </div>
               </div>
 
-              <div className="bg-card border-2 border-primary/30 rounded-2xl p-6 md:p-8 shadow-xl">
+              <div className="bg-card border-2 border-primary/30 rounded-2xl p-4 sm:p-6 md:p-8 shadow-xl">
                 <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                   Exklusiver Quiz-Preis
                 </p>
