@@ -15,32 +15,31 @@ const patterns = [
 
 const AngebotMuster = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="py-8 md:py-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-3">
             Drei typische Muster, die Fortschritt blockieren k&ouml;nnen
           </h2>
 
-          <p className="text-base md:text-lg text-muted-foreground text-center leading-relaxed mb-10 max-w-2xl mx-auto">
-            Viele k&auml;mpfen nicht gegen dasselbe Problem.<br />
-            Aber sehr viele landen in einem dieser drei Muster:
+          <p className="text-base md:text-lg text-muted-foreground text-center leading-relaxed mb-8 max-w-2xl mx-auto">
+            Vielleicht erkennst Du Dich in einem dieser Muster sofort wieder.
           </p>
 
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-3">
             {patterns.map((p, i) => (
               <div
                 key={i}
-                className="bg-card border border-border rounded-xl p-6 shadow-sm"
+                className="bg-card border border-border rounded-xl p-5 shadow-sm"
               >
-                <h3 className="text-lg font-bold text-foreground mb-3">{p.title}</h3>
+                <h3 className="text-lg font-bold text-foreground mb-2">{p.title}</h3>
                 <p className="text-sm md:text-base text-foreground/75 leading-relaxed">{p.text}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-base md:text-lg text-foreground/80 text-center mt-10 leading-relaxed max-w-2xl mx-auto">
-            <span className="font-medium text-foreground">
+          <p className="text-base md:text-lg text-center mt-8 leading-relaxed max-w-2xl mx-auto">
+            <span className="font-semibold text-foreground">
               Solange Du nur h&auml;rter gegen Deinen K&ouml;rper arbeitest, drehst Du Dich oft weiter im Kreis.
             </span>
           </p>
