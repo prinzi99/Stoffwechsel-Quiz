@@ -8,9 +8,9 @@ const BuchHero = () => {
   return (
     <section className="py-10 md:py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-14">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-14">
           {/* Book Cover */}
-          <div className="w-56 sm:w-64 md:w-72 lg:w-80 flex-shrink-0">
+          <div className="w-48 sm:w-56 lg:w-72 xl:w-80 flex-shrink-0">
             <img
               src={bookCover}
               alt="Du bist nicht das Problem – Buchcover"
@@ -22,19 +22,19 @@ const BuchHero = () => {
           </div>
 
           {/* Text Content */}
-          <div className="text-center md:text-left max-w-xl">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-4">
+          <div className="text-center lg:text-left min-w-0">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground leading-tight mb-4">
               Du bist nicht das Problem.{" "}
               <span className="text-primary">
                 Du kämpfst nur gegen etwas, das Du bisher falsch verstanden hast.
               </span>
             </h1>
 
-            <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground mb-6 leading-relaxed">
               Wenn Dein Stoffwechsel trotz Disziplin, gesunder Ernährung und Bewegung nicht reagiert, liegt das oft nicht an fehlendem Willen — sondern an einem Körper, der längst auf Stress, Mangel oder alte Diätmuster antwortet.
             </p>
 
-            <div className="text-base text-foreground/80 space-y-3 mb-6 leading-relaxed text-left">
+            <div className="text-sm sm:text-base text-foreground/80 space-y-3 mb-6 leading-relaxed text-left">
               <p>Du gibst Dir Mühe.</p>
               <p>Du willst es richtig machen.</p>
               <p>Du versuchst, über Ernährung, Bewegung und Kontrolle endlich voranzukommen.</p>
@@ -61,18 +61,18 @@ const BuchHero = () => {
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-base text-foreground/90">{item}</span>
+                  <span className="text-sm sm:text-base text-foreground/90">{item}</span>
                 </div>
               ))}
             </div>
 
             {/* Price Block */}
-            <div className="bg-primary/5 rounded-xl p-5 mb-5 border border-primary/15">
+            <div className="bg-primary/5 rounded-xl p-4 sm:p-5 mb-5 border border-primary/15">
               <p className="text-sm text-primary font-medium mb-2">
                 Einführungspreis nur für kurze Zeit
               </p>
-              <div className="flex items-center gap-3 justify-center md:justify-start mb-4">
-                <span className="text-base text-muted-foreground/50 line-through">34,99&nbsp;€</span>
+              <div className="flex items-center gap-3 justify-center lg:justify-start mb-4">
+                <span className="text-sm text-muted-foreground/50 line-through">34,99&nbsp;€</span>
                 <span className="text-3xl md:text-4xl font-extrabold text-foreground">29,99&nbsp;€</span>
               </div>
 
@@ -80,13 +80,13 @@ const BuchHero = () => {
                 variant="cta"
                 size="xl"
                 asChild
-                className="w-full text-sm md:text-base py-5 mb-2"
+                className="w-full h-auto min-h-[3rem] whitespace-normal leading-snug text-xs sm:text-sm md:text-base py-4 px-3 mb-2"
               >
                 <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                   Ja — ich will endlich verstehen, warum mein Stoffwechsel blockiert
                 </a>
               </Button>
-              <p className="text-sm text-muted-foreground text-center">
+              <p className="text-xs sm:text-sm text-muted-foreground text-center">
                 Sofort verfügbar als E-Book
               </p>
             </div>
