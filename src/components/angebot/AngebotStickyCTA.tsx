@@ -18,9 +18,9 @@ const AngebotStickyCTA = () => {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-card/95 backdrop-blur-sm border-t border-border px-4 py-3 shadow-lg">
-      <Button variant="cta" size="lg" asChild className="w-full text-base py-4">
+      <Button variant="cta" size="lg" asChild className="w-full text-base py-5">
         <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-          Jetzt f&uuml;r 19,99&nbsp;&euro; Klarheit sichern
+          Jetzt f&uuml;r 19,99&nbsp;&euro; sichern
         </a>
       </Button>
     </div>

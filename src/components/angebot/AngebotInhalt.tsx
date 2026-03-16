@@ -2,18 +2,18 @@ import { Brain, Zap, ListChecks, Wrench } from "lucide-react";
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
 const bookPoints = [
-  "warum klassische Abnehmstrategien oft in die Sackgasse f\u00FChren",
-  "wie Stress, Mangel und Di\u00E4tmuster den Stoffwechsel beeinflussen",
-  "warum mehr Disziplin ein biologisches Problem nicht automatisch l\u00F6st",
+  "warum klassische Abnehmstrategien oft in die Sackgasse führen",
+  "wie Stress, Mangel und Diätmuster den Stoffwechsel beeinflussen",
+  "warum mehr Disziplin ein biologisches Problem nicht automatisch löst",
   "wie ein sinnvoller Neustart aussehen kann",
-  "wie Du wieder mit Deinem K\u00F6rper arbeitest statt gegen ihn",
+  "wie Du wieder mit Deinem Körper arbeitest statt gegen ihn",
 ];
 
 const bonuses = [
   {
     icon: Brain,
     title: "Stoffwechsel-Reset-Check",
-    text: "Damit Du schneller erkennst, welches Muster bei Dir wahrscheinlich im Hintergrund l\u00E4uft.",
+    text: "Damit Du schneller erkennst, welches Muster bei Dir wahrscheinlich im Hintergrund läuft.",
   },
   {
     icon: Zap,
@@ -28,21 +28,21 @@ const bonuses = [
   {
     icon: Wrench,
     title: "Biohacking-Tools",
-    text: "Damit Du Deinen K\u00F6rper besser lesen und kl\u00FCger reagieren kannst.",
+    text: "Damit Du Deinen Körper besser lesen und klüger reagieren kannst.",
   },
 ];
 
 const AngebotInhalt = () => {
   return (
-    <section className="py-8 md:py-12 bg-background">
+    <section className="py-6 md:py-8 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-3 leading-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-2 leading-tight">
             Du bekommst nicht einfach nur ein E-Book.{" "}
             <span className="text-primary">Du bekommst endlich ein klareres Bild.</span>
           </h2>
 
-          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 mt-8 md:mt-10">
+          <div className="flex flex-col md:flex-row items-center gap-5 md:gap-8 mt-6">
             <div className="w-44 sm:w-52 md:w-64 flex-shrink-0">
               <img
                 src={bookCover}
@@ -55,14 +55,14 @@ const AngebotInhalt = () => {
             </div>
 
             <div className="flex-1">
-              <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-4">
+              <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-3">
                 &bdquo;Du bist nicht das Problem&ldquo; hilft Dir zu verstehen,
                 warum Dein K&ouml;rper gerade nicht so reagiert, wie Du es erwartest.
               </p>
-              <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-4">
+              <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-3">
                 Du erf&auml;hrst:
               </p>
-              <ul className="space-y-2.5">
+              <ul className="space-y-2">
                 {bookPoints.map((point, i) => (
                   <li key={i} className="flex items-start gap-3 text-base md:text-lg text-foreground/90 leading-snug">
                     <span className="text-primary font-bold mt-0.5">&ndash;</span>
@@ -73,8 +73,8 @@ const AngebotInhalt = () => {
             </div>
           </div>
 
-          <div className="mt-10 md:mt-14">
-            <h3 className="text-xl md:text-2xl font-bold text-foreground text-center mb-6">
+          <div className="mt-8 md:mt-10">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground text-center mb-5">
               Zus&auml;tzlich enthalten: praktische Bonus-Tools
             </h3>
 
