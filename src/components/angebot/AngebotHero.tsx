@@ -62,7 +62,7 @@ const AngebotHero = () => {
                   <span className="text-base text-muted-foreground">statt</span>
                   <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
                 </div>
-                <Button variant="cta" size="xl" asChild className="w-full text-base md:text-lg py-6 md:py-7 text-lg">
+                <Button variant="cta" size="xl" asChild className="w-full text-base md:text-lg py-6 md:py-7 whitespace-normal leading-snug text-center">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                     Ja &mdash; ich will endlich verstehen, was meinen Stoffwechsel blockiert
                   </a>
