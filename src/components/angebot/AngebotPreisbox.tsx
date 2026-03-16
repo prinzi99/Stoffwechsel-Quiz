@@ -14,25 +14,24 @@ const included = [
 
 const AngebotPreisbox = () => {
   return (
-    <section id="kaufen" className="py-8 md:py-12 bg-section-alt">
+    <section id="kaufen" className="py-6 md:py-8 bg-section-alt">
       <div className="container mx-auto px-4">
         <div className="max-w-lg mx-auto">
-          <div className="bg-card border-2 border-primary/25 rounded-2xl p-7 md:p-10 text-center shadow-xl">
+          <div className="bg-card border-2 border-primary/30 rounded-2xl p-7 md:p-10 text-center shadow-xl">
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
               Exklusiver Sonderpreis f&uuml;r Quiz-Teilnehmer
             </p>
 
-            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-5 leading-snug">
-              Hol Dir jetzt das komplette Buch<br />
-              inklusive Bonusbereich f&uuml;r nur 19,99&nbsp;&euro;
+            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4 leading-snug">
+              Hol Dir jetzt das komplette Buch inklusive Bonusbereich f&uuml;r nur 19,99&nbsp;&euro;
             </h2>
 
             <div className="flex items-center justify-center gap-3 mb-5">
-              <span className="text-xl text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
+              <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
               <span className="text-4xl md:text-5xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
             </div>
 
-            <div className="text-left space-y-2.5 mb-6">
+            <div className="text-left space-y-2 mb-5">
               {included.map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
@@ -41,17 +40,14 @@ const AngebotPreisbox = () => {
               ))}
             </div>
 
-            <Button variant="cta" size="xl" asChild className="w-full text-base md:text-lg py-5 md:py-6 mb-3">
+            <Button variant="cta" size="xl" asChild className="w-full text-base md:text-lg py-6 md:py-7 mb-3">
               <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                 Ja &mdash; ich will Buch &amp; Bonus jetzt sichern
               </a>
             </Button>
 
-            <p className="text-sm text-muted-foreground mb-1">
+            <p className="text-sm text-muted-foreground">
               Direkt nach dem Kauf verf&uuml;gbar.
-            </p>
-            <p className="text-xs text-muted-foreground/70">
-              Dieses Angebot ist exklusiv f&uuml;r Teilnehmer des Stoffwechsel-Quiz.
             </p>
           </div>
         </div>
