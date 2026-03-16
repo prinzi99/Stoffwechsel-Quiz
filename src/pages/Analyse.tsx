@@ -69,6 +69,10 @@ const Analyse = () => {
   const loginsToday = logins.filter((l) => l.logged_in_at.startsWith(todayStr)).length;
   const viewsToday = pageViews.filter((v) => v.viewed_at.startsWith(todayStr)).length;
 
+  // Angebot page stats
+  const anbotViews = pageViews.filter((v) => v.page_path.includes("anbot")).length;
+  const anbotViewsToday = pageViews.filter((v) => v.page_path.includes("anbot") && v.viewed_at.startsWith(todayStr)).length;
+
   const pageStats = useMemo(() => {
     const map: Record<string, { count: number; title: string }> = {};
     pageViews.forEach((v) => {
