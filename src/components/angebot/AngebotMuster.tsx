@@ -1,47 +1,50 @@
+import { AlertTriangle, Battery, RotateCcw } from "lucide-react";
+
 const patterns = [
   {
+    icon: AlertTriangle,
     title: "Der gestresste Stoffwechsel",
-    text: "Wenn Dein System dauerhaft unter Druck l\u00E4uft, priorisiert Dein K\u00F6rper Sicherheit \u2013 nicht Fettverbrennung.",
+    text: "Wenn Dein System dauerhaft unter Druck läuft, priorisiert Dein Körper Sicherheit – nicht Fettverbrennung.",
   },
   {
+    icon: Battery,
     title: "Der unterversorgte Fettstoffwechsel",
-    text: "Wenn Dein K\u00F6rper \u00FCber l\u00E4ngere Zeit zu wenig bekommt, reagiert er oft nicht mit Freigabe \u2013 sondern mit Sparsamkeit, M\u00FCdigkeit und Stillstand.",
+    text: "Wenn Dein Körper über längere Zeit zu wenig bekommt, reagiert er oft nicht mit Freigabe – sondern mit Sparsamkeit, Müdigkeit und Stillstand.",
   },
   {
-    title: "Der \u00FCberangepasste Di\u00E4t-Stoffwechsel",
-    text: "Wenn Du viele Di\u00E4ten hinter Dir hast, sch\u00FCtzt Dein K\u00F6rper Reserven oft st\u00E4rker als fr\u00FCher.",
+    icon: RotateCcw,
+    title: "Der überangepasste Diät-Stoffwechsel",
+    text: "Wenn Du viele Diäten hinter Dir hast, schützt Dein Körper Reserven oft stärker als früher.",
   },
 ];
 
 const AngebotMuster = () => {
   return (
-    <section className="py-8 md:py-12 bg-background">
+    <section className="py-6 md:py-8 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-3">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-2 leading-tight">
             Drei typische Muster, die Fortschritt blockieren k&ouml;nnen
           </h2>
 
-          <p className="text-base md:text-lg text-muted-foreground text-center leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground text-center mb-5">
             Vielleicht erkennst Du Dich in einem dieser Muster sofort wieder.
           </p>
 
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-3">
             {patterns.map((p, i) => (
-              <div
-                key={i}
-                className="bg-card border border-border rounded-xl p-5 shadow-sm"
-              >
-                <h3 className="text-lg font-bold text-foreground mb-2">{p.title}</h3>
-                <p className="text-sm md:text-base text-foreground/75 leading-relaxed">{p.text}</p>
+              <div key={i} className="bg-card border border-border rounded-xl p-5 shadow-sm">
+                <div className="flex items-center gap-3 mb-2">
+                  <p.icon className="w-5 h-5 text-primary flex-shrink-0" />
+                  <h3 className="font-bold text-foreground text-base">{p.title}</h3>
+                </div>
+                <p className="text-sm text-foreground/75 leading-relaxed">{p.text}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-base md:text-lg text-center mt-8 leading-relaxed max-w-2xl mx-auto">
-            <span className="font-semibold text-foreground">
-              Solange Du nur h&auml;rter gegen Deinen K&ouml;rper arbeitest, drehst Du Dich oft weiter im Kreis.
-            </span>
+          <p className="text-base md:text-lg text-foreground/80 text-center mt-5 font-medium">
+            Solange Du nur h&auml;rter gegen Deinen K&ouml;rper arbeitest, drehst Du Dich oft weiter im Kreis.
           </p>
         </div>
       </div>
