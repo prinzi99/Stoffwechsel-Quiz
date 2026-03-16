@@ -8,23 +8,23 @@ import {
 const faqs = [
   {
     q: "Ist das Buch auch f\u00FCr Anf\u00E4nger geeignet?",
-    a: "Ja. Du brauchst keine Vorkenntnisse. Das Buch erkl\u00E4rt die wichtigsten Zusammenh\u00E4nge so, dass Du Deine eigene Situation besser einordnen kannst, ohne Dich durch Fachsprache k\u00E4mpfen zu m\u00FCssen.",
+    a: "Ja. Du brauchst kein Vorwissen. Das Buch erkl\u00E4rt die wichtigsten Zusammenh\u00E4nge so, dass Du Deine eigene Situation besser einordnen kannst.",
   },
   {
     q: "Ist das einfach nur ein weiterer Di\u00E4tplan?",
-    a: "Nein. Genau darum geht es gerade nicht. Dieses Buch soll Dir helfen zu verstehen, warum starre Standardpl\u00E4ne bei vielen irgendwann nicht mehr funktionieren \u2013 und worauf es stattdessen ankommt.",
+    a: "Nein. Es geht nicht um einen starren Plan, sondern darum zu verstehen, warum Dein K\u00F6rper gerade blockiert und was in Deiner Situation sinnvoller sein kann.",
   },
   {
     q: "Kann ich direkt nach dem Kauf loslegen?",
-    a: "Ja. Du erh\u00E4ltst sofort Zugriff auf das E-Book und alle Bonus-Inhalte und kannst direkt anfangen, Deine bisherige Situation klarer einzuordnen.",
+    a: "Ja. Du erh\u00E4ltst sofort Zugriff auf das E-Book und alle Bonus-Inhalte.",
   },
   {
     q: "Ist das nur Theorie?",
-    a: "Nein. Das Buch verbindet Erkl\u00E4rung mit konkreten Denkanst\u00F6\u00DFen und praktischen Hilfen, damit Du nicht nur mehr wei\u00DFt, sondern bessere Entscheidungen treffen kannst.",
+    a: "Nein. Das Buch verbindet Erkl\u00E4rung mit konkreten Hilfen, damit Du bessere Entscheidungen f\u00FCr Deinen Alltag treffen kannst.",
   },
   {
     q: "Was unterscheidet dieses Buch von kostenlosen Infos im Internet?",
-    a: "Im Internet findest Du unendlich viele Einzelinformationen. Was meist fehlt, ist eine stimmige Einordnung. Dieses Buch verbindet die entscheidenden Zusammenh\u00E4nge so, dass aus widerspr\u00FCchlichen Tipps endlich ein verst\u00E4ndliches Bild wird.",
+    a: "Im Internet findest Du viele Einzelinfos. Dieses Buch hilft Dir, die Zusammenh\u00E4nge klarer zu sehen und sinnvoll einzuordnen.",
   },
 ];
 
