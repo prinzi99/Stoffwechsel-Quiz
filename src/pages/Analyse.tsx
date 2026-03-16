@@ -63,11 +63,12 @@ const Analyse = () => {
 
   // Stats
   const totalLogins = logins.length;
-  const totalPageViews = pageViews.length;
+  const bonusPageViews = pageViews.filter((v) => !v.page_path.includes("anbot"));
+  const totalBonusPageViews = bonusPageViews.length;
 
   const todayStr = new Date().toISOString().split("T")[0];
   const loginsToday = logins.filter((l) => l.logged_in_at.startsWith(todayStr)).length;
-  const viewsToday = pageViews.filter((v) => v.viewed_at.startsWith(todayStr)).length;
+  const viewsToday = bonusPageViews.filter((v) => v.viewed_at.startsWith(todayStr)).length;
 
   // Angebot page stats
   const anbotViews = pageViews.filter((v) => v.page_path.includes("anbot")).length;
