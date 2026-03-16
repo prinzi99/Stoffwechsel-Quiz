@@ -80,7 +80,7 @@ const BuchHero = () => {
                 variant="cta"
                 size="xl"
                 asChild
-                className="w-full text-base md:text-lg py-6 mb-2"
+                className="w-full text-sm md:text-base py-5 mb-2"
               >
                 <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                   Ja — ich will endlich verstehen, warum mein Stoffwechsel blockiert
