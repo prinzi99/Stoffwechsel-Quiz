@@ -20,8 +20,12 @@ const AngebotHero = () => {
             </span>
           </h1>
 
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto mb-5">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto mb-2">
             Wenn Dein Stoffwechsel trotz Disziplin nicht reagiert, liegt das nicht daran, dass Du zu wenig tust &mdash; sondern daran, dass Dein K&ouml;rper l&auml;ngst auf etwas anderes reagiert.
+          </p>
+
+          <p className="text-lg md:text-xl font-bold text-primary text-center mb-5">
+            Du scheiterst nicht trotz Disziplin. Du scheiterst wegen ihr.
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-5 md:gap-8">
@@ -50,7 +54,7 @@ const AngebotHero = () => {
               </div>
 
               <p className="text-base md:text-lg font-bold text-primary mb-3 text-left">
-                Du scheiterst nicht an Disziplin. Du bek&auml;mpfst die falsche Ursache.
+                Du l&ouml;st das falsche Problem.
               </p>
 
               <div className="space-y-1.5 mb-4 text-left">

@@ -18,10 +18,10 @@ const AngebotPreisbox = () => {
           {/* Pre-box tension */}
           <div className="text-center mb-6">
             <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-              Wenn Du das hier nicht verstehst,<br />
-              wirst Du in ein paar Wochen wieder genau hier stehen.<br />
-              Motiviert. Frustriert.<br />
-              Und ohne zu wissen, warum es wieder nicht funktioniert hat.
+              Wenn Du das hier nicht verstehst, wird sich nichts &auml;ndern.<br />
+              Du wirst wieder anfangen.<br />
+              Wieder abbrechen.<br />
+              Und wieder denken, es liegt an Dir.
             </p>
           </div>
 
