@@ -10,7 +10,8 @@ const AngebotAha = () => {
           <div className="text-base md:text-lg text-foreground/80 space-y-3 leading-relaxed mb-5">
             <p>
               Dein K&ouml;rper ist nicht das Problem.<br />
-              Er ist der Einzige in Deinem System, der sich logisch verh&auml;lt.
+              Er ist der Einzige in Deinem System,<br />
+              der sich logisch verh&auml;lt.
             </p>
             <p>
               Du versuchst, mit Disziplin ein Problem zu l&ouml;sen,<br />
@@ -22,18 +23,12 @@ const AngebotAha = () => {
               das Dich sp&auml;ter wieder einbrechen l&auml;sst.
             </p>
             <p>
-              Dein R&uuml;ckfall ist kein Versagen.<br />
+              Dein R&uuml;ckfall ist kein Ausrutscher.<br />
               Er ist das Ergebnis Deines Plans.
             </p>
-            <p>
-              Und genau deshalb f&uuml;hlst Du Dich,<br />
-              als w&uuml;rdest Du gegen Dich selbst arbeiten.
-            </p>
-          </div>
-
-          <div className="bg-card border-2 border-primary/30 rounded-xl p-4 text-center mb-5">
-            <p className="text-base md:text-lg font-bold text-primary leading-snug">
-              Du scheiterst nicht an Disziplin. Du bek&auml;mpfst die falsche Ursache.
+            <p className="font-medium text-foreground">
+              Du k&auml;mpfst nicht gegen Dich.<br />
+              Du k&auml;mpfst gegen die falsche Ursache.
             </p>
           </div>
 

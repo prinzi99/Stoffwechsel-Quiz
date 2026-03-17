@@ -45,7 +45,8 @@ const AngebotMuster = () => {
 
           <div className="mt-6 bg-card border-2 border-primary/30 rounded-xl p-4 text-center">
             <p className="text-base md:text-lg font-bold text-primary leading-snug">
-              Du scheiterst nicht an Disziplin. Dein K&ouml;rper reagiert logisch &mdash; nur nicht auf das, was Du glaubst.
+              Du arbeitest gegen die eigentliche Ursache.<br />
+              Und genau deshalb dreht sich alles im Kreis.
             </p>
           </div>
         </div>

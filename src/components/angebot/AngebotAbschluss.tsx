@@ -7,16 +7,18 @@ const AngebotAbschluss = () => {
     <section className="py-6 md:py-8 bg-section-alt">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
+          <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-5">
+            Solange Du glaubst, dass Du Dich nur mehr zusammenrei&szlig;en musst,<br />
+            wirst Du immer wieder genau hier landen.
+          </p>
+
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4">
-            Du brauchst nicht mehr Disziplin.{" "}
-            <span className="text-primary">
-              Du brauchst die richtige Ursache.
-            </span>
+            Du hast zwei Optionen:
           </h2>
 
           <div className="text-base md:text-lg text-foreground/80 space-y-2 leading-relaxed mb-5">
-            <p>Solange Du gegen das falsche Problem arbeitest,</p>
-            <p>wird es sich immer wieder gleich anf&uuml;hlen.</p>
+            <p>Weitermachen wie bisher &mdash; und wieder scheitern.</p>
+            <p className="font-medium text-foreground">Oder endlich verstehen, was wirklich passiert.</p>
           </div>
 
           <Button variant="cta" size="xl" asChild className="text-base md:text-lg py-6 md:py-7 px-8 mb-3">

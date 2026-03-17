@@ -24,14 +24,14 @@ const AngebotAnders = () => {
               und kommst trotzdem nicht weiter.
             </p>
             <p className="font-medium text-foreground">
-              Und genau das f&uuml;hlt sich irgendwann an wie Stillstand.
+              Du optimierst das Symptom &mdash; nicht den Ausl&ouml;ser.
             </p>
           </div>
 
           <div className="mt-5 border-l-4 border-primary/60 pl-4 py-2">
             <p className="text-base md:text-lg text-foreground font-medium leading-snug">
-              Du scheiterst nicht an Disziplin.<br />
-              Du scheiterst daran, dass Dein K&ouml;rper logisch gegen Deinen Plan arbeitet.
+              Du k&auml;mpfst an der falschen Stelle.<br />
+              Und genau deshalb f&uuml;hlt es sich an wie Stillstand.
             </p>
           </div>
         </div>
