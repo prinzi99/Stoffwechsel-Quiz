@@ -76,6 +76,7 @@ const AngebotHero = () => {
 
               <div className="bg-card border-2 border-primary/30 rounded-2xl p-4 sm:p-6 md:p-8 shadow-xl">
                 <div className="flex items-baseline justify-center md:justify-start gap-2 mb-2">
+                  <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
                   <span className="text-4xl md:text-5xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                 </div>
                 <p className="text-sm text-foreground/70 mb-4">
