@@ -9,7 +9,7 @@ const AngebotDenken = () => {
 
           <div className="text-base md:text-lg text-foreground/80 space-y-3 leading-relaxed">
             <p>
-              Du wei&szlig;t eigentlich, was Du tun solltest. Du achtest auf Ern&auml;hrung. Du bewegst Dich. Du versuchst, konsequent zu bleiben.
+              Du wei&szlig;t eigentlich, was Du tun solltest. Du achtest auf Ern&auml;hrung. Du bewegst Dich. Du versuchst, konsequent zu sein.
             </p>
             <p>
               Und trotzdem wird es nicht leichter. Sondern schwerer.
@@ -18,16 +18,20 @@ const AngebotDenken = () => {
               Du startest neu. Ziehst wieder durch. Und landest wieder am selben Punkt.
             </p>
             <p>
-              Nicht sichtbar f&uuml;r andere. Aber sehr klar f&uuml;r Dich.
-            </p>
-            <p className="pt-1">
-              Und genau hier entsteht der gef&auml;hrlichste Gedanke:
+              Und irgendwann kommt dieser Gedanke:
             </p>
             <p className="text-foreground font-semibold text-lg md:text-xl">
-              &bdquo;Ich bin wohl einfach nicht konsequent genug.&ldquo;
+              &bdquo;Vielleicht bin ich einfach nicht konsequent genug.&ldquo;
             </p>
-            <p className="pt-1">
+            <p>
               Das Problem ist: <strong className="text-foreground">Das stimmt nicht.</strong>
+            </p>
+          </div>
+
+          <div className="mt-5 border-l-4 border-primary/60 pl-4 py-2">
+            <p className="text-base md:text-lg text-foreground font-medium leading-snug">
+              Und genau hier passiert der Denkfehler, der fast alle ausbremst.<br />
+              Ich zeige Dir gleich, welcher das ist.
             </p>
           </div>
         </div>

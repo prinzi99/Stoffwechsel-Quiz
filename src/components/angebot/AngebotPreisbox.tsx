@@ -4,12 +4,10 @@ import { Button } from "@/components/ui/button";
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
 
 const included = [
-  'E-Book „Du bist nicht das Problem"',
-  "sofortiger digitaler Zugriff",
-  "Stoffwechsel-Reset-Check",
-  "Kalorien-Startpunkt-Rechner",
-  "Checklisten & Vorlagen",
-  "Biohacking-Tools",
+  "sofort verfügbar",
+  "verständlich erklärt",
+  "direkt umsetzbar",
+  "inkl. Bonus-Tools",
 ];
 
 const AngebotPreisbox = () => {
@@ -52,7 +50,7 @@ const AngebotPreisbox = () => {
 
             <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3.25rem] whitespace-normal leading-snug text-base md:text-lg py-6 md:py-7 mb-3">
               <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                Ich will endlich verstehen, warum ich immer wieder scheitere
+                Ich will aufh&ouml;ren, gegen mich selbst zu arbeiten
               </a>
             </Button>
 

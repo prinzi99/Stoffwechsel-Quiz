@@ -25,6 +25,13 @@ const AngebotAnders = () => {
               Und genau das f&uuml;hlt sich irgendwann an wie Stillstand.
             </p>
           </div>
+
+          <div className="mt-5 border-l-4 border-primary/60 pl-4 py-2">
+            <p className="text-base md:text-lg text-foreground font-medium leading-snug">
+              Du scheiterst nicht an Disziplin.<br />
+              Du scheiterst daran, dass Dein K&ouml;rper logisch gegen Deinen Plan arbeitet.
+            </p>
+          </div>
         </div>
       </div>
     </section>
