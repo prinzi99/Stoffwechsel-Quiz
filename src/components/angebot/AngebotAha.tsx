@@ -3,7 +3,7 @@ const statements = [
     text: "Disziplin funktioniert nur, solange Dein Körper mitspielt. Wenn er auf Schutz schaltet, arbeitet sie gegen Dich.",
   },
   {
-    text: "Dein Körper blockiert Dich nicht, weil er „kaputt" ist — sondern weil er sich angepasst hat.",
+    text: "Dein K\u00F6rper blockiert Dich nicht, weil er \u201Ekaputt\u201C ist \u2014 sondern weil er sich angepasst hat.",
   },
   {
     text: "Je öfter Du versuchst, es mit weniger Essen und mehr Kontrolle zu lösen, desto stärker trainierst Du genau das Problem, das Dich festhält.",

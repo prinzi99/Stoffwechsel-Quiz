@@ -2,8 +2,8 @@ import { UserCheck } from "lucide-react";
 
 const points = [
   "Du immer wieder neu anfängst — und heimlich wieder aufhörst",
-  "Du eigentlich weißt, was „richtig" ist, aber es nicht dauerhaft funktioniert",
-  "Du das Gefühl hast, Dein Körper arbeitet gegen Dich",
+  "Du eigentlich wei\u00DFt, was \u201Erichtig\u201C ist, aber es nicht dauerhaft funktioniert",
+  "Du das Gef\u00FChl hast, Dein K\u00F6rper arbeitet gegen Dich",
   "Du Dich fragst, warum es bei anderen klappt — aber bei Dir nicht",
   "Du Dich innerlich schon oft selbst dafür kritisiert hast",
   "Du merkst, dass es nicht an Wissen fehlt — sondern an etwas anderem",
