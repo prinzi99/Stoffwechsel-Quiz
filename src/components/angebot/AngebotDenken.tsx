@@ -9,19 +9,25 @@ const AngebotDenken = () => {
 
           <div className="text-base md:text-lg text-foreground/80 space-y-3 leading-relaxed">
             <p>
-              Du wei&szlig;t eigentlich, was Du tun solltest. Du achtest auf Ern&auml;hrung. Du bewegst Dich. Du versuchst, konsequent zu sein.
+              Du wei&szlig;t eigentlich, was Du tun solltest.<br />
+              Du achtest auf Ern&auml;hrung.<br />
+              Du bewegst Dich.<br />
+              Du versuchst, konsequent zu sein.
             </p>
             <p>
-              Und trotzdem wird es nicht leichter. Sondern schwerer.
+              Und trotzdem wird es nicht leichter.<br />
+              Sondern schwerer.
             </p>
             <p>
-              Du startest neu. Ziehst wieder durch. Und landest wieder am selben Punkt.
+              Du startest neu.<br />
+              Ziehst wieder durch.<br />
+              Und landest wieder am selben Punkt.
             </p>
             <p>
               Und irgendwann kommt dieser Gedanke:
             </p>
             <p className="text-foreground font-semibold text-lg md:text-xl">
-              &bdquo;Vielleicht bin ich einfach nicht konsequent genug.&ldquo;
+              &bdquo;Ich bin wohl einfach nicht konsequent genug.&ldquo;
             </p>
             <p>
               Das Problem ist: <strong className="text-foreground">Das stimmt nicht.</strong>

@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
 
 const included = [
-  "sofort verfügbar",
-  "verständlich erklärt",
+  "sofort verf\u00FCgbar",
+  "verst\u00E4ndlich erkl\u00E4rt",
   "direkt umsetzbar",
   "inkl. Bonus-Tools",
 ];
@@ -15,6 +15,16 @@ const AngebotPreisbox = () => {
     <section id="kaufen" className="py-6 md:py-8 bg-section-alt">
       <div className="container mx-auto px-4">
         <div className="max-w-lg mx-auto">
+          {/* Pre-box tension */}
+          <div className="text-center mb-6">
+            <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+              Wenn Du das hier nicht verstehst,<br />
+              wirst Du in ein paar Wochen wieder genau hier stehen.<br />
+              Motiviert. Frustriert.<br />
+              Und ohne zu wissen, warum es wieder nicht funktioniert hat.
+            </p>
+          </div>
+
           <div className="bg-card border-2 border-primary/30 rounded-2xl p-7 md:p-10 text-center shadow-xl relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
 
@@ -43,10 +53,6 @@ const AngebotPreisbox = () => {
                 </div>
               ))}
             </div>
-
-            <p className="text-sm text-foreground/60 mb-4 leading-relaxed">
-              Wenn Du das nicht verstehst, wirst Du in ein paar Monaten wieder genau an diesem Punkt stehen.
-            </p>
 
             <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3.25rem] whitespace-normal leading-snug text-base md:text-lg py-6 md:py-7 mb-3">
               <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">

@@ -10,13 +10,13 @@ const AngebotAbschluss = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4">
             Du brauchst nicht mehr Disziplin.{" "}
             <span className="text-primary">
-              Du brauchst die richtige Erkl&auml;rung.
+              Du brauchst die richtige Ursache.
             </span>
           </h2>
 
           <div className="text-base md:text-lg text-foreground/80 space-y-2 leading-relaxed mb-5">
-            <p>Du kannst weitermachen wie bisher.</p>
-            <p>Oder Du verstehst endlich, warum es bisher nicht funktioniert hat.</p>
+            <p>Solange Du gegen das falsche Problem arbeitest,</p>
+            <p>wird es sich immer wieder gleich anf&uuml;hlen.</p>
           </div>
 
           <Button variant="cta" size="xl" asChild className="text-base md:text-lg py-6 md:py-7 px-8 mb-3">
