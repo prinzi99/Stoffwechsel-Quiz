@@ -1,12 +1,12 @@
 import { UserCheck } from "lucide-react";
 
 const points = [
-  "Du motiviert anfängst — und dann still wieder verschwindest",
-  "Du eigentlich genau wei\u00DFt, was Du tun solltest — es aber nicht durchziehst",
-  "Du Dir immer wieder vornimmst, diesmal wirklich dranzubleiben",
-  "Du merkst, dass es nicht an Wissen fehlt — sondern an etwas, das Du nicht greifen kannst",
-  "Du Dich schon \u00F6fter gefragt hast, warum es bei anderen klappt — aber bei Dir nicht",
-  "Du Dir insgeheim selbst nicht mehr ganz vertraust",
+  "Du stark anf\u00E4ngst \u2014 und jedes Mal hoffst, dass es diesmal anders l\u00E4uft",
+  "Du irgendwann die Waage meidest, weil Du die Antwort schon kennst",
+  "Du immer besser im Anfangen wirst \u2014 aber nicht im Durchziehen",
+  "Du wei\u00DFt, was Du tun solltest \u2014 und es trotzdem nicht dauerhaft funktioniert",
+  "Du Dir M\u00FChe gibst \u2014 aber Dir selbst nicht mehr wirklich vertraust",
+  "Du das Gef\u00FChl hast, dass Dein K\u00F6rper gegen Dich arbeitet",
 ];
 
 const AngebotZielgruppe = () => {

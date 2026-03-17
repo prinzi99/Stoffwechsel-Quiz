@@ -10,7 +10,8 @@ const AngebotAnders = () => {
 
           <div className="text-base md:text-lg text-foreground/80 space-y-3 leading-relaxed">
             <p>
-              Die meisten bekommen immer wieder dieselbe Empfehlung: Weniger essen. Mehr verbrennen. Mehr Kontrolle.
+              Die meisten bekommen immer wieder dieselbe Empfehlung:<br />
+              Weniger essen. Mehr verbrennen. Mehr Kontrolle.
             </p>
             <p>
               Das klingt logisch.
@@ -19,7 +20,8 @@ const AngebotAnders = () => {
               Aber wenn Dein K&ouml;rper bereits auf Stress, Unterversorgung oder wiederholte Di&auml;ten reagiert, versch&auml;rft genau das die Situation.
             </p>
             <p>
-              Dann strengst Du Dich mehr an &mdash; und kommst trotzdem nicht weiter.
+              Dann strengst Du Dich mehr an &mdash;<br />
+              und kommst trotzdem nicht weiter.
             </p>
             <p className="font-medium text-foreground">
               Und genau das f&uuml;hlt sich irgendwann an wie Stillstand.

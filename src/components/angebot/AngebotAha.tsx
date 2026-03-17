@@ -9,28 +9,39 @@ const AngebotAha = () => {
 
           <div className="text-base md:text-lg text-foreground/80 space-y-3 leading-relaxed mb-5">
             <p>
-              Disziplin ist nicht Dein Problem.<br />
-              In Deinem Fall ist sie genau das, was Dich festh&auml;lt.
+              Dein K&ouml;rper ist nicht das Problem.<br />
+              Er ist der Einzige in Deinem System, der sich logisch verh&auml;lt.
             </p>
             <p>
-              Denn solange Dein K&ouml;rper auf Schutz schaltet, arbeitet jede weitere Kontrolle gegen Dich.
+              Du versuchst, mit Disziplin ein Problem zu l&ouml;sen,<br />
+              das durch Disziplin &uuml;berhaupt erst entsteht.
             </p>
             <p>
-              Dein K&ouml;rper sabotiert Dich nicht.<br />
-              Er reagiert logisch auf das, was Du ihm gibst.
+              Je mehr Du Dich kontrollierst,<br />
+              desto st&auml;rker wird genau das System,<br />
+              das Dich sp&auml;ter wieder einbrechen l&auml;sst.
             </p>
             <p>
-              Und genau das ist das Problem:<br />
-              Du versuchst, ein System zu kontrollieren, das l&auml;ngst gelernt hat, sich dagegen zu wehren.
+              Dein R&uuml;ckfall ist kein Versagen.<br />
+              Er ist das Ergebnis Deines Plans.
             </p>
-            <p className="font-medium text-foreground">
-              Je mehr Du dr&uuml;ckst, desto st&auml;rker macht es dicht.
+            <p>
+              Und genau deshalb f&uuml;hlst Du Dich,<br />
+              als w&uuml;rdest Du gegen Dich selbst arbeiten.
             </p>
           </div>
 
-          <div className="bg-card border-2 border-primary/30 rounded-xl p-4 text-center">
+          <div className="bg-card border-2 border-primary/30 rounded-xl p-4 text-center mb-5">
             <p className="text-base md:text-lg font-bold text-primary leading-snug">
-              Du scheiterst nicht an Disziplin. Dein K&ouml;rper arbeitet logisch gegen Deinen Plan.
+              Du scheiterst nicht an Disziplin. Du bek&auml;mpfst die falsche Ursache.
+            </p>
+          </div>
+
+          <div className="border-l-4 border-primary/60 pl-4 py-2">
+            <p className="text-base md:text-lg text-foreground font-medium leading-snug">
+              Das Problem ist nicht, dass Du es nicht durchziehst.<br />
+              Das Problem ist, dass das, was Du durchziehst,<br />
+              Dich genau dorthin bringt, wo Du nicht hinwillst.
             </p>
           </div>
         </div>

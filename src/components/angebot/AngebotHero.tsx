@@ -50,14 +50,14 @@ const AngebotHero = () => {
               </div>
 
               <p className="text-base md:text-lg font-bold text-primary mb-3 text-left">
-                Du scheiterst nicht an Disziplin. Dein K&ouml;rper arbeitet logisch gegen Deinen Plan.
+                Du scheiterst nicht an Disziplin. Du bek&auml;mpfst die falsche Ursache.
               </p>
 
               <div className="space-y-1.5 mb-4 text-left">
                 {[
-                  "warum Dein Körper aktuell gegen Dich arbeitet",
+                  "warum Dein K\u00F6rper aktuell gegen Dich arbeitet",
                   "warum Disziplin Dich tiefer ins Problem bringt",
-                  "was sich ändern muss, damit Dein System wieder reagiert",
+                  "was sich \u00E4ndern muss, damit Dein System wieder reagiert",
                 ].map((b, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
