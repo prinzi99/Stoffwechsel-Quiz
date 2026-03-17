@@ -10,18 +10,18 @@ const AngebotAbschluss = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4">
             Du brauchst nicht mehr Disziplin.{" "}
             <span className="text-primary">
-              Du brauchst endlich die richtige Erkl&auml;rung.
+              Du brauchst die richtige Erkl&auml;rung.
             </span>
           </h2>
 
           <div className="text-base md:text-lg text-foreground/80 space-y-2 leading-relaxed mb-5">
-            <p>Du kannst Dich weiter anstrengen.</p>
-            <p>Oder Du verstehst, warum es bisher nicht funktioniert hat.</p>
+            <p>Du kannst weitermachen wie bisher.</p>
+            <p>Oder Du verstehst endlich, warum es bisher nicht funktioniert hat.</p>
           </div>
 
           <Button variant="cta" size="xl" asChild className="text-base md:text-lg py-6 md:py-7 px-8 mb-3">
             <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-              Ich will das jetzt verstehen
+              Ich will raus aus diesem Kreislauf
             </a>
           </Button>
 

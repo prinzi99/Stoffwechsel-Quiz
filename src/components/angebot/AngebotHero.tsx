@@ -37,7 +37,7 @@ const AngebotHero = () => {
             </div>
 
             <div className="flex-1 text-center md:text-left">
-              <div className="text-sm sm:text-base text-foreground/80 space-y-1 leading-relaxed mb-4 text-left">
+              <div className="text-sm sm:text-base text-foreground/80 space-y-1 leading-relaxed mb-3 text-left">
                 <p>Du ziehst wieder durch.</p>
                 <p>3 Tage. 5 Tage. Vielleicht 2 Wochen.</p>
                 <p>Und dann bricht es wieder weg.</p>
@@ -46,7 +46,24 @@ const AngebotHero = () => {
                 <em className="text-foreground font-medium">Was stimmt eigentlich nicht mit mir?</em></p>
                 <p className="pt-1">Die Waage bewegt sich kaum. Die Energie sinkt. Und Du f&auml;ngst wieder von vorne an.</p>
                 <p className="pt-1">Nicht, weil Du zu schwach bist.<br />
-                Sondern weil Du gegen etwas arbeitest, das Du so nie gelernt hast zu verstehen.</p>
+                Sondern weil Dein K&ouml;rper l&auml;ngst gegen Deinen Plan arbeitet.</p>
+              </div>
+
+              <p className="text-base md:text-lg font-bold text-primary mb-3 text-left">
+                Du scheiterst nicht an Disziplin. Dein K&ouml;rper arbeitet logisch gegen Deinen Plan.
+              </p>
+
+              <div className="space-y-1.5 mb-4 text-left">
+                {[
+                  "warum Dein Körper aktuell gegen Dich arbeitet",
+                  "warum Disziplin Dich tiefer ins Problem bringt",
+                  "was sich ändern muss, damit Dein System wieder reagiert",
+                ].map((b, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span className="text-sm text-foreground/80">{b}</span>
+                  </div>
+                ))}
               </div>
 
               <div className="bg-card border-2 border-primary/30 rounded-2xl p-4 sm:p-6 md:p-8 shadow-xl">
@@ -61,7 +78,7 @@ const AngebotHero = () => {
                 </div>
                 <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3rem] whitespace-normal leading-snug text-sm lg:text-lg py-7 md:py-8 text-center">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                    Ja &mdash; ich will endlich verstehen, was meinen Stoffwechsel blockiert
+                    Ich will aufh&ouml;ren, gegen mich selbst zu arbeiten
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-3 text-center md:text-left">
