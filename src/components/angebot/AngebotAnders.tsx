@@ -14,17 +14,14 @@ const AngebotAnders = () => {
               Weniger essen. Mehr verbrennen. Mehr Kontrolle.
             </p>
             <p>
-              Das klingt logisch.
+              Wenn Dein K&ouml;rper bereits auf Stress, Unterversorgung oder wiederholte Di&auml;ten reagiert, versch&auml;rft genau das die Situation.
             </p>
             <p>
-              Aber wenn Dein K&ouml;rper bereits auf Stress, Unterversorgung oder wiederholte Di&auml;ten reagiert, versch&auml;rft genau das die Situation.
-            </p>
-            <p>
-              Dann strengst Du Dich mehr an &mdash;<br />
+              Du strengst Dich mehr an &mdash;<br />
               und kommst trotzdem nicht weiter.
             </p>
             <p className="font-medium text-foreground">
-              Du optimierst das Symptom &mdash; nicht den Ausl&ouml;ser.
+              Du optimierst das Symptom &mdash; nicht die Ursache.
             </p>
           </div>
 
