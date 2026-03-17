@@ -22,8 +22,8 @@ const AngebotAha = () => {
               desto st&auml;rker wird genau das System,<br />
               das Dich sp&auml;ter wieder einbrechen l&auml;sst.
             </p>
-            <p>
-              Dein R&uuml;ckfall ist kein Ausrutscher.<br />
+            <p className="font-medium text-foreground">
+              Dein R&uuml;ckfall ist kein Fehler.<br />
               Er ist das Ergebnis Deines Plans.
             </p>
             <p className="font-medium text-foreground">
@@ -32,13 +32,21 @@ const AngebotAha = () => {
             </p>
           </div>
 
-          <div className="border-l-4 border-primary/60 pl-4 py-2">
+          <div className="border-l-4 border-primary/60 pl-4 py-2 mb-5">
             <p className="text-base md:text-lg text-foreground font-medium leading-snug">
-              Das Problem ist nicht, dass Du es nicht durchziehst.<br />
-              Das Problem ist, dass das, was Du durchziehst,<br />
-              Dich genau dorthin bringt, wo Du nicht hinwillst.
+              Und genau hier passiert der Denkfehler &hellip;<br />
+              &hellip; den fast jeder macht.
+            </p>
+            <p className="text-base md:text-lg text-foreground/80 leading-snug mt-2">
+              Und der daf&uuml;r sorgt,<br />
+              dass Du immer wieder von vorne anf&auml;ngst.
             </p>
           </div>
+
+          <p className="text-base md:text-lg font-bold text-primary text-center">
+            Du l&ouml;st nicht das Problem.<br />
+            Du verst&auml;rkst es.
+          </p>
         </div>
       </div>
     </section>

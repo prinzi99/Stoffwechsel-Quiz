@@ -20,12 +20,16 @@ const AngebotHero = () => {
             </span>
           </h1>
 
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto mb-2">
-            Wenn Dein Stoffwechsel trotz Disziplin nicht reagiert, liegt das nicht daran, dass Du zu wenig tust &mdash; sondern daran, dass Dein K&ouml;rper l&auml;ngst auf etwas anderes reagiert.
+          <p className="text-base md:text-lg text-foreground/80 leading-relaxed text-center max-w-2xl mx-auto mb-1">
+            Du gibst Dir M&uuml;he. Mehr als die meisten.
+          </p>
+          <p className="text-base md:text-lg text-foreground/80 leading-relaxed text-center max-w-2xl mx-auto mb-2">
+            Und genau das ist das Problem.
           </p>
 
           <p className="text-lg md:text-xl font-bold text-primary text-center mb-5">
-            Du scheiterst nicht trotz Disziplin. Du scheiterst wegen ihr.
+            Du scheiterst nicht trotz Disziplin.<br />
+            Du scheiterst wegen ihr.
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-5 md:gap-8">
@@ -43,12 +47,12 @@ const AngebotHero = () => {
             <div className="flex-1 text-center md:text-left">
               <div className="text-sm sm:text-base text-foreground/80 space-y-1 leading-relaxed mb-3 text-left">
                 <p>Du ziehst wieder durch.</p>
-                <p>3 Tage. 5 Tage. Vielleicht 2 Wochen.</p>
+                <p>3 Tage. 5 Tage. 2 Wochen.</p>
                 <p>Und dann bricht es wieder weg.</p>
                 <p>Nicht komplett. Aber genug, dass Du merkst: <strong className="text-foreground">Es h&auml;lt nicht.</strong></p>
                 <p className="pt-1">Und jedes Mal kommt derselbe Gedanke:<br />
                 <em className="text-foreground font-medium">Was stimmt eigentlich nicht mit mir?</em></p>
-                <p className="pt-1">Die Waage bewegt sich kaum. Die Energie sinkt. Und Du f&auml;ngst wieder von vorne an.</p>
+                <p className="pt-1">Die Waage bewegt sich kaum.<br />Die Energie sinkt.<br />Und Du f&auml;ngst wieder von vorne an.</p>
                 <p className="pt-1">Nicht, weil Du zu schwach bist.<br />
                 Sondern weil Dein K&ouml;rper l&auml;ngst gegen Deinen Plan arbeitet.</p>
               </div>
@@ -71,23 +75,17 @@ const AngebotHero = () => {
               </div>
 
               <div className="bg-card border-2 border-primary/30 rounded-2xl p-4 sm:p-6 md:p-8 shadow-xl">
-                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
-                  Exklusiver Quiz-Preis
-                </p>
-                <div className="flex items-baseline justify-center md:justify-start gap-2 mb-4">
-                  <span className="text-base text-muted-foreground">Heute nur</span>
+                <div className="flex items-baseline justify-center md:justify-start gap-2 mb-2">
                   <span className="text-4xl md:text-5xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
-                  <span className="text-base text-muted-foreground">statt</span>
-                  <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
                 </div>
+                <p className="text-sm text-foreground/70 mb-4">
+                  Einmal verstehen &mdash;<br />statt immer wieder neu anfangen.
+                </p>
                 <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3rem] whitespace-normal leading-snug text-sm lg:text-lg py-7 md:py-8 text-center">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                    Ich will aufh&ouml;ren, gegen mich selbst zu arbeiten
+                    Ich will aufh&ouml;ren, mich selbst zu sabotieren
                   </a>
                 </Button>
-                <p className="text-sm text-muted-foreground mt-3 text-center md:text-left">
-                  Sofort verf&uuml;gbar als E-Book
-                </p>
               </div>
             </div>
           </div>

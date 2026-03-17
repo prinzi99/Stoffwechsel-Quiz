@@ -18,21 +18,21 @@ const AngebotPreisbox = () => {
           {/* Pre-box tension */}
           <div className="text-center mb-6">
             <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-              Wenn Du das hier nicht verstehst, wird sich nichts &auml;ndern.<br />
-              Du wirst wieder anfangen.<br />
-              Wieder abbrechen.<br />
-              Und wieder denken, es liegt an Dir.
+              Wenn Du bis hier gelesen hast, merkst Du:
+            </p>
+            <p className="text-base md:text-lg text-foreground font-medium leading-relaxed mt-1">
+              Das Problem liegt nicht an Dir.
+            </p>
+            <p className="text-base md:text-lg text-foreground/80 leading-relaxed mt-1">
+              Sondern daran,<br />
+              dass Du bisher die falsche Ursache bek&auml;mpfst.
             </p>
           </div>
 
           <div className="bg-card border-2 border-primary/30 rounded-2xl p-7 md:p-10 text-center shadow-xl relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
 
-            <p className="text-sm text-muted-foreground mb-1 mt-1">
-              Einmal verstehen &mdash; statt immer wieder neu anfangen
-            </p>
-
-            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4 leading-snug">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4 mt-1 leading-snug">
               Hol Dir die Erkl&auml;rung, die Dir bisher gefehlt hat
             </h2>
 
@@ -42,7 +42,7 @@ const AngebotPreisbox = () => {
             </div>
 
             <p className="text-sm text-foreground/70 mb-5">
-              Exklusiver Sonderpreis f&uuml;r Quiz-Teilnehmer
+              Einmal verstehen &mdash; statt immer wieder neu anfangen.
             </p>
 
             <div className="text-left space-y-2 mb-4">
@@ -56,7 +56,7 @@ const AngebotPreisbox = () => {
 
             <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3.25rem] whitespace-normal leading-snug text-base md:text-lg py-6 md:py-7 mb-3">
               <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                Ich will aufh&ouml;ren, gegen mich selbst zu arbeiten
+                Ich will verstehen, warum es bisher nicht funktioniert hat
               </a>
             </Button>
 
