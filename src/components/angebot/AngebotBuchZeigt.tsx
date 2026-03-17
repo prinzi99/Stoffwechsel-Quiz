@@ -1,11 +1,11 @@
 import { CheckCircle2 } from "lucide-react";
 
 const bullets = [
-  'warum viele Menschen ihren Stoffwechsel mit scheinbar \u201Egesunden\u201C Strategien unbewusst weiter ausbremsen',
+  "warum viele Menschen ihren Stoffwechsel mit scheinbar „gesunden" Strategien unbewusst weiter ausbremsen",
   "woran Du erkennst, ob bei Dir eher Stress, Unterversorgung oder alte Diätmuster im Hintergrund arbeiten",
-  "warum weniger Kalorien kurzfristig helfen können, langfristig aber oft neue Probleme schaffen",
+  "warum weniger Kalorien kurzfristig helfen können, langfristig aber neue Probleme schaffen",
   "welche Fehler besonders disziplinierte Menschen immer wieder machen, ohne es zu merken",
-  "wie Du wieder mehr Stabilität in Dein System bringst, ohne in die nächste Verzichtsphase zu rutschen",
+  "wie Du wieder Stabilität in Dein System bringst, ohne in die nächste Verzichtsphase zu rutschen",
   "welche Körpersignale Du ernst nehmen solltest, bevor Frust und Stillstand zum Dauerzustand werden",
 ];
 
@@ -19,7 +19,7 @@ const AngebotBuchZeigt = () => {
           </h2>
 
           <p className="text-base md:text-lg text-muted-foreground text-center leading-relaxed mb-6">
-            Kein weiterer Standardplan. Keine leeren Motivationstipps. Sondern eine verst&auml;ndliche Erkl&auml;rung, die f&uuml;r viele zum ersten Mal wirklich Sinn ergibt.
+            Kein Motivationsgerede. Keine Fitness-Floskeln. Sondern ein klarer Blick auf die Mechanismen, die viele sp&uuml;ren, aber kaum jemand sauber erkl&auml;rt.
           </p>
 
           <div className="space-y-2">

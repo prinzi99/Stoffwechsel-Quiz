@@ -21,7 +21,7 @@ const AngebotHero = () => {
           </h1>
 
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto mb-5">
-            Wenn Dein K&ouml;rper l&auml;ngst auf Stress, Mangel oder alte Di&auml;ten reagiert, machen Dich noch mehr Disziplin und noch weniger Essen oft nur noch m&uuml;der, frustrierter und unbeweglicher.
+            Wenn Dein Stoffwechsel trotz Disziplin nicht reagiert, liegt das nicht daran, dass Du zu wenig tust &mdash; sondern daran, dass Dein K&ouml;rper l&auml;ngst auf etwas anderes reagiert.
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-5 md:gap-8">
@@ -37,19 +37,16 @@ const AngebotHero = () => {
             </div>
 
             <div className="flex-1 text-center md:text-left">
-              <div className="space-y-1.5 mb-4">
-                <div className="flex items-center gap-3 justify-center md:justify-start">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-base md:text-lg text-foreground/90 font-medium">endlich verstehen, warum nichts richtig greift</span>
-                </div>
-                <div className="flex items-center gap-3 justify-center md:justify-start">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-base md:text-lg text-foreground/90 font-medium">die 3 h&auml;ufigsten Stoffwechsel-Blockaden klar erkennen</span>
-                </div>
-                <div className="flex items-center gap-3 justify-center md:justify-start">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-base md:text-lg text-foreground/90 font-medium">sofort als E-Book plus Bonusbereich verf&uuml;gbar</span>
-                </div>
+              <div className="text-sm sm:text-base text-foreground/80 space-y-1 leading-relaxed mb-4 text-left">
+                <p>Du ziehst wieder durch.</p>
+                <p>3 Tage. 5 Tage. Vielleicht 2 Wochen.</p>
+                <p>Und dann bricht es wieder weg.</p>
+                <p>Nicht komplett. Aber genug, dass Du merkst: <strong className="text-foreground">Es h&auml;lt nicht.</strong></p>
+                <p className="pt-1">Und jedes Mal kommt derselbe Gedanke:<br />
+                <em className="text-foreground font-medium">Was stimmt eigentlich nicht mit mir?</em></p>
+                <p className="pt-1">Die Waage bewegt sich kaum. Die Energie sinkt. Und Du f&auml;ngst wieder von vorne an.</p>
+                <p className="pt-1">Nicht, weil Du zu schwach bist.<br />
+                Sondern weil Du gegen etwas arbeitest, das Du so nie gelernt hast zu verstehen.</p>
               </div>
 
               <div className="bg-card border-2 border-primary/30 rounded-2xl p-4 sm:p-6 md:p-8 shadow-xl">
@@ -62,7 +59,7 @@ const AngebotHero = () => {
                   <span className="text-base text-muted-foreground">statt</span>
                   <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
                 </div>
-                <Button variant="cta" size="xl" asChild className="w-full text-sm lg:text-lg py-7 md:py-8 whitespace-normal leading-snug text-center">
+                <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3rem] whitespace-normal leading-snug text-sm lg:text-lg py-7 md:py-8 text-center">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                     Ja &mdash; ich will endlich verstehen, was meinen Stoffwechsel blockiert
                   </a>
