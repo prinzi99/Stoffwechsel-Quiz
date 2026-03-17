@@ -4,20 +4,30 @@ const AngebotDenken = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-xl mx-auto">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-4 text-center">
-            Vielleicht liegt es nicht an Deinem Willen
+            Du machst mehr. Aber es funktioniert weniger.
           </h2>
 
-          <div className="text-base md:text-lg text-foreground/80 space-y-4 leading-relaxed">
+          <div className="text-base md:text-lg text-foreground/80 space-y-3 leading-relaxed">
             <p>
-              Du gibst Dir M&uuml;he, achtest auf Ern&auml;hrung und versuchst, alles richtig zu machen. Trotzdem geht es kaum voran. Die Waage bleibt stehen, die Energie wird weniger und mit der Zeit w&auml;chst vor allem eines: der Frust.
+              Du wei&szlig;t eigentlich, was Du tun solltest. Du achtest auf Ern&auml;hrung. Du bewegst Dich. Du versuchst, konsequent zu bleiben.
             </p>
-
             <p>
-              Genau in diesem Moment glauben viele, sie m&uuml;ssten einfach noch disziplinierter werden. Noch konsequenter. Noch h&auml;rter.
+              Und trotzdem wird es nicht leichter. Sondern schwerer.
             </p>
-
             <p>
-              Oft ist aber nicht der Wille das Problem. Sondern die Tatsache, dass im K&ouml;rper l&auml;ngst etwas anderes abl&auml;uft, als man von au&szlig;en sieht.
+              Du startest neu. Ziehst wieder durch. Und landest wieder am selben Punkt.
+            </p>
+            <p>
+              Nicht sichtbar f&uuml;r andere. Aber sehr klar f&uuml;r Dich.
+            </p>
+            <p className="pt-1">
+              Und genau hier entsteht der gef&auml;hrlichste Gedanke:
+            </p>
+            <p className="text-foreground font-semibold text-lg md:text-xl">
+              &bdquo;Ich bin wohl einfach nicht konsequent genug.&ldquo;
+            </p>
+            <p className="pt-1">
+              Das Problem ist: <strong className="text-foreground">Das stimmt nicht.</strong>
             </p>
           </div>
         </div>

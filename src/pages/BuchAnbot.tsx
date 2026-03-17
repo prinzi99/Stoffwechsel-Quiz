@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import AngebotHero from "@/components/angebot/AngebotHero";
 import AngebotDenken from "@/components/angebot/AngebotDenken";
+import AngebotAha from "@/components/angebot/AngebotAha";
 import AngebotAnders from "@/components/angebot/AngebotAnders";
 import AngebotMuster from "@/components/angebot/AngebotMuster";
 import AngebotBuchZeigt from "@/components/angebot/AngebotBuchZeigt";
@@ -33,6 +34,7 @@ const BuchAnbot = () => {
       <main className="pb-16 md:pb-0">
         <AngebotHero />
         <AngebotDenken />
+        <AngebotAha />
         <AngebotAnders />
         <AngebotMuster />
         <AngebotBuchZeigt />
