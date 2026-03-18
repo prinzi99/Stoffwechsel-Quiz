@@ -29,7 +29,7 @@ const Anbot2Content = () => {
           </p>
 
           {/* DESKTOP: 2-column / MOBILE: stacked */}
-          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-8">
             {/* LEFT – Book image */}
             <div className="w-36 sm:w-44 md:w-60 flex-shrink-0 order-1 md:order-none">
               <img
