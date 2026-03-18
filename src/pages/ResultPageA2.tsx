@@ -158,7 +158,7 @@ const ResultPageA2 = () => {
                   <ul className="space-y-2 mb-6">
                     {[
                       'warum Dein K\u00f6rper unter Stress Energie spart statt verbrennt',
-                      'warum Kontrolle und Disziplin Deinen Fortschritt blockieren k\u00f6nnen',
+                      'warum Kontrolle und Disziplin Deinen Fortschritt blockieren',
                       'warum Dein System Sicherheit braucht, bevor Ver\u00e4nderung m\u00f6glich wird',
                       'und wie Du diesen Kreislauf Schritt f\u00fcr Schritt durchbrichst',
                     ].map((item, i) => (
