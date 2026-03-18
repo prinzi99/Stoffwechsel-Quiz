@@ -216,7 +216,7 @@ const ResultPageC2 = () => {
                   asChild
                 >
                   <a href="https://www.digistore24.com/product/675804?voucher=quizrabatt" target="_blank" rel="noopener noreferrer">
-                    Ja – ich will verstehen, warum mein Körper nicht mehr reagiert
+                    Ja – ich will endlich wieder Fortschritt sehen
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
