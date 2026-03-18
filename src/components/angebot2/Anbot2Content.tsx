@@ -159,7 +159,7 @@ const Anbot2Content = () => {
               <p className="pt-1">Mehr Kontrolle.</p>
               <p>Mehr Disziplin.</p>
               <p>Mehr Verzicht.</p>
-              <p className="pt-1 font-semibold text-foreground">Und genau das ist der Fehler.</p>
+              <p className="pt-1 font-semibold text-foreground">Und genau hier liegt der Denkfehler.</p>
             </div>
 
             {/* UMKEHR */}
