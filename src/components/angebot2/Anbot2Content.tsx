@@ -27,7 +27,7 @@ const Anbot2Content = () => {
             </p>
 
             {/* TEXT */}
-            <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1 md:mb-3">
+            <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-0 md:mb-2">
               Irgendwann denkst Du:
               <span className="italic"> &bdquo;Vielleicht liegt es an mir.&ldquo;</span>
               <br />
