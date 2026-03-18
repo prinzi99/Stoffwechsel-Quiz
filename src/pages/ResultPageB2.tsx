@@ -117,39 +117,27 @@ const ResultPageB2 = () => {
             </div>
           </section>
 
-          {/* 6b. Wie Du Deinen Stoffwechsel wieder versorgst */}
+          {/* 6b. Überleitung zum Buch */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-foreground mb-2 flex items-center gap-2">
-              <BookOpen className="w-5 h-5 text-primary" />
-              Wie Du Deinen Stoffwechsel wieder versorgst und in Bewegung bringst
-            </h2>
-            <p className="text-sm text-muted-foreground mb-5">
-              Gerade wenn Dein K&ouml;rper aktuell auf Sparflamme l&auml;uft
-            </p>
-
-            <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">
-              <p>
-                Wenn Dein K&ouml;rper &uuml;ber l&auml;ngere Zeit zu wenig Energie, Eiwei&szlig; oder Fett bekommt, reagiert er oft nicht mit mehr Freigabe, sondern mit Schutz. Genau deshalb machen noch weniger Essen, noch mehr Verzicht oder noch strengere Kontrolle das Problem h&auml;ufig noch gr&ouml;&szlig;er.
-              </p>
-              <p>
-                Viele merken zwar, dass sie m&uuml;de, frustriert und blockiert sind, reagieren aber trotzdem mit weiterer Reduktion. Das Problem ist nur: Ein unterversorgter Stoffwechsel braucht nicht noch weniger. Er braucht zuerst wieder Versorgung und Sicherheit.
-              </p>
-              <p>Deshalb habe ich einen klaren Leitfaden entwickelt, der Dir verst&auml;ndlich zeigt,</p>
-              <ul className="space-y-2 pl-1">
-                {[
-                  'warum Unterversorgung Deinen Stoffwechsel ausbremsen kann',
-                  'welche Fehler viele in genau dieser Situation machen',
-                  'wie Du Dein System wieder stabilisierst, ohne in blinden Verzicht zu rutschen',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-secondary mt-2.5 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4">
-                Wenn Du verstehen willst, warum Dein K&ouml;rper gerade auf Mangel mit Stillstand reagiert und was ihm wirklich helfen kann, dann ist dieser Leitfaden der richtige n&auml;chste Schritt.
-              </p>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p className="text-foreground">Dein Ergebnis zeigt nicht, dass Du undiszipliniert bist.</p>
+              <p className="text-foreground">Es zeigt, dass Dein Körper unterversorgt ist.</p>
+              <div className="pt-2">
+                <p>Du isst bewusst.</p>
+                <p>Achte auf Qualität.</p>
+                <p>Versuchst, alles richtig zu machen.</p>
+              </div>
+              <div className="pt-2">
+                <p>Und trotzdem fühlst Du Dich:</p>
+                <p>müde</p>
+                <p>leer</p>
+                <p>und kommst nicht voran</p>
+              </div>
+              <div className="pt-2">
+                <p>Irgendwann denkst Du:</p>
+                <p className="italic text-foreground">„Ich esse doch schon so wenig… warum passiert nichts?"</p>
+              </div>
+              <p className="font-semibold text-foreground">Genau das ist das Problem.</p>
             </div>
           </section>
 
