@@ -164,7 +164,7 @@ const ResultPageA2 = () => {
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-muted-foreground">
                         <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
-                        <span>&ndash; {item}</span>
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
