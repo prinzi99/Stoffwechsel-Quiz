@@ -68,7 +68,7 @@ const Analyse = () => {
       ]);
       if (loginsRes.data) setLogins(loginsRes.data);
       if (viewsRes.data) setPageViews(viewsRes.data);
-      if (clicksRes.data) setButtonClicks(clicksRes.data as ButtonClickRow[]);
+      if (clicksRes.data) setButtonClicks(clicksRes.data as unknown as ButtonClickRow[]);
       setLoading(false);
     };
     fetchData();
