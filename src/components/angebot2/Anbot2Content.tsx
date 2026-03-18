@@ -130,9 +130,10 @@ const Anbot2Content = () => {
                   <span className="text-sm text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
                   <span className="text-3xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                 </div>
-                <Button variant="cta" size="xl" asChild className="w-full text-sm py-3 h-auto whitespace-normal">
+                <Button variant="cta" size="xl" asChild className="w-full text-sm py-3 h-auto whitespace-normal" onClick={() => handleBuyClick("Hero CTA Mobile")}>
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                     Jetzt verstehen, warum Dein K&ouml;rper blockiert
+                  </a>
                   </a>
                 </Button>
               </div>
