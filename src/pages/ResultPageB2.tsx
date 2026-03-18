@@ -132,7 +132,7 @@ const ResultPageB2 = () => {
                 <p>Und trotzdem fühlst Du Dich:</p>
                 <p>müde</p>
                 <p>leer</p>
-                <p>und kommst nicht voran</p>
+                <p>und fragst Dich, warum selbst das nicht reicht.</p>
               </div>
               <div className="pt-2">
                 <p>Irgendwann denkst Du:</p>
@@ -190,14 +190,16 @@ const ResultPageB2 = () => {
                   <div className="py-6 my-2 border-y border-primary/20">
                     <p className="text-base md:text-lg font-extrabold text-primary leading-snug">
                       Je weniger Du Deinem Körper gibst,<br />
-                      desto weniger gibt er Dir zurück.
+                      desto mehr hält er zurück.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Offer Box */}
-              <div className="mt-8 bg-primary/5 border-2 border-primary/15 rounded-xl p-6 text-center">
+              <p className="text-sm md:text-base font-medium text-muted-foreground mb-6">
+                Wenn Du das hier nicht verstehst, wird genau das so bleiben.
+              </p>
+              <div className="bg-primary/5 border-2 border-primary/15 rounded-xl p-6 text-center">
                 <p className="text-sm text-muted-foreground mb-2">
                   Exklusiver Sonderpreis f&uuml;r Teilnehmer des Stoffwechsel-Quiz
                 </p>
@@ -212,7 +214,7 @@ const ResultPageB2 = () => {
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
-                    Ja – ich will verstehen, warum mein Körper trotz wenig Essen blockiert
+                    Ja – ich will endlich wieder Fortschritt sehen
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
