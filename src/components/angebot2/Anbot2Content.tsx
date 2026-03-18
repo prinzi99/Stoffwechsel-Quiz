@@ -171,10 +171,12 @@ const Anbot2Content = () => {
             </div>
 
             {/* MIC-DROP */}
-            <p className="text-base md:text-lg font-bold text-primary leading-snug mb-3 md:mb-5">
-              Der Fehler ist nicht Dein Verhalten.<br />
-              Der Fehler ist, wie Du es interpretierst.
-            </p>
+            <div className="my-5 md:my-8 py-4 md:py-5 border-y border-primary/20">
+              <p className="text-lg md:text-xl font-extrabold text-primary leading-snug">
+                Der Fehler ist nicht Dein Verhalten.<br />
+                Der Fehler ist, wie Du es interpretierst.
+              </p>
+            </div>
 
             {/* BULLETPOINTS */}
             <div className="inline-block text-left space-y-1 text-sm md:text-base text-foreground/80 mb-3 md:mb-5">
