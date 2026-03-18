@@ -30,7 +30,7 @@ const Anbot2Content = () => {
             Und trotzdem passiert&hellip; nichts.
           </p>
           <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1.5 md:mb-2">
-            Und genau deshalb steckst Du fest.
+            Genau deshalb steckst Du fest.
           </p>
 
           {/* EMOTIONALER BLOCK */}
