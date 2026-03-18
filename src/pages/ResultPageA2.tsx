@@ -115,10 +115,10 @@ const ResultPageA2 = () => {
           <section className="mb-10">
             <div className="text-center mb-6">
               <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-                Du machst vieles richtig.
+                Du machst alles richtig.
               </h2>
               <p className="text-lg md:text-xl font-bold text-primary">
-                Und genau das blockiert Dich gerade.
+                Und genau das ist das Problem.
               </p>
             </div>
 
