@@ -171,13 +171,13 @@ const ResultPageB2 = () => {
                     Gerade beim unterversorgten Stoffwechsel liegt das Problem oft nicht in fehlender Konsequenz, sondern in einem System, das &uuml;ber l&auml;ngere Zeit zu wenig bekommen hat und deshalb Reserven sch&uuml;tzt, statt sie freizugeben.
                   </p>
 
-                  <p className="text-sm font-semibold text-foreground mb-3">Du erf&auml;hrst:</p>
+                  <p className="text-sm font-semibold text-foreground mb-3">Genau deshalb brauchst Du dieses Buch.</p>
                   <ul className="space-y-2 mb-6">
                     {[
-                      'warum zu wenig Energie den Stoffwechsel sp\u00fcrbar ausbremsen kann',
-                      'welche typischen Fehler viele aus Angst vor Gewichtszunahme machen',
-                      'wie Du Deinem K\u00f6rper wieder mehr Sicherheit und Versorgung gibst',
-                      'warum noch mehr Reduktion das Problem oft versch\u00e4rft',
+                      'warum Dein Körper Energie zurückhält, obwohl Du wenig isst',
+                      'warum „weniger essen" Deinen Stoffwechsel noch weiter ausbremst',
+                      'warum gesunde Ernährung allein nicht reicht, wenn Deinem System Energie fehlt',
+                      'und wie Du Deinen Körper wieder versorgst, ohne zuzunehmen',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-muted-foreground">
                         <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
