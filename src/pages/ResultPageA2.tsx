@@ -126,8 +126,9 @@ const ResultPageA2 = () => {
               <p>Dein Ergebnis zeigt nicht, dass Du zu wenig Disziplin hast.</p>
               <p>Es zeigt, dass Dein K&ouml;rper unter Stress reagiert.</p>
               <div className="pt-2">
-                <p>Du versuchst, weiter zu funktionieren.</p>
-                <p>Mehr Kontrolle. Mehr Struktur. Mehr Druck.</p>
+                <p>Du gibst Dir mehr M&uuml;he als die meisten.</p>
+                <p>Kontrollierst mehr. Planst mehr. Verzichtest mehr.</p>
+                <p>Und merkst, dass es immer weniger bringt.</p>
               </div>
               <p className="font-semibold text-foreground">Und genau das h&auml;lt Dich fest.</p>
               <div className="pt-2">
