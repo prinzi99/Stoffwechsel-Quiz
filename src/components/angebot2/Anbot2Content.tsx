@@ -194,8 +194,9 @@ const Anbot2Content = () => {
 
             {/* CTA ÜBERLEITUNG */}
             <div className="text-sm md:text-base text-foreground/80 leading-relaxed space-y-1">
-              <p>Wenn das f&uuml;r Dich gerade Sinn macht,</p>
-              <p>dann ist dieses Buch der n&auml;chste Schritt.</p>
+              <p>Wenn Du das hier gerade erkennst,</p>
+              <p>dann wei&szlig;t Du, warum es bisher nicht funktioniert hat.</p>
+              <p className="pt-1 font-medium text-foreground">Und genau deshalb ist dieses Buch der n&auml;chste Schritt.</p>
             </div>
           </div>
         </div>
