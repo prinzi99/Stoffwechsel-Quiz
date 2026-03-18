@@ -61,12 +61,14 @@ const Analyse = () => {
     if (!authenticated) return;
     const fetchData = async () => {
       setLoading(true);
-      const [loginsRes, viewsRes] = await Promise.all([
+      const [loginsRes, viewsRes, clicksRes] = await Promise.all([
         supabase.from("bonus_logins").select("*").order("logged_in_at", { ascending: false }),
         supabase.from("bonus_page_views").select("*").order("viewed_at", { ascending: false }),
+        supabase.from("button_clicks" as any).select("*").order("clicked_at", { ascending: false }),
       ]);
       if (loginsRes.data) setLogins(loginsRes.data);
       if (viewsRes.data) setPageViews(viewsRes.data);
+      if (clicksRes.data) setButtonClicks(clicksRes.data as ButtonClickRow[]);
       setLoading(false);
     };
     fetchData();
