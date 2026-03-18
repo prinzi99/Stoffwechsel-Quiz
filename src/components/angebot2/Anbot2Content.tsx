@@ -61,9 +61,10 @@ const Anbot2Content = () => {
                     Im Buch lernst Du:
                   </p>
                   <div className="space-y-0.5 text-xs md:text-sm text-foreground/80">
-                    <p>&ndash; welche Signale Dein K&ouml;rper wirklich braucht</p>
-                    <p>&ndash; warum mehr Disziplin Dich nicht weiterbringt</p>
-                    <p>&ndash; wie Du wieder Fortschritt m&ouml;glich machst</p>
+                    <p>&ndash; warum alles, was Du bisher versucht hast, Deinen Fortschritt blockiert hat</p>
+                    <p>&ndash; welche Signale Du aktuell sendest, die Deinen K&ouml;rper ausbremsen</p>
+                    <p>&ndash; warum mehr Disziplin Dich tiefer in den Stillstand bringt</p>
+                    <p>&ndash; und wie Du diesen Kreislauf endlich durchbrichst</p>
                   </div>
                 </div>
 
