@@ -11,16 +11,26 @@ const Anbot2Content = () => {
       <section className="pt-4 pb-8 md:pt-8 md:pb-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
+            {/* Änderung 1 */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-foreground leading-[1.1] text-center mb-4 md:mb-5">
-              Du bist nicht das Problem.{" "}
+              Du machst alles richtig.{" "}
               <span className="text-primary">
-                Dein Stoffwechsel reagiert nur genau so, wie er soll.
+                Und genau das ist das Problem.
               </span>
             </h1>
 
+            {/* Änderung 2 */}
+            <p className="text-base md:text-lg text-foreground/80 leading-relaxed text-center max-w-2xl mx-auto mb-4">
+              Du isst weniger. Du gibst Dir M&uuml;he. Du ziehst durch.
+              Und trotzdem passiert nichts.
+            </p>
+
+            {/* Änderung 3 */}
             <p className="text-base md:text-lg text-foreground/80 leading-relaxed text-center max-w-2xl mx-auto mb-8">
-              Und genau deshalb bringen Dich Di&auml;ten, mehr Disziplin oder mehr Training
-              immer wieder zur&uuml;ck an denselben Punkt.
+              Irgendwann denkst Du:<br />
+              <span className="italic">&bdquo;Vielleicht liegt es an mir.&ldquo;</span>
+              <br /><br />
+              <span className="font-bold text-foreground">Tut es nicht.</span>
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 mb-8">
@@ -67,25 +77,56 @@ const Anbot2Content = () => {
               </div>
             </div>
 
-            <div className="max-w-2xl mx-auto text-center mb-6">
+            {/* Änderung 4 – Pattern Interrupt */}
+            <div className="max-w-2xl mx-auto text-center mb-8">
               <p className="text-lg md:text-xl font-bold text-primary leading-snug">
-                Das Problem ist nicht, dass Du zu wenig tust.<br />
-                Sondern dass Du immer wieder genau das Falsche verst&auml;rkst.
+                Je mehr Du versuchst abzunehmen,<br />
+                desto besser wird Dein K&ouml;rper darin, es zu verhindern.
               </p>
             </div>
 
-            <div className="text-center">
-              <Button variant="cta" size="xl" asChild className="text-base md:text-lg py-6 md:py-7 px-8">
-                <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                  Jetzt verstehen, was wirklich passiert
-                </a>
-              </Button>
+            {/* Änderung 5 – Preisblock im Hero */}
+            <div className="max-w-lg mx-auto mb-6">
+              <div className="bg-card border-2 border-primary/30 rounded-2xl p-7 md:p-10 text-center shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
+                <p className="text-sm text-primary font-medium tracking-wide mb-4 mt-1">
+                  Exklusiv f&uuml;r Quiz-Teilnehmer
+                </p>
+                <div className="flex items-baseline justify-center gap-3 mb-5">
+                  <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
+                  <span className="text-4xl md:text-5xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
+                </div>
+                <Button variant="cta" size="xl" asChild className="w-full text-base md:text-lg py-6 md:py-7">
+                  <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
+                    Jetzt verstehen statt weiter k&auml;mpfen
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 2 – PERSONALISIERUNG */}
+      {/* Änderung 6 – IDENTIFIKATION */}
+      <section className="py-8 md:py-12 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl font-bold text-foreground mb-5">
+              Du kennst das:
+            </p>
+            <div className="space-y-2 text-base md:text-lg text-foreground/80 mb-6">
+              <p>– Du isst weniger und erwartest Fortschritt</p>
+              <p>– Du bist diszipliniert, aber nichts ver&auml;ndert sich</p>
+              <p>– Du strengst Dich an – und bleibst trotzdem stehen</p>
+            </div>
+            <p className="text-lg md:text-xl font-bold text-primary">
+              Und genau hier beginnt der Denkfehler.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2 – PERSONALISIERUNG (Änderung 7) */}
       <section className="py-8 md:py-12 bg-section-alt">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -123,12 +164,12 @@ const Anbot2Content = () => {
         </div>
       </section>
 
-      {/* SECTION 3 – ESKALATION */}
+      {/* SECTION 3 – ESKALATION (Änderung 8) */}
       <section className="py-8 md:py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-6">
-              Die meisten machen jetzt genau das:
+              Die meisten machen jetzt genau das – und genau dadurch verschlimmern sie das Problem:
             </h2>
 
             <div className="space-y-1 text-base md:text-lg text-foreground/80 mb-5">
@@ -151,7 +192,7 @@ const Anbot2Content = () => {
         </div>
       </section>
 
-      {/* SECTION 4 – MECHANISMUS */}
+      {/* SECTION 4 – MECHANISMUS (Änderung 9) */}
       <section className="py-8 md:py-12 bg-section-alt">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
@@ -174,21 +215,34 @@ const Anbot2Content = () => {
               <p>– er reduziert unbewusst Bewegung</p>
             </div>
 
-            <p className="text-base md:text-lg font-medium text-foreground mb-5">
+            <p className="text-lg md:text-xl font-bold text-primary leading-snug mb-5">
+              Die eigentliche Frage ist nicht, wie Du mehr machst.<br />
+              Sondern wie Du Dein System wieder dazu bringst, loszulassen.
+            </p>
+
+            {/* Änderung 9 – Ergänzung */}
+            <p className="text-base md:text-lg font-medium text-foreground">
               Stillstand ist kein Fehler.<br />
               Es ist eine Reaktion.
             </p>
+          </div>
+        </div>
+      </section>
 
+      {/* Änderung 10 – POINT OF NO RETURN */}
+      <section className="py-8 md:py-10 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg md:text-xl font-bold text-primary leading-snug">
-              Die eigentliche Frage ist nicht, wie Du mehr machst.<br />
-              Sondern wie Du Dein System wieder dazu bringst, loszulassen.
+              Wenn Du das einmal verstanden hast,<br />
+              kannst Du nicht mehr so weitermachen wie bisher.
             </p>
           </div>
         </div>
       </section>
 
       {/* SECTION 5 – MINI LÖSUNG */}
-      <section className="py-8 md:py-12 bg-background">
+      <section className="py-8 md:py-12 bg-section-alt">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <p className="text-lg md:text-xl font-bold text-foreground mb-5">
@@ -213,8 +267,8 @@ const Anbot2Content = () => {
         </div>
       </section>
 
-      {/* SECTION 6 – PRODUKT */}
-      <section className="py-8 md:py-12 bg-section-alt">
+      {/* SECTION 6 – PRODUKT (Änderung 11) */}
+      <section className="py-8 md:py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-5">
@@ -222,13 +276,13 @@ const Anbot2Content = () => {
             </h2>
 
             <div className="space-y-1 text-base md:text-lg text-foreground/80 mb-6">
-              <p>Nicht um mehr Regeln.</p>
-              <p>Nicht um mehr Disziplin.</p>
-              <p>Nicht um noch eine Di&auml;t.</p>
+              <p>Kein Plan.</p>
+              <p>Keine Regeln.</p>
+              <p>Keine Motivation.</p>
             </div>
 
             <p className="text-base md:text-lg font-medium text-foreground mb-5">
-              Sondern darum, zu verstehen, was wirklich passiert.
+              Sondern ein klares Verst&auml;ndnis davon, was wirklich passiert.
             </p>
 
             <div className="space-y-2 text-sm md:text-base text-foreground/80">
@@ -253,15 +307,18 @@ const Anbot2Content = () => {
         </div>
       </section>
 
-      {/* SECTION 7 – PREIS */}
-      <section className="py-8 md:py-12 bg-background">
+      {/* SECTION 7 – PREIS (Änderung 12) */}
+      <section className="py-8 md:py-12 bg-section-alt">
         <div className="container mx-auto px-4">
           <div className="max-w-lg mx-auto">
             <div className="bg-card border-2 border-primary/30 rounded-2xl p-7 md:p-10 text-center shadow-xl relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
 
-              <p className="text-sm text-primary font-medium tracking-wide mb-4 mt-1">
+              <p className="text-sm text-primary font-medium tracking-wide mb-2 mt-1">
                 Exklusiver Rabatt f&uuml;r Quiz-Teilnehmer
+              </p>
+              <p className="text-base text-foreground/80 mb-4">
+                Statt 34,99&nbsp;&euro; heute nur
               </p>
 
               <div className="flex items-baseline justify-center gap-3 mb-2">
@@ -273,8 +330,8 @@ const Anbot2Content = () => {
         </div>
       </section>
 
-      {/* SECTION 8 – CTA */}
-      <section className="py-8 md:py-12 bg-section-alt">
+      {/* SECTION 8 – CTA (Änderung 13) */}
+      <section className="py-8 md:py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-2">
@@ -286,15 +343,15 @@ const Anbot2Content = () => {
 
             <Button variant="cta" size="xl" asChild className="text-base md:text-lg py-6 md:py-7 px-8">
               <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                Jetzt verstehen statt weiter k&auml;mpfen
+                Jetzt verstehen, warum Dein K&ouml;rper blockiert
               </a>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* SECTION 9 – RISIKO */}
-      <section className="py-6 md:py-8 bg-background">
+      {/* SECTION 9 – RISIKO (Änderung 14) */}
+      <section className="py-6 md:py-8 bg-section-alt">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-sm md:text-base text-foreground/60 leading-relaxed">
