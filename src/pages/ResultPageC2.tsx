@@ -172,13 +172,13 @@ const ResultPageC2 = () => {
                     Gerade beim &uuml;berangepassten Di&auml;t-Stoffwechsel liegt das Problem oft nicht in fehlender Disziplin, sondern in einem System, das sich &uuml;ber l&auml;ngere Zeit an Mangel, Kontrolle und wiederholte Einschr&auml;nkung angepasst hat.
                   </p>
 
-                  <p className="text-sm font-semibold text-foreground mb-3">Du erf&auml;hrst:</p>
+                  <p className="text-sm font-semibold text-foreground mb-3">Genau deshalb brauchst Du dieses Buch.</p>
                   <ul className="space-y-2 mb-6">
                     {[
-                      'warum wiederholte Di\u00e4ten Deinen Fortschritt immer schwerer machen k\u00f6nnen',
-                      'welche typischen Fehler viele trotz Ehrgeiz immer wiederholen',
-                      'wie Du Deinen Stoffwechsel Schritt f\u00fcr Schritt wieder stabilisierst',
-                      'warum noch mehr Druck oft genau das falsche Signal ist',
+                      'warum Dein Körper nach Diäten weniger verbrennt, obwohl Du gleich viel machst',
+                      'warum weniger essen Deinen Fortschritt langfristig komplett blockieren kann',
+                      'warum Dein System sich gegen weitere Veränderung „absichert"',
+                      'und wie Du diesen Stillstand wieder durchbrichst',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-muted-foreground">
                         <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
