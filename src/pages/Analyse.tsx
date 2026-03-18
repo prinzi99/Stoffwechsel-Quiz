@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
-import { Lock, LogIn, Eye, TrendingUp, Calendar, BarChart3, ShoppingCart } from "lucide-react";
+import { Lock, LogIn, Eye, TrendingUp, Calendar, BarChart3, ShoppingCart, MousePointerClick } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
@@ -27,6 +27,16 @@ interface PageViewRow {
   referrer: string | null;
 }
 
+interface ButtonClickRow {
+  id: string;
+  page_path: string;
+  button_label: string | null;
+  destination_url: string | null;
+  user_agent: string | null;
+  referrer: string | null;
+  clicked_at: string;
+}
+
 const Analyse = () => {
   const [password, setPassword] = useState("");
   const [authenticated, setAuthenticated] = useState(false);
@@ -34,6 +44,7 @@ const Analyse = () => {
 
   const [logins, setLogins] = useState<LoginRow[]>([]);
   const [pageViews, setPageViews] = useState<PageViewRow[]>([]);
+  const [buttonClicks, setButtonClicks] = useState<ButtonClickRow[]>([]);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -50,12 +61,14 @@ const Analyse = () => {
     if (!authenticated) return;
     const fetchData = async () => {
       setLoading(true);
-      const [loginsRes, viewsRes] = await Promise.all([
+      const [loginsRes, viewsRes, clicksRes] = await Promise.all([
         supabase.from("bonus_logins").select("*").order("logged_in_at", { ascending: false }),
         supabase.from("bonus_page_views").select("*").order("viewed_at", { ascending: false }),
+        supabase.from("button_clicks" as any).select("*").order("clicked_at", { ascending: false }),
       ]);
       if (loginsRes.data) setLogins(loginsRes.data);
       if (viewsRes.data) setPageViews(viewsRes.data);
+      if (clicksRes.data) setButtonClicks(clicksRes.data as unknown as ButtonClickRow[]);
       setLoading(false);
     };
     fetchData();
@@ -73,6 +86,20 @@ const Analyse = () => {
   // Angebot page stats
   const anbotViews = pageViews.filter((v) => v.page_path.includes("anbot")).length;
   const anbotViewsToday = pageViews.filter((v) => v.page_path.includes("anbot") && v.viewed_at.startsWith(todayStr)).length;
+
+  // Button click stats
+  const totalClicks = buttonClicks.length;
+  const clicksToday = buttonClicks.filter((c) => c.clicked_at.startsWith(todayStr)).length;
+  const clickConversionRate = anbotViews > 0 ? ((totalClicks / anbotViews) * 100).toFixed(1) : "0";
+
+  const clicksByButton = useMemo(() => {
+    const map: Record<string, number> = {};
+    buttonClicks.forEach((c) => {
+      const label = c.button_label || "Unbekannt";
+      map[label] = (map[label] || 0) + 1;
+    });
+    return Object.entries(map).sort(([, a], [, b]) => b - a);
+  }, [buttonClicks]);
 
   const pageStats = useMemo(() => {
     const map: Record<string, { count: number; title: string }> = {};
@@ -163,14 +190,48 @@ const Analyse = () => {
             ) : (
               <>
                 {/* KPI Cards */}
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <KpiCard icon={LogIn} label="Logins gesamt" value={totalLogins} />
                   <KpiCard icon={Eye} label="Seitenaufrufe Bonuspage" value={totalBonusPageViews} />
                   <KpiCard icon={TrendingUp} label="Logins heute" value={loginsToday} />
                   <KpiCard icon={Calendar} label="Aufrufe heute" value={viewsToday} />
                   <KpiCard icon={ShoppingCart} label="Angebotsseite gesamt" value={anbotViews} />
                   <KpiCard icon={ShoppingCart} label="Angebotsseite heute" value={anbotViewsToday} />
+                  <KpiCard icon={MousePointerClick} label="Kaufklicks gesamt" value={totalClicks} />
+                  <KpiCard icon={MousePointerClick} label="Kaufklicks heute" value={clicksToday} />
                 </div>
+
+                {/* Conversion Funnel */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg flex items-center gap-2">
+                      <MousePointerClick className="w-5 h-5 text-secondary" />
+                      Kaufbutton-Klicks (Angebotsseite)
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="flex items-center gap-4 text-sm">
+                      <span className="text-muted-foreground">Klickrate:</span>
+                      <Badge variant="secondary">{clickConversionRate}% der Besucher klicken</Badge>
+                    </div>
+                    {clicksByButton.length === 0 ? (
+                      <p className="text-sm text-muted-foreground">Noch keine Klick-Daten vorhanden.</p>
+                    ) : (
+                      <div className="space-y-3">
+                        {clicksByButton.map(([label, count]) => (
+                          <div key={label} className="flex items-center justify-between gap-4">
+                            <div className="min-w-0">
+                              <p className="text-sm font-medium text-foreground truncate">{label}</p>
+                            </div>
+                            <Badge variant="secondary" className="shrink-0">
+                              {count} Klicks
+                            </Badge>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
 
                 {/* Page Stats */}
                 <Card>

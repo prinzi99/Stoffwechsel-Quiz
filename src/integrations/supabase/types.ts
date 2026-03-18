@@ -62,6 +62,36 @@ export type Database = {
         }
         Relationships: []
       }
+      button_clicks: {
+        Row: {
+          button_label: string | null
+          clicked_at: string
+          destination_url: string | null
+          id: string
+          page_path: string
+          referrer: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          button_label?: string | null
+          clicked_at?: string
+          destination_url?: string | null
+          id?: string
+          page_path: string
+          referrer?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          button_label?: string | null
+          clicked_at?: string
+          destination_url?: string | null
+          id?: string
+          page_path?: string
+          referrer?: string | null
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

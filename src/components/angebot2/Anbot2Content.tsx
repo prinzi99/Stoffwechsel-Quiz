@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button";
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
+import { trackButtonClick } from "@/hooks/useBonusTracking";
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+
+const handleBuyClick = (buttonLabel: string) => {
+  trackButtonClick("/buch/anbot3g4a3e", buttonLabel, DIGISTORE_URL);
+};
 
 const Anbot2Content = () => {
   return (
@@ -78,7 +83,7 @@ const Anbot2Content = () => {
                   <span className="text-base text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
                   <span className="text-4xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                 </div>
-                <Button variant="cta" size="xl" asChild className="w-full text-base py-5 h-auto whitespace-normal">
+                <Button variant="cta" size="xl" asChild className="w-full text-base py-5 h-auto whitespace-normal" onClick={() => handleBuyClick("Hero CTA Desktop")}>
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                     Jetzt verstehen, warum Dein K&ouml;rper blockiert
                   </a>
@@ -125,7 +130,7 @@ const Anbot2Content = () => {
                   <span className="text-sm text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
                   <span className="text-3xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                 </div>
-                <Button variant="cta" size="xl" asChild className="w-full text-sm py-3 h-auto whitespace-normal">
+                <Button variant="cta" size="xl" asChild className="w-full text-sm py-3 h-auto whitespace-normal" onClick={() => handleBuyClick("Hero CTA Mobile")}>
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                     Jetzt verstehen, warum Dein K&ouml;rper blockiert
                   </a>
@@ -218,7 +223,7 @@ const Anbot2Content = () => {
               <p className="text-sm text-foreground/70 mb-4">
                 Einmal verstehen &mdash; statt immer wieder neu anfangen.
               </p>
-              <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3.25rem] whitespace-normal leading-snug text-base md:text-lg py-6 md:py-7">
+              <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3.25rem] whitespace-normal leading-snug text-base md:text-lg py-6 md:py-7" onClick={() => handleBuyClick("Abschluss CTA")}>
                 <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                   Jetzt verstehen, warum Dein K&ouml;rper blockiert
                 </a>
