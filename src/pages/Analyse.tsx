@@ -44,6 +44,7 @@ const Analyse = () => {
 
   const [logins, setLogins] = useState<LoginRow[]>([]);
   const [pageViews, setPageViews] = useState<PageViewRow[]>([]);
+  const [buttonClicks, setButtonClicks] = useState<ButtonClickRow[]>([]);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
