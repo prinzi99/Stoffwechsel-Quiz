@@ -195,8 +195,6 @@ const Analyse = () => {
                   <KpiCard icon={Eye} label="Seitenaufrufe Bonuspage" value={totalBonusPageViews} />
                   <KpiCard icon={TrendingUp} label="Logins heute" value={loginsToday} />
                   <KpiCard icon={Calendar} label="Aufrufe heute" value={viewsToday} />
-                  <KpiCard icon={ShoppingCart} label="Angebotsseite gesamt" value={anbotViews} />
-                  <KpiCard icon={ShoppingCart} label="Angebotsseite heute" value={anbotViewsToday} />
                   <KpiCard icon={MousePointerClick} label="Kaufklicks gesamt" value={totalClicks} />
                   <KpiCard icon={MousePointerClick} label="Kaufklicks heute" value={clicksToday} />
                 </div>
