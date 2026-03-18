@@ -212,7 +212,7 @@ const ResultPageB2 = () => {
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
-                    Ja – ich will verstehen, warum mein Körper trotz wenig Essen blockiert
+                    Ja – ich will endlich wieder Fortschritt sehen
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
