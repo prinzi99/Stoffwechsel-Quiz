@@ -8,33 +8,35 @@ const Anbot2Content = () => {
   return (
     <>
       {/* SECTION 1 – HERO */}
-      <section className="pt-4 pb-8 md:pt-8 md:pb-12 bg-background">
+      <section className="pt-3 pb-4 md:pt-6 md:pb-10 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            {/* Änderung 1 */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-foreground leading-[1.1] text-center mb-4 md:mb-5">
+          <div className="max-w-4xl mx-auto">
+            {/* HEADLINE */}
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-foreground leading-[1.1] text-center mb-2 md:mb-4">
               Du machst alles richtig.{" "}
               <span className="text-primary">
                 Und genau das ist das Problem.
               </span>
             </h1>
 
-            {/* Änderung 2 */}
-            <p className="text-base md:text-lg text-foreground/80 leading-relaxed text-center max-w-2xl mx-auto mb-4">
+            {/* SUBHEADLINE */}
+            <p className="text-sm md:text-lg text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1.5 md:mb-3">
               Du isst weniger. Du gibst Dir M&uuml;he. Du ziehst durch.
               Und trotzdem passiert nichts.
             </p>
 
-            {/* Änderung 3 */}
-            <p className="text-base md:text-lg text-foreground/80 leading-relaxed text-center max-w-2xl mx-auto mb-8">
-              Irgendwann denkst Du:<br />
-              <span className="italic">&bdquo;Vielleicht liegt es an mir.&ldquo;</span>
-              <br /><br />
+            {/* TEXT */}
+            <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-3 md:mb-6">
+              Irgendwann denkst Du:
+              <span className="italic"> &bdquo;Vielleicht liegt es an mir.&ldquo;</span>
+              <br />
               <span className="font-bold text-foreground">Tut es nicht.</span>
             </p>
 
-            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 mb-8">
-              <div className="w-56 sm:w-64 md:w-72 flex-shrink-0">
+            {/* DESKTOP: 2-column / MOBILE: stacked */}
+            <div className="flex flex-col md:flex-row items-center gap-3 md:gap-8">
+              {/* LEFT – Book image */}
+              <div className="w-40 sm:w-48 md:w-64 flex-shrink-0 order-1 md:order-none">
                 <img
                   src={bookCover}
                   alt="Du bist nicht das Problem – Buchcover"
@@ -45,62 +47,63 @@ const Anbot2Content = () => {
                 />
               </div>
 
-              <div className="flex-1 space-y-4">
-                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                  Dein K&ouml;rper ist kein Taschenrechner.<br />
-                  Er ist ein Schutzsystem.
+              {/* RIGHT – Text + Price + CTA */}
+              <div className="flex-1 space-y-2 md:space-y-3 order-2 md:order-none">
+                {/* PRODUKT-EINBINDUNG */}
+                <p className="text-sm md:text-base text-foreground/80 leading-snug">
+                  Dieses Buch zeigt Dir, warum Dein K&ouml;rper genau so reagiert
+                  &ndash; und wie Du diesen Kreislauf durchbrichst.
                 </p>
 
-                <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
-                  Sobald Du:
-                </p>
-                <div className="space-y-1 text-sm md:text-base text-foreground/80">
-                  <p>– weniger isst</p>
-                  <p>– mehr Druck machst</p>
-                  <p>– mehr Kontrolle aus&uuml;bst</p>
+                {/* TEASER */}
+                <div>
+                  <p className="text-sm md:text-base font-semibold text-foreground mb-1">
+                    Im Buch zeige ich Dir:
+                  </p>
+                  <div className="space-y-0.5 text-xs md:text-sm text-foreground/80">
+                    <p>&ndash; warum alles, was Du bisher versucht hast, Dein Problem verst&auml;rkt hat</p>
+                    <p>&ndash; welche Signale Dein K&ouml;rper wirklich braucht</p>
+                    <p>&ndash; und wie Du wieder Fortschritt m&ouml;glich machst</p>
+                  </div>
+                  <p className="text-xs md:text-sm text-foreground/80 mt-1 leading-snug">
+                    Nicht durch mehr Druck.
+                    <span className="font-medium text-foreground"> Sondern durch ein System, das Dein K&ouml;rper akzeptiert.</span>
+                  </p>
                 </div>
 
-                <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
-                  passiert etwas, das die meisten nie verstehen:
-                </p>
-
-                <div className="space-y-1 text-sm md:text-base text-foreground font-medium">
-                  <p>👉 Dein K&ouml;rper reduziert Verbrauch</p>
-                  <p>👉 erh&ouml;ht Hunger</p>
-                  <p>👉 blockiert Fortschritt</p>
+                {/* MECHANISMUS KOMPRIMIERT */}
+                <div className="text-xs md:text-sm text-foreground/80 leading-snug">
+                  <p>
+                    Dein K&ouml;rper ist kein Taschenrechner.
+                    <span className="font-medium text-foreground"> Er ist ein Schutzsystem.</span>
+                  </p>
+                  <p className="mt-0.5">
+                    👉 Weniger Essen = weniger Verbrauch<br />
+                    👉 Mehr Druck = mehr Blockade
+                  </p>
                 </div>
 
-                <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
-                  Nicht weil Du versagst.<br />
-                  Sondern weil er Dich sch&uuml;tzt.
+                <p className="text-sm md:text-base font-bold text-primary leading-snug">
+                  Je mehr Du versuchst abzunehmen,<br />
+                  desto besser wird Dein K&ouml;rper darin, es zu verhindern.
                 </p>
-              </div>
-            </div>
 
-            {/* Änderung 4 – Pattern Interrupt */}
-            <div className="max-w-2xl mx-auto text-center mb-8">
-              <p className="text-lg md:text-xl font-bold text-primary leading-snug">
-                Je mehr Du versuchst abzunehmen,<br />
-                desto besser wird Dein K&ouml;rper darin, es zu verhindern.
-              </p>
-            </div>
-
-            {/* Änderung 5 – Preisblock im Hero */}
-            <div className="max-w-lg mx-auto mb-6">
-              <div className="bg-card border-2 border-primary/30 rounded-2xl p-7 md:p-10 text-center shadow-xl relative overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
-                <p className="text-sm text-primary font-medium tracking-wide mb-4 mt-1">
-                  Exklusiv f&uuml;r Quiz-Teilnehmer
-                </p>
-                <div className="flex items-baseline justify-center gap-3 mb-5">
-                  <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
-                  <span className="text-4xl md:text-5xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
+                {/* PREIS + CTA */}
+                <div className="bg-card border-2 border-primary/30 rounded-xl p-4 md:p-6 text-center shadow-xl relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
+                  <p className="text-xs md:text-sm text-primary font-medium tracking-wide mb-1.5">
+                    Exklusiv f&uuml;r Quiz-Teilnehmer
+                  </p>
+                  <div className="flex items-baseline justify-center gap-2 mb-2.5">
+                    <span className="text-sm md:text-base text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
+                    <span className="text-3xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
+                  </div>
+                  <Button variant="cta" size="xl" asChild className="w-full text-sm md:text-base py-4 md:py-6 h-auto whitespace-normal">
+                    <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
+                      Jetzt verstehen, warum Dein K&ouml;rper blockiert
+                    </a>
+                  </Button>
                 </div>
-                <Button variant="cta" size="xl" asChild className="w-full text-base md:text-lg py-6 md:py-7">
-                  <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                    Jetzt verstehen statt weiter k&auml;mpfen
-                  </a>
-                </Button>
               </div>
             </div>
           </div>
