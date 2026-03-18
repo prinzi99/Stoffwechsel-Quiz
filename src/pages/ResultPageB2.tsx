@@ -132,7 +132,7 @@ const ResultPageB2 = () => {
                 <p>Und trotzdem fühlst Du Dich:</p>
                 <p>müde</p>
                 <p>leer</p>
-                <p>und kommst nicht voran</p>
+                <p>und fragst Dich, warum selbst das nicht reicht.</p>
               </div>
               <div className="pt-2">
                 <p>Irgendwann denkst Du:</p>
