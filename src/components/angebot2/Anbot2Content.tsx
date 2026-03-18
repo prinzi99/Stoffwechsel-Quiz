@@ -137,39 +137,67 @@ const Anbot2Content = () => {
         </div>
       </section>
 
-      {/* SECTION 2 – EINZIGE SECTION NACH HERO */}
+      {/* SECTION 2 */}
       <section className="py-6 md:py-10 bg-section-alt">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-xl md:text-3xl font-bold text-foreground text-center mb-3 md:mb-5">
+            <h2 className="text-xl md:text-3xl font-bold text-foreground mb-3 md:mb-5">
               Du bist nicht das Problem.
             </h2>
 
-            <div className="text-sm md:text-base text-foreground/80 leading-relaxed text-center space-y-1 mb-3 md:mb-4">
+            {/* TEXTBLOCK */}
+            <div className="text-sm md:text-base text-foreground/80 leading-relaxed space-y-1 mb-3 md:mb-5">
               <p>Dein Ergebnis zeigt nicht, dass Du undiszipliniert bist.</p>
               <p>Es zeigt, wie Dein K&ouml;rper aktuell reagiert.</p>
-              <p className="pt-1">Dein K&ouml;rper arbeitet nicht gegen Dich.</p>
-              <p>Er sch&uuml;tzt Dich.</p>
-              <p className="pt-1">Und genau das ist der Punkt, den die meisten nicht verstehen.</p>
+              <p className="pt-1">Und genau das hast Du bisher falsch eingeordnet.</p>
             </div>
 
-            <p className="text-base md:text-lg font-bold text-primary text-center leading-snug mb-3 md:mb-5">
+            {/* DRUCK-BLOCK */}
+            <div className="text-sm md:text-base text-foreground/80 leading-relaxed space-y-1 mb-3 md:mb-5">
+              <p>Du hast versucht, das Problem zu l&ouml;sen,</p>
+              <p>indem Du mehr machst.</p>
+              <p className="pt-1">Mehr Kontrolle.</p>
+              <p>Mehr Disziplin.</p>
+              <p>Mehr Verzicht.</p>
+              <p className="pt-1 font-semibold text-foreground">Und genau das ist der Fehler.</p>
+            </div>
+
+            {/* UMKEHR */}
+            <div className="text-sm md:text-base text-foreground/80 leading-relaxed space-y-1 mb-3 md:mb-5">
+              <p>Dein K&ouml;rper arbeitet nicht gegen Dich.</p>
+              <p>Er reagiert auf das, was Du ihm gibst.</p>
+              <p className="pt-1">Und je mehr Druck Du erzeugst,</p>
+              <p>desto st&auml;rker geht er in den Schutzmodus.</p>
+            </div>
+
+            {/* MIC-DROP */}
+            <p className="text-base md:text-lg font-bold text-primary leading-snug mb-3 md:mb-5">
               Der Fehler ist nicht Dein Verhalten.<br />
-              Der Fehler ist, wie Du es einordnest.
+              Der Fehler ist, wie Du es interpretierst.
             </p>
 
-            <div className="inline-block text-left space-y-1 text-sm md:text-base text-foreground/80 mb-3 md:mb-5 mx-auto">
-              <p>&ndash; Dein K&ouml;rper reduziert Energie, um Dich zu sch&uuml;tzen</p>
-              <p>&ndash; Fortschritt stoppt nicht ohne Grund</p>
-              <p>&ndash; Mehr Druck verst&auml;rkt genau das Problem</p>
+            {/* BULLETPOINTS */}
+            <div className="inline-block text-left space-y-1 text-sm md:text-base text-foreground/80 mb-3 md:mb-5">
+              <p>&ndash; Dein K&ouml;rper reduziert Energie nicht zuf&auml;llig</p>
+              <p>&ndash; Stillstand ist kein Versagen, sondern eine Reaktion</p>
+              <p>&ndash; Mehr Disziplin verst&auml;rkt genau das, was Dich blockiert</p>
               <p>&ndash; Dein System folgt klaren Regeln &ndash; nur nicht den falschen</p>
             </div>
 
-            <p className="text-sm md:text-base font-medium text-foreground text-center">
-              Wenn Du das verstehst, ver&auml;ndert sich Dein Ansatz automatisch.
-            </p>
+            {/* ABSCHLUSS */}
+            <div className="text-sm md:text-base text-foreground leading-relaxed space-y-1 mb-3 md:mb-5">
+              <p className="font-medium">Wenn Du das verstehst, h&ouml;rst Du auf, gegen Deinen K&ouml;rper zu arbeiten.</p>
+              <p className="font-medium">Und genau dann wird Ver&auml;nderung wieder m&ouml;glich.</p>
+            </div>
+
+            {/* CTA ÜBERLEITUNG */}
+            <div className="text-sm md:text-base text-foreground/80 leading-relaxed space-y-1">
+              <p>Wenn das f&uuml;r Dich gerade Sinn macht,</p>
+              <p>dann ist dieses Buch der n&auml;chste Schritt.</p>
+            </div>
           </div>
         </div>
+      </section>
       </section>
 
       {/* SECTION 3 – CTA BLOCK */}
