@@ -27,6 +27,16 @@ interface PageViewRow {
   referrer: string | null;
 }
 
+interface ButtonClickRow {
+  id: string;
+  page_path: string;
+  button_label: string | null;
+  destination_url: string | null;
+  user_agent: string | null;
+  referrer: string | null;
+  clicked_at: string;
+}
+
 const Analyse = () => {
   const [password, setPassword] = useState("");
   const [authenticated, setAuthenticated] = useState(false);
