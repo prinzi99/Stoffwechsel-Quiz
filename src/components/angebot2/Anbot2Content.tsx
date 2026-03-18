@@ -8,11 +8,11 @@ const Anbot2Content = () => {
   return (
     <>
       {/* SECTION 1 – HERO */}
-      <section className="pt-3 pb-4 md:pt-6 md:pb-10 bg-background">
+      <section className="pt-2 pb-3 md:pt-5 md:pb-8 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             {/* HEADLINE */}
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-foreground leading-[1.1] text-center mb-2 md:mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-foreground leading-[1.08] text-center mb-1.5 md:mb-3">
               Du machst alles richtig.{" "}
               <span className="text-primary">
                 Und genau das ist das Problem.
@@ -20,13 +20,14 @@ const Anbot2Content = () => {
             </h1>
 
             {/* SUBHEADLINE */}
-            <p className="text-sm md:text-lg text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1.5 md:mb-3">
-              Du isst weniger. Du gibst Dir M&uuml;he. Du ziehst durch.
+            <p className="text-sm md:text-lg text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1 md:mb-2">
+              Du isst weniger. Du gibst Dir M&uuml;he.
+              <br className="hidden md:inline" />{" "}
               Und trotzdem passiert nichts.
             </p>
 
             {/* TEXT */}
-            <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-3 md:mb-6">
+            <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-2 md:mb-5">
               Irgendwann denkst Du:
               <span className="italic"> &bdquo;Vielleicht liegt es an mir.&ldquo;</span>
               <br />
@@ -34,9 +35,9 @@ const Anbot2Content = () => {
             </p>
 
             {/* DESKTOP: 2-column / MOBILE: stacked */}
-            <div className="flex flex-col md:flex-row items-center gap-3 md:gap-8">
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
               {/* LEFT – Book image */}
-              <div className="w-40 sm:w-48 md:w-64 flex-shrink-0 order-1 md:order-none">
+              <div className="w-36 sm:w-44 md:w-60 flex-shrink-0 order-1 md:order-none">
                 <img
                   src={bookCover}
                   alt="Du bist nicht das Problem – Buchcover"
@@ -48,38 +49,29 @@ const Anbot2Content = () => {
               </div>
 
               {/* RIGHT – Text + Price + CTA */}
-              <div className="flex-1 space-y-2 md:space-y-3 order-2 md:order-none">
-                {/* PRODUKT-EINBINDUNG */}
+              <div className="flex-1 space-y-1.5 md:space-y-2.5 order-2 md:order-none">
+                {/* PRODUKT + TEASER */}
                 <p className="text-sm md:text-base text-foreground/80 leading-snug">
-                  Dieses Buch zeigt Dir, warum Dein K&ouml;rper genau so reagiert
-                  &ndash; und wie Du diesen Kreislauf durchbrichst.
+                  Dieses Buch zeigt Dir, warum Dein K&ouml;rper blockiert
+                  &ndash; und warum alles, was Du bisher versucht hast, Dein Problem verst&auml;rkt hat.
                 </p>
 
-                {/* TEASER */}
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-foreground mb-1">
-                    Im Buch zeige ich Dir:
+                  <p className="text-sm md:text-base font-semibold text-foreground mb-0.5">
+                    Im Buch lernst Du:
                   </p>
                   <div className="space-y-0.5 text-xs md:text-sm text-foreground/80">
-                    <p>&ndash; warum alles, was Du bisher versucht hast, Dein Problem verst&auml;rkt hat</p>
                     <p>&ndash; welche Signale Dein K&ouml;rper wirklich braucht</p>
-                    <p>&ndash; und wie Du wieder Fortschritt m&ouml;glich machst</p>
+                    <p>&ndash; warum mehr Disziplin Dich nicht weiterbringt</p>
+                    <p>&ndash; wie Du wieder Fortschritt m&ouml;glich machst</p>
                   </div>
-                  <p className="text-xs md:text-sm text-foreground/80 mt-1 leading-snug">
-                    Nicht durch mehr Druck.
-                    <span className="font-medium text-foreground"> Sondern durch ein System, das Dein K&ouml;rper akzeptiert.</span>
-                  </p>
                 </div>
 
-                {/* MECHANISMUS KOMPRIMIERT */}
+                {/* MECHANISMUS */}
                 <div className="text-xs md:text-sm text-foreground/80 leading-snug">
                   <p>
                     Dein K&ouml;rper ist kein Taschenrechner.
                     <span className="font-medium text-foreground"> Er ist ein Schutzsystem.</span>
-                  </p>
-                  <p className="mt-0.5">
-                    👉 Weniger Essen = weniger Verbrauch<br />
-                    👉 Mehr Druck = mehr Blockade
                   </p>
                 </div>
 
@@ -88,17 +80,22 @@ const Anbot2Content = () => {
                   desto besser wird Dein K&ouml;rper darin, es zu verhindern.
                 </p>
 
+                {/* PUNCH-SATZ */}
+                <p className="text-xs md:text-sm font-medium text-foreground/70 italic leading-snug">
+                  Wenn Du das verstehst, wirst Du Deinen bisherigen Ansatz nicht mehr weiterf&uuml;hren k&ouml;nnen.
+                </p>
+
                 {/* PREIS + CTA */}
-                <div className="bg-card border-2 border-primary/30 rounded-xl p-4 md:p-6 text-center shadow-xl relative overflow-hidden">
+                <div className="bg-card border-2 border-primary/30 rounded-xl p-3 md:p-5 text-center shadow-xl relative overflow-hidden">
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
-                  <p className="text-xs md:text-sm text-primary font-medium tracking-wide mb-1.5">
+                  <p className="text-xs md:text-sm text-primary font-medium tracking-wide mb-1">
                     Exklusiv f&uuml;r Quiz-Teilnehmer
                   </p>
-                  <div className="flex items-baseline justify-center gap-2 mb-2.5">
+                  <div className="flex items-baseline justify-center gap-2 mb-2">
                     <span className="text-sm md:text-base text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
                     <span className="text-3xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                   </div>
-                  <Button variant="cta" size="xl" asChild className="w-full text-sm md:text-base py-4 md:py-6 h-auto whitespace-normal">
+                  <Button variant="cta" size="xl" asChild className="w-full text-sm md:text-base py-3 md:py-5 h-auto whitespace-normal">
                     <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                       Jetzt verstehen, warum Dein K&ouml;rper blockiert
                     </a>
