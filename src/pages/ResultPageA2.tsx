@@ -111,39 +111,30 @@ const ResultPageA2 = () => {
             </div>
           </section>
 
-          {/* 6b. Wie Du Deinen Stoffwechsel wieder beruhigst */}
+          {/* 6b. Überleitung zum Buch */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-foreground mb-2 flex items-center gap-2">
-              <BookOpen className="w-5 h-5 text-primary" />
-              Wie Du Deinen Stoffwechsel wieder beruhigst und in Bewegung bringst
-            </h2>
-            <p className="text-sm text-muted-foreground mb-5">
-              Gerade wenn Dein K&ouml;rper aktuell im Stressmodus l&auml;uft
-            </p>
+            <div className="text-center mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                Du machst vieles richtig.
+              </h2>
+              <p className="text-lg md:text-xl font-bold text-primary">
+                Und genau das blockiert Dich gerade.
+              </p>
+            </div>
 
-            <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">
-              <p>
-                Wenn Dein Stoffwechsel unter Stress steht, bringen Dich noch mehr Kontrolle, noch weniger Essen oder noch mehr Training oft nicht weiter. Im Gegenteil: Genau das kann den Druck im System weiter erh&ouml;hen.
-              </p>
-              <p>
-                Viele merken zwar, dass ihr K&ouml;rper blockiert, reagieren aber mit noch mehr Disziplin. Das Problem ist nur: Ein gestresster Stoffwechsel braucht nicht noch mehr H&auml;rte. Er braucht zuerst die richtigen Signale.
-              </p>
-              <p>Deshalb habe ich einen klaren Leitfaden entwickelt, der Dir verst&auml;ndlich zeigt,</p>
-              <ul className="space-y-2 pl-1">
-                {[
-                  'warum Stress Deinen Stoffwechsel sp\u00fcrbar ausbremsen kann',
-                  'welche Fehler viele in genau dieser Situation machen',
-                  'wie Du wieder mehr Ruhe, Stabilit\u00e4t und Struktur in Dein System bringst',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-secondary mt-2.5 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4">
-                Wenn Du verstehen willst, warum Dein K&ouml;rper gerade auf Druck mit Widerstand reagiert und was ihm wirklich helfen kann, dann ist dieser Leitfaden der richtige n&auml;chste Schritt.
-              </p>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Dein Ergebnis zeigt nicht, dass Du zu wenig Disziplin hast.</p>
+              <p>Es zeigt, dass Dein K&ouml;rper unter Stress reagiert.</p>
+              <div className="pt-2">
+                <p>Du versuchst, weiter zu funktionieren.</p>
+                <p>Mehr Kontrolle. Mehr Struktur. Mehr Druck.</p>
+              </div>
+              <p className="font-semibold text-foreground">Und genau das h&auml;lt Dich fest.</p>
+              <div className="pt-2">
+                <p>Irgendwann denkst Du:</p>
+                <p className="italic text-foreground">&bdquo;Ich muss mich einfach mehr zusammenrei&szlig;en.&ldquo;</p>
+              </div>
+              <p className="font-semibold text-foreground">Tut es nicht.</p>
             </div>
           </section>
 
@@ -163,49 +154,27 @@ const ResultPageA2 = () => {
 
                 {/* Book Info */}
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                    Du bist nicht das Problem
-                  </h3>
-                  <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
-                    Warum Dein Stoffwechsel unter Stress blockiert &ndash;<br />
-                    und wie Du wieder in Bewegung kommst
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    Dieses Buch hilft Dir zu verstehen, warum Dein K&ouml;rper trotz Bem&uuml;hen oft nicht so reagiert, wie Du es erwartest.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed mb-5">
-                    Gerade beim gestressten Stoffwechsel liegt das Problem oft nicht in fehlender Disziplin, sondern in einem System, das dauerhaft unter Druck steht und deshalb Sicherheit vor Fortschritt priorisiert.
-                  </p>
-
-                  <p className="text-sm font-semibold text-foreground mb-3">Du erf&auml;hrst:</p>
+                  <p className="text-sm font-semibold text-foreground mb-3">Genau das erkl&auml;rt dieses Buch.</p>
                   <ul className="space-y-2 mb-6">
                     {[
-                      'warum Stress die Fettverbrennung sp\u00fcrbar ausbremsen kann',
-                      'welche typischen Fehler viele in Stressphasen machen',
-                      'wie Du Deinem K\u00f6rper wieder mehr Ruhe und Stabilit\u00e4t gibst',
-                      'warum noch mehr Verzicht das Problem oft versch\u00e4rft',
+                      'warum Dein K\u00f6rper unter Stress Energie spart statt verbrennt',
+                      'warum Kontrolle und Disziplin Deinen Fortschritt blockieren k\u00f6nnen',
+                      'warum Dein System Sicherheit braucht, bevor Ver\u00e4nderung m\u00f6glich wird',
+                      'und wie Du diesen Kreislauf Schritt f\u00fcr Schritt durchbrichst',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-muted-foreground">
                         <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
-                        <span>{item}</span>
+                        <span>&ndash; {item}</span>
                       </li>
                     ))}
                   </ul>
 
-                  <p className="text-sm font-semibold text-foreground mb-3">Viele Leser berichten schon nach kurzer Zeit von:</p>
-                  <ul className="space-y-2">
-                    {[
-                      'weniger innerer Unruhe',
-                      'weniger Hei\u00dfhunger in stressigen Phasen',
-                      'stabilerer Energie \u00fcber den Tag',
-                      'mehr Klarheit bei Ern\u00e4hrung und Training',
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                        <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="py-4 border-y border-primary/20 mb-6">
+                    <p className="text-base md:text-lg font-extrabold text-primary leading-snug">
+                      Je mehr Druck Du erzeugst,<br />
+                      desto st&auml;rker h&auml;lt Dein K&ouml;rper dagegen.
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -225,7 +194,7 @@ const ResultPageA2 = () => {
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
-                    Ja &mdash; ich will verstehen, warum mein Stoffwechsel unter Stress blockiert
+                    Ja &ndash; ich will verstehen, warum mein K&ouml;rper unter Stress blockiert
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
