@@ -158,7 +158,7 @@ const ResultPageA2 = () => {
                   <p className="text-sm font-semibold text-foreground mb-3">Genau deshalb brauchst Du dieses Buch.</p>
                   <ul className="space-y-2 mb-6">
                     {[
-                      'warum Dein K\u00f6rper unter Stress Energie spart statt verbrennt',
+                      'warum Dein K\u00f6rper unter Stress Energie zur\u00fckh\u00e4lt \u2013 egal wie diszipliniert Du bist',
                       'warum Kontrolle und Disziplin Deinen Fortschritt blockieren',
                       'warum Dein System Sicherheit braucht, bevor Ver\u00e4nderung m\u00f6glich wird',
                       'und wie Du diesen Kreislauf Schritt f\u00fcr Schritt durchbrichst',
