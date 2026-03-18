@@ -169,10 +169,10 @@ const ResultPageA2 = () => {
                     ))}
                   </ul>
 
-                  <div className="py-4 border-y border-primary/20 mb-6">
+                  <div className="py-6 my-2 border-y border-primary/20 mb-6">
                     <p className="text-base md:text-lg font-extrabold text-primary leading-snug">
-                      Je mehr Druck Du erzeugst,<br />
-                      desto st&auml;rker h&auml;lt Dein K&ouml;rper dagegen.
+                      Je mehr Druck Du machst,<br />
+                      desto besser wird Dein K&ouml;rper darin, Dich zu stoppen.
                     </p>
                   </div>
                 </div>
