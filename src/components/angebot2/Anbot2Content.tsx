@@ -224,9 +224,10 @@ const Anbot2Content = () => {
               <p className="text-sm text-foreground/70 mb-4">
                 Einmal verstehen &mdash; statt immer wieder neu anfangen.
               </p>
-              <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3.25rem] whitespace-normal leading-snug text-base md:text-lg py-6 md:py-7">
+              <Button variant="cta" size="xl" asChild className="w-full h-auto min-h-[3.25rem] whitespace-normal leading-snug text-base md:text-lg py-6 md:py-7" onClick={() => handleBuyClick("Abschluss CTA")}>
                 <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                   Jetzt verstehen, warum Dein K&ouml;rper blockiert
+                </a>
                 </a>
               </Button>
             </div>

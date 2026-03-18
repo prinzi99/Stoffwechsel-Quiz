@@ -42,3 +42,4 @@ export const useBonusPageView = (pagePath: string, pageTitle: string) => {
     };
     track();
   }, [pagePath, pageTitle]);
+};
