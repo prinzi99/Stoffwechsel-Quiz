@@ -140,7 +140,7 @@ const Anbot2Content = () => {
       {/* SECTION 2 – EINZIGE SECTION NACH HERO */}
       <section className="py-6 md:py-10 bg-section-alt">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-xl md:text-3xl font-bold text-foreground text-center mb-3 md:mb-5">
               Du bist nicht das Problem.
             </h2>
@@ -158,7 +158,7 @@ const Anbot2Content = () => {
               Der Fehler ist, wie Du es einordnest.
             </p>
 
-            <div className="space-y-1 text-sm md:text-base text-foreground/80 mb-3 md:mb-5">
+            <div className="inline-block text-left space-y-1 text-sm md:text-base text-foreground/80 mb-3 md:mb-5 mx-auto">
               <p>&ndash; Dein K&ouml;rper reduziert Energie, um Dich zu sch&uuml;tzen</p>
               <p>&ndash; Fortschritt stoppt nicht ohne Grund</p>
               <p>&ndash; Mehr Druck verst&auml;rkt genau das Problem</p>
