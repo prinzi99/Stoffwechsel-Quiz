@@ -82,7 +82,7 @@ const Anbot2Content = () => {
 
                 {/* PUNCH-SATZ */}
                 <p className="text-xs md:text-sm font-medium text-foreground/70 italic leading-snug">
-                  Wenn Du das verstehst, wirst Du Deinen bisherigen Ansatz nicht mehr weiterf&uuml;hren k&ouml;nnen.
+                  Danach wei&szlig;t Du, warum es bisher nicht funktioniert hat.
                 </p>
 
                 {/* PREIS + CTA */}
