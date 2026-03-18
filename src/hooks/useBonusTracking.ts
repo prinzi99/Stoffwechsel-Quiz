@@ -42,20 +42,3 @@ export const useBonusPageView = (pagePath: string, pageTitle: string) => {
     };
     track();
   }, [pagePath, pageTitle]);
-};
-  useEffect(() => {
-    const track = async () => {
-      try {
-        await supabase.from("bonus_page_views").insert({
-          page_path: pagePath,
-          page_title: pageTitle,
-          user_agent: navigator.userAgent,
-          referrer: document.referrer || null,
-        });
-      } catch (e) {
-        console.error("Tracking page view failed", e);
-      }
-    };
-    track();
-  }, [pagePath, pageTitle]);
-};
