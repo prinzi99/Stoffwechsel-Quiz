@@ -61,6 +61,7 @@ const App = () => {
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/buch" element={<Buch />} />
             <Route path="/buch/anbot3g4a3e" element={<BuchAnbot />} />
+            <Route path="/buch/anbot3g4a3e-2" element={<BuchAnbot2 />} />
             <Route path="/buch/bonus" element={<BuchBonus />} />
             <Route path="/buch/bonus/intern" element={<BuchBonusIntern />} />
             <Route path="/buch/bonus/intern/biohacking-tools" element={<BiohackingTools />} />
