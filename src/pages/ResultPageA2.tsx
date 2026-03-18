@@ -154,7 +154,7 @@ const ResultPageA2 = () => {
 
                 {/* Book Info */}
                 <div className="flex-1 text-center md:text-left">
-                  <p className="text-sm font-semibold text-foreground mb-3">Genau das erkl&auml;rt dieses Buch.</p>
+                  <p className="text-sm font-semibold text-foreground mb-3">Genau deshalb brauchst Du dieses Buch.</p>
                   <ul className="space-y-2 mb-6">
                     {[
                       'warum Dein K\u00f6rper unter Stress Energie spart statt verbrennt',
