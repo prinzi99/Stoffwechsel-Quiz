@@ -16,92 +16,90 @@ const Anbot2Content = () => {
               Du machst alles richtig.{" "}
               <span className="text-primary">
                 Und genau das ist das Problem.
-              </span>
-            </h1>
+            </span>
+          </h1>
 
-            {/* SUBHEADLINE */}
-            <p className="text-sm md:text-lg text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1 md:mb-2">
-              Du isst weniger. Du gibst Dir M&uuml;he.
-              <br className="hidden md:inline" />{" "}
-              Und trotzdem passiert nichts.
-            </p>
+          {/* NACH HEADLINE */}
+          <p className="text-sm md:text-lg text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1 md:mb-2">
+            Denn genau das bringt Dich immer wieder zur&uuml;ck an denselben Punkt.
+          </p>
+          <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-0 md:mb-2">
+            Du f&auml;ngst neu an.<br />
+            Du ziehst durch.<br />
+            Und trotzdem landest Du wieder genau da, wo Du vorher warst.
+          </p>
 
-            {/* TEXT */}
-            <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-0 md:mb-2">
-              Irgendwann denkst Du:
-              <span className="italic"> &bdquo;Vielleicht liegt es an mir.&ldquo;</span>
-              <br />
-              <span className="font-bold text-foreground">Tut es nicht.</span>
-            </p>
+          {/* DESKTOP: 2-column / MOBILE: stacked */}
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
+            {/* LEFT – Book image */}
+            <div className="w-36 sm:w-44 md:w-60 flex-shrink-0 order-1 md:order-none">
+              <img
+                src={bookCover}
+                alt="Du bist nicht das Problem – Buchcover"
+                className="w-full h-auto rounded-xl shadow-2xl"
+                fetchPriority="high"
+                width={800}
+                height={1067}
+              />
+            </div>
 
-            {/* DESKTOP: 2-column / MOBILE: stacked */}
-            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
-              {/* LEFT – Book image */}
-              <div className="w-36 sm:w-44 md:w-60 flex-shrink-0 order-1 md:order-none">
-                <img
-                  src={bookCover}
-                  alt="Du bist nicht das Problem – Buchcover"
-                  className="w-full h-auto rounded-xl shadow-2xl"
-                  fetchPriority="high"
-                  width={800}
-                  height={1067}
-                />
+            {/* RIGHT – Text + Price + CTA */}
+            <div className="flex-1 space-y-1.5 md:space-y-2.5 order-2 md:order-none">
+              {/* PRODUKT + TEASER */}
+              <p className="text-sm md:text-base text-foreground/80 leading-snug">
+                Dieses Buch zeigt Dir, warum Dein K&ouml;rper blockiert
+                &ndash; und warum alles, was Du bisher versucht hast, Dein Problem verst&auml;rkt hat.
+              </p>
+
+              <div>
+                <p className="text-sm md:text-base font-semibold text-foreground mb-0.5">
+                  Im Buch lernst Du:
+                </p>
+                <div className="space-y-0.5 text-xs md:text-sm text-foreground/80">
+                  <p>&ndash; warum Dein K&ouml;rper Deinen Fortschritt aktiv ausbremst &ndash; obwohl Du alles richtig machst</p>
+                  <p>&ndash; warum Dein Kalorienverbrauch sinkt, ohne dass Du es bemerkst</p>
+                  <p>&ndash; warum mehr Disziplin Dein Problem verst&auml;rkt statt l&ouml;st</p>
+                  <p>&ndash; und wie Du diesen Kreislauf endlich durchbrichst</p>
+                </div>
               </div>
 
-              {/* RIGHT – Text + Price + CTA */}
-              <div className="flex-1 space-y-1.5 md:space-y-2.5 order-2 md:order-none">
-                {/* PRODUKT + TEASER */}
-                <p className="text-sm md:text-base text-foreground/80 leading-snug">
-                  Dieses Buch zeigt Dir, warum Dein K&ouml;rper blockiert
-                  &ndash; und warum alles, was Du bisher versucht hast, Dein Problem verst&auml;rkt hat.
+              {/* MECHANISMUS */}
+              <div className="text-xs md:text-sm text-foreground/80 leading-snug">
+                <p>
+                  Dein K&ouml;rper ist kein Taschenrechner.
+                  <span className="font-medium text-foreground"> Er ist ein Schutzsystem.</span>
                 </p>
+              </div>
 
-                <div>
-                  <p className="text-sm md:text-base font-semibold text-foreground mb-0.5">
-                    Im Buch lernst Du:
-                  </p>
-                  <div className="space-y-0.5 text-xs md:text-sm text-foreground/80">
-                    <p>&ndash; warum alles, was Du bisher versucht hast, Deinen Fortschritt blockiert hat</p>
-                    <p>&ndash; welche Signale Du aktuell sendest, die Deinen K&ouml;rper ausbremsen</p>
-                    <p>&ndash; warum mehr Disziplin Dich tiefer in den Stillstand bringt</p>
-                    <p>&ndash; und wie Du diesen Kreislauf endlich durchbrichst</p>
-                  </div>
-                </div>
-
-                {/* MECHANISMUS */}
-                <div className="text-xs md:text-sm text-foreground/80 leading-snug">
-                  <p>
-                    Dein K&ouml;rper ist kein Taschenrechner.
-                    <span className="font-medium text-foreground"> Er ist ein Schutzsystem.</span>
-                  </p>
-                </div>
-
+              {/* MIC DROP – freigestellt */}
+              <div className="py-2 md:py-3">
                 <p className="text-sm md:text-base font-bold text-primary leading-snug">
                   Je mehr Du versuchst abzunehmen,<br />
                   desto besser wird Dein K&ouml;rper darin, es zu verhindern.
                 </p>
+              </div>
 
-                {/* PUNCH-SATZ */}
-                <p className="text-xs md:text-sm font-medium text-foreground/70 italic leading-snug">
-                  Danach wei&szlig;t Du, warum es bisher nicht funktioniert hat.
+              {/* PUNCH-SATZ */}
+              <p className="text-xs md:text-sm font-medium text-foreground/70 italic leading-snug">
+                Danach wei&szlig;t Du, warum es bisher nicht funktioniert hat.
+              </p>
+
+              {/* PREIS + CTA */}
+              <div className="bg-card border-2 border-primary/30 rounded-xl p-3 md:p-5 text-center shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
+                <p className="text-xs md:text-sm text-primary font-medium tracking-wide mb-1">
+                  Exklusiv f&uuml;r Quiz-Teilnehmer
                 </p>
-
-                {/* PREIS + CTA */}
-                <div className="bg-card border-2 border-primary/30 rounded-xl p-3 md:p-5 text-center shadow-xl relative overflow-hidden">
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
-                  <p className="text-xs md:text-sm text-primary font-medium tracking-wide mb-1">
-                    Exklusiv f&uuml;r Quiz-Teilnehmer
-                  </p>
-                  <div className="flex items-baseline justify-center gap-2 mb-2">
-                    <span className="text-sm md:text-base text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
-                    <span className="text-3xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
-                  </div>
-                  <Button variant="cta" size="xl" asChild className="w-full text-sm md:text-base py-3 md:py-5 h-auto whitespace-normal">
-                    <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                      Jetzt verstehen, warum Dein K&ouml;rper blockiert
-                    </a>
-                  </Button>
+                <div className="flex items-baseline justify-center gap-2 mb-2">
+                  <span className="text-sm md:text-base text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
+                  <span className="text-3xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                 </div>
+                <Button variant="cta" size="xl" asChild className="w-full text-sm md:text-base py-3 md:py-5 h-auto whitespace-normal">
+                  <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
+                    Jetzt verstehen, warum es bisher nicht funktioniert hat
+                  </a>
+                </Button>
+              </div>
               </div>
             </div>
           </div>
