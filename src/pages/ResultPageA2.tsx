@@ -194,7 +194,7 @@ const ResultPageA2 = () => {
                   className="w-full h-auto min-h-[5.5rem] whitespace-normal leading-snug text-xs sm:text-sm md:text-base py-4 px-4"
                   asChild
                 >
-                  <a href="/buch/anbot3g4a3e">
+                  <a href="https://www.digistore24.com/product/675804?voucher=quizrabatt" target="_blank" rel="noopener noreferrer">
                     Ja &ndash; ich will endlich aufh&ouml;ren, gegen meinen K&ouml;rper zu arbeiten
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
