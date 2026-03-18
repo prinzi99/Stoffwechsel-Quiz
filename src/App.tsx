@@ -22,6 +22,7 @@ import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
 import BuchAnbot from "./pages/BuchAnbot";
+import BuchAnbot2 from "./pages/BuchAnbot2";
 import BuchBonus from "./pages/BuchBonus";
 import Analyse from "./pages/Analyse";
 import BuchBonusIntern from "./pages/BuchBonusIntern";
