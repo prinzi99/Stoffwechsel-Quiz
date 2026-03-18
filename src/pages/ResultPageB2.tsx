@@ -186,20 +186,12 @@ const ResultPageB2 = () => {
                     ))}
                   </ul>
 
-                  <p className="text-sm font-semibold text-foreground mb-3">Viele Leser berichten schon nach kurzer Zeit von:</p>
-                  <ul className="space-y-2">
-                    {[
-                      'mehr Energie im Alltag',
-                      'weniger Frieren und M\u00fcdigkeit',
-                      'klareren Entscheidungen bei Ern\u00e4hrung',
-                      'weniger Frust beim Abnehmen',
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                        <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="py-6 my-2 border-y border-primary/20">
+                    <p className="text-base md:text-lg font-extrabold text-primary leading-snug">
+                      Je weniger Du Deinem Körper gibst,<br />
+                      desto weniger gibt er Dir zurück.
+                    </p>
+                  </div>
                 </div>
               </div>
 
