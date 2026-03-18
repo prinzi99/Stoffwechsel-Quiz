@@ -126,8 +126,9 @@ const ResultPageA2 = () => {
               <p>Dein Ergebnis zeigt nicht, dass Du zu wenig Disziplin hast.</p>
               <p>Es zeigt, dass Dein K&ouml;rper unter Stress reagiert.</p>
               <div className="pt-2">
-                <p>Du versuchst, weiter zu funktionieren.</p>
-                <p>Mehr Kontrolle. Mehr Struktur. Mehr Druck.</p>
+                <p>Du gibst Dir mehr M&uuml;he als die meisten.</p>
+                <p>Kontrollierst mehr. Planst mehr. Verzichtest mehr.</p>
+                <p>Und merkst, dass es immer weniger bringt.</p>
               </div>
               <p className="font-semibold text-foreground">Und genau das h&auml;lt Dich fest.</p>
               <div className="pt-2">
@@ -157,7 +158,7 @@ const ResultPageA2 = () => {
                   <p className="text-sm font-semibold text-foreground mb-3">Genau deshalb brauchst Du dieses Buch.</p>
                   <ul className="space-y-2 mb-6">
                     {[
-                      'warum Dein K\u00f6rper unter Stress Energie spart statt verbrennt',
+                      'warum Dein K\u00f6rper unter Stress Energie zur\u00fckh\u00e4lt \u2013 egal wie diszipliniert Du bist',
                       'warum Kontrolle und Disziplin Deinen Fortschritt blockieren',
                       'warum Dein System Sicherheit braucht, bevor Ver\u00e4nderung m\u00f6glich wird',
                       'und wie Du diesen Kreislauf Schritt f\u00fcr Schritt durchbrichst',
@@ -194,7 +195,7 @@ const ResultPageA2 = () => {
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
-                    Ja &ndash; ich will endlich verstehen, warum nichts funktioniert
+                    Ja &ndash; ich will endlich aufh&ouml;ren, gegen meinen K&ouml;rper zu arbeiten
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
