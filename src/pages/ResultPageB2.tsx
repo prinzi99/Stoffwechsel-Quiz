@@ -30,7 +30,8 @@ const ResultPageB2 = () => {
           {/* 1. Headline */}
           <header className="text-center mb-12">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-3">
-              Was bei Deinem Stoffwechsel <span className="text-primary">aktuell passiert</span>
+              Du gibst Dir Mühe.<br />
+              <span className="text-primary">Und genau das reicht gerade nicht.</span>
             </h1>
             <p className="text-base md:text-lg text-muted-foreground">
               Dein Stoffwechsel-Profil: <strong className="text-foreground">Unterversorgter Stoffwechsel</strong>
