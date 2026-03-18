@@ -227,7 +227,6 @@ const Anbot2Content = () => {
                 <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
                   Jetzt verstehen, warum Dein K&ouml;rper blockiert
                 </a>
-                </a>
               </Button>
             </div>
           </div>
