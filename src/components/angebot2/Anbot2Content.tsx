@@ -104,6 +104,7 @@ const Anbot2Content = () => {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Änderung 6 – IDENTIFIKATION */}
