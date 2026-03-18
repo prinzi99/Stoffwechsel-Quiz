@@ -158,7 +158,7 @@ const Anbot2Content = () => {
               Der Fehler ist, wie Du es einordnest.
             </p>
 
-            <div className="space-y-1 text-sm md:text-base text-foreground/80 mb-3 md:mb-5">
+            <div className="inline-block text-left space-y-1 text-sm md:text-base text-foreground/80 mb-3 md:mb-5 mx-auto">
               <p>&ndash; Dein K&ouml;rper reduziert Energie, um Dich zu sch&uuml;tzen</p>
               <p>&ndash; Fortschritt stoppt nicht ohne Grund</p>
               <p>&ndash; Mehr Druck verst&auml;rkt genau das Problem</p>
