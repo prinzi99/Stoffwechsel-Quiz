@@ -159,7 +159,7 @@ const Anbot2Content = () => {
               <p className="pt-1">Mehr Kontrolle.</p>
               <p>Mehr Disziplin.</p>
               <p>Mehr Verzicht.</p>
-              <p className="pt-1 font-semibold text-foreground">Und genau das ist der Fehler.</p>
+              <p className="pt-1 font-semibold text-foreground">Und genau hier liegt der Denkfehler.</p>
             </div>
 
             {/* UMKEHR */}
@@ -171,17 +171,19 @@ const Anbot2Content = () => {
             </div>
 
             {/* MIC-DROP */}
-            <p className="text-base md:text-lg font-bold text-primary leading-snug mb-3 md:mb-5">
-              Der Fehler ist nicht Dein Verhalten.<br />
-              Der Fehler ist, wie Du es interpretierst.
-            </p>
+            <div className="my-5 md:my-8 py-4 md:py-5 border-y border-primary/20">
+              <p className="text-lg md:text-xl font-extrabold text-primary leading-snug">
+                Der Fehler ist nicht Dein Verhalten.<br />
+                Der Fehler ist, wie Du es interpretierst.
+              </p>
+            </div>
 
             {/* BULLETPOINTS */}
             <div className="inline-block text-left space-y-1 text-sm md:text-base text-foreground/80 mb-3 md:mb-5">
               <p>&ndash; Dein K&ouml;rper reduziert Energie nicht zuf&auml;llig</p>
               <p>&ndash; Stillstand ist kein Versagen, sondern eine Reaktion</p>
               <p>&ndash; Mehr Disziplin verst&auml;rkt genau das, was Dich blockiert</p>
-              <p>&ndash; Dein System folgt klaren Regeln &ndash; nur nicht den falschen</p>
+              <p>&ndash; Dein System folgt klaren Regeln &ndash; nur nicht denen, die Du aktuell nutzt</p>
             </div>
 
             {/* ABSCHLUSS */}
@@ -192,8 +194,9 @@ const Anbot2Content = () => {
 
             {/* CTA ÜBERLEITUNG */}
             <div className="text-sm md:text-base text-foreground/80 leading-relaxed space-y-1">
-              <p>Wenn das f&uuml;r Dich gerade Sinn macht,</p>
-              <p>dann ist dieses Buch der n&auml;chste Schritt.</p>
+              <p>Wenn Du das hier gerade erkennst,</p>
+              <p>dann wei&szlig;t Du, warum es bisher nicht funktioniert hat.</p>
+              <p className="pt-1 font-medium text-foreground">Und genau deshalb ist dieses Buch der n&auml;chste Schritt.</p>
             </div>
           </div>
         </div>
