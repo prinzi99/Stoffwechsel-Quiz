@@ -20,12 +20,28 @@ const Anbot2Content = () => {
           </h1>
 
           {/* NACH HEADLINE */}
-          <p className="text-sm md:text-lg text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1 md:mb-2">
+          <p className="text-sm md:text-lg text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-0.5 md:mb-1">
             Denn genau das bringt Dich immer wieder zur&uuml;ck an denselben Punkt.
           </p>
-          <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-0 md:mb-2">
-            Du f&auml;ngst neu an &ndash; Du ziehst durch.<br />
-            Und trotzdem landest Du wieder genau da, wo Du vorher warst.
+          <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-0.5 md:mb-1">
+            Du f&auml;ngst neu an. Du ziehst durch.
+          </p>
+          <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-0.5 md:mb-1">
+            Und trotzdem passiert&hellip; nichts.
+          </p>
+          <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1.5 md:mb-2">
+            Und genau deshalb steckst Du fest.
+          </p>
+
+          {/* EMOTIONALER BLOCK */}
+          <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-0.5 md:mb-1">
+            Irgendwann denkst Du:
+          </p>
+          <p className="text-sm md:text-base text-foreground italic leading-snug text-center max-w-2xl mx-auto mb-0.5 md:mb-1">
+            &bdquo;Vielleicht liegt es an mir.&ldquo;
+          </p>
+          <p className="text-sm md:text-base font-semibold text-foreground leading-snug text-center max-w-2xl mx-auto mb-1 md:mb-2">
+            Tut es nicht.
           </p>
 
           {/* DESKTOP: classic 2-col (book left, all text right) */}
@@ -41,12 +57,8 @@ const Anbot2Content = () => {
               />
             </div>
             <div className="flex-1 space-y-2.5">
-              <p className="text-base text-foreground/80 leading-snug">
-                Dieses Buch zeigt Dir, warum Dein K&ouml;rper blockiert
-                &ndash; und warum alles, was Du bisher versucht hast, Dein Problem verst&auml;rkt hat.
-              </p>
               <div>
-                <p className="text-base font-semibold text-foreground mb-0.5">Im Buch lernst Du:</p>
+                <p className="text-base font-semibold text-foreground mb-0.5">Genau das erkl&auml;rt dieses Buch.</p>
                 <div className="space-y-0.5 text-sm text-foreground/80">
                   <p>&ndash; warum Dein K&ouml;rper Deinen Fortschritt aktiv ausbremst &ndash; obwohl Du alles richtig machst</p>
                   <p>&ndash; warum Dein Kalorienverbrauch sinkt, ohne dass Du es bemerkst</p>
@@ -54,18 +66,12 @@ const Anbot2Content = () => {
                   <p>&ndash; und wie Du diesen Kreislauf endlich durchbrichst</p>
                 </div>
               </div>
-              <div className="text-sm text-foreground/80 leading-snug">
-                <p>Dein K&ouml;rper ist kein Taschenrechner.<span className="font-medium text-foreground"> Er ist ein Schutzsystem.</span></p>
-              </div>
               <div className="py-3">
                 <p className="text-base font-bold text-primary leading-snug">
                   Je mehr Du versuchst abzunehmen,<br />
                   desto besser wird Dein K&ouml;rper darin, es zu verhindern.
                 </p>
               </div>
-              <p className="text-sm font-medium text-foreground/70 italic leading-snug">
-                Danach wei&szlig;t Du, warum es bisher nicht funktioniert hat.
-              </p>
               <div className="bg-card border-2 border-primary/30 rounded-xl p-5 text-center shadow-xl relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
                 <p className="text-sm text-primary font-medium tracking-wide mb-1">Exklusiv f&uuml;r Quiz-Teilnehmer</p>
@@ -75,20 +81,15 @@ const Anbot2Content = () => {
                 </div>
                 <Button variant="cta" size="xl" asChild className="w-full text-base py-5 h-auto whitespace-normal">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                    Jetzt verstehen, warum es bisher nicht funktioniert hat
+                    Jetzt verstehen, warum Dein K&ouml;rper blockiert
                   </a>
                 </Button>
               </div>
             </div>
           </div>
 
-          {/* MOBILE: teaser full-width, then book+bullets side by side, rest full-width */}
+          {/* MOBILE: book+bullets side by side, rest full-width */}
           <div className="md:hidden">
-            <p className="text-sm text-foreground/80 leading-snug text-center mb-1">
-              Dieses Buch zeigt Dir, warum Dein K&ouml;rper blockiert
-              &ndash; und warum alles, was Du bisher versucht hast, Dein Problem verst&auml;rkt hat.
-            </p>
-
             <div className="flex flex-row items-start gap-3 mb-2">
               <div className="w-28 sm:w-36 flex-shrink-0">
                 <img
@@ -101,7 +102,7 @@ const Anbot2Content = () => {
                 />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-foreground mb-0.5">Im Buch lernst Du:</p>
+                <p className="text-sm font-semibold text-foreground mb-0.5">Genau das erkl&auml;rt dieses Buch.</p>
                 <div className="space-y-0.5 text-xs text-foreground/80">
                   <p>&ndash; warum Dein K&ouml;rper Deinen Fortschritt aktiv ausbremst &ndash; obwohl Du alles richtig machst</p>
                   <p>&ndash; warum Dein Kalorienverbrauch sinkt, ohne dass Du es bemerkst</p>
@@ -112,18 +113,12 @@ const Anbot2Content = () => {
             </div>
 
             <div className="space-y-1.5">
-              <div className="text-xs text-foreground/80 leading-snug">
-                <p>Dein K&ouml;rper ist kein Taschenrechner.<span className="font-medium text-foreground"> Er ist ein Schutzsystem.</span></p>
-              </div>
               <div className="py-2">
                 <p className="text-sm font-bold text-primary leading-snug">
                   Je mehr Du versuchst abzunehmen,<br />
                   desto besser wird Dein K&ouml;rper darin, es zu verhindern.
                 </p>
               </div>
-              <p className="text-xs font-medium text-foreground/70 italic leading-snug">
-                Danach wei&szlig;t Du, warum es bisher nicht funktioniert hat.
-              </p>
               <div className="bg-card border-2 border-primary/30 rounded-xl p-3 text-center shadow-xl relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
                 <p className="text-xs text-primary font-medium tracking-wide mb-1">Exklusiv f&uuml;r Quiz-Teilnehmer</p>
@@ -133,7 +128,7 @@ const Anbot2Content = () => {
                 </div>
                 <Button variant="cta" size="xl" asChild className="w-full text-sm py-3 h-auto whitespace-normal">
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                    Jetzt verstehen, warum es bisher nicht funktioniert hat
+                    Jetzt verstehen, warum Dein K&ouml;rper blockiert
                   </a>
                 </Button>
               </div>
