@@ -211,8 +211,8 @@ const ResultPageC2 = () => {
                   className="w-full h-auto min-h-[3.5rem] whitespace-normal leading-snug text-xs sm:text-sm md:text-base py-4 px-4"
                   asChild
                 >
-                  <a href="/buch/anbot3g4a3e">
-                    Ja &mdash; ich will verstehen, warum mein Stoffwechsel nach vielen Di&auml;ten blockiert
+                  <a href="https://www.digistore24.com/product/675804?voucher=quizrabatt" target="_blank" rel="noopener noreferrer">
+                    Ja – ich will verstehen, warum mein Körper nicht mehr reagiert
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
