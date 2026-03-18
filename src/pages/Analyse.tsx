@@ -87,6 +87,20 @@ const Analyse = () => {
   const anbotViews = pageViews.filter((v) => v.page_path.includes("anbot")).length;
   const anbotViewsToday = pageViews.filter((v) => v.page_path.includes("anbot") && v.viewed_at.startsWith(todayStr)).length;
 
+  // Button click stats
+  const totalClicks = buttonClicks.length;
+  const clicksToday = buttonClicks.filter((c) => c.clicked_at.startsWith(todayStr)).length;
+  const clickConversionRate = anbotViews > 0 ? ((totalClicks / anbotViews) * 100).toFixed(1) : "0";
+
+  const clicksByButton = useMemo(() => {
+    const map: Record<string, number> = {};
+    buttonClicks.forEach((c) => {
+      const label = c.button_label || "Unbekannt";
+      map[label] = (map[label] || 0) + 1;
+    });
+    return Object.entries(map).sort(([, a], [, b]) => b - a);
+  }, [buttonClicks]);
+
   const pageStats = useMemo(() => {
     const map: Record<string, { count: number; title: string }> = {};
     pageViews.forEach((v) => {
