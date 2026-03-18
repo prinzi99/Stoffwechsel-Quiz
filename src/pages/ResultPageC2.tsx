@@ -115,39 +115,29 @@ const ResultPageC2 = () => {
             </div>
           </section>
 
-          {/* 6b. Wie Du Deinen Stoffwechsel aus dem Diätmodus herausholst */}
+          {/* 6b. Überleitung zum Buch */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-foreground mb-2 flex items-center gap-2">
-              <BookOpen className="w-5 h-5 text-primary" />
-              Wie Du Deinen Stoffwechsel aus dem Di&auml;tmodus herausholst
-            </h2>
-            <p className="text-sm text-muted-foreground mb-5">
-              Gerade wenn Dein K&ouml;rper sich an wiederholte Einschr&auml;nkung angepasst hat
-            </p>
-
-            <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">
-              <p>
-                Wenn Du schon mehrfach Di&auml;ten gemacht, Kalorien gesenkt oder nach R&uuml;ckschl&auml;gen wieder neu gestartet hast, reagiert Dein K&ouml;rper irgendwann nicht mehr so wie am Anfang. Was fr&uuml;her funktioniert hat, bringt heute oft kaum noch etwas. Nicht weil Du zu wenig willst, sondern weil Dein System gelernt hat, Energie vorsichtiger zu behandeln.
-              </p>
-              <p>
-                Genau das macht den &uuml;berangepassten Di&auml;t-Stoffwechsel so frustrierend: Du gibst Dir M&uuml;he, bist kontrolliert, ziehst durch &mdash; und trotzdem bleibt der Fortschritt aus oder wird immer schwerer.
-              </p>
-              <p>Deshalb habe ich einen klaren Leitfaden entwickelt, der Dir verst&auml;ndlich zeigt,</p>
-              <ul className="space-y-2 pl-1">
-                {[
-                  'warum wiederholte Di\u00e4ten den Stoffwechsel ausbremsen k\u00f6nnen',
-                  'welche Denkfehler viele trotz Disziplin immer wieder machen',
-                  'wie Du aus diesem Muster Schritt f\u00fcr Schritt wieder herauskommst',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-secondary mt-2.5 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4">
-                Wenn Du verstehen willst, warum Dein K&ouml;rper trotz Einsatz nicht mehr normal reagiert und wie Du aus dieser Di&auml;tspirale wieder herausfindest, dann ist dieser Leitfaden der richtige n&auml;chste Schritt.
-              </p>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p className="text-foreground">Dein Ergebnis zeigt nicht, dass Du etwas falsch machst.</p>
+              <p className="text-foreground">Es zeigt, dass Dein Körper sich angepasst hat.</p>
+              <div className="pt-2">
+                <p>Du hast kontrolliert gegessen.</p>
+                <p>Kalorien reduziert.</p>
+                <p>Dich diszipliniert durchgezogen.</p>
+              </div>
+              <p className="text-foreground">Und am Anfang hat es funktioniert.</p>
+              <div className="pt-2">
+                <p>Aber jetzt:</p>
+                <p>Stillstand.</p>
+                <p>Rückschritte.</p>
+                <p>Oder Dein Körper reagiert gar nicht mehr.</p>
+              </div>
+              <p className="text-foreground font-semibold">Und genau das ist der Punkt, an dem alles kippt.</p>
+              <div className="pt-2">
+                <p>Irgendwann denkst Du:</p>
+                <p className="italic text-foreground">„Ich muss einfach noch konsequenter sein."</p>
+              </div>
+              <p className="font-semibold text-foreground">Genau das macht es schlimmer.</p>
             </div>
           </section>
 
