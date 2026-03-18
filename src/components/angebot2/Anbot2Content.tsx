@@ -30,7 +30,7 @@ const Anbot2Content = () => {
             Und trotzdem passiert&hellip; nichts.
           </p>
           <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-1.5 md:mb-2">
-            Und genau deshalb steckst Du fest.
+            Genau deshalb steckst Du fest.
           </p>
 
           {/* EMOTIONALER BLOCK */}
@@ -61,8 +61,8 @@ const Anbot2Content = () => {
                 <p className="text-base font-semibold text-foreground mb-0.5">Genau das erkl&auml;rt dieses Buch.</p>
                 <div className="space-y-0.5 text-sm text-foreground/80">
                   <p>&ndash; warum Dein K&ouml;rper Deinen Fortschritt aktiv ausbremst &ndash; obwohl Du alles richtig machst</p>
-                  <p>&ndash; warum Dein Kalorienverbrauch sinkt, ohne dass Du es bemerkst</p>
-                  <p>&ndash; warum mehr Disziplin Dein Problem verst&auml;rkt statt l&ouml;st</p>
+                  <p>&ndash; wie Dein Kalorienverbrauch sinkt, ohne dass Du es bemerkst</p>
+                  <p>&ndash; weshalb mehr Disziplin Dein Problem verst&auml;rkt statt l&ouml;st</p>
                   <p>&ndash; und wie Du diesen Kreislauf endlich durchbrichst</p>
                 </div>
               </div>
@@ -105,8 +105,8 @@ const Anbot2Content = () => {
                 <p className="text-sm font-semibold text-foreground mb-0.5">Genau das erkl&auml;rt dieses Buch.</p>
                 <div className="space-y-0.5 text-xs text-foreground/80">
                   <p>&ndash; warum Dein K&ouml;rper Deinen Fortschritt aktiv ausbremst &ndash; obwohl Du alles richtig machst</p>
-                  <p>&ndash; warum Dein Kalorienverbrauch sinkt, ohne dass Du es bemerkst</p>
-                  <p>&ndash; warum mehr Disziplin Dein Problem verst&auml;rkt statt l&ouml;st</p>
+                  <p>&ndash; wie Dein Kalorienverbrauch sinkt, ohne dass Du es bemerkst</p>
+                  <p>&ndash; weshalb mehr Disziplin Dein Problem verst&auml;rkt statt l&ouml;st</p>
                   <p>&ndash; und wie Du diesen Kreislauf endlich durchbrichst</p>
                 </div>
               </div>
