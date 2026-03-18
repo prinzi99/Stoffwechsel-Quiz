@@ -121,6 +121,10 @@ const ResultPageC2 = () => {
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p className="text-foreground">Dein Ergebnis zeigt nicht, dass Du etwas falsch machst.</p>
               <p className="text-foreground">Es zeigt, dass Dein Körper sich angepasst hat.</p>
+              <div className="pt-3 pb-1">
+                <p className="text-foreground font-bold text-primary">Dein Körper hat nicht aufgehört zu funktionieren.</p>
+                <p className="text-foreground font-bold text-primary">Er hat sich angepasst.</p>
+              </div>
               <div className="pt-2">
                 <p>Du hast kontrolliert gegessen.</p>
                 <p>Kalorien reduziert.</p>
@@ -131,9 +135,9 @@ const ResultPageC2 = () => {
                 <p>Aber jetzt:</p>
                 <p>Stillstand.</p>
                 <p>Rückschritte.</p>
-                <p>Oder Dein Körper reagiert gar nicht mehr.</p>
+                <p>Oder Dein Körper reagiert einfach gar nicht mehr.</p>
               </div>
-              <p className="text-foreground font-semibold">Und genau das ist der Punkt, an dem alles kippt.</p>
+              <p className="text-foreground font-semibold">Und genau das ist der Punkt, an dem es nicht mehr logisch wirkt.</p>
               <div className="pt-2">
                 <p>Irgendwann denkst Du:</p>
                 <p className="italic text-foreground">„Ich muss einfach noch konsequenter sein."</p>
@@ -212,7 +216,7 @@ const ResultPageC2 = () => {
                   asChild
                 >
                   <a href="https://www.digistore24.com/product/675804?voucher=quizrabatt" target="_blank" rel="noopener noreferrer">
-                    Ja – ich will verstehen, warum mein Körper nicht mehr reagiert
+                    Ja – ich will endlich wieder Fortschritt sehen
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
