@@ -30,7 +30,8 @@ const ResultPageB2 = () => {
           {/* 1. Headline */}
           <header className="text-center mb-12">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-3">
-              Was bei Deinem Stoffwechsel <span className="text-primary">aktuell passiert</span>
+              Du gibst Dir Mühe.<br />
+              <span className="text-primary">Und genau das reicht gerade nicht.</span>
             </h1>
             <p className="text-base md:text-lg text-muted-foreground">
               Dein Stoffwechsel-Profil: <strong className="text-foreground">Unterversorgter Stoffwechsel</strong>
@@ -117,39 +118,27 @@ const ResultPageB2 = () => {
             </div>
           </section>
 
-          {/* 6b. Wie Du Deinen Stoffwechsel wieder versorgst */}
+          {/* 6b. Überleitung zum Buch */}
           <section className="mb-10">
-            <h2 className="text-xl font-bold text-foreground mb-2 flex items-center gap-2">
-              <BookOpen className="w-5 h-5 text-primary" />
-              Wie Du Deinen Stoffwechsel wieder versorgst und in Bewegung bringst
-            </h2>
-            <p className="text-sm text-muted-foreground mb-5">
-              Gerade wenn Dein K&ouml;rper aktuell auf Sparflamme l&auml;uft
-            </p>
-
-            <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">
-              <p>
-                Wenn Dein K&ouml;rper &uuml;ber l&auml;ngere Zeit zu wenig Energie, Eiwei&szlig; oder Fett bekommt, reagiert er oft nicht mit mehr Freigabe, sondern mit Schutz. Genau deshalb machen noch weniger Essen, noch mehr Verzicht oder noch strengere Kontrolle das Problem h&auml;ufig noch gr&ouml;&szlig;er.
-              </p>
-              <p>
-                Viele merken zwar, dass sie m&uuml;de, frustriert und blockiert sind, reagieren aber trotzdem mit weiterer Reduktion. Das Problem ist nur: Ein unterversorgter Stoffwechsel braucht nicht noch weniger. Er braucht zuerst wieder Versorgung und Sicherheit.
-              </p>
-              <p>Deshalb habe ich einen klaren Leitfaden entwickelt, der Dir verst&auml;ndlich zeigt,</p>
-              <ul className="space-y-2 pl-1">
-                {[
-                  'warum Unterversorgung Deinen Stoffwechsel ausbremsen kann',
-                  'welche Fehler viele in genau dieser Situation machen',
-                  'wie Du Dein System wieder stabilisierst, ohne in blinden Verzicht zu rutschen',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-secondary mt-2.5 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4">
-                Wenn Du verstehen willst, warum Dein K&ouml;rper gerade auf Mangel mit Stillstand reagiert und was ihm wirklich helfen kann, dann ist dieser Leitfaden der richtige n&auml;chste Schritt.
-              </p>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p className="text-foreground">Dein Ergebnis zeigt nicht, dass Du undiszipliniert bist.</p>
+              <p className="text-foreground">Es zeigt, dass Dein Körper unterversorgt ist.</p>
+              <div className="pt-2">
+                <p>Du isst bewusst.</p>
+                <p>Achte auf Qualität.</p>
+                <p>Versuchst, alles richtig zu machen.</p>
+              </div>
+              <div className="pt-2">
+                <p>Und trotzdem fühlst Du Dich:</p>
+                <p>müde</p>
+                <p>leer</p>
+                <p>und kommst nicht voran</p>
+              </div>
+              <div className="pt-2">
+                <p>Irgendwann denkst Du:</p>
+                <p className="italic text-foreground">„Ich esse doch schon so wenig… warum passiert nichts?"</p>
+              </div>
+              <p className="font-semibold text-foreground">Genau das ist das Problem.</p>
             </div>
           </section>
 
@@ -183,13 +172,13 @@ const ResultPageB2 = () => {
                     Gerade beim unterversorgten Stoffwechsel liegt das Problem oft nicht in fehlender Konsequenz, sondern in einem System, das &uuml;ber l&auml;ngere Zeit zu wenig bekommen hat und deshalb Reserven sch&uuml;tzt, statt sie freizugeben.
                   </p>
 
-                  <p className="text-sm font-semibold text-foreground mb-3">Du erf&auml;hrst:</p>
+                  <p className="text-sm font-semibold text-foreground mb-3">Genau deshalb brauchst Du dieses Buch.</p>
                   <ul className="space-y-2 mb-6">
                     {[
-                      'warum zu wenig Energie den Stoffwechsel sp\u00fcrbar ausbremsen kann',
-                      'welche typischen Fehler viele aus Angst vor Gewichtszunahme machen',
-                      'wie Du Deinem K\u00f6rper wieder mehr Sicherheit und Versorgung gibst',
-                      'warum noch mehr Reduktion das Problem oft versch\u00e4rft',
+                      'warum Dein Körper Energie zurückhält, obwohl Du wenig isst',
+                      'warum „weniger essen" Deinen Stoffwechsel noch weiter ausbremst',
+                      'warum gesunde Ernährung allein nicht reicht, wenn Deinem System Energie fehlt',
+                      'und wie Du Deinen Körper wieder versorgst, ohne zuzunehmen',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-muted-foreground">
                         <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
@@ -198,20 +187,12 @@ const ResultPageB2 = () => {
                     ))}
                   </ul>
 
-                  <p className="text-sm font-semibold text-foreground mb-3">Viele Leser berichten schon nach kurzer Zeit von:</p>
-                  <ul className="space-y-2">
-                    {[
-                      'mehr Energie im Alltag',
-                      'weniger Frieren und M\u00fcdigkeit',
-                      'klareren Entscheidungen bei Ern\u00e4hrung',
-                      'weniger Frust beim Abnehmen',
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                        <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="py-6 my-2 border-y border-primary/20">
+                    <p className="text-base md:text-lg font-extrabold text-primary leading-snug">
+                      Je weniger Du Deinem Körper gibst,<br />
+                      desto weniger gibt er Dir zurück.
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -231,7 +212,7 @@ const ResultPageB2 = () => {
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
-                    Ja &mdash; ich will verstehen, warum mein Stoffwechsel auf Mangel blockiert
+                    Ja – ich will verstehen, warum mein Körper trotz wenig Essen blockiert
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
