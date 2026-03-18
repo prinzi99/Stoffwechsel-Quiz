@@ -190,14 +190,48 @@ const Analyse = () => {
             ) : (
               <>
                 {/* KPI Cards */}
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <KpiCard icon={LogIn} label="Logins gesamt" value={totalLogins} />
                   <KpiCard icon={Eye} label="Seitenaufrufe Bonuspage" value={totalBonusPageViews} />
                   <KpiCard icon={TrendingUp} label="Logins heute" value={loginsToday} />
                   <KpiCard icon={Calendar} label="Aufrufe heute" value={viewsToday} />
                   <KpiCard icon={ShoppingCart} label="Angebotsseite gesamt" value={anbotViews} />
                   <KpiCard icon={ShoppingCart} label="Angebotsseite heute" value={anbotViewsToday} />
+                  <KpiCard icon={MousePointerClick} label="Kaufklicks gesamt" value={totalClicks} />
+                  <KpiCard icon={MousePointerClick} label="Kaufklicks heute" value={clicksToday} />
                 </div>
+
+                {/* Conversion Funnel */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg flex items-center gap-2">
+                      <MousePointerClick className="w-5 h-5 text-secondary" />
+                      Kaufbutton-Klicks (Angebotsseite)
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="flex items-center gap-4 text-sm">
+                      <span className="text-muted-foreground">Klickrate:</span>
+                      <Badge variant="secondary">{clickConversionRate}% der Besucher klicken</Badge>
+                    </div>
+                    {clicksByButton.length === 0 ? (
+                      <p className="text-sm text-muted-foreground">Noch keine Klick-Daten vorhanden.</p>
+                    ) : (
+                      <div className="space-y-3">
+                        {clicksByButton.map(([label, count]) => (
+                          <div key={label} className="flex items-center justify-between gap-4">
+                            <div className="min-w-0">
+                              <p className="text-sm font-medium text-foreground truncate">{label}</p>
+                            </div>
+                            <Badge variant="secondary" className="shrink-0">
+                              {count} Klicks
+                            </Badge>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
 
                 {/* Page Stats */}
                 <Card>
