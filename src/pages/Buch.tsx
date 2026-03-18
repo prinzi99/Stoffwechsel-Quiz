@@ -1,12 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
-import BuchHero from "@/components/buch/BuchHero";
-import BuchWarum from "@/components/buch/BuchWarum";
-import BuchInhalt from "@/components/buch/BuchInhalt";
-import BuchAutor from "@/components/buch/BuchAutor";
-import BuchBonus from "@/components/buch/BuchBonus";
-import BuchPreisbox from "@/components/buch/BuchPreisbox";
+import BuchContent from "@/components/buch/BuchContent";
 import BuchQuizHinweis from "@/components/buch/BuchQuizHinweis";
 
 const Buch = () => {
@@ -20,12 +15,7 @@ const Buch = () => {
       <Header />
 
       <main>
-        <BuchHero />
-        <BuchWarum />
-        <BuchInhalt />
-        <BuchAutor />
-        <BuchBonus />
-        <BuchPreisbox />
+        <BuchContent />
         <BuchQuizHinweis />
 
         {/* Medizinischer Hinweis */}
