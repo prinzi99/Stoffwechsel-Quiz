@@ -183,7 +183,7 @@ const Anbot2Content = () => {
               <p>&ndash; Dein K&ouml;rper reduziert Energie nicht zuf&auml;llig</p>
               <p>&ndash; Stillstand ist kein Versagen, sondern eine Reaktion</p>
               <p>&ndash; Mehr Disziplin verst&auml;rkt genau das, was Dich blockiert</p>
-              <p>&ndash; Dein System folgt klaren Regeln &ndash; nur nicht den falschen</p>
+              <p>&ndash; Dein System folgt klaren Regeln &ndash; nur nicht denen, die Du aktuell nutzt</p>
             </div>
 
             {/* ABSCHLUSS */}
