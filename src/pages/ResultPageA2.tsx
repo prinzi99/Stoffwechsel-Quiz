@@ -115,10 +115,10 @@ const ResultPageA2 = () => {
           <section className="mb-10">
             <div className="text-center mb-6">
               <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-                Du machst vieles richtig.
+                Du machst alles richtig.
               </h2>
               <p className="text-lg md:text-xl font-bold text-primary">
-                Und genau das blockiert Dich gerade.
+                Und genau das ist das Problem.
               </p>
             </div>
 
@@ -154,11 +154,11 @@ const ResultPageA2 = () => {
 
                 {/* Book Info */}
                 <div className="flex-1 text-center md:text-left">
-                  <p className="text-sm font-semibold text-foreground mb-3">Genau das erkl&auml;rt dieses Buch.</p>
+                  <p className="text-sm font-semibold text-foreground mb-3">Genau deshalb brauchst Du dieses Buch.</p>
                   <ul className="space-y-2 mb-6">
                     {[
                       'warum Dein K\u00f6rper unter Stress Energie spart statt verbrennt',
-                      'warum Kontrolle und Disziplin Deinen Fortschritt blockieren k\u00f6nnen',
+                      'warum Kontrolle und Disziplin Deinen Fortschritt blockieren',
                       'warum Dein System Sicherheit braucht, bevor Ver\u00e4nderung m\u00f6glich wird',
                       'und wie Du diesen Kreislauf Schritt f\u00fcr Schritt durchbrichst',
                     ].map((item, i) => (
@@ -169,10 +169,10 @@ const ResultPageA2 = () => {
                     ))}
                   </ul>
 
-                  <div className="py-4 border-y border-primary/20 mb-6">
+                  <div className="py-6 my-2 border-y border-primary/20 mb-6">
                     <p className="text-base md:text-lg font-extrabold text-primary leading-snug">
-                      Je mehr Druck Du erzeugst,<br />
-                      desto st&auml;rker h&auml;lt Dein K&ouml;rper dagegen.
+                      Je mehr Druck Du machst,<br />
+                      desto besser wird Dein K&ouml;rper darin, Dich zu stoppen.
                     </p>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ const ResultPageA2 = () => {
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
-                    Ja &ndash; ich will verstehen, warum mein K&ouml;rper unter Stress blockiert
+                    Ja &ndash; ich will endlich verstehen, warum nichts funktioniert
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
