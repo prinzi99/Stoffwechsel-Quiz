@@ -24,7 +24,8 @@ const Anbot2Content = () => {
             Denn genau das bringt Dich immer wieder zur&uuml;ck an denselben Punkt.
           </p>
           <p className="text-sm md:text-base text-foreground/80 leading-snug text-center max-w-2xl mx-auto mb-0 md:mb-2">
-            Du f&auml;ngst neu an <span className="text-primary/60 mx-1">|</span> Du ziehst durch <span className="text-primary/60 mx-1">|</span> Und trotzdem landest Du wieder genau da, wo Du vorher warst.
+            Du f&auml;ngst neu an &ndash; Du ziehst durch.<br />
+            Und trotzdem landest Du wieder genau da, wo Du vorher warst.
           </p>
 
           {/* DESKTOP: 2-column / MOBILE: stacked */}
