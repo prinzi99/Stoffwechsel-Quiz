@@ -190,7 +190,7 @@ const ResultPageB2 = () => {
                   <div className="py-6 my-2 border-y border-primary/20">
                     <p className="text-base md:text-lg font-extrabold text-primary leading-snug">
                       Je weniger Du Deinem Körper gibst,<br />
-                      desto weniger gibt er Dir zurück.
+                      desto mehr hält er zurück.
                     </p>
                   </div>
                 </div>
