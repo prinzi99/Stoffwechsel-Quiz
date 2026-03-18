@@ -198,7 +198,6 @@ const Anbot2Content = () => {
           </div>
         </div>
       </section>
-      </section>
 
       {/* SECTION 3 – CTA BLOCK */}
       <section className="py-6 md:py-10 bg-background">
