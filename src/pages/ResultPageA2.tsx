@@ -195,7 +195,7 @@ const ResultPageA2 = () => {
                   asChild
                 >
                   <a href="/buch/anbot3g4a3e">
-                    Ja &ndash; ich will endlich verstehen, warum nichts funktioniert
+                    Ja &ndash; ich will endlich aufh&ouml;ren, gegen meinen K&ouml;rper zu arbeiten
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
