@@ -196,8 +196,10 @@ const ResultPageB2 = () => {
                 </div>
               </div>
 
-              {/* Offer Box */}
-              <div className="mt-8 bg-primary/5 border-2 border-primary/15 rounded-xl p-6 text-center">
+              <p className="text-sm md:text-base font-medium text-muted-foreground mb-6">
+                Wenn Du das hier nicht verstehst, wird genau das so bleiben.
+              </p>
+              <div className="bg-primary/5 border-2 border-primary/15 rounded-xl p-6 text-center">
                 <p className="text-sm text-muted-foreground mb-2">
                   Exklusiver Sonderpreis f&uuml;r Teilnehmer des Stoffwechsel-Quiz
                 </p>
