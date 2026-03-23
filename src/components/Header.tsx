@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import biohackLogo from "@/assets/biohack-logo.png";
+import biohackLogo from "@/assets/biohack-logo-small.webp";
 
 const Header = () => {
   return (
