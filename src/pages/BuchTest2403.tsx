@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
+import Test2403Hero from "@/components/angebot2/Test2403Hero";
 import Anbot2Content from "@/components/angebot2/Anbot2Content";
 
 const BuchTest2403 = () => {
