@@ -1,6 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { trackButtonClick } from "@/hooks/useBonusTracking";
+import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
 
@@ -16,7 +17,7 @@ const Test2403Hero = () => {
   return (
     <section className="pt-6 pb-8 md:pt-12 md:pb-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
 
           {/* Pre-Headline */}
           <div className="mb-3 md:mb-4">
@@ -50,16 +51,29 @@ const Test2403Hero = () => {
             </p>
           </div>
 
-          {/* Bullet Section */}
-          <div className="text-left max-w-lg mx-auto mb-7 md:mb-10">
-            <p className="text-sm md:text-base font-semibold text-foreground mb-4 text-center">
-              In diesem Buch zeige ich Dir:
-            </p>
-            <div className="space-y-3.5">
+          {/* Bullet Section with Book Mockup */}
+          <p className="text-sm md:text-base font-semibold text-foreground mb-4 text-center">
+            In diesem Buch zeige ich Dir:
+          </p>
+
+          <div className="flex flex-row items-start gap-4 md:gap-8 max-w-2xl mx-auto mb-7 md:mb-10">
+            {/* Book Cover */}
+            <div className="w-28 sm:w-32 md:w-48 flex-shrink-0">
+              <img
+                src={bookCover}
+                alt="Du bist nicht das Problem – Buchcover"
+                className="w-full h-auto rounded-xl shadow-2xl"
+                width={800}
+                height={1067}
+              />
+            </div>
+
+            {/* Bullets */}
+            <div className="flex-1 min-w-0 space-y-3 md:space-y-3.5 text-left">
               {bullets.map((text, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm md:text-base text-foreground/85 leading-snug">
+                <div key={i} className="flex items-start gap-2 md:gap-3">
+                  <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-xs sm:text-sm md:text-base text-foreground/85 leading-snug">
                     {text}
                   </span>
                 </div>
