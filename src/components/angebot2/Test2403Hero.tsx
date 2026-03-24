@@ -75,18 +75,30 @@ const Test2403Hero = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <Button
-            variant="cta"
-            size="xl"
-            asChild
-            className="w-full max-w-lg mx-auto h-auto min-h-[3.5rem] whitespace-normal leading-snug text-base md:text-lg py-5 md:py-6 shadow-xl hover:shadow-2xl transition-shadow"
-            onClick={() => trackButtonClick("/buch/test2403", "Hero CTA", DIGISTORE_URL)}
-          >
-            <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-              Stoffwechsel-Code knacken &amp; abnehmen
-            </a>
-          </Button>
+          {/* Preisbox + CTA */}
+          <div className="max-w-lg mx-auto">
+            <div className="bg-card border-2 border-primary/30 rounded-2xl p-5 md:p-8 text-center shadow-xl relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
+              <p className="text-xs md:text-sm text-primary font-medium tracking-wide mb-1 mt-1">
+                Exklusiv f&uuml;r Quiz-Teilnehmer
+              </p>
+              <div className="flex items-baseline justify-center gap-2 md:gap-3 mb-2">
+                <span className="text-sm md:text-lg text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
+                <span className="text-3xl md:text-5xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
+              </div>
+              <Button
+                variant="cta"
+                size="xl"
+                asChild
+                className="w-full h-auto min-h-[3.25rem] whitespace-normal leading-snug text-sm md:text-lg py-5 md:py-6 shadow-xl"
+                onClick={() => trackButtonClick("/buch/test2403", "Hero CTA", DIGISTORE_URL)}
+              >
+                <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
+                  Stoffwechsel-Code knacken &amp; abnehmen
+                </a>
+              </Button>
+            </div>
+          </div>
 
         </div>
       </div>
