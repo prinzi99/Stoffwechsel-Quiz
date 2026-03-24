@@ -1,0 +1,89 @@
+import { CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { trackButtonClick } from "@/hooks/useBonusTracking";
+
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+
+const bullets = [
+  "Wie Du die Blockade Deines Stoffwechsels gezielt auflöst – selbst wenn bisher nichts funktioniert hat",
+  "Warum Dein Körper genau dann dichtmacht, wenn Du alles richtig machst – und wie Du ihn wieder öffnest",
+  "Der Punkt, an dem mehr Disziplin Deinen Fortschritt zerstört – und was stattdessen endlich wirkt",
+  "Wie Du Deinen Körper aus dem Festhalten-Modus zurück in echte Fettverbrennung bringst",
+  "Warum Dein Stoffwechsel nicht reagiert – bis Du genau diesen einen Mechanismus veränderst",
+];
+
+const Test2403Hero = () => {
+  return (
+    <section className="pt-6 pb-8 md:pt-12 md:pb-16 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="max-w-2xl mx-auto text-center">
+
+          {/* Pre-Headline */}
+          <div className="mb-3 md:mb-4">
+            <span className="inline-block text-xs md:text-sm font-semibold tracking-widest uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">
+              Der Stoffwechsel-Code™
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-foreground leading-[1.1] mb-4 md:mb-5">
+            Du machst alles richtig.
+            <br />
+            <span className="text-primary">
+              Und genau das ist das Problem.
+            </span>
+          </h1>
+
+          {/* Subheadline */}
+          <p className="text-base md:text-lg text-foreground/75 leading-relaxed mb-5 md:mb-7 max-w-xl mx-auto">
+            Wie Du Deinen <span className="font-semibold text-foreground">Stoffwechsel-Code</span> knackst,
+            <br className="hidden sm:block" /> wenn Dein Körper blockiert
+            <br className="hidden sm:block" /> und Abnehmen trotz Disziplin nicht funktioniert.
+          </p>
+
+          {/* Bridge */}
+          <div className="mb-7 md:mb-10 py-4 md:py-5 border-y border-primary/15">
+            <p className="text-base md:text-lg font-bold text-foreground leading-snug">
+              Dein Stoffwechsel ist nicht kaputt.
+              <br />
+              Er hat sich angepasst.
+            </p>
+          </div>
+
+          {/* Bullet Section */}
+          <div className="text-left max-w-lg mx-auto mb-7 md:mb-10">
+            <p className="text-sm md:text-base font-semibold text-foreground mb-4 text-center">
+              In diesem Buch zeige ich Dir:
+            </p>
+            <div className="space-y-3.5">
+              {bullets.map((text, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm md:text-base text-foreground/85 leading-snug">
+                    {text}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <Button
+            variant="cta"
+            size="xl"
+            asChild
+            className="w-full max-w-lg mx-auto h-auto min-h-[3.5rem] whitespace-normal leading-snug text-base md:text-lg py-5 md:py-6 shadow-xl hover:shadow-2xl transition-shadow"
+            onClick={() => trackButtonClick("/buch/test2403", "Hero CTA", DIGISTORE_URL)}
+          >
+            <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
+              Stoffwechsel-Code knacken &amp; abnehmen
+            </a>
+          </Button>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Test2403Hero;

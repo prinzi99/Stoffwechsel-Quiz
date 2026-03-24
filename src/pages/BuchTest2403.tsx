@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
-import Anbot2Content from "@/components/angebot2/Anbot2Content";
+import Test2403Hero from "@/components/angebot2/Test2403Hero";
+import Test2403Body from "@/components/angebot2/Test2403Body";
 
 const BuchTest2403 = () => {
   useBonusPageView("/buch/test2403", "Buch Angebot Test 2403");
@@ -21,7 +22,8 @@ const BuchTest2403 = () => {
       <Header />
 
       <main className="pb-16 md:pb-0">
-        <Anbot2Content />
+        <Test2403Hero />
+        <Test2403Body />
 
         <div className="bg-muted py-6">
           <div className="container mx-auto px-4">
