@@ -19,12 +19,6 @@ const Test2403Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
 
-          {/* Pre-Headline */}
-          <div className="mb-3 md:mb-4">
-            <span className="inline-block text-xs md:text-sm font-semibold tracking-widest uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">
-              Der Stoffwechsel-Code™
-            </span>
-          </div>
 
           {/* Headline */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-foreground leading-[1.1] mb-4 md:mb-5">
