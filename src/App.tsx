@@ -23,6 +23,7 @@ import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
 import BuchAnbot from "./pages/BuchAnbot";
 import BuchAnbot2 from "./pages/BuchAnbot2";
+import BuchTest2403 from "./pages/BuchTest2403";
 import BuchAnbotOld from "./pages/BuchAnbotOld";
 import BuchBonus from "./pages/BuchBonus";
 import Analyse from "./pages/Analyse";
@@ -63,6 +64,7 @@ const App = () => {
             <Route path="/buch" element={<Buch />} />
             <Route path="/buch/anbot3g4a3e" element={<BuchAnbot2 />} />
             <Route path="/buch/angebot000z00-old" element={<BuchAnbotOld />} />
+            <Route path="/buch/test2403" element={<BuchTest2403 />} />
             <Route path="/buch/bonus" element={<BuchBonus />} />
             <Route path="/buch/bonus/intern" element={<BuchBonusIntern />} />
             <Route path="/buch/bonus/intern/biohacking-tools" element={<BiohackingTools />} />
