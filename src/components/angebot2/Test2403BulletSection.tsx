@@ -63,14 +63,10 @@ const bullets = [
 
 const Test2403BulletSection = () => {
   return (
-    <section className="py-6 md:py-10 bg-background">
+    <section className="py-4 md:py-6 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
-
-          <p className="text-sm md:text-base font-semibold text-foreground mb-2">
-            Das musst Du verstehen, wenn Du wieder abnehmen willst:
-          </p>
-          <div className="space-y-3 md:space-y-4 mb-4 md:mb-5">
+          <div className="space-y-3 md:space-y-4">
             {bullets.map((text, i) => (
               <div key={i} className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 md:w-7 md:h-7 text-primary flex-shrink-0 mt-0.5" />
@@ -80,21 +76,6 @@ const Test2403BulletSection = () => {
               </div>
             ))}
           </div>
-
-          {/* KONSEQUENZ */}
-          <div className="bg-destructive/5 rounded-xl py-2.5 px-4 md:py-3 md:px-6 mb-2 md:mb-3">
-            <p className="text-center text-sm md:text-base font-semibold text-foreground leading-snug">
-              Wenn Du das ignorierst, wirst Du weiter k&auml;mpfen –
-              <br />
-              ohne dass sich etwas ver&auml;ndert.
-            </p>
-          </div>
-
-          {/* PRODUKT-VERANKERUNG */}
-          <p className="text-center text-sm md:text-base font-bold text-foreground leading-snug">
-            Genau das lernst Du in diesem Buch.
-          </p>
-
         </div>
       </div>
     </section>

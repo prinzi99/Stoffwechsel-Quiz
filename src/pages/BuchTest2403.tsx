@@ -6,7 +6,6 @@ import { useBonusPageView } from "@/hooks/useBonusTracking";
 import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
 import Test2403Hero from "@/components/angebot2/Test2403Hero";
 import Test2403BulletSection from "@/components/angebot2/Test2403BulletSection";
-import Test2403Body from "@/components/angebot2/Test2403Body";
 import Test2403Emotion from "@/components/angebot2/Test2403Emotion";
 import Test2403MiniClose from "@/components/angebot2/Test2403MiniClose";
 
@@ -15,7 +14,6 @@ const BuchTest2403 = () => {
   const mainRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Scroll past the header so the headline is at the top
     mainRef.current?.scrollIntoView({ behavior: "instant" });
   }, []);
 
@@ -36,15 +34,6 @@ const BuchTest2403 = () => {
         <Test2403Emotion />
         <Test2403BulletSection />
         <Test2403MiniClose />
-        <Test2403Body />
-
-        <div className="bg-muted py-6">
-          <div className="container mx-auto px-4">
-            <p className="text-xs text-muted-foreground text-center max-w-xl mx-auto">
-              Die Inhalte dienen ausschließlich zu Informationszwecken und ersetzen keine medizinische Beratung.
-            </p>
-          </div>
-        </div>
       </main>
 
       <footer className="bg-muted text-muted-foreground py-8">
