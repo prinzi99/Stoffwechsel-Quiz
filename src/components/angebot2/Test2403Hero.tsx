@@ -11,7 +11,7 @@ const Test2403Hero = () => {
         <div className="max-w-2xl mx-auto">
 
           {/* HEADLINE */}
-          <h1 className="text-center text-[1.75rem] sm:text-3xl md:text-5xl font-extrabold text-foreground leading-[1.08] mb-1.5 md:mb-2">
+          <h1 className="text-left text-[1.75rem] sm:text-3xl md:text-5xl font-extrabold text-foreground leading-[1.08] mb-1.5 md:mb-2">
             Du isst weniger, trainierst mehr –
             <br />
             <span className="text-primary">
