@@ -5,27 +5,35 @@ const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizra
 
 const Test2403MiniClose = () => {
   return (
-    <section className="py-6 md:py-10 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto text-center space-y-6 md:space-y-8">
-
-          {/* MINI CLOSE */}
-          <div className="space-y-1.5">
-            <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Das ist der Punkt, an dem die meisten weiter k&auml;mpfen.
-            </p>
-            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-              Oder endlich erleben, wie sich wieder etwas bewegt.
+    <>
+      {/* SECTION 4 – KERNAUSSAGE */}
+      <section className="py-8 md:py-14 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-xl md:text-3xl font-extrabold text-primary leading-snug">
+              Dieses Buch ist der Unterschied zwischen Stillstand
+              <br />
+              und echtem Fortschritt.
             </p>
           </div>
+        </div>
+      </section>
 
-          {/* PRODUKT-ÜBERGANG */}
-          <p className="text-sm md:text-base font-bold text-foreground leading-snug">
-            Genau daf&uuml;r ist dieses Buch da.
-          </p>
+      {/* SECTION 5 – ÜBERGANG */}
+      <section className="pb-4 md:pb-6 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-sm md:text-base font-bold text-foreground leading-snug">
+              Genau daf&uuml;r ist dieses Buch da.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          {/* CTA BOX */}
-          <div className="max-w-lg mx-auto pt-2 md:pt-4">
+      {/* SECTION 6 – CTA */}
+      <section className="py-6 md:py-10 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-lg mx-auto">
             <div className="bg-card border-2 border-primary/50 rounded-2xl p-7 md:p-10 text-center shadow-[0_12px_50px_-10px_hsl(var(--primary)/0.3)] relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
 
@@ -52,10 +60,9 @@ const Test2403MiniClose = () => {
               </Button>
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

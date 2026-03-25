@@ -63,9 +63,14 @@ const bullets = [
 
 const Test2403BulletSection = () => {
   return (
-    <section className="py-4 md:py-6 bg-background">
+    <section className="py-6 md:py-10 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
+          {/* SECTION 3 – HEADLINE */}
+          <h2 className="text-lg md:text-2xl font-extrabold text-foreground text-center mb-6 md:mb-8">
+            Das passiert gerade in Deinem K&ouml;rper:
+          </h2>
+
           <div className="space-y-3 md:space-y-4">
             {bullets.map((text, i) => (
               <div key={i} className="flex items-start gap-3">
