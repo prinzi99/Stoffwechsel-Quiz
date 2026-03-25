@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
 import Test2403Hero from "@/components/angebot2/Test2403Hero";
+import Test2403BulletSection from "@/components/angebot2/Test2403BulletSection";
 import Test2403Body from "@/components/angebot2/Test2403Body";
 
 const BuchTest2403 = () => {
