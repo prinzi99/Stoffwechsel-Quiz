@@ -15,13 +15,13 @@ const Test2403MiniClose = () => {
               Das ist der Punkt, an dem die meisten weiter k&auml;mpfen.
             </p>
             <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-              Oder endlich verstehen, was wirklich passiert.
+              Oder endlich erleben, wie sich wieder etwas bewegt.
             </p>
           </div>
 
           {/* PRODUKT-ÜBERGANG */}
           <p className="text-sm md:text-base font-bold text-foreground leading-snug">
-            Genau das lernst Du in diesem Buch.
+            Genau daf&uuml;r ist dieses Buch da.
           </p>
 
           {/* CTA BOX */}
@@ -37,7 +37,7 @@ const Test2403MiniClose = () => {
                 <span className="text-3xl md:text-5xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
               </div>
               <p className="text-sm md:text-base text-foreground/70 mb-4">
-                Einmal verstehen – statt immer wieder neu anfangen.
+                Beende den Stillstand – und bring Deinen K&ouml;rper wieder dazu, loszulassen.
               </p>
               <Button
                 variant="cta"
@@ -47,7 +47,7 @@ const Test2403MiniClose = () => {
                 onClick={() => trackButtonClick("/buch/test2403", "MiniClose CTA", DIGISTORE_URL)}
               >
                 <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                  Jetzt verstehen, warum Dein K&ouml;rper blockiert
+                  Bring Deinen K&ouml;rper wieder in Bewegung
                 </a>
               </Button>
             </div>

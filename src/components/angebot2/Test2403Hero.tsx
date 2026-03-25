@@ -77,7 +77,7 @@ const Test2403Hero = () => {
                   <span className="text-2xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                 </div>
                 <p className="text-xs md:text-sm text-foreground/70 mb-3">
-                  Beende den Stillstand – indem Du verstehst, was wirklich passiert.
+                  Beende den Stillstand – und bring Deinen K&ouml;rper wieder in Bewegung.
                 </p>
                 <Button
                   variant="cta"
