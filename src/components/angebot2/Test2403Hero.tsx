@@ -7,10 +7,10 @@ const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizra
 
 const bullets = [
   "Warum weniger essen Deinen Fettverlust heimlich stoppt",
-  "Was in Deinem K\u00f6rper passiert, wenn Du alles richtig machst",
-  "Warum mehr Disziplin Deinen Stillstand verst\u00e4rken kann",
-  "Wie Du Deinen K\u00f6rper wieder dazu bringst, Fett freizugeben",
-  "Der Mechanismus, der entscheidet, ob Du Fortschritt siehst",
+  "Warum Dein Körper Dich ausbremst – obwohl Du alles richtig machst",
+  "Warum mehr Disziplin Deinen Stillstand verstärken kann",
+  "Wie Du Deinen Körper wieder dazu bringst, Fett freizugeben",
+  "Der eine Schalter, der darüber entscheidet, ob Du abnimmst – oder feststeckst",
 ];
 
 const Test2403Hero = () => {
@@ -21,22 +21,22 @@ const Test2403Hero = () => {
 
           {/* HEADLINE */}
           <h1 className="text-center text-[1.75rem] sm:text-3xl md:text-5xl font-extrabold text-foreground leading-[1.08] mb-1.5 md:mb-2">
-            Du machst alles richtig.
+            Du isst weniger, trainierst mehr –
             <br />
             <span className="text-primary">
-              Und genau das ist das&nbsp;Problem.
+              und nimmst trotzdem nicht ab?
             </span>
           </h1>
 
           {/* SUBHEADLINE */}
           <p className="text-center text-sm md:text-lg text-foreground/70 leading-snug mb-1.5 md:mb-2">
-            Warum Dein <span className="font-semibold text-foreground">Stoffwechsel</span> blockiert &ndash;
+            Warum Dein K&ouml;rper in einen Schutzmodus geht –
             <br />
-            und Du trotz Disziplin nicht abnimmst
+            und Fett nicht mehr freigibt
           </p>
 
           {/* MECHANISMUS */}
-          <div className="border-y border-primary/20 py-2 md:py-3 mb-2 md:mb-3">
+          <div className="border-y border-primary/20 py-2 md:py-3 mb-1.5 md:mb-2">
             <p className="text-center text-sm md:text-lg font-bold text-foreground leading-snug">
               Dein K&ouml;rper h&auml;lt fest.
               <br />
@@ -44,11 +44,18 @@ const Test2403Hero = () => {
             </p>
           </div>
 
+          {/* ERGEBNIS */}
+          <p className="text-center text-sm md:text-base text-foreground/80 leading-snug mb-2 md:mb-3 italic">
+            Damit sich die Waage endlich wieder bewegt –
+            <br />
+            ohne dass Du noch h&auml;rter k&auml;mpfen musst.
+          </p>
+
           {/* BULLET SECTION */}
           <p className="text-sm md:text-base font-semibold text-foreground mb-1.5">
             In diesem Buch zeige ich Dir:
           </p>
-          <div className="space-y-1 md:space-y-1.5 mb-3 md:mb-4">
+          <div className="space-y-1 md:space-y-1.5 mb-2 md:mb-3">
             {bullets.map((text, i) => (
               <div key={i} className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -59,7 +66,14 @@ const Test2403Hero = () => {
             ))}
           </div>
 
-          {/* CTA BOX mit Buch-Mockup */}
+          {/* KONSEQUENZ */}
+          <p className="text-center text-sm md:text-base font-semibold text-foreground/90 leading-snug mb-3 md:mb-4">
+            Wenn Du das nicht verstehst, wirst Du weiter alles richtig machen –
+            <br />
+            und trotzdem keine Ergebnisse sehen.
+          </p>
+
+          {/* CTA BOX */}
           <div className="max-w-lg mx-auto">
             <div className="bg-card border-2 border-primary/30 rounded-2xl p-4 md:p-6 shadow-xl relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
@@ -84,7 +98,7 @@ const Test2403Hero = () => {
                     <span className="text-4xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                   </div>
                   <p className="text-sm text-foreground/70 mb-3">
-                    Einmal verstehen. Endlich wieder Fortschritt sehen.
+                    Einmal verstehen. Endlich raus aus dem Stillstand.
                   </p>
                   <Button
                     variant="cta"
@@ -94,7 +108,7 @@ const Test2403Hero = () => {
                     onClick={() => trackButtonClick("/buch/test2403", "Hero CTA", DIGISTORE_URL)}
                   >
                     <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                      Ich will endlich wieder Fortschritt sehen
+                      Ich will raus aus dem Stillstand
                     </a>
                   </Button>
                 </div>
@@ -121,7 +135,7 @@ const Test2403Hero = () => {
                       <span className="text-2xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                     </div>
                     <p className="text-xs text-foreground/70">
-                      Einmal verstehen. Endlich wieder Fortschritt sehen.
+                      Einmal verstehen. Endlich raus aus dem Stillstand.
                     </p>
                   </div>
                 </div>
@@ -133,7 +147,7 @@ const Test2403Hero = () => {
                   onClick={() => trackButtonClick("/buch/test2403", "Hero CTA", DIGISTORE_URL)}
                 >
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                    Ich will endlich wieder Fortschritt sehen
+                    Ich will raus aus dem Stillstand
                   </a>
                 </Button>
               </div>
