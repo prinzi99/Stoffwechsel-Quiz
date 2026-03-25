@@ -36,8 +36,11 @@ const Test2403Hero = () => {
           </div>
 
           {/* ERGEBNIS */}
-          <p className="text-center text-sm md:text-lg font-bold text-primary leading-snug mb-3 md:mb-4">
+          <p className="text-center text-sm md:text-lg font-bold text-primary leading-snug mb-1 md:mb-1.5">
             Damit sich die Waage endlich wieder bewegt…
+          </p>
+          <p className="text-center text-sm md:text-base font-bold text-foreground leading-snug mb-3 md:mb-4">
+            Genau das zeigt Dir dieses Buch.
           </p>
 
           {/* CTA BOX */}
