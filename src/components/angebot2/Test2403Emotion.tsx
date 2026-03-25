@@ -3,7 +3,6 @@ const Test2403Emotion = () => {
     <section className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center space-y-8">
-          {/* Opener */}
           <div className="space-y-1">
             <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
               Du machst alles richtig.
@@ -13,7 +12,6 @@ const Test2403Emotion = () => {
             </p>
           </div>
 
-          {/* Verhalten */}
           <div className="space-y-1">
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
               Du isst weniger.
@@ -25,80 +23,88 @@ const Test2403Emotion = () => {
           </div>
 
           <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-            Und genau dadurch verst&auml;rkst Du den Stillstand.
-          </p>
-
-          {/* Entlastung */}
-          <div className="space-y-2">
-            <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Nicht, weil Dir Disziplin fehlt.
-            </p>
-            <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Sondern weil Dein K&ouml;rper l&auml;ngst in einen Schutzmodus gegangen ist –
-              <br />
-              und Du ihn jeden Tag weiter darin best&auml;tigst.
-            </p>
-          </div>
-
-          {/* Regeln */}
-          <div className="space-y-2">
-            <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Du spielst nach Regeln,
-              <br />
-              die Deinen K&ouml;rper dazu bringen, dichtzumachen.
-            </p>
-          </div>
-
-          <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-            Und das Gef&auml;hrliche daran ist:
+            Und nichts passiert.
           </p>
 
           <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-            Je mehr Du Dich anstrengst,
-            <br />
-            desto st&auml;rker arbeitet Dein K&ouml;rper gegen Dich.
+            Nicht, weil Dir Disziplin fehlt.
           </p>
 
-          {/* Bullets */}
+          <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+            Sondern weil Dein K&ouml;rper l&auml;ngst umgeschaltet hat.
+          </p>
+
+          <p className="text-sm md:text-lg text-foreground/80 leading-snug">
+            In einen Zustand,
+            <br />
+            in dem er sich gegen weiteren Fettverlust sch&uuml;tzt.
+          </p>
+
+          <p className="text-sm md:text-lg text-foreground/80 leading-snug">
+            Du spielst nach Regeln,
+            <br />
+            die Deinen K&ouml;rper dazu bringen, dichtzumachen.
+          </p>
+
+          <p className="text-sm md:text-lg text-foreground/80 leading-snug">
+            Und je mehr Du Dich anstrengst –
+            <br />
+            desto st&auml;rker wird genau dieser Effekt.
+          </p>
+
           <div className="space-y-1 text-sm md:text-lg text-foreground/80 leading-snug">
             <p>👉 Die Waage bewegt sich nicht.</p>
             <p>👉 Dein K&ouml;rper h&auml;lt fest.</p>
             <p>👉 Und nichts von dem, was fr&uuml;her funktioniert hat, greift noch.</p>
           </div>
 
+          <div className="space-y-1">
+            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+              Das ist kein Zufall.
+            </p>
+            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+              Das ist ein Mechanismus.
+            </p>
+          </div>
+
           <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-            Das ist kein Zufall. Das ist ein Mechanismus.
+            Und genau hier liegt der Unterschied:
           </p>
 
-          {/* Wendepunkt */}
           <div className="space-y-2">
-            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-              Und genau hier liegt der Unterschied:
+            <p className="text-sm md:text-lg text-foreground/80 leading-snug">
+              Entweder Du verstehst,
+              <br />
+              was in Deinem K&ouml;rper wirklich passiert –
             </p>
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Entweder Du verstehst, was in Deinem K&ouml;rper wirklich passiert –
-              <br />
-              oder Du bleibst genau in diesem Kreislauf stecken.
+              oder Du bleibst genau hier stecken.
             </p>
           </div>
 
-          {/* Buch-Positionierung */}
           <div className="space-y-2">
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Dieses Buch zeigt Dir, was die meisten &uuml;bersehen –
+              Dieses Buch zeigt Dir,
               <br />
-              und wie Du diesen Mechanismus gezielt aufl&ouml;st.
+              was die meisten &uuml;bersehen.
             </p>
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Damit Dein K&ouml;rper wieder damit aufh&ouml;rt, Fett festzuhalten
-              <br />
-              und endlich wieder freigibt.
+              Und wie Du diesen Mechanismus gezielt aufl&ouml;st.
             </p>
           </div>
 
-          {/* Überleitung zum CTA */}
+          <p className="text-sm md:text-lg text-foreground/80 leading-snug">
+            Damit Dein K&ouml;rper endlich wieder aufh&ouml;rt,
+            <br />
+            Fett festzuhalten –
+          </p>
+
+          <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+            und wieder freigibt.
+          </p>
+
           <p className="text-base md:text-xl font-extrabold text-primary leading-snug">
-            Und genau das wirst Du gleich verstehen:
+            Und genau das wirst Du gleich verstehen.
           </p>
         </div>
       </div>
