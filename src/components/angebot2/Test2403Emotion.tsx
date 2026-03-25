@@ -26,6 +26,10 @@ const Test2403Emotion = () => {
             Und nichts passiert.
           </p>
 
+          <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+            Und genau hier machen die meisten den entscheidenden Fehler.
+          </p>
+
           <p className="text-sm md:text-lg text-foreground/80 leading-snug">
             Nicht, weil Dir Disziplin fehlt.
           </p>
@@ -67,9 +71,14 @@ const Test2403Emotion = () => {
             </p>
           </div>
 
-          <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-            Und genau hier liegt der Unterschied:
-          </p>
+          <div className="space-y-1">
+            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+              Hier entscheidet sich, ob Du weiter feststeckst –
+            </p>
+            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+              oder endlich wieder Fortschritt siehst.
+            </p>
+          </div>
 
           <div className="space-y-2">
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
@@ -89,19 +98,11 @@ const Test2403Emotion = () => {
               was die meisten &uuml;bersehen.
             </p>
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Und wie Du diesen Mechanismus gezielt aufl&ouml;st.
+              Und warum Du ohne dieses Verst&auml;ndnis
+              <br />
+              immer wieder an denselben Punkt zur&uuml;ckkommst.
             </p>
           </div>
-
-          <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-            Damit Dein K&ouml;rper endlich wieder aufh&ouml;rt,
-            <br />
-            Fett festzuhalten –
-          </p>
-
-          <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-            und wieder freigibt.
-          </p>
 
           <p className="text-base md:text-xl font-extrabold text-primary leading-snug">
             Und genau das wirst Du gleich verstehen.
