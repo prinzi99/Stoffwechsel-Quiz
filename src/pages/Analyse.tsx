@@ -295,6 +295,10 @@ const Analyse = () => {
                 </Card>
               </>
             )}
+
+            <p className="text-xs text-muted-foreground text-right pt-2">
+              Letztes Update Angebotsseite: 25.03.2026
+            </p>
           </div>
         </section>
       </main>
