@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
 import Test2403Hero from "@/components/angebot2/Test2403Hero";
+import Test2403BulletSection from "@/components/angebot2/Test2403BulletSection";
 import Test2403Body from "@/components/angebot2/Test2403Body";
 
 const BuchTest2403 = () => {
@@ -30,6 +31,7 @@ const BuchTest2403 = () => {
 
       <main ref={mainRef} className="pb-16 md:pb-0" id="test2403-main">
         <Test2403Hero />
+        <Test2403BulletSection />
         <Test2403Body />
 
         <div className="bg-muted py-6">
