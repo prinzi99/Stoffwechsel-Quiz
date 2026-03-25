@@ -9,28 +9,22 @@ const Test2403MiniClose = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center space-y-6 md:space-y-8">
 
-          {/* MINI-CLOSE */}
-          <div className="space-y-2">
-            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-              Das hier ist kein weiterer Versuch.
-            </p>
+          {/* MINI CLOSE */}
+          <div className="space-y-1.5">
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Das ist der Moment, in dem Du verstehst,
-              <br />
-              warum es bisher nicht funktioniert hat –
-              <br />
-              und wie Du es endlich &auml;nderst.
+              Das ist der Punkt, an dem die meisten weiter k&auml;mpfen.
+            </p>
+            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+              Oder endlich verstehen, was wirklich passiert.
             </p>
           </div>
 
-          {/* FINALER DRUCK-SATZ */}
-          <div className="my-5 md:my-8 py-4 md:py-5 border-y border-primary/20">
-            <p className="text-base md:text-xl font-extrabold text-primary leading-snug">
-              Wenn Du so weitermachst wie bisher, bleibt alles gleich.
-            </p>
-          </div>
+          {/* PRODUKT-ÜBERGANG */}
+          <p className="text-sm md:text-base font-bold text-foreground leading-snug">
+            Genau das lernst Du in diesem Buch.
+          </p>
 
-          {/* VERSTÄRKTE 2. CTA BOX */}
+          {/* CTA BOX */}
           <div className="max-w-lg mx-auto pt-2 md:pt-4">
             <div className="bg-card border-2 border-primary/50 rounded-2xl p-7 md:p-10 text-center shadow-[0_12px_50px_-10px_hsl(var(--primary)/0.3)] relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
