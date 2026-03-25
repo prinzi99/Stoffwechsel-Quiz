@@ -28,7 +28,7 @@ const BuchTest2403 = () => {
       </Helmet>
       <Header />
 
-      <main className="pb-16 md:pb-0" id="test2403-main">
+      <main ref={mainRef} className="pb-16 md:pb-0" id="test2403-main">
         <Test2403Hero />
         <Test2403Body />
 
