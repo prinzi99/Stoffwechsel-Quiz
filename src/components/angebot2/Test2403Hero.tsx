@@ -7,7 +7,7 @@ const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizra
 
 const bullets = [
   "Warum weniger essen Deinen Fettverlust heimlich stoppt",
-  "Was in Deinem Körper passiert, wenn Du „alles richtig" machst",
+  "Was in Deinem Körper passiert, wenn Du \u201Ealles richtig\u201C machst",
   "Warum mehr Disziplin Deinen Stillstand verstärken kann",
   "Wie Du Deinen Körper wieder dazu bringst, Fett freizugeben",
   "Der Mechanismus, der entscheidet, ob Du Fortschritt siehst",
