@@ -6,31 +6,7 @@ const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizra
 const Test2403MiniClose = () => {
   return (
     <>
-      {/* SECTION 4 – KERNAUSSAGE */}
-      <section className="py-8 md:py-14 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-xl md:text-3xl font-extrabold text-primary leading-snug">
-              Dieses Buch ist der Unterschied zwischen Stillstand
-              <br />
-              und echtem Fortschritt.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 5 – ÜBERGANG */}
-      <section className="pb-4 md:pb-6 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-sm md:text-base font-bold text-foreground leading-snug">
-              Genau daf&uuml;r ist dieses Buch da.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 6 – CTA */}
+      {/* CTA */}
       <section className="py-6 md:py-10 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-lg mx-auto">
