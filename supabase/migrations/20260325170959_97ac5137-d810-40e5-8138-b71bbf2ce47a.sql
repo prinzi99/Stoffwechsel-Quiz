@@ -1,0 +1,2 @@
+DELETE FROM public.bonus_page_views WHERE page_path LIKE '/buch/anbot%' OR page_path LIKE '/buch/test2403%';
+DELETE FROM public.button_clicks WHERE page_path LIKE '/buch/anbot%' OR page_path LIKE '/buch/test2403%';
