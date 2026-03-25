@@ -24,7 +24,7 @@ const Test2403Hero = () => {
             Du isst weniger, trainierst mehr –
             <br />
             <span className="text-primary">
-              und nimmst trotzdem nicht ab?
+              und Dein K&ouml;rper macht einfach dicht?
             </span>
           </h1>
 
@@ -44,8 +44,8 @@ const Test2403Hero = () => {
             </p>
           </div>
 
-          {/* ERGEBNIS */}
-          <p className="text-center text-sm md:text-base text-foreground/80 leading-snug mb-2 md:mb-3 italic">
+          {/* ERGEBNIS – visuell hervorgehoben, NICHT kursiv */}
+          <p className="text-center text-base md:text-xl font-semibold text-primary leading-snug mb-2 md:mb-3">
             Damit sich die Waage endlich wieder bewegt –
             <br />
             ohne dass Du noch h&auml;rter k&auml;mpfen musst.
@@ -53,7 +53,7 @@ const Test2403Hero = () => {
 
           {/* BULLET SECTION */}
           <p className="text-sm md:text-base font-semibold text-foreground mb-1.5">
-            In diesem Buch zeige ich Dir:
+            Das ist der Grund, warum Du feststeckst:
           </p>
           <div className="space-y-1 md:space-y-1.5 mb-2 md:mb-3">
             {bullets.map((text, i) => (
@@ -68,9 +68,9 @@ const Test2403Hero = () => {
 
           {/* KONSEQUENZ */}
           <p className="text-center text-sm md:text-base font-semibold text-foreground/90 leading-snug mb-3 md:mb-4">
-            Wenn Du das nicht verstehst, wirst Du weiter alles richtig machen –
+            Wenn Du das ignorierst, wirst Du weiter k&auml;mpfen –
             <br />
-            und trotzdem keine Ergebnisse sehen.
+            ohne dass sich etwas ver&auml;ndert.
           </p>
 
           {/* CTA BOX */}
@@ -98,7 +98,7 @@ const Test2403Hero = () => {
                     <span className="text-4xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                   </div>
                   <p className="text-sm text-foreground/70 mb-3">
-                    Einmal verstehen. Endlich raus aus dem Stillstand.
+                    Beende den Stillstand – indem Du verstehst, was wirklich passiert.
                   </p>
                   <Button
                     variant="cta"
@@ -108,13 +108,13 @@ const Test2403Hero = () => {
                     onClick={() => trackButtonClick("/buch/test2403", "Hero CTA", DIGISTORE_URL)}
                   >
                     <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                      Ich will raus aus dem Stillstand
+                      Ich will, dass sich endlich wieder etwas bewegt
                     </a>
                   </Button>
                 </div>
               </div>
 
-              {/* MOBILE: Bild links, Inhalt rechts */}
+              {/* MOBILE: Bild links neben Preis */}
               <div className="md:hidden mt-1">
                 <div className="flex flex-row items-center gap-3 mb-2.5">
                   <div className="w-24 flex-shrink-0">
@@ -135,7 +135,7 @@ const Test2403Hero = () => {
                       <span className="text-2xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
                     </div>
                     <p className="text-xs text-foreground/70">
-                      Einmal verstehen. Endlich raus aus dem Stillstand.
+                      Beende den Stillstand – indem Du verstehst, was wirklich passiert.
                     </p>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Test2403Hero = () => {
                   onClick={() => trackButtonClick("/buch/test2403", "Hero CTA", DIGISTORE_URL)}
                 >
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                    Ich will raus aus dem Stillstand
+                    Ich will, dass sich endlich wieder etwas bewegt
                   </a>
                 </Button>
               </div>
