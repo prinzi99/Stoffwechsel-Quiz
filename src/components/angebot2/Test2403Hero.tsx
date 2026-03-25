@@ -62,7 +62,7 @@ const Test2403Hero = () => {
               {bullets.map((text, i) => (
                 <div key={i} className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm md:text-base text-foreground/85 leading-snug font-medium">
+                  <span className="text-sm sm:text-base md:text-lg text-foreground/85 leading-snug font-medium">
                     {text}
                   </span>
                 </div>
