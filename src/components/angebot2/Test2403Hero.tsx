@@ -59,7 +59,7 @@ const Test2403Hero = () => {
 
           {/* PRODUKT-VERANKERUNG */}
           <p className="text-center text-sm md:text-base font-bold text-foreground leading-snug mb-2 md:mb-3">
-            Genau das zeigt Dir dieses Buch.
+            Dieses Buch zeigt Dir, wie Du den Stillstand beendest.
           </p>
 
           {/* CTA BOX – ohne Mockup */}
