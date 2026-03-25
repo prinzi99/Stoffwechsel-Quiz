@@ -10,7 +10,7 @@ import Test2403Emotion from "@/components/angebot2/Test2403Emotion";
 import Test2403MiniClose from "@/components/angebot2/Test2403MiniClose";
 
 const BuchTest2403 = () => {
-  useBonusPageView("/buch/test2403", "Buch Angebot Test 2403");
+  useBonusPageView("/buch/anbot3g4a3e", "Buch Angebot V3");
   const mainRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
