@@ -98,19 +98,11 @@ const Test2403Emotion = () => {
               was die meisten &uuml;bersehen.
             </p>
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Und wie Du diesen Mechanismus gezielt aufl&ouml;st.
+              Und warum Du ohne dieses Verst&auml;ndnis
+              <br />
+              immer wieder an denselben Punkt zur&uuml;ckkommst.
             </p>
           </div>
-
-          <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-            Damit Dein K&ouml;rper endlich wieder aufh&ouml;rt,
-            <br />
-            Fett festzuhalten –
-          </p>
-
-          <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-            und wieder freigibt.
-          </p>
 
           <p className="text-base md:text-xl font-extrabold text-primary leading-snug">
             Und genau das wirst Du gleich verstehen.
