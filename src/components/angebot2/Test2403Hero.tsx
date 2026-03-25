@@ -64,7 +64,7 @@ const Test2403Hero = () => {
 
           {/* CTA BOX – ohne Mockup */}
           <div className="max-w-lg mx-auto">
-            <div className="bg-card border-2 border-primary/40 rounded-2xl p-5 md:p-7 shadow-2xl relative overflow-hidden">
+            <div className="bg-card border-2 border-primary/50 rounded-2xl p-6 md:p-8 shadow-[0_8px_40px_-8px_hsl(var(--primary)/0.25)] relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
 
               <div className="text-center mt-1">
