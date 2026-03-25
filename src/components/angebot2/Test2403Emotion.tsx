@@ -71,9 +71,14 @@ const Test2403Emotion = () => {
             </p>
           </div>
 
-          <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-            Und genau hier liegt der Unterschied:
-          </p>
+          <div className="space-y-1">
+            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+              Hier entscheidet sich, ob Du weiter feststeckst –
+            </p>
+            <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+              oder endlich wieder Fortschritt siehst.
+            </p>
+          </div>
 
           <div className="space-y-2">
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
