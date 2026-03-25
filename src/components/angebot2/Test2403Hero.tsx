@@ -45,20 +45,15 @@ const Test2403Hero = () => {
           </div>
 
           {/* ERGEBNIS – visuell hervorgehoben, NICHT kursiv */}
-          <div className="text-center mb-2 md:mb-3">
-            <p className="text-base md:text-xl font-semibold text-primary leading-snug mb-1">
-              Damit sich die Waage endlich wieder bewegt –
-              <br />
-              ohne dass Du noch h&auml;rter k&auml;mpfen musst.
-            </p>
-            <p className="text-sm md:text-base font-semibold text-foreground/90 leading-snug">
-              Und genau das lernst Du in diesem Buch – Schritt f&uuml;r Schritt.
-            </p>
-          </div>
+          <p className="text-center text-base md:text-xl font-semibold text-primary leading-snug mb-2 md:mb-3">
+            Damit sich die Waage endlich wieder bewegt –
+            <br />
+            ohne dass Du noch h&auml;rter k&auml;mpfen musst.
+          </p>
 
           {/* BULLET SECTION */}
           <p className="text-sm md:text-base font-semibold text-foreground mb-1.5">
-            In diesem Buch zeige ich Dir genau, wie Du diesen Stillstand durchbrichst:
+            Das musst Du verstehen, wenn Du wieder abnehmen willst:
           </p>
           <div className="space-y-1 md:space-y-1.5 mb-2 md:mb-3">
             {bullets.map((text, i) => (
@@ -78,9 +73,9 @@ const Test2403Hero = () => {
             ohne dass sich etwas ver&auml;ndert.
           </p>
 
-          {/* MINI-BRIDGE ZUM PRODUKT */}
+          {/* PRODUKT-VERANKERUNG */}
           <p className="text-center text-sm md:text-base font-bold text-foreground leading-snug mb-3 md:mb-4">
-            Genau daf&uuml;r habe ich dieses Buch geschrieben.
+            Genau das lernst Du in diesem Buch.
           </p>
 
           {/* CTA BOX */}
