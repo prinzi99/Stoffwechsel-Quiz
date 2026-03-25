@@ -34,14 +34,10 @@ const Test2403Hero = () => {
 
             {/* Texte rechts */}
             <div className="flex-1 min-w-0">
-              {/* SUBHEADLINE */}
               <p className="text-sm md:text-lg text-foreground/80 leading-snug mb-1.5 md:mb-2">
-                Warum Dein K&ouml;rper in einen Schutzmodus geht –
-                <br />
-                und Fett nicht mehr freigibt
+                Dann liegt das nicht an Dir.
               </p>
 
-              {/* MECHANISMUS */}
               <div className="border-y border-primary/20 py-1.5 md:py-2.5 mb-1.5 md:mb-2">
                 <p className="text-sm md:text-lg font-bold text-foreground leading-snug">
                   Dein K&ouml;rper h&auml;lt fest.
@@ -50,16 +46,31 @@ const Test2403Hero = () => {
                 </p>
               </div>
 
-              {/* ERGEBNIS */}
+              <p className="text-xs md:text-base text-foreground/80 leading-snug mb-1.5 md:mb-2">
+                Er geht in einen Zustand, in dem er kein Fett mehr freigibt –
+                <br className="hidden md:inline" />
+                egal, wie diszipliniert Du bist.
+              </p>
+
+              <p className="text-xs md:text-sm font-semibold text-foreground/70 leading-snug mb-1 md:mb-1.5">
+                Und genau deshalb passiert gerade das:
+              </p>
+
+              <p className="text-sm md:text-xl font-extrabold text-primary leading-snug mb-1.5 md:mb-2">
+                Die Waage bewegt sich nicht.
+              </p>
+
               <p className="text-sm md:text-lg font-bold text-primary leading-snug">
-                Damit sich die Waage endlich wieder bewegt…
+                Damit sich das endlich &auml;ndert…
               </p>
             </div>
           </div>
 
           {/* PRODUKT-VERANKERUNG */}
-          <p className="text-center text-sm md:text-base font-bold text-foreground leading-snug mb-2 md:mb-3">
-            Dieses Buch zeigt Dir, wie Du den Stillstand beendest.
+          <p className="text-center text-xs md:text-base font-bold text-foreground leading-snug mb-2 md:mb-3">
+            Dieses Buch zeigt Dir, wie Du diesen Schutzmechanismus aufl&ouml;st
+            <br />
+            und Deinen K&ouml;rper wieder dazu bringst, Fett freizugeben.
           </p>
 
           {/* CTA BOX – ohne Mockup */}
