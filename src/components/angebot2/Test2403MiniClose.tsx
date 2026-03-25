@@ -21,7 +21,7 @@ const Test2403MiniClose = () => {
 
           {/* PRODUKT-ÜBERGANG */}
           <p className="text-sm md:text-base font-bold text-foreground leading-snug">
-            Genau das lernst Du in diesem Buch.
+            Genau daf&uuml;r ist dieses Buch da.
           </p>
 
           {/* CTA BOX */}
