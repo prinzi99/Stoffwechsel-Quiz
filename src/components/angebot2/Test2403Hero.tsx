@@ -100,27 +100,31 @@ const Test2403Hero = () => {
                 </div>
               </div>
 
-              {/* MOBILE: Bild oben, Inhalt darunter */}
+              {/* MOBILE: Bild links, Inhalt rechts */}
               <div className="md:hidden mt-1">
-                <div className="flex justify-center mb-3">
-                  <img
-                    src={bookCover}
-                    alt="Du bist nicht das Problem – Buchcover"
-                    className="w-32 h-auto rounded-xl shadow-2xl"
-                    width={800}
-                    height={1067}
-                  />
+                <div className="flex flex-row items-center gap-3 mb-2.5">
+                  <div className="w-24 flex-shrink-0">
+                    <img
+                      src={bookCover}
+                      alt="Du bist nicht das Problem – Buchcover"
+                      className="w-full h-auto rounded-xl shadow-2xl"
+                      width={800}
+                      height={1067}
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0 text-center">
+                    <p className="text-xs text-primary font-medium tracking-wide mb-1">
+                      Exklusiv f&uuml;r Quiz-Teilnehmer
+                    </p>
+                    <div className="flex items-baseline justify-center gap-2 mb-1">
+                      <span className="text-sm text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
+                      <span className="text-2xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
+                    </div>
+                    <p className="text-xs text-foreground/70">
+                      Einmal verstehen. Endlich wieder Fortschritt sehen.
+                    </p>
+                  </div>
                 </div>
-                <p className="text-xs text-primary font-medium tracking-wide mb-1 text-center">
-                  Exklusiv f&uuml;r Quiz-Teilnehmer
-                </p>
-                <div className="flex items-baseline justify-center gap-2 mb-1.5">
-                  <span className="text-sm text-muted-foreground/50 line-through">34,99&nbsp;&euro;</span>
-                  <span className="text-3xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
-                </div>
-                <p className="text-xs text-foreground/70 mb-2.5 text-center">
-                  Einmal verstehen. Endlich wieder Fortschritt sehen.
-                </p>
                 <Button
                   variant="cta"
                   size="xl"
