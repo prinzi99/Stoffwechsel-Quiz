@@ -26,6 +26,10 @@ const Test2403Emotion = () => {
             Und nichts passiert.
           </p>
 
+          <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
+            Und genau hier machen die meisten den entscheidenden Fehler.
+          </p>
+
           <p className="text-sm md:text-lg text-foreground/80 leading-snug">
             Nicht, weil Dir Disziplin fehlt.
           </p>
