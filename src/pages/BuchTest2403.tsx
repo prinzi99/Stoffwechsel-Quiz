@@ -33,7 +33,9 @@ const BuchTest2403 = () => {
 
       <main ref={mainRef} className="pb-16 md:pb-0" id="test2403-main">
         <Test2403Hero />
+        <Test2403Emotion />
         <Test2403BulletSection />
+        <Test2403MiniClose />
         <Test2403Body />
 
         <div className="bg-muted py-6">
