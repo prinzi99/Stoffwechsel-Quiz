@@ -20,7 +20,7 @@ const Test2403Hero = () => {
           </h1>
 
           {/* MOCKUP + TEXTE nebeneinander */}
-          <div className="flex flex-row items-center gap-4 md:gap-6 mb-3 md:mb-4">
+          <div className="flex flex-row items-center gap-3 md:gap-4 mb-3 md:mb-4">
             {/* Buch-Mockup links */}
             <div className="w-24 md:w-36 flex-shrink-0">
               <img
