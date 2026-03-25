@@ -37,7 +37,7 @@ const Test2403MiniClose = () => {
                 <span className="text-3xl md:text-5xl font-extrabold text-foreground">19,99&nbsp;&euro;</span>
               </div>
               <p className="text-sm md:text-base text-foreground/70 mb-4">
-                Einmal verstehen – statt immer wieder neu anfangen.
+                Beende den Stillstand – und bring Deinen K&ouml;rper wieder dazu, loszulassen.
               </p>
               <Button
                 variant="cta"
