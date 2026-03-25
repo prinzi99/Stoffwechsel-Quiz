@@ -40,10 +40,12 @@ const Test2403Emotion = () => {
           {/* KURZE SPANNUNG */}
           <div className="space-y-1">
             <p className="text-sm md:text-lg text-foreground/80 leading-snug">
-              Wenn Du das nicht verstehst, bleibst Du genau hier.
+              Hier entscheidet sich, ob sich etwas ver&auml;ndert.
             </p>
             <p className="text-base md:text-xl font-extrabold text-primary leading-snug">
-              Wenn Du es verstehst, ver&auml;ndert sich alles.
+              Dieses Buch ist der Unterschied zwischen Stillstand
+              <br />
+              und echtem Fortschritt.
             </p>
           </div>
 
