@@ -29,7 +29,7 @@ const Test2403Hero = () => {
           </h1>
 
           {/* SUBHEADLINE */}
-          <p className="text-center text-sm md:text-base text-foreground/70 leading-snug mb-5 md:mb-6">
+          <p className="text-center text-base md:text-lg text-foreground/70 leading-snug mb-5 md:mb-6">
             Warum Dein <span className="font-semibold text-foreground">Stoffwechsel</span> blockiert –
             <br />
             und Du trotz Disziplin nicht abnimmst.
@@ -62,7 +62,7 @@ const Test2403Hero = () => {
               {bullets.map((text, i) => (
                 <div key={i} className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm md:text-base text-foreground/85 leading-snug font-medium">
+                  <span className="text-sm sm:text-base md:text-lg text-foreground/85 leading-snug font-medium">
                     {text}
                   </span>
                 </div>
