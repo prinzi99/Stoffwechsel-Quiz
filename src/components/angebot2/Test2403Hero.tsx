@@ -29,7 +29,7 @@ const Test2403Hero = () => {
           </h1>
 
           {/* SUBHEADLINE */}
-          <p className="text-center text-base md:text-lg text-foreground/70 leading-snug mb-5 md:mb-6">
+          <p className="text-center text-base md:text-lg text-foreground/70 leading-snug mb-3 md:mb-4">
             Warum Dein <span className="font-semibold text-foreground">Stoffwechsel</span> blockiert –
             <br />
             und Du trotz Disziplin nicht abnimmst.
