@@ -44,30 +44,30 @@ const Test2403Hero = () => {
             </p>
           </div>
 
-          {/* BULLETS */}
+          {/* BULLETS + BOOK MOCKUP */}
           <p className="text-sm md:text-base font-semibold text-foreground mb-3">
             In diesem Buch zeige ich Dir:
           </p>
-          <div className="space-y-2 md:space-y-2.5 mb-5 md:mb-7">
-            {bullets.map((text, i) => (
-              <div key={i} className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-sm md:text-base text-foreground/85 leading-snug font-medium">
-                  {text}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {/* PRODUKTBILD */}
-          <div className="flex justify-center mb-5 md:mb-7">
-            <img
-              src={bookCover}
-              alt="Du bist nicht das Problem – Buchcover"
-              className="w-32 sm:w-36 md:w-44 h-auto rounded-xl shadow-2xl"
-              width={800}
-              height={1067}
-            />
+          <div className="flex flex-row items-start gap-4 md:gap-8 mb-5 md:mb-7">
+            <div className="w-28 sm:w-32 md:w-44 flex-shrink-0">
+              <img
+                src={bookCover}
+                alt="Du bist nicht das Problem – Buchcover"
+                className="w-full h-auto rounded-xl shadow-2xl"
+                width={800}
+                height={1067}
+              />
+            </div>
+            <div className="flex-1 min-w-0 space-y-2 md:space-y-2.5">
+              {bullets.map((text, i) => (
+                <div key={i} className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-xs sm:text-sm md:text-base text-foreground/85 leading-snug font-medium">
+                    {text}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* CTA BOX */}
