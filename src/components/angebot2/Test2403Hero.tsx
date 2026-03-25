@@ -36,7 +36,7 @@ const Test2403Hero = () => {
           </p>
 
           {/* PUNCH-LINE */}
-          <div className="border-y border-primary/20 py-4 md:py-5 mb-5 md:mb-7">
+          <div className="border-y border-primary/20 py-3 md:py-4 mb-3 md:mb-5">
             <p className="text-center text-base md:text-xl font-bold text-foreground leading-snug">
               Dein Körper hält fest.
               <br />
