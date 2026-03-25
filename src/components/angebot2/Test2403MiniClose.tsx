@@ -47,7 +47,7 @@ const Test2403MiniClose = () => {
                 onClick={() => trackButtonClick("/buch/test2403", "MiniClose CTA", DIGISTORE_URL)}
               >
                 <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-                  Jetzt verstehen, warum Dein K&ouml;rper blockiert
+                  Bring Deinen K&ouml;rper wieder in Bewegung
                 </a>
               </Button>
             </div>
