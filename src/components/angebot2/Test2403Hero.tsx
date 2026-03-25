@@ -15,7 +15,7 @@ const bullets = [
 
 const Test2403Hero = () => {
   return (
-    <section className="pt-6 pb-6 md:pt-12 md:pb-12 bg-background">
+    <section className="pt-16 pb-6 md:pt-20 md:pb-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
 
