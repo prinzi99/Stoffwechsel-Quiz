@@ -5,6 +5,60 @@ import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
 
+const BoldText = ({ text }: { text: string }) => {
+  const boldWords = [
+    "weniger essen",
+    "Fettverlust",
+    "ausbremst",
+    "Stillstand",
+    "Fett freizugeben",
+    "entscheidet",
+    "feststeckst",
+  ];
+
+  let result = text;
+  const parts: (string | { bold: string })[] = [];
+  let remaining = result;
+
+  while (remaining.length > 0) {
+    let earliestIndex = remaining.length;
+    let matchedWord = "";
+
+    for (const word of boldWords) {
+      const idx = remaining.indexOf(word);
+      if (idx !== -1 && idx < earliestIndex) {
+        earliestIndex = idx;
+        matchedWord = word;
+      }
+    }
+
+    if (matchedWord) {
+      if (earliestIndex > 0) {
+        parts.push(remaining.slice(0, earliestIndex));
+      }
+      parts.push({ bold: matchedWord });
+      remaining = remaining.slice(earliestIndex + matchedWord.length);
+    } else {
+      parts.push(remaining);
+      break;
+    }
+  }
+
+  return (
+    <span>
+      {parts.map((part, i) =>
+        typeof part === "string" ? (
+          <span key={i}>{part}</span>
+        ) : (
+          <strong key={i} className="text-foreground font-bold">
+            {part.bold}
+          </strong>
+        )
+      )}
+    </span>
+  );
+};
+
 const bullets = [
   "Warum weniger essen Deinen Fettverlust heimlich stoppt",
   "Warum Dein Körper Dich ausbremst – obwohl Du alles richtig machst",
@@ -29,14 +83,14 @@ const Test2403Hero = () => {
           </h1>
 
           {/* SUBHEADLINE */}
-          <p className="text-center text-sm md:text-lg text-foreground/70 leading-snug mb-1.5 md:mb-2">
+          <p className="text-center text-sm md:text-lg text-foreground/80 leading-snug mb-1.5 md:mb-2">
             Warum Dein K&ouml;rper in einen Schutzmodus geht –
             <br />
             und Fett nicht mehr freigibt
           </p>
 
           {/* MECHANISMUS */}
-          <div className="border-y border-primary/20 py-2 md:py-3 mb-1.5 md:mb-2">
+          <div className="border-y border-primary/20 py-2 md:py-3 mb-3 md:mb-4">
             <p className="text-center text-sm md:text-lg font-bold text-foreground leading-snug">
               Dein K&ouml;rper h&auml;lt fest.
               <br />
@@ -44,48 +98,52 @@ const Test2403Hero = () => {
             </p>
           </div>
 
-          {/* ERGEBNIS – visuell hervorgehoben, NICHT kursiv */}
-          <p className="text-center text-base md:text-xl font-semibold text-primary leading-snug mb-2 md:mb-3">
-            Damit sich die Waage endlich wieder bewegt –
-            <br />
-            ohne dass Du noch h&auml;rter k&auml;mpfen musst.
-          </p>
+          {/* ERGEBNIS – visuell hervorgehoben, NICHT kursiv, gleiche Größe wie Mechanismus */}
+          <div className="bg-primary/5 rounded-xl py-3 px-4 md:py-4 md:px-6 mb-3 md:mb-4">
+            <p className="text-center text-sm md:text-lg font-bold text-primary leading-snug">
+              Damit sich die Waage endlich wieder bewegt –
+              <br />
+              ohne dass Du noch h&auml;rter k&auml;mpfen musst.
+            </p>
+          </div>
 
           {/* BULLET SECTION */}
-          <p className="text-sm md:text-base font-semibold text-foreground mb-1.5">
+          <p className="text-sm md:text-base font-semibold text-foreground mb-2">
             Das musst Du verstehen, wenn Du wieder abnehmen willst:
           </p>
-          <div className="space-y-1 md:space-y-1.5 mb-2 md:mb-3">
+          <div className="space-y-2 md:space-y-2.5 mb-3 md:mb-4">
             {bullets.map((text, i) => (
-              <div key={i} className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-sm sm:text-base md:text-lg text-foreground/85 leading-snug font-medium">
-                  {text}
+              <div key={i} className="flex items-start gap-2.5">
+                <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-0.5" />
+                <span className="text-sm sm:text-base md:text-lg text-foreground/90 leading-snug font-medium">
+                  <BoldText text={text} />
                 </span>
               </div>
             ))}
           </div>
 
           {/* KONSEQUENZ */}
-          <p className="text-center text-sm md:text-base font-semibold text-foreground/90 leading-snug mb-2 md:mb-3">
-            Wenn Du das ignorierst, wirst Du weiter k&auml;mpfen –
-            <br />
-            ohne dass sich etwas ver&auml;ndert.
-          </p>
+          <div className="bg-destructive/5 rounded-xl py-2.5 px-4 md:py-3 md:px-6 mb-2 md:mb-3">
+            <p className="text-center text-sm md:text-base font-semibold text-foreground leading-snug">
+              Wenn Du das ignorierst, wirst Du weiter k&auml;mpfen –
+              <br />
+              ohne dass sich etwas ver&auml;ndert.
+            </p>
+          </div>
 
           {/* PRODUKT-VERANKERUNG */}
-          <p className="text-center text-sm md:text-base font-bold text-foreground leading-snug mb-3 md:mb-4">
+          <p className="text-center text-sm md:text-base font-bold text-foreground leading-snug mb-4 md:mb-6">
             Genau das lernst Du in diesem Buch.
           </p>
 
           {/* CTA BOX */}
           <div className="max-w-lg mx-auto">
-            <div className="bg-card border-2 border-primary/30 rounded-2xl p-4 md:p-6 shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
+            <div className="bg-card border-2 border-primary/40 rounded-2xl p-5 md:p-7 shadow-2xl relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
 
               {/* DESKTOP: Bild links, Inhalt rechts */}
               <div className="hidden md:flex flex-row items-center gap-5 mt-1">
-                <div className="w-36 flex-shrink-0">
+                <div className="w-40 flex-shrink-0">
                   <img
                     src={bookCover}
                     alt="Du bist nicht das Problem – Buchcover"
@@ -95,7 +153,7 @@ const Test2403Hero = () => {
                   />
                 </div>
                 <div className="flex-1 text-center">
-                  <p className="text-sm text-primary font-medium tracking-wide mb-1">
+                  <p className="text-sm text-primary font-semibold tracking-wide mb-1">
                     Exklusiv f&uuml;r Quiz-Teilnehmer
                   </p>
                   <div className="flex items-baseline justify-center gap-2 mb-1.5">
@@ -109,7 +167,7 @@ const Test2403Hero = () => {
                     variant="cta"
                     size="xl"
                     asChild
-                    className="w-full h-auto min-h-[3rem] whitespace-normal leading-snug text-base py-4 shadow-xl"
+                    className="w-full h-auto min-h-[3.5rem] whitespace-normal leading-snug text-base py-5 shadow-2xl ring-2 ring-accent/20"
                     onClick={() => trackButtonClick("/buch/test2403", "Hero CTA", DIGISTORE_URL)}
                   >
                     <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
@@ -121,7 +179,7 @@ const Test2403Hero = () => {
 
               {/* MOBILE: Bild links neben Preis */}
               <div className="md:hidden mt-1">
-                <div className="flex flex-row items-center gap-3 mb-2.5">
+                <div className="flex flex-row items-center gap-3 mb-3">
                   <div className="w-24 flex-shrink-0">
                     <img
                       src={bookCover}
@@ -132,7 +190,7 @@ const Test2403Hero = () => {
                     />
                   </div>
                   <div className="flex-1 min-w-0 text-center">
-                    <p className="text-xs text-primary font-medium tracking-wide mb-1">
+                    <p className="text-xs text-primary font-semibold tracking-wide mb-1">
                       Exklusiv f&uuml;r Quiz-Teilnehmer
                     </p>
                     <div className="flex items-baseline justify-center gap-2 mb-1">
@@ -148,7 +206,7 @@ const Test2403Hero = () => {
                   variant="cta"
                   size="xl"
                   asChild
-                  className="w-full h-auto min-h-[3rem] whitespace-normal leading-snug text-sm py-4 shadow-xl"
+                  className="w-full h-auto min-h-[3.5rem] whitespace-normal leading-snug text-sm py-5 shadow-2xl ring-2 ring-accent/20"
                   onClick={() => trackButtonClick("/buch/test2403", "Hero CTA", DIGISTORE_URL)}
                 >
                   <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
