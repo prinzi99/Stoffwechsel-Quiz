@@ -19,7 +19,7 @@ const BuchTest2403 = () => {
         />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
-      
+      <Header />
 
       <main className="pb-16 md:pb-0" id="test2403-main">
         <Test2403Hero />
