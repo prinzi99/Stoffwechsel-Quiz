@@ -70,11 +70,11 @@ const Test2403BulletSection = () => {
           <p className="text-sm md:text-base font-semibold text-foreground mb-2">
             Das musst Du verstehen, wenn Du wieder abnehmen willst:
           </p>
-          <div className="space-y-2 md:space-y-2.5 mb-3 md:mb-4">
+          <div className="space-y-3 md:space-y-4 mb-4 md:mb-5">
             {bullets.map((text, i) => (
-              <div key={i} className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-sm sm:text-base md:text-lg text-foreground/90 leading-snug font-medium">
+              <div key={i} className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 md:w-7 md:h-7 text-primary flex-shrink-0 mt-0.5" />
+                <span className="text-base md:text-lg text-foreground leading-snug font-semibold">
                   <BoldText text={text} />
                 </span>
               </div>

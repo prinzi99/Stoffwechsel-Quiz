@@ -7,6 +7,8 @@ import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
 import Test2403Hero from "@/components/angebot2/Test2403Hero";
 import Test2403BulletSection from "@/components/angebot2/Test2403BulletSection";
 import Test2403Body from "@/components/angebot2/Test2403Body";
+import Test2403Emotion from "@/components/angebot2/Test2403Emotion";
+import Test2403MiniClose from "@/components/angebot2/Test2403MiniClose";
 
 const BuchTest2403 = () => {
   useBonusPageView("/buch/test2403", "Buch Angebot Test 2403");
@@ -31,7 +33,9 @@ const BuchTest2403 = () => {
 
       <main ref={mainRef} className="pb-16 md:pb-0" id="test2403-main">
         <Test2403Hero />
+        <Test2403Emotion />
         <Test2403BulletSection />
+        <Test2403MiniClose />
         <Test2403Body />
 
         <div className="bg-muted py-6">
