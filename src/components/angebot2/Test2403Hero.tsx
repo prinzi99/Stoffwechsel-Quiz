@@ -20,7 +20,7 @@ const Test2403Hero = () => {
           </h1>
 
           {/* MOCKUP + TEXTE nebeneinander */}
-          <div className="flex flex-row items-center gap-4 md:gap-6 mb-3 md:mb-4">
+          <div className="flex flex-row items-center gap-3 md:gap-4 mb-3 md:mb-4">
             {/* Buch-Mockup links */}
             <div className="w-24 md:w-36 flex-shrink-0">
               <img
@@ -59,12 +59,12 @@ const Test2403Hero = () => {
 
           {/* PRODUKT-VERANKERUNG */}
           <p className="text-center text-sm md:text-base font-bold text-foreground leading-snug mb-2 md:mb-3">
-            Genau das zeigt Dir dieses Buch.
+            Dieses Buch zeigt Dir, wie Du den Stillstand beendest.
           </p>
 
           {/* CTA BOX – ohne Mockup */}
           <div className="max-w-lg mx-auto">
-            <div className="bg-card border-2 border-primary/40 rounded-2xl p-5 md:p-7 shadow-2xl relative overflow-hidden">
+            <div className="bg-card border-2 border-primary/50 rounded-2xl p-6 md:p-8 shadow-[0_8px_40px_-8px_hsl(var(--primary)/0.25)] relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60" />
 
               <div className="text-center mt-1">
