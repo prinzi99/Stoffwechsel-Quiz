@@ -15,7 +15,7 @@ const Test2403MiniClose = () => {
               Das ist der Punkt, an dem die meisten weiter k&auml;mpfen.
             </p>
             <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
-              Oder endlich verstehen, was wirklich passiert.
+              Oder endlich erleben, wie sich wieder etwas bewegt.
             </p>
           </div>
 
