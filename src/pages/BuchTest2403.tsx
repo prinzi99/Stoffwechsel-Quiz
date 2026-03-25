@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -8,6 +9,12 @@ import Test2403Body from "@/components/angebot2/Test2403Body";
 
 const BuchTest2403 = () => {
   useBonusPageView("/buch/test2403", "Buch Angebot Test 2403");
+  const mainRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Scroll past the header so the headline is at the top
+    mainRef.current?.scrollIntoView({ behavior: "instant" });
+  }, []);
 
   return (
     <>
