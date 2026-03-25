@@ -25,6 +25,7 @@ import BuchAnbot from "./pages/BuchAnbot";
 import BuchAnbot2 from "./pages/BuchAnbot2";
 import BuchTest2403 from "./pages/BuchTest2403";
 import BuchAnbotOld from "./pages/BuchAnbotOld";
+import BuchAnbot2Old from "./pages/BuchAnbot2Old";
 import BuchBonus from "./pages/BuchBonus";
 import Analyse from "./pages/Analyse";
 import BuchBonusIntern from "./pages/BuchBonusIntern";
