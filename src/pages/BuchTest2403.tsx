@@ -7,6 +7,8 @@ import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
 import Test2403Hero from "@/components/angebot2/Test2403Hero";
 import Test2403BulletSection from "@/components/angebot2/Test2403BulletSection";
 import Test2403Body from "@/components/angebot2/Test2403Body";
+import Test2403Emotion from "@/components/angebot2/Test2403Emotion";
+import Test2403MiniClose from "@/components/angebot2/Test2403MiniClose";
 
 const BuchTest2403 = () => {
   useBonusPageView("/buch/test2403", "Buch Angebot Test 2403");
