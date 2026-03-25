@@ -32,43 +32,33 @@ const Test2403Hero = () => {
               />
             </div>
 
-            {/* Texte rechts */}
-            <div className="flex-1 min-w-0">
-              <p className="text-sm md:text-lg text-foreground/80 leading-snug mb-1.5 md:mb-2">
+            {/* Texte rechts – einheitlicher Stil, wenig Farbwechsel */}
+            <div className="flex-1 min-w-0 space-y-1.5 md:space-y-2">
+              <p className="text-sm md:text-lg text-foreground/80 leading-snug">
                 Dann liegt das nicht an Dir.
               </p>
 
-              <div className="border-y border-primary/20 py-1.5 md:py-2.5 mb-1.5 md:mb-2">
-                <p className="text-sm md:text-lg font-bold text-foreground leading-snug">
-                  Dein K&ouml;rper h&auml;lt fest.
-                  <br />
-                  Weil er sich sch&uuml;tzt.
-                </p>
-              </div>
-
-              <p className="text-xs md:text-base text-foreground/80 leading-snug mb-1.5 md:mb-2">
+              <p className="text-sm md:text-lg text-foreground/80 leading-snug">
+                Dein K&ouml;rper h&auml;lt fest, weil er sich sch&uuml;tzt.
+                <br />
                 Er geht in einen Zustand, in dem er kein Fett mehr freigibt –
                 <br className="hidden md:inline" />
                 egal, wie diszipliniert Du bist.
               </p>
 
-              <p className="text-xs md:text-sm font-semibold text-foreground/70 leading-snug mb-1 md:mb-1.5">
-                Und genau deshalb passiert gerade das:
-              </p>
-
-              <p className="text-sm md:text-xl font-extrabold text-primary leading-snug mb-1.5 md:mb-2">
+              <p className="text-base md:text-xl font-extrabold text-foreground leading-snug">
                 Die Waage bewegt sich nicht.
               </p>
 
-              <p className="text-sm md:text-lg font-bold text-primary leading-snug">
+              <p className="text-sm md:text-lg text-foreground/80 leading-snug">
                 Damit sich das endlich &auml;ndert…
               </p>
             </div>
           </div>
 
           {/* PRODUKT-VERANKERUNG */}
-          <p className="text-center text-xs md:text-base font-bold text-foreground leading-snug mb-2 md:mb-3">
-            Dieses Buch zeigt Dir, wie Du diesen Schutzmechanismus aufl&ouml;st
+          <p className="text-center text-xs md:text-base font-semibold text-foreground/90 leading-snug mb-2 md:mb-3">
+            Dieses Buch zeigt Dir, wie Du diesen Mechanismus aufl&ouml;st
             <br />
             und Deinen K&ouml;rper wieder dazu bringst, Fett freizugeben.
           </p>
