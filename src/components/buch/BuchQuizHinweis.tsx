@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+
 import { getUtmParams } from "@/hooks/useUtmParams";
 
 const BuchQuizHinweis = () => {
