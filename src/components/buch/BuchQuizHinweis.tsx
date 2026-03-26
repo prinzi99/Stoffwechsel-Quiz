@@ -1,7 +1,20 @@
+import { useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { getUtmParams } from "@/hooks/useUtmParams";
 
 const BuchQuizHinweis = () => {
+  const quizUrl = useMemo(() => {
+    const utm = getUtmParams();
+    const hasUtm = Object.values(utm).some(v => v);
+    if (hasUtm) {
+      const params = new URLSearchParams();
+      Object.entries(utm).forEach(([k, v]) => { if (v) params.set(k, v as string); });
+      return `/?${params.toString()}`;
+    }
+    return "/?utm_source=buchvkseite";
+  }, []);
+
   return (
     <section className="py-10 md:py-14 bg-background">
       <div className="container mx-auto px-4">
@@ -26,7 +39,7 @@ const BuchQuizHinweis = () => {
             asChild
             className="w-full sm:w-auto"
           >
-            <Link to="/">
+            <Link to={quizUrl}>
               Stoffwechsel-Quiz starten
             </Link>
           </Button>
