@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
+import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const MobileStickyCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const quizUrl = useMemo(() => buildUtmUrl("/quiz"), []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +31,7 @@ const MobileStickyCTA = () => {
         asChild
         className="w-full"
       >
-        <Link to="/quiz">
+        <Link to={quizUrl}>
           Zum Stoffwechsel-Quiz
         </Link>
       </Button>

@@ -1,6 +1,8 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Target, Clock, Lightbulb } from "lucide-react";
+import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const benefits = [
   {
@@ -21,6 +23,7 @@ const benefits = [
 ];
 
 const WhyQuizSection = () => {
+  const quizUrl = useMemo(() => buildUtmUrl("/quiz"), []);
   return (
     <section className="section-padding bg-section-alt">
       <div className="container-narrow">
@@ -72,7 +75,7 @@ const WhyQuizSection = () => {
             size="lg" 
             asChild
           >
-            <Link to="/quiz">
+            <Link to={quizUrl}>
               Stoffwechsel-Quiz starten (ca. 2 Minuten)
             </Link>
           </Button>

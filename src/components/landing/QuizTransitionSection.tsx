@@ -1,8 +1,11 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const QuizTransitionSection = () => {
+  const quizUrl = useMemo(() => buildUtmUrl("/quiz"), []);
   return (
     <section 
       id="quiz-section" 
@@ -41,7 +44,7 @@ const QuizTransitionSection = () => {
             asChild
             className="w-full sm:w-auto"
           >
-            <Link to="/quiz">
+            <Link to={quizUrl}>
               Jetzt Quiz starten
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

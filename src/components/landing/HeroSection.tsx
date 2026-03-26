@@ -1,9 +1,12 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-abstract.webp";
+import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const HeroSection = () => {
+  const quizUrl = useMemo(() => buildUtmUrl("/quiz"), []);
   return (
     <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
       {/* Background with subtle gradient overlay */}
@@ -53,7 +56,7 @@ const HeroSection = () => {
             asChild
             className="mb-4 md:mb-6 w-full sm:w-auto"
           >
-            <Link to="/quiz">
+            <Link to={quizUrl}>
               <span className="hidden sm:inline">Jetzt herausfinden, was meinen Stoffwechsel blockiert</span>
               <span className="sm:hidden">Zum Stoffwechsel-Quiz</span>
             </Link>
