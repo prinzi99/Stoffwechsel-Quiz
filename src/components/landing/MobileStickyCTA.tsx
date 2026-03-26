@@ -31,7 +31,7 @@ const MobileStickyCTA = () => {
         asChild
         className="w-full"
       >
-        <Link to="/quiz">
+        <Link to={quizUrl}>
           Zum Stoffwechsel-Quiz
         </Link>
       </Button>

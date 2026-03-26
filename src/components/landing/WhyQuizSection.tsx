@@ -75,7 +75,7 @@ const WhyQuizSection = () => {
             size="lg" 
             asChild
           >
-            <Link to="/quiz">
+            <Link to={quizUrl}>
               Stoffwechsel-Quiz starten (ca. 2 Minuten)
             </Link>
           </Button>

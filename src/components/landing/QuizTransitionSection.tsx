@@ -44,7 +44,7 @@ const QuizTransitionSection = () => {
             asChild
             className="w-full sm:w-auto"
           >
-            <Link to="/quiz">
+            <Link to={quizUrl}>
               Jetzt Quiz starten
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

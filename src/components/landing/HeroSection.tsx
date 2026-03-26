@@ -56,7 +56,7 @@ const HeroSection = () => {
             asChild
             className="mb-4 md:mb-6 w-full sm:w-auto"
           >
-            <Link to="/quiz">
+            <Link to={quizUrl}>
               <span className="hidden sm:inline">Jetzt herausfinden, was meinen Stoffwechsel blockiert</span>
               <span className="sm:hidden">Zum Stoffwechsel-Quiz</span>
             </Link>
