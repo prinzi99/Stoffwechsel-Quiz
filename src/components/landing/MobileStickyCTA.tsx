@@ -5,6 +5,7 @@ import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const MobileStickyCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const quizUrl = useMemo(() => buildUtmUrl("/quiz"), []);
 
   useEffect(() => {
     const handleScroll = () => {
