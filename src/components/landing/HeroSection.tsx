@@ -6,6 +6,7 @@ import heroImage from "@/assets/hero-abstract.webp";
 import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const HeroSection = () => {
+  const quizUrl = useMemo(() => buildUtmUrl("/quiz"), []);
   return (
     <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
       {/* Background with subtle gradient overlay */}
