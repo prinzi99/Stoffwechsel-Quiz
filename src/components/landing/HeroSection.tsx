@@ -1,7 +1,9 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-abstract.webp";
+import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const HeroSection = () => {
   return (

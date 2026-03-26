@@ -29,3 +29,14 @@ export function captureUtmParams(): UtmParams {
 export function useUtmParams(): UtmParams {
   return captureUtmParams();
 }
+
+export function buildUtmUrl(basePath: string): string {
+  const utm = getUtmParams();
+  const hasUtm = Object.values(utm).some(v => v);
+  if (hasUtm) {
+    const params = new URLSearchParams();
+    Object.entries(utm).forEach(([k, v]) => { if (v) params.set(k, v); });
+    return `${basePath}?${params.toString()}`;
+  }
+  return basePath;
+}

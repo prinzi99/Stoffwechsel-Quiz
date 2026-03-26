@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
+import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const MobileStickyCTA = () => {
   const [isVisible, setIsVisible] = useState(false);

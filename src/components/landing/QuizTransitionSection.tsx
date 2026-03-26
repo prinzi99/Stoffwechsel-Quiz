@@ -1,6 +1,8 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const QuizTransitionSection = () => {
   return (

@@ -1,6 +1,8 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Target, Clock, Lightbulb } from "lucide-react";
+import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const benefits = [
   {
