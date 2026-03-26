@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
 
-const ANALYSE_PASSWORD = "10X5ist50";
+const ANALYSE_PASSWORD = "ptytwwHh26zGJGU";
 
 interface LoginRow {
   id: string;
