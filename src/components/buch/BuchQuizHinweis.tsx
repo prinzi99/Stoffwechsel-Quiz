@@ -10,9 +10,9 @@ const BuchQuizHinweis = () => {
     if (hasUtm) {
       const params = new URLSearchParams();
       Object.entries(utm).forEach(([k, v]) => { if (v) params.set(k, v as string); });
-      return `/?${params.toString()}`;
+      return `https://stoffwechsel.philippsbiohack.de/?${params.toString()}`;
     }
-    return "/?utm_source=buchvkseite";
+    return "https://stoffwechsel.philippsbiohack.de/?utm_source=buchvkseite";
   }, []);
 
   return (
