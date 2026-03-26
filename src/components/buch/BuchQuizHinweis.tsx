@@ -1,8 +1,5 @@
-import { useMemo } from "react";
 import { Button } from "@/components/ui/button";
-import { getUtmParams } from "@/hooks/useUtmParams";
-
-const BASE_URL = "https://stoffwechsel.philippsbiohack.de/buch";
+import { Link } from "react-router-dom";
 
 const BuchQuizHinweis = () => {
   const quizUrl = useMemo(() => {
