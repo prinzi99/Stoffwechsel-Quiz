@@ -23,6 +23,7 @@ const benefits = [
 ];
 
 const WhyQuizSection = () => {
+  const quizUrl = useMemo(() => buildUtmUrl("/quiz"), []);
   return (
     <section className="section-padding bg-section-alt">
       <div className="container-narrow">
