@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+
 import { getUtmParams } from "@/hooks/useUtmParams";
 
 const BuchQuizHinweis = () => {
@@ -10,9 +10,9 @@ const BuchQuizHinweis = () => {
     if (hasUtm) {
       const params = new URLSearchParams();
       Object.entries(utm).forEach(([k, v]) => { if (v) params.set(k, v as string); });
-      return `/?${params.toString()}`;
+      return `https://stoffwechsel.philippsbiohack.de/?${params.toString()}`;
     }
-    return "/?utm_source=buchvkseite";
+    return "https://stoffwechsel.philippsbiohack.de/?utm_source=buchvkseite";
   }, []);
 
   return (
@@ -39,9 +39,9 @@ const BuchQuizHinweis = () => {
             asChild
             className="w-full sm:w-auto"
           >
-            <Link to={quizUrl}>
+            <a href={quizUrl} target="_blank" rel="noopener noreferrer">
               Stoffwechsel-Quiz starten
-            </Link>
+            </a>
           </Button>
 
           <p className="text-sm text-muted-foreground mt-2.5">
