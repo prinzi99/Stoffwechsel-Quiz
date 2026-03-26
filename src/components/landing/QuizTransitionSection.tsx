@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { buildUtmUrl } from "@/hooks/useUtmParams";
 
 const QuizTransitionSection = () => {
+  const quizUrl = useMemo(() => buildUtmUrl("/quiz"), []);
   return (
     <section 
       id="quiz-section" 
