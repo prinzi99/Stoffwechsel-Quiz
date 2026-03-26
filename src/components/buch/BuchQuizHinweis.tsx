@@ -39,9 +39,9 @@ const BuchQuizHinweis = () => {
             asChild
             className="w-full sm:w-auto"
           >
-            <Link to={quizUrl}>
+            <a href={quizUrl} target="_blank" rel="noopener noreferrer">
               Stoffwechsel-Quiz starten
-            </Link>
+            </a>
           </Button>
 
           <p className="text-sm text-muted-foreground mt-2.5">
