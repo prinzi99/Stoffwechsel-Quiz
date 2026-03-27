@@ -17,7 +17,7 @@ const AnbotTestZielgruppe = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             Dieses Buch ist für dich, wenn...
           </h2>
-          <ul className="space-y-4">
+          <ul className="space-y-5">
             {items.map((item, i) => (
               <li key={i} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-accent shrink-0 mt-1" />

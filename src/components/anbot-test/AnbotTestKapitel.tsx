@@ -18,15 +18,19 @@ const chapters = [
 ];
 
 const AnbotTestKapitel = () => {
+  const scrollToKauf = () => {
+    document.getElementById("kaufen")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-12 md:py-16 bg-section-alt">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-10">
             Was du in diesem Buch lernst
           </h2>
 
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-4">
             {chapters.map((ch, i) => (
               <div key={i} className="bg-card rounded-lg border border-border p-5 flex gap-4">
                 <div className="shrink-0 mt-1">
@@ -44,6 +48,17 @@ const AnbotTestKapitel = () => {
             <Badge variant="secondary" className="text-sm px-4 py-1.5">
               Bonuskapitel: 10 Stoffwechsel-Mythen – wissenschaftlich eingeordnet
             </Badge>
+          </div>
+
+          {/* Zwischen-CTA */}
+          <div className="mt-10 text-center">
+            <button
+              onClick={scrollToKauf}
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-accent text-accent-foreground shadow-lg hover:bg-accent/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
+            >
+              Jetzt für 19,99&nbsp;€ statt <span className="line-through ml-1">34,99&nbsp;€</span> sichern
+            </button>
+            <p className="text-muted-foreground text-sm mt-3">Exklusiv für Quiz-Teilnehmer</p>
           </div>
         </div>
       </div>
