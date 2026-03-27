@@ -1,9 +1,8 @@
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+
 const AnbotTestHero = () => {
-  const scrollToKauf = () => {
-    document.getElementById("kaufen")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <section className="bg-[image:var(--hero-gradient)] py-16 md:py-24">
@@ -30,12 +29,14 @@ const AnbotTestHero = () => {
             />
           </div>
 
-          <button
-            onClick={scrollToKauf}
+          <a
+            href={DIGISTORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-accent text-accent-foreground shadow-lg hover:bg-accent/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
           >
             Jetzt für 19,99&nbsp;€ statt <span className="line-through ml-1">34,99&nbsp;€</span> sichern
-          </button>
+          </a>
           <p className="text-primary-foreground/70 text-sm mt-3">
             Sofort-Download als PDF · Inkl. Online-Bonusbereich
           </p>
