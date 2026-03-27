@@ -139,7 +139,7 @@ const ResultPageB2 = () => {
                 <p className="italic text-foreground">„Ich esse doch schon so wenig… warum passiert nichts?"</p>
               </div>
               <p className="font-semibold text-foreground">Genau das ist das Problem.</p>
-              <p className="font-bold text-foreground text-lg mt-6 mb-4">Genau dafür habe ich dieses Buch geschrieben.</p>
+              <p className="font-bold text-foreground text-lg mt-6 mb-4">Dafür habe ich dieses Buch geschrieben.</p>
             </div>
           </section>
 
