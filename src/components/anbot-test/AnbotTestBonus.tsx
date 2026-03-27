@@ -20,9 +20,6 @@ const summary = [
 ];
 
 const AnbotTestBonus = () => {
-  const scrollToKauf = () => {
-    document.getElementById("kaufen")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <section className="py-12 md:py-16 bg-card">
