@@ -314,7 +314,7 @@ const ResultPageA2 = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
             >
-              Jetzt für 19,99&nbsp;€ statt <span className="line-through mx-1">54,99&nbsp;€</span> sichern
+              Jetzt für 19,99&nbsp;€ statt <span className="line-through mx-1">34,99&nbsp;€</span> sichern
             </a>
             <div className="flex flex-wrap justify-center gap-5 mt-8 text-sm text-primary-foreground/80">
               <span>🔒 Sicherer Checkout</span>
