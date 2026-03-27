@@ -10,7 +10,7 @@ const AngebotHero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <p className="text-sm font-medium text-primary tracking-wide text-center mb-3">
-            Nur f&uuml;r Teilnehmer des Stoffwechsel-Quiz
+            Nur f&uuml;r Teilnehmer
           </p>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-foreground leading-[1.1] text-center mb-2 md:mb-3 max-w-3xl mx-auto">
