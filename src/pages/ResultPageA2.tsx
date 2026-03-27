@@ -224,7 +224,7 @@ const ResultPageA2 = () => {
               <h3 className="text-lg font-bold text-foreground mb-5">Das bekommst Du zusammen:</h3>
               <div className="space-y-3 mb-6">
                 {[
-                  { text: 'Buch (10 Kapitel + Bonuskapitel)', value: '54,99 €' },
+                  { text: 'Buch (10 Kapitel + Bonuskapitel)', value: '34,99 €' },
                   { text: 'Online-Begleitbereich mit Tools & Rechnern', value: '29,99 €' },
                   { text: '11 Downloads (PDF-Checklisten, Protokolle, Übersichten)', value: '19,99 €' },
                   { text: 'Persönliche Kalorien- & Makro-Berechnung', value: '14,99 €' },
