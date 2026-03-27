@@ -40,6 +40,9 @@ const AnbotTestHero = () => {
           <p className="text-primary-foreground/70 text-sm mt-3">
             Sofort-Download als PDF · Inkl. Online-Bonusbereich
           </p>
+          <p className="text-primary-foreground/70 text-sm mt-1">
+            100 Seiten · Wissenschaftlich fundiert · Sofort anwendbar
+          </p>
         </div>
       </div>
     </section>

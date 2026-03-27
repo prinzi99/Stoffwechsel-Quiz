@@ -36,7 +36,7 @@ const AnbotTestKapitel = () => {
                   <ch.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">{ch.title}</h3>
+                  <h3 className="font-semibold text-foreground mb-1"><span className="text-primary font-bold">{i + 1}.</span> {ch.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{ch.text}</p>
                 </div>
               </div>
