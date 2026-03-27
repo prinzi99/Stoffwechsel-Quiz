@@ -209,7 +209,7 @@ const ResultPageA2 = () => {
                 { icon: '🧮', title: 'Kalorien- & Makro-Rechner', desc: 'Dein persönlicher Startpunkt, individuell berechnet. Kein Rätselraten.' },
                 { icon: '✅', title: 'Wöchentlicher Bereich', desc: 'Wochenübersicht für Training & Energie, Schlaf- und Erholungsprotokoll, Alltags-Checkliste.' },
               ].map((card, i) => (
-                <div key={i} className="bg-card border border-border rounded-xl p-5 text-center">
+                <div key={i} className="bg-card border border-border rounded-xl p-5 md:py-8 text-center">
                   <span className="text-3xl mb-3 block">{card.icon}</span>
                   <h3 className="font-semibold text-foreground mb-2">{card.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
