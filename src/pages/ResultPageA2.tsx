@@ -247,7 +247,7 @@ const ResultPageA2 = () => {
               <div className="text-center">
                 <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
                 <div className="flex items-center justify-center gap-3 mb-5">
-                  <span className="text-lg text-muted-foreground/50 line-through">54,99&nbsp;€</span>
+                  <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;€</span>
                   <span className="text-3xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;€</span>
                 </div>
                 <Button
