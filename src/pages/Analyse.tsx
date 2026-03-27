@@ -297,7 +297,7 @@ const Analyse = () => {
             )}
 
             <p className="text-xs text-muted-foreground text-right pt-2">
-              Letztes Update Angebotsseite: 25.03.2026
+              Letztes Update Angebotsseite: 27.03.2026
             </p>
           </div>
         </section>
