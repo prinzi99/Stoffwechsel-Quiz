@@ -17,10 +17,9 @@ const chapters = [
   { icon: User, title: "Individualisierung ist keine Luxusoption", text: "Warum das, was für andere funktioniert, für dich scheitern kann – und wie du dein eigenes System findest." },
 ];
 
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+
 const AnbotTestKapitel = () => {
-  const scrollToKauf = () => {
-    document.getElementById("kaufen")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <section className="py-12 md:py-16 bg-section-alt">
