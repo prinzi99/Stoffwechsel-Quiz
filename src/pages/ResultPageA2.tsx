@@ -224,7 +224,7 @@ const ResultPageA2 = () => {
               <h3 className="text-lg font-bold text-foreground mb-5">Das bekommst Du zusammen:</h3>
               <div className="space-y-3 mb-6">
                 {[
-                  { text: 'Buch (10 Kapitel + Bonuskapitel)', value: '54,99 €' },
+                  { text: 'Buch (10 Kapitel + Bonuskapitel)', value: '34,99 €' },
                   { text: 'Online-Begleitbereich mit Tools & Rechnern', value: '29,99 €' },
                   { text: '11 Downloads (PDF-Checklisten, Protokolle, Übersichten)', value: '19,99 €' },
                   { text: 'Persönliche Kalorien- & Makro-Berechnung', value: '14,99 €' },
@@ -240,14 +240,14 @@ const ResultPageA2 = () => {
               <div className="border-t-2 border-primary/20 pt-4 mb-6">
                 <div className="flex justify-between items-center mb-1">
                   <span className="text-lg font-bold text-foreground">Gesamtwert</span>
-                  <span className="text-xl font-extrabold text-primary line-through">~120&nbsp;€</span>
+                  <span className="text-xl font-extrabold text-primary line-through">~100&nbsp;€</span>
                 </div>
               </div>
 
               <div className="text-center">
                 <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
                 <div className="flex items-center justify-center gap-3 mb-5">
-                  <span className="text-lg text-muted-foreground/50 line-through">54,99&nbsp;€</span>
+                  <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;€</span>
                   <span className="text-3xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;€</span>
                 </div>
                 <Button
@@ -306,7 +306,7 @@ const ResultPageA2 = () => {
             <p className="text-lg text-primary-foreground/85 mb-6">
               Kein Abo. Kein Mengenzählen. Einmal kaufen, sofort loslegen.
             </p>
-            <p className="text-xl text-primary-foreground/60 line-through mb-1">54,99&nbsp;€</p>
+            <p className="text-xl text-primary-foreground/60 line-through mb-1">34,99&nbsp;€</p>
             <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">19,99&nbsp;€</p>
             <a
               href="https://www.digistore24.com/product/675804?voucher=quizrabatt"
@@ -314,7 +314,7 @@ const ResultPageA2 = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
             >
-              Jetzt für 19,99&nbsp;€ statt <span className="line-through mx-1">54,99&nbsp;€</span> sichern
+              Jetzt für 19,99&nbsp;€ statt <span className="line-through mx-1">34,99&nbsp;€</span> sichern
             </a>
             <div className="flex flex-wrap justify-center gap-5 mt-8 text-sm text-primary-foreground/80">
               <span>🔒 Sicherer Checkout</span>
