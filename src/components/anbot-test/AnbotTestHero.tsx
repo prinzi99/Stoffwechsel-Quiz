@@ -1,9 +1,8 @@
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+
 const AnbotTestHero = () => {
-  const scrollToKauf = () => {
-    document.getElementById("kaufen")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <section className="bg-[image:var(--hero-gradient)] py-16 md:py-24">
