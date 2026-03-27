@@ -8,6 +8,7 @@ import AnbotTestProblemAnker from "@/components/anbot-test/AnbotTestProblemAnker
 import AnbotTestKapitel from "@/components/anbot-test/AnbotTestKapitel";
 import AnbotTestBonus from "@/components/anbot-test/AnbotTestBonus";
 import AnbotTestZielgruppe from "@/components/anbot-test/AnbotTestZielgruppe";
+import AnbotTestSocialProof from "@/components/anbot-test/AnbotTestSocialProof";
 import AnbotTestAutor from "@/components/anbot-test/AnbotTestAutor";
 import AnbotTestKauf from "@/components/anbot-test/AnbotTestKauf";
 import AnbotTestFAQ from "@/components/anbot-test/AnbotTestFAQ";
