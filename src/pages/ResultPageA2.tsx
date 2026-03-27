@@ -240,7 +240,7 @@ const ResultPageA2 = () => {
               <div className="border-t-2 border-primary/20 pt-4 mb-6">
                 <div className="flex justify-between items-center mb-1">
                   <span className="text-lg font-bold text-foreground">Gesamtwert</span>
-                  <span className="text-xl font-extrabold text-primary line-through">~120&nbsp;€</span>
+                  <span className="text-xl font-extrabold text-primary line-through">~100&nbsp;€</span>
                 </div>
               </div>
 
