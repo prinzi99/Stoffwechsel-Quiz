@@ -1,10 +1,10 @@
 import { Calculator, Activity, Wrench, FileDown, Utensils, Plus, Check } from "lucide-react";
 
 const tools = [
+  { icon: FileDown, title: "9 Downloads & Checklisten", text: "Stoffwechsel-Reset-Checkliste, Defizit-Phase-Checkliste, Alltags-Checkliste, Ernährungs-Beobachtungsblatt, Schlaf- & Erholungsprotokoll, Wochenübersicht Training & Energie, Makronährstoff-Übersicht, Kalorien-Startpunkt-Übersicht, Stoffwechsel-System-Übersicht." },
   { icon: Calculator, title: "Kalorien- & Makro-Rechner", text: "Berechne deinen individuellen Kalorienbedarf und deine Makroverteilung – einfach, schnell und auf dich abgestimmt." },
   { icon: Activity, title: "Stoffwechsel-Reset-Check", text: "Finde heraus, ob dein Stoffwechsel gerade im Sparmodus ist – und was du konkret dagegen tun kannst." },
   { icon: Wrench, title: "Biohacking-Tools & App-Empfehlungen", text: "Ernährungstracker, Fitnessuhr, Schlaftracking, CO₂-Messgerät – kuratierte Empfehlungen, die wirklich nützlich sind." },
-  { icon: FileDown, title: "9 Downloads & Checklisten", text: "Stoffwechsel-Reset-Checkliste, Defizit-Phase-Checkliste, Alltags-Checkliste, Ernährungs-Beobachtungsblatt, Schlaf- & Erholungsprotokoll, Wochenübersicht Training & Energie, Makronährstoff-Übersicht, Kalorien-Startpunkt-Übersicht, Stoffwechsel-System-Übersicht." },
   { icon: Utensils, title: "Beispielstrukturen Ernährung", text: "Keine starren Diätpläne – sondern flexible Orientierungsrahmen, die du an dein Leben anpassen kannst." },
   { icon: Plus, title: "Wachsender Bereich", text: "Neue Inhalte und Tools werden regelmäßig ergänzt. Der Bonusbereich wächst mit." },
 ];
@@ -54,14 +54,20 @@ const AnbotTestBonus = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Alles zusammen: 19,99&nbsp;€
+            <p className="text-sm text-muted-foreground line-through mb-1">
+              Regulärer Preis: 34,99&nbsp;€
+            </p>
+            <p className="text-2xl md:text-3xl font-bold text-primary mb-1">
+              Dein Preis: 19,99&nbsp;€
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              Exklusiv für Quiz-Teilnehmer
             </p>
             <button
               onClick={scrollToKauf}
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-accent text-accent-foreground shadow-lg hover:bg-accent/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
             >
-              Jetzt sichern
+              Jetzt für 19,99&nbsp;€ statt <span className="line-through ml-1">34,99&nbsp;€</span> sichern
             </button>
           </div>
         </div>
