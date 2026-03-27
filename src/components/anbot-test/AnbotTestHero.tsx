@@ -1,3 +1,5 @@
+import bookCover from "@/assets/book-cover-mockup2.jpeg";
+
 const AnbotTestHero = () => {
   const scrollToKauf = () => {
     document.getElementById("kaufen")?.scrollIntoView({ behavior: "smooth" });
@@ -14,8 +16,14 @@ const AnbotTestHero = () => {
             Kein neuer Diätplan. Sondern ein System, das mit deinem Körper arbeitet – nicht gegen ihn.
           </p>
 
-          <div className="bg-muted/20 border border-primary-foreground/20 rounded-xl flex items-center justify-center h-[300px] mb-10">
-            <span className="text-primary-foreground/60 text-lg">Buch-Mockup hier einfügen</span>
+          <div className="flex justify-center mb-10">
+            <img
+              src={bookCover}
+              alt="Du bist nicht das Problem – Buchcover"
+              className="w-48 md:w-64 h-auto rounded-xl shadow-2xl"
+              width={800}
+              height={1067}
+            />
           </div>
 
           <button
