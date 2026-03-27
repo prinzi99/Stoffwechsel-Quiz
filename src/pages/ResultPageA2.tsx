@@ -136,6 +136,7 @@ const ResultPageA2 = () => {
                 <p className="italic text-foreground">&bdquo;Ich muss mich einfach mehr zusammenrei&szlig;en.&ldquo;</p>
               </div>
               <p className="font-semibold text-foreground">Tut es nicht.</p>
+              <p className="font-bold text-foreground text-lg mt-6 mb-4">Genau dafür habe ich dieses Buch geschrieben.</p>
             </div>
           </section>
 
