@@ -15,7 +15,7 @@ const AnbotTestHero = () => {
             Kein neuer Diätplan. Sondern ein System, das mit deinem Körper arbeitet – nicht gegen ihn.
           </p>
 
-          <span className="inline-block bg-primary-foreground/15 backdrop-blur-sm text-primary-foreground text-sm px-4 py-1.5 rounded-full mb-10">
+          <span className="inline-block bg-white text-primary font-semibold text-base px-6 py-2 rounded-full mb-10 shadow-md">
             🎯 Exklusiv für Quiz-Teilnehmer: 43% günstiger
           </span>
 
@@ -39,6 +39,9 @@ const AnbotTestHero = () => {
           </a>
           <p className="text-primary-foreground/70 text-sm mt-3">
             Sofort-Download als PDF · Inkl. Online-Bonusbereich
+          </p>
+          <p className="text-primary-foreground/70 text-sm mt-1">
+            100 Seiten · Wissenschaftlich fundiert · Sofort anwendbar
           </p>
         </div>
       </div>

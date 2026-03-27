@@ -12,11 +12,11 @@ const tools = [
 ];
 
 const summary = [
-  "E-Book (10 Kapitel + Bonuskapitel)",
-  "Online-Bonusbereich mit Tools & Rechnern",
-  "9 herunterladbare PDFs (Checklisten, Arbeitsblätter, Übersichten)",
-  "Kuratierte App- & Tool-Empfehlungen",
-  "Regelmäßige Updates im Bonusbereich",
+  { text: "E-Book (10 Kapitel + Bonuskapitel)", value: "34,99 €" },
+  { text: "Online-Bonusbereich mit Tools & Rechnern", value: "29,00 €" },
+  { text: "9 herunterladbare PDFs (Checklisten, Arbeitsblätter, Übersichten)", value: "19,00 €" },
+  { text: "Kuratierte App- & Tool-Empfehlungen", value: "9,00 €" },
+  { text: "Regelmäßige Updates im Bonusbereich", value: "kostenlos" },
 ];
 
 const AnbotTestBonus = () => {
@@ -49,19 +49,22 @@ const AnbotTestBonus = () => {
               {summary.map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-foreground/80">
                   <Check className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span>{item}</span>
+                  <span className="flex-1">{item.text}</span>
+                  <span className="text-sm text-muted-foreground whitespace-nowrap ml-2">{item.value}</span>
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-muted-foreground line-through mb-1">
-              Regulärer Preis: 34,99&nbsp;€
-            </p>
-            <p className="text-2xl md:text-3xl font-bold text-primary mb-1">
-              Dein Preis: 19,99&nbsp;€
-            </p>
-            <p className="text-sm text-muted-foreground mb-4">
-              Exklusiv für Quiz-Teilnehmer
-            </p>
+            <div className="border-t border-border pt-4 mb-4">
+              <p className="text-sm text-muted-foreground line-through mb-1">
+                Gesamtwert: 91,99&nbsp;€
+              </p>
+              <p className="text-2xl md:text-3xl font-bold text-primary mb-1">
+                Dein Preis: 19,99&nbsp;€
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Exklusiv für Quiz-Teilnehmer
+              </p>
+            </div>
             <a
               href={DIGISTORE_URL}
               target="_blank"
