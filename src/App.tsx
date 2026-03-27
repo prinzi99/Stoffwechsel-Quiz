@@ -23,7 +23,6 @@ import Datenschutz from "./pages/Datenschutz";
 import Buch from "./pages/Buch";
 import BuchAnbot from "./pages/BuchAnbot";
 import BuchAnbot2 from "./pages/BuchAnbot2";
-import BuchTest2403 from "./pages/BuchTest2403";
 import BuchAnbotTest from "./pages/BuchAnbotTest";
 import BuchAnbotOld from "./pages/BuchAnbotOld";
 import BuchAnbot2Old from "./pages/BuchAnbot2Old";
