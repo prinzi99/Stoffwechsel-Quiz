@@ -46,6 +46,7 @@ const BuchAnbotTest = () => {
         <AnbotTestFAQ />
       </main>
 
+      <AngebotStickyCTA />
       <Footer />
     </>
   );
