@@ -24,6 +24,7 @@ import Buch from "./pages/Buch";
 import BuchAnbot from "./pages/BuchAnbot";
 import BuchAnbot2 from "./pages/BuchAnbot2";
 import BuchTest2403 from "./pages/BuchTest2403";
+import BuchAnbotTest from "./pages/BuchAnbotTest";
 import BuchAnbotOld from "./pages/BuchAnbotOld";
 import BuchAnbot2Old from "./pages/BuchAnbot2Old";
 import BuchBonus from "./pages/BuchBonus";
@@ -66,6 +67,7 @@ const App = () => {
             <Route path="/buch/anbot00z00z01-old" element={<BuchAnbot2Old />} />
             <Route path="/buch/angebot000z00-old" element={<BuchAnbotOld />} />
             <Route path="/buch/anbot3g4a3e" element={<BuchTest2403 />} />
+            <Route path="/buch/anbot-test" element={<BuchAnbotTest />} />
             
             <Route path="/buch/bonus" element={<BuchBonus />} />
             <Route path="/buch/bonus/intern" element={<BuchBonusIntern />} />
