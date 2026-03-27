@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
+import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
 import AnbotTestHero from "@/components/anbot-test/AnbotTestHero";
 import AnbotTestProblemAnker from "@/components/anbot-test/AnbotTestProblemAnker";
 import AnbotTestKapitel from "@/components/anbot-test/AnbotTestKapitel";
@@ -45,6 +46,7 @@ const BuchAnbotTest = () => {
         <AnbotTestFAQ />
       </main>
 
+      <AngebotStickyCTA />
       <Footer />
     </>
   );
