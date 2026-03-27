@@ -15,7 +15,7 @@ import AnbotTestKauf from "@/components/anbot-test/AnbotTestKauf";
 import AnbotTestFAQ from "@/components/anbot-test/AnbotTestFAQ";
 
 const BuchAnbotTest = () => {
-  useBonusPageView("/buch/anbot-test", "Buch Angebot Test");
+  useBonusPageView("/buch/anbot3g4a3e", "Buch Angebot Test");
   const mainRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

@@ -66,8 +66,8 @@ const App = () => {
             <Route path="/buch" element={<Buch />} />
             <Route path="/buch/anbot00z00z01-old" element={<BuchAnbot2Old />} />
             <Route path="/buch/angebot000z00-old" element={<BuchAnbotOld />} />
-            <Route path="/buch/anbot3g4a3e" element={<BuchTest2403 />} />
-            <Route path="/buch/anbot-test" element={<BuchAnbotTest />} />
+            <Route path="/buch/anbot3g4a3e" element={<BuchAnbotTest />} />
+            <Route path="/buch/anbot-test" element={<Navigate to="/buch/anbot3g4a3e" replace />} />
             
             <Route path="/buch/bonus" element={<BuchBonus />} />
             <Route path="/buch/bonus/intern" element={<BuchBonusIntern />} />
