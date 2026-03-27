@@ -12,11 +12,11 @@ const tools = [
 ];
 
 const summary = [
-  "E-Book (10 Kapitel + Bonuskapitel)",
-  "Online-Bonusbereich mit Tools & Rechnern",
-  "9 herunterladbare PDFs (Checklisten, Arbeitsblätter, Übersichten)",
-  "Kuratierte App- & Tool-Empfehlungen",
-  "Regelmäßige Updates im Bonusbereich",
+  { text: "E-Book (10 Kapitel + Bonuskapitel)", value: "34,99 €" },
+  { text: "Online-Bonusbereich mit Tools & Rechnern", value: "29,00 €" },
+  { text: "9 herunterladbare PDFs (Checklisten, Arbeitsblätter, Übersichten)", value: "19,00 €" },
+  { text: "Kuratierte App- & Tool-Empfehlungen", value: "9,00 €" },
+  { text: "Regelmäßige Updates im Bonusbereich", value: "kostenlos" },
 ];
 
 const AnbotTestBonus = () => {
