@@ -306,7 +306,7 @@ const ResultPageA2 = () => {
             <p className="text-lg text-primary-foreground/85 mb-6">
               Kein Abo. Kein Mengenzählen. Einmal kaufen, sofort loslegen.
             </p>
-            <p className="text-xl text-primary-foreground/60 line-through mb-1">54,99&nbsp;€</p>
+            <p className="text-xl text-primary-foreground/60 line-through mb-1">34,99&nbsp;€</p>
             <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">19,99&nbsp;€</p>
             <a
               href="https://www.digistore24.com/product/675804?voucher=quizrabatt"
