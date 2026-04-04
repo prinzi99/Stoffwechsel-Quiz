@@ -1,10 +1,28 @@
+import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
-import BuchContent from "@/components/buch/BuchContent";
 import BuchQuizHinweis from "@/components/buch/BuchQuizHinweis";
+import { useBonusPageView } from "@/hooks/useBonusTracking";
+import BuchAllgemeinHero from "@/components/buch/BuchAllgemeinHero";
+import AnbotTestProblemAnker from "@/components/anbot-test/AnbotTestProblemAnker";
+import BuchAllgemeinKapitel from "@/components/buch/BuchAllgemeinKapitel";
+import BuchAllgemeinBonus from "@/components/buch/BuchAllgemeinBonus";
+import AnbotTestZielgruppe from "@/components/anbot-test/AnbotTestZielgruppe";
+import BuchAllgemeinSocialProof from "@/components/buch/BuchAllgemeinSocialProof";
+import AnbotTestAutor from "@/components/anbot-test/AnbotTestAutor";
+import BuchAllgemeinKauf from "@/components/buch/BuchAllgemeinKauf";
+import AnbotTestFAQ from "@/components/anbot-test/AnbotTestFAQ";
+import BuchAllgemeinStickyCTA from "@/components/buch/BuchAllgemeinStickyCTA";
 
 const Buch = () => {
+  useBonusPageView("/buch", "Buch Landingpage");
+  const mainRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    mainRef.current?.scrollIntoView({ behavior: "instant" });
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -14,8 +32,17 @@ const Buch = () => {
       </Helmet>
       <Header />
 
-      <main>
-        <BuchContent />
+      <main ref={mainRef} className="pb-16 md:pb-0">
+        <BuchAllgemeinHero />
+        <AnbotTestProblemAnker />
+        <BuchAllgemeinKapitel />
+        <BuchAllgemeinBonus />
+        <AnbotTestZielgruppe />
+        <BuchAllgemeinSocialProof />
+        <AnbotTestAutor />
+        <BuchAllgemeinKauf />
+        <AnbotTestFAQ />
+
         <BuchQuizHinweis />
 
         {/* Medizinischer Hinweis */}
@@ -28,6 +55,7 @@ const Buch = () => {
         </div>
       </main>
 
+      <BuchAllgemeinStickyCTA />
       <Footer />
     </>
   );
