@@ -4,7 +4,7 @@ import { ArrowRight, AlertCircle, XCircle, Lightbulb } from 'lucide-react';
 import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
 
-const ResultPageA2 = () => {
+const ResultPageA3 = () => {
   const typicalSigns = [
     'Gewicht stagniert trotz gesunder Ernährung',
     'Heißhunger in stressigen Phasen',
@@ -337,4 +337,4 @@ const ResultPageA2 = () => {
   );
 };
 
-export default ResultPageA2;
+export default ResultPageA3;
