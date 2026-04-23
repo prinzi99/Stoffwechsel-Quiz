@@ -14,6 +14,7 @@ import Quiz from "./pages/Quiz";
 import ThankYou from "./pages/ThankYou";
 import ResultPage from "./pages/ResultPage";
 import ResultPageA2 from "./pages/ResultPageA2";
+import ResultPageA3 from "./pages/ResultPageA3";
 import ResultPageB from "./pages/ResultPageB";
 import ResultPageB2 from "./pages/ResultPageB2";
 import ResultPageC from "./pages/ResultPageC";
@@ -56,6 +57,7 @@ const App = () => {
             <Route path="/danke" element={<ThankYou />} />
             <Route path="/dfgk34k" element={<ResultPage />} />
             <Route path="/dfgk34k-2" element={<ResultPageA2 />} />
+            <Route path="/dfgk34k-3" element={<ResultPageA3 />} />
             <Route path="/k93fda" element={<ResultPageB />} />
             <Route path="/k93fda-2" element={<ResultPageB2 />} />
             <Route path="/x7q9p2" element={<ResultPageC />} />
