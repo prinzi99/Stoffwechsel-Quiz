@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, AlertCircle, XCircle, Lightbulb, Check } from 'lucide-react';
 import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
+import ExitIntentPopup from '@/components/buch/ExitIntentPopup';
 
 const ResultPageA3 = () => {
   const typicalSigns = [
@@ -34,6 +35,7 @@ const ResultPageA3 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet><meta name="robots" content="noindex, nofollow" /></Helmet>
+      <ExitIntentPopup />
       <Header />
       {/* Main Content */}
       <main className="container-wide px-3 sm:px-5 md:px-8 py-10 md:py-16 lg:py-24">
