@@ -4,6 +4,9 @@ import { ArrowRight, AlertCircle, XCircle, Lightbulb, Check } from 'lucide-react
 import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
 import ExitIntentPopup from '@/components/buch/ExitIntentPopup';
+import A3StickyMobileCTA from '@/components/buch/A3StickyMobileCTA';
+import A3InactivityPopup from '@/components/buch/A3InactivityPopup';
+import A3MiniClose from '@/components/buch/A3MiniClose';
 
 const ResultPageA3 = () => {
   const typicalSigns = [
@@ -36,6 +39,8 @@ const ResultPageA3 = () => {
     <div className="min-h-screen bg-background">
       <Helmet><meta name="robots" content="noindex, nofollow" /></Helmet>
       <ExitIntentPopup />
+      <A3InactivityPopup />
+      <A3StickyMobileCTA />
       <Header />
       {/* Main Content */}
       <main className="container-wide px-3 sm:px-5 md:px-8 py-10 md:py-16 lg:py-24">
@@ -222,7 +227,7 @@ const ResultPageA3 = () => {
 
           {/* 10. Preis-Box + CTA */}
           <section className="mb-12">
-            <div className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
+            <div id="preis-box-1" className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
               <div className="text-center">
                 <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
                 <div className="flex items-center justify-center gap-3 mb-5">
