@@ -1,7 +1,7 @@
 import { Calculator, Activity, Wrench, FileDown, Utensils, Plus, Check } from "lucide-react";
 import { trackButtonClick } from "@/hooks/useBonusTracking";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=promo";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
 const tools = [
   { icon: FileDown, title: "9 Downloads & Checklisten", text: "Stoffwechsel-Reset-Checkliste, Defizit-Phase-Checkliste, Alltags-Checkliste, Ernährungs-Beobachtungsblatt, Schlaf- & Erholungsprotokoll, Wochenübersicht Training & Energie, Makronährstoff-Übersicht, Kalorien-Startpunkt-Übersicht, Stoffwechsel-System-Übersicht." },

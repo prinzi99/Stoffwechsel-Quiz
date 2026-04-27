@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 import { trackButtonClick } from "@/hooks/useBonusTracking";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
 const handleBuyClick = (buttonLabel: string) => {
   trackButtonClick("/buch/anbot3g4a3e", buttonLabel, DIGISTORE_URL);

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
 const AngebotHero = () => {
   return (

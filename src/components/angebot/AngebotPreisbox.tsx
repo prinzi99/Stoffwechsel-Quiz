@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
 const included = [
   "sofort verf\u00FCgbar",

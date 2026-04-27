@@ -18,7 +18,7 @@ const chapters = [
   { icon: User, title: "Individualisierung ist keine Luxusoption", text: "Warum das, was für andere funktioniert, für dich scheitern kann – und wie du dein eigenes System findest." },
 ];
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=promo";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
 const BuchAllgemeinKapitel = () => {
   return (

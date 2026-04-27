@@ -86,7 +86,7 @@ const ExitIntentPopup = () => {
             asChild
           >
             <a
-              href="https://www.digistore24.com/product/675804?voucher=quizrabatt"
+              href="https://www.digistore24.com/product/675804?voucher=specialdeal"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
