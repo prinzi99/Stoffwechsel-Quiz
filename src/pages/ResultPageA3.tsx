@@ -234,14 +234,6 @@ const ResultPageA3 = () => {
             </p>
           </section>
 
-          {/* Mini-Close #2 (mobile re-engagement after bonus) */}
-          <div className="md:hidden">
-            <A3MiniClose
-              headline="Buch + Bonus-Tools – alles dabei."
-              cta="Jetzt für 9,99 € starten"
-            />
-          </div>
-
           {/* 10. Preis-Box + CTA */}
           <section className="mb-12">
             <div id="preis-box-1" className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
