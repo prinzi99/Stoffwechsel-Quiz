@@ -5,7 +5,7 @@ import bookCover from "@/assets/book-cover-mockup3.jpeg";
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 const STORAGE_KEY = "inactivityPopupShown_dfgk34k-3";
-const INACTIVITY_MS = 35_000; // 35 seconds without scroll/touch/click
+const INACTIVITY_MS = 20_000; // 20 seconds without scroll/touch interaction
 
 /**
  * Mobile-only inactivity popup. Triggers once per session after 35s
