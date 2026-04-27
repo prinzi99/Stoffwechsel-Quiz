@@ -1,43 +1,65 @@
 import { Helmet } from "react-helmet-async";
 import { Button } from '@/components/ui/button';
-import { ArrowRight, AlertCircle, XCircle, Lightbulb } from 'lucide-react';
+import { ArrowRight, AlertCircle, XCircle, Lightbulb, Check } from 'lucide-react';
 import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
+import ExitIntentPopup from '@/components/buch/ExitIntentPopup';
+import A3StickyMobileCTA from '@/components/buch/A3StickyMobileCTA';
+import A3InactivityPopup from '@/components/buch/A3InactivityPopup';
+import A3MiniClose from '@/components/buch/A3MiniClose';
 
 const ResultPageC3 = () => {
   const typicalSigns = [
     'Abnehmen wird trotz Disziplin immer schwieriger',
-    'Schnelle Gewichtszunahme nach Diäten',
-    'Kaum Spielraum bei Ernährung',
+    'Gewicht stagniert – oder geht trotz Defizit hoch',
+    'Ständige Beschäftigung mit Essen und Kalorien',
+    'Kein Spielraum mehr bei der Ernährung',
     'Frust trotz Kontrolle',
+    'Heißhunger trotz „satter" Mahlzeiten',
+    'Das Gefühl, dass der eigene Körper nicht mehr mitmacht',
   ];
 
   const commonMistakes = [
-    'Neue Diät starten',
-    'Erneutes Kaloriendefizit',
-    'immer neue Diäten ausprobieren',
-    'Angst vor Erhöhungen',
+    'Neue Diät starten – der Körper kennt das Muster und reagiert noch schneller mit Anpassung',
+    'Kalorien weiter senken – verstärkt den Spareffekt',
+    'Mehr Cardio – verbrennt Struktur statt Fett',
+    'Immer neue Regeln aufstellen – erhöht die mentale Belastung ohne körperlichen Effekt',
+    'Angst vor Veränderung – das Bekannte fühlt sich sicher an, hält aber den Kreislauf am Laufen',
+  ];
+
+  const learnings = [
+    { title: 'Der große Denkfehler', desc: 'Warum „weniger essen = abnehmen" nicht funktioniert – und was die Forschung wirklich zeigt' },
+    { title: 'Stoffwechsel ist kein Schicksal', desc: 'Wie Dein Körper auf Diäten, Einschränkungen und Disziplin reagiert – und warum er sich anpasst' },
+    { title: 'Kein Sport ≠ mehr Fettverbrennung?', desc: 'Warum mehr Bewegung ohne die richtige Versorgung nach hinten losgeht' },
+    { title: 'Dein System entschlüsselt', desc: 'Welche Stellschrauben und Bedingungen genau bestimmen, ob Dein Körper Fett freigibt oder festhält' },
+    { title: 'Sicherheit statt Kampf', desc: 'Warum Dein Körper erst loslässt, wenn er sich sicher fühlt – und wie Du dieses Signal sendest' },
+    { title: 'Signale statt Regeln', desc: 'Warum Hunger und Erschöpfung keine Schwäche sind – sondern Informationen, die Du nutzen kannst' },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Helmet><meta name="robots" content="noindex, nofollow" /></Helmet>
+      <ExitIntentPopup />
+      <A3InactivityPopup />
+      <A3StickyMobileCTA />
       <Header />
       {/* Main Content */}
       <main className="container-wide px-3 sm:px-5 md:px-8 py-10 md:py-16 lg:py-24">
         <div className="max-w-2xl mx-auto">
-          
+
           {/* 1. Headline */}
           <header className="text-center mb-12">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-3">
-              Du bist diszipliniert.<br />
-              <span className="text-primary">Und genau das ist das Problem.</span>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-2">
+              Du bist diszipliniert.
             </h1>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary leading-tight mb-5">
+              Und genau das ist das Problem.
+            </p>
             <p className="text-base md:text-lg text-muted-foreground">
               Dein Stoffwechsel-Profil: <strong className="text-foreground">Überangepasster Diät-Stoffwechsel</strong>
             </p>
             <p className="text-sm text-muted-foreground mt-2">
-              Dein Körper hat sich an wiederholte Diäten angepasst und schützt seine Reserven besonders stark.
+              Dein Körper hat sich an deine Kontrolle angepasst – und reagiert nicht mehr so, wie er sollte. Nicht weil du zu wenig machst, sondern weil du zu lange zu viel gemacht hast.
             </p>
           </header>
 
@@ -45,13 +67,7 @@ const ResultPageC3 = () => {
           <section className="mb-10">
             <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-8">
               <p className="text-lg text-foreground leading-relaxed">
-                Dein Ergebnis zeigt <strong className="text-primary">kein Willensproblem.</strong>
-              </p>
-              <p className="text-lg text-foreground leading-relaxed mt-3">
-                Viele Diäten hinterlassen Spuren – Dein Körper zeigt ein sehr typisches Muster nach wiederholten Einschränkungen.
-              </p>
-              <p className="text-lg text-foreground leading-relaxed mt-3">
-                Noch eine Diät zu starten, kann den Stoffwechsel <strong className="text-primary">weiter blockieren.</strong>
+                <strong className="text-primary">Dein Ergebnis zeigt kein Willenskraftproblem.</strong> Dein Körper zeigt ein sehr typisches Muster nach wiederholten Diätphasen und dauerhafter Kontrolle: Er hat gelernt, mit immer weniger auszukommen. Noch eine Diät zu starten, kann den Stoffwechsel weiter blockieren.
               </p>
             </div>
           </section>
@@ -61,11 +77,12 @@ const ResultPageC3 = () => {
             <h2 className="text-xl font-bold text-foreground mb-4">
               Was das bedeutet
             </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Dein Stoffwechsel hat gelernt, mit immer weniger Energie auszukommen. Dadurch 
-              werden Fettreserven besonders stark geschützt – selbst bei strenger Ernährung 
-              passiert wenig oder gar nichts. Der Körper reagiert darauf, indem er den Verbrauch weiter senkt und Fettreserven noch stärker festhält.
-            </p>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Dein Stoffwechsel ist nicht kaputt – er ist <strong className="text-foreground">überangepasst</strong>. Nach Monaten oder Jahren mit Kalorienreduktion, strikten Ernährungsplänen und hoher Disziplin hat dein Körper seine Spielregeln geändert: Er verbraucht weniger, speichert effizienter und gibt Reserven nicht mehr frei.</p>
+              <p>Das Ergebnis: Dein Körper reagiert kaum noch auf das, was früher funktioniert hat – weniger essen bringt nichts mehr, mehr Training auch nicht. Der Stoffwechsel hat sich nach unten reguliert.</p>
+              <p>Studien zeigen: Nach wiederholten Diätzyklen kann der Grundumsatz um <strong className="text-foreground">10–15 % unter dem erwarteten Wert</strong> liegen – selbst bei normalem Gewicht. Dein Körper hat gelernt, mit weniger zu funktionieren. Und genau das macht jede weitere Diät schwieriger als die letzte.</p>
+              <p>Das Problem ist nicht, dass du zu wenig Disziplin hast. Das Problem ist, dass dein Körper deine Disziplin gegen dich verwendet.</p>
+            </div>
           </section>
 
           {/* 4. Typical Signs */}
@@ -94,7 +111,7 @@ const ResultPageC3 = () => {
               <ul className="space-y-3">
                 {commonMistakes.map((mistake, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <XCircle className="w-4 h-4 text-destructive mt-0.5 flex-shrink-0" />
+                    <XCircle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" />
                     <span className="text-foreground">{mistake}</span>
                   </li>
                 ))}
@@ -110,39 +127,41 @@ const ResultPageC3 = () => {
             </h2>
             <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-5">
               <p className="text-foreground leading-relaxed">
-                Hier braucht es <strong className="text-secondary">Strategie und Individualisierung</strong> – nicht noch 
-                mehr Verzicht. Dein Stoffwechsel muss wieder lernen, dass Energie verfügbar ist.
+                Dein Körper braucht keine weitere Ernährungsumstellung – und erst recht nicht noch mehr Kontrolle. Er braucht <strong className="text-secondary">Struktur und Flexibilität</strong>. Ein System, das ihm zeigt, dass die Sparphase vorbei ist – und dass er wieder normal arbeiten darf.
               </p>
             </div>
           </section>
 
-          {/* 6b. Überleitung zum Buch */}
+          {/* Mini-Close #1 (mobile re-engagement) */}
+          <div className="md:hidden">
+            <A3MiniClose
+              id="mini-close-1"
+              headline="Genau das löst dieses Buch."
+              cta="Buch jetzt für 9,99 € sichern"
+            />
+          </div>
+
+          {/* 6b. Emotionaler Fließtext */}
           <section className="mb-10">
+            <div className="text-center mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+                Dein Körper hat nicht aufgehört zu funktionieren.
+              </h2>
+              <p className="text-lg md:text-xl font-bold text-secondary">
+                Er hat sich angepasst.
+              </p>
+            </div>
+
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p className="text-foreground">Dein Ergebnis zeigt nicht, dass Du etwas falsch machst.</p>
-              <p className="text-foreground">Es zeigt, dass Dein Körper sich angepasst hat.</p>
-              <div className="pt-3 pb-1">
-                <p className="text-foreground font-bold text-primary">Dein Körper hat nicht aufgehört zu funktionieren.</p>
-                <p className="text-foreground font-bold text-primary">Er hat sich angepasst.</p>
-              </div>
-              <div className="pt-2">
-                <p>Du hast kontrolliert gegessen.</p>
-                <p>Kalorien reduziert.</p>
-                <p>Dich diszipliniert durchgezogen.</p>
-              </div>
-              <p className="text-foreground">Und am Anfang hat es funktioniert.</p>
-              <div className="pt-2">
-                <p>Aber jetzt:</p>
-                <p>Stillstand.</p>
-                <p>Rückschritte.</p>
-                <p>Oder Dein Körper reagiert einfach gar nicht mehr.</p>
-              </div>
-              <p className="text-foreground font-semibold">Und genau das ist der Punkt, an dem es nicht mehr logisch wirkt.</p>
-              <div className="pt-2">
-                <p>Irgendwann denkst Du:</p>
-                <p className="italic text-foreground">„Ich muss einfach noch konsequenter sein."</p>
-              </div>
-              <p className="font-semibold text-foreground">Genau das macht es schlimmer.</p>
+              <p>Dein Ergebnis zeigt nicht, dass Du etwas falsch machst. Es zeigt, dass Dein Körper überangepasst ist.</p>
+              <p>Du hast kontrolliert.<br />Reduziert.<br />Durchgezogen.</p>
+              <p>Und trotzdem: nichts passiert.</p>
+              <p>Oder schlimmer – es wurde schwieriger.</p>
+              <p>Das liegt nicht an Dir. Das liegt daran, dass Dein Körper nach Jahren der Kontrolle gelernt hat, mit immer weniger auszukommen. Er hat den Verbrauch gesenkt, die Effizienz erhöht und seine Reserven gesichert.</p>
+              <p>Dein Stoffwechsel ist kein Kalorienrechner. Er ist ein <strong className="text-foreground">Anpassungssystem</strong>. Und Anpassungssysteme optimieren sich – auch wenn das bedeutet, dass sie gegen Dein Ziel arbeiten.</p>
+              <p className="font-semibold text-foreground">Noch disziplinierter sein ist bei überangepasstem Stoffwechsel nicht die Lösung – es ist das, was den Kreislauf am Laufen hält.</p>
+              <p>Wissenschaftlich nennt man das <strong className="text-foreground">metabolische Adaptation</strong>: Dein Körper senkt den Grundumsatz, drosselt Schilddrüsenhormone und hält Fett fest – nicht weil er gegen Dich arbeitet, sondern weil er gelernt hat, dass Mangel der Normalzustand ist.</p>
+              <p>Genau das ist das Problem.</p>
               <p className="font-bold text-foreground text-lg mt-6 mb-4">Dafür habe ich dieses Buch geschrieben.</p>
             </div>
           </section>
@@ -162,15 +181,12 @@ const ResultPageC3 = () => {
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
                   Du bist nicht das Problem
                 </h2>
-                <p className="text-lg text-muted-foreground mb-4">
-                  Warum wiederholte Diäten Deinen Stoffwechsel blockieren können – und wie Du ihn Schritt für Schritt wieder in Bewegung bringst.
+                <p className="text-lg text-secondary font-semibold mb-4">
+                  Dieses Buch zeigt Dir, warum Dein Körper gerade gegen Deine Disziplin arbeitet – und wie Du ihn Schritt für Schritt wieder in Bewegung bringst.
                 </p>
-                <p className="text-foreground leading-relaxed mb-5">
-                  Dieses Buch zeigt Dir, warum Disziplin und Kontrolle Deinen Fortschritt blockieren – und was Dein Körper stattdessen braucht, um wieder Fett zu verbrennen.
+                <p className="text-foreground leading-relaxed">
+                  Dieses Buch zeigt Dir, warum Chapeau und Kontrolle Deinen Fettstoffwechsel blockieren – und was Dein Körper stattdessen braucht, um wieder Fett zu verbrennen.
                 </p>
-                <span className="inline-flex items-center gap-2 bg-secondary/15 text-secondary font-semibold text-sm px-4 py-1.5 rounded-full">
-                  ✅ Über 500 Leser
-                </span>
               </div>
             </div>
           </section>
@@ -180,26 +196,22 @@ const ResultPageC3 = () => {
             <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-8">
               Was Du in diesem Buch lernst
             </h2>
-            <div className="space-y-5">
-              {[
-                { title: 'Der große Denkfehler', desc: 'Warum „weniger essen = abnehmen" nicht funktioniert – und was die Forschung wirklich zeigt.' },
-                { title: 'Stoffwechsel ist kein Schicksal', desc: 'Wie Dein System auf Stress, Schlafmangel und Diäten reagiert – und warum es sich anpasst.' },
-                { title: 'Kein Sport = mehr Fettverbrennung?', desc: 'Warum das richtige Maß an Bewegung wichtiger ist als hartes Training.' },
-                { title: 'Dein System entschlüsselt', desc: 'Wie Du erkennst, was Dein Körper gerade braucht – statt blind dem nächsten Plan zu folgen.' },
-                { title: 'Sicherheit statt Kampf', desc: 'Warum Dein Körper erst loslässt, wenn er sich sicher fühlt – und wie Du das erreichst.' },
-                { title: 'Signale statt Regeln', desc: 'Wie Du lernst, Deinem Körper wieder zu vertrauen – statt gegen ihn zu arbeiten.' },
-              ].map((ch, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
+            <ul className="space-y-4">
+              {learnings.map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/15 text-primary flex items-center justify-center mt-0.5 text-sm font-bold">
                     {i + 1}
                   </span>
-                  <div>
-                    <h3 className="font-semibold text-foreground">{ch.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{ch.desc}</p>
-                  </div>
-                </div>
+                  <span className="text-foreground leading-relaxed">
+                    <strong className="block">{item.title}</strong>
+                    {item.desc}
+                  </span>
+                </li>
               ))}
-            </div>
+            </ul>
+            <p className="text-center font-bold text-foreground mt-8">
+              100+ Seiten. Über 60 wissenschaftliche Quellen. Kein Blabla. Kein Guru. Geschrieben für Menschen mit genau deinem Ergebnis.
+            </p>
           </section>
 
           {/* 9. Nicht nur lesen – direkt anwenden */}
@@ -212,9 +224,9 @@ const ResultPageC3 = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
-                { icon: '📋', title: '11 Downloads & Checklisten', desc: 'Ernährungs-Beobachtungsblatt, Makronährstoff-Übersicht, Defizit-Phase-Checkliste, Stoffwechsel-Reset-Checkliste u.v.m.' },
-                { icon: '🧮', title: 'Kalorien- & Makro-Rechner', desc: 'Dein persönlicher Startpunkt, individuell berechnet. Kein Rätselraten.' },
-                { icon: '✅', title: 'Wöchentlicher Bereich', desc: 'Wochenübersicht für Training & Energie, Schlaf- und Erholungsprotokoll, Alltags-Checkliste.' },
+                { icon: '📋', title: '9 Checklisten & Arbeitsblätter', desc: 'Stoffwechsel-Reset-Checkliste, Defizit-Phase-Checkliste, Schlaf-Protokoll, Ernährungs-Beobachtungsblatt, Makronährstoff-Übersicht u.v.m. Zum Ausdrucken und sofort nutzen.' },
+                { icon: '🧮', title: 'Kalorien- & Makro-Rechner', desc: 'Dein persönlicher Online-Rechner für Deinen individuellen Startpunkt. Kein Raten, kein Standardwert.' },
+                { icon: '✅', title: 'Wöchentlicher Online-Bereich', desc: 'Training & Energie-Tracker, Schlaf-Protokoll, Alltags-Checkliste. Alles an einem Ort.' },
               ].map((card, i) => (
                 <div key={i} className="bg-card border border-border rounded-xl p-5 md:py-8 text-center">
                   <span className="text-3xl mb-3 block">{card.icon}</span>
@@ -223,39 +235,19 @@ const ResultPageC3 = () => {
                 </div>
               ))}
             </div>
+            <p className="text-center text-sm italic text-muted-foreground mt-6">
+              Alles sofort nutzbar. Kein Abo. Kein Upsell.
+            </p>
           </section>
 
-          {/* 10. Wert-Übersicht + CTA */}
+          {/* 10. Preis-Box + CTA */}
           <section className="mb-12">
-            <div className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
-              <h3 className="text-lg font-bold text-foreground mb-5">Das bekommst Du zusammen:</h3>
-              <div className="space-y-3 mb-6">
-                {[
-                  { text: 'Buch (10 Kapitel + Bonuskapitel)', value: '34,99 €' },
-                  { text: 'Online-Begleitbereich mit Tools & Rechnern', value: '29,99 €' },
-                  { text: '11 Downloads (PDF-Checklisten, Protokolle, Übersichten)', value: '19,99 €' },
-                  { text: 'Persönliche Kalorien- & Makro-Berechnung', value: '14,99 €' },
-                  { text: 'Regelmäßige Updates & neue Inhalte', value: 'Gratis' },
-                ].map((item, i) => (
-                  <div key={i} className="flex justify-between items-start gap-4">
-                    <span className="text-foreground text-sm">✓ {item.text}</span>
-                    <span className="text-muted-foreground text-sm whitespace-nowrap">{item.value}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="border-t-2 border-primary/20 pt-4 mb-6">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="text-lg font-bold text-foreground">Gesamtwert</span>
-                  <span className="text-xl font-extrabold text-primary line-through">~100&nbsp;€</span>
-                </div>
-              </div>
-
+            <div id="preis-box-1" className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
               <div className="text-center">
                 <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
                 <div className="flex items-center justify-center gap-3 mb-5">
                   <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;€</span>
-                  <span className="text-3xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;€</span>
+                  <span className="text-3xl md:text-4xl font-extrabold text-secondary">9,99&nbsp;€</span>
                 </div>
                 <Button
                   variant="cta"
@@ -264,15 +256,15 @@ const ResultPageC3 = () => {
                   asChild
                 >
                   <a href="https://www.digistore24.com/product/675804?voucher=specialdeal" target="_blank" rel="noopener noreferrer">
-                    Ja – ich will endlich wieder Fortschritt sehen
+                    Ja – ich will endlich meinen Stoffwechsel verstehen
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-3">Sofort verfügbar als E-Book</p>
                 <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-muted-foreground">
                   <span>🔒 Sicherer Checkout</span>
-                  <span>📱 Auf allen Geräten</span>
-                  <span>⚡ Sofortige Lieferung</span>
+                  <span>📥 Sofort-Download</span>
+                  <span>🔄 14-Tage-Garantie</span>
                 </div>
               </div>
             </div>
@@ -285,12 +277,12 @@ const ResultPageC3 = () => {
             </h2>
             <ul className="space-y-4">
               {[
-                'Du schon alles versucht hast – weniger essen, mehr Sport, Intervallfasten, Low Carb – und trotzdem nicht weiterkommst.',
-                'Du das Gefühl hast, Dein Stoffwechsel arbeitet gegen Dich.',
-                'Du verstehen willst, warum es nicht funktioniert hat – statt Dich zu fragen, was mit Dir nicht stimmt.',
-                'Du einen Weg suchst, der ohne extreme Diäten, tägliches Wiegen oder ständige Kontrolle funktioniert.',
-                'Du bereit bist, Deinen Körper zu verstehen – statt ihn weiter zu bekämpfen.',
-                'Du endlich einen klaren Blick auf Ernährung und Stoffwechsel bekommen willst.',
+                'Du schon alles versucht hast – weniger essen, mehr Sport, Intervallfasten, Low Carb – und trotzdem nichts weitergeht',
+                'Du das Gefühl hast, Dein Stoffwechsel arbeitet gegen Dich',
+                'Du verstehen willst, warum es nicht funktioniert hat – statt Dir zu sagen, was Du als nächstes streichen sollst',
+                'Du einen Weg suchst, der ohne extreme Diäten, tägliches Wiegen oder ständige Kontrolle funktioniert',
+                'Du bereit bist, Deinen Körper zu versorgen – statt ihn weiter zu bestrafen',
+                'Du endlich einen klaren Blick auf Ernährung und Stoffwechsel bekommen willst',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <span className="text-secondary mt-0.5 flex-shrink-0">✅</span>
@@ -311,22 +303,22 @@ const ResultPageC3 = () => {
               Bereit, das Spiel zu verändern?
             </h2>
             <p className="text-lg text-primary-foreground/85 mb-6">
-              Kein Abo. Kein Mengenzählen. Einmal kaufen, sofort loslegen.
+              Kein Abo. Kein Hörensagen. Einmal kaufen, sofort loslegen.
             </p>
             <p className="text-xl text-primary-foreground/60 line-through mb-1">34,99&nbsp;€</p>
-            <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">19,99&nbsp;€</p>
+            <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">9,99&nbsp;€</p>
             <a
               href="https://www.digistore24.com/product/675804?voucher=specialdeal"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
             >
-              Jetzt für 19,99&nbsp;€ statt <span className="line-through mx-1">34,99&nbsp;€</span> sichern
+              Jetzt für 9,99&nbsp;€ statt <span className="line-through mx-1">34,99&nbsp;€</span> sichern →
             </a>
             <div className="flex flex-wrap justify-center gap-5 mt-8 text-sm text-primary-foreground/80">
               <span>🔒 Sicherer Checkout</span>
-              <span>📱 Auf allen Geräten</span>
-              <span>⚡ Sofortige Lieferung</span>
+              <span>📥 Sofort-Download</span>
+              <span>🔄 14-Tage-Garantie</span>
             </div>
           </div>
         </div>
