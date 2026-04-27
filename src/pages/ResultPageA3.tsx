@@ -131,6 +131,14 @@ const ResultPageA3 = () => {
             </div>
           </section>
 
+          {/* Mini-Close #1 (mobile re-engagement) */}
+          <div className="md:hidden">
+            <A3MiniClose
+              headline="Genau das löst dieses Buch."
+              cta="Buch jetzt für 9,99 € sichern"
+            />
+          </div>
+
           {/* 6b. Emotionaler Fließtext */}
           <section className="mb-10">
             <div className="text-center mb-6">
@@ -224,6 +232,14 @@ const ResultPageA3 = () => {
               Alles sofort nutzbar. Kein Abo. Kein Upsell.
             </p>
           </section>
+
+          {/* Mini-Close #2 (mobile re-engagement after bonus) */}
+          <div className="md:hidden">
+            <A3MiniClose
+              headline="Buch + Bonus-Tools – alles dabei."
+              cta="Jetzt für 9,99 € starten"
+            />
+          </div>
 
           {/* 10. Preis-Box + CTA */}
           <section className="mb-12">
