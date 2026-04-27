@@ -17,6 +17,7 @@ import ResultPageA2 from "./pages/ResultPageA2";
 import ResultPageA3 from "./pages/ResultPageA3";
 import ResultPageB from "./pages/ResultPageB";
 import ResultPageB2 from "./pages/ResultPageB2";
+import ResultPageB3 from "./pages/ResultPageB3";
 import ResultPageC from "./pages/ResultPageC";
 import ResultPageC2 from "./pages/ResultPageC2";
 import Impressum from "./pages/Impressum";
@@ -60,6 +61,7 @@ const App = () => {
             <Route path="/dfgk34k-3" element={<ResultPageA3 />} />
             <Route path="/k93fda" element={<ResultPageB />} />
             <Route path="/k93fda-2" element={<ResultPageB2 />} />
+            <Route path="/k93fda-3" element={<ResultPageB3 />} />
             <Route path="/x7q9p2" element={<ResultPageC />} />
             <Route path="/x7q9p2-2" element={<ResultPageC2 />} />
             <Route path="/impressum" element={<Impressum />} />
