@@ -1,7 +1,7 @@
 import { Download, Gift, Lock } from "lucide-react";
 import { trackButtonClick } from "@/hooks/useBonusTracking";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=promo";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
 const trustItems = [
   { icon: Download, label: "Sofort-Download" },

@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=promo";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
 const included = [
   'E-Book „Du bist nicht das Problem"',

@@ -1,6 +1,6 @@
 import { Calculator, Activity, Wrench, FileDown, Utensils, Plus, Check } from "lucide-react";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
 const tools = [
   { icon: FileDown, title: "9 Downloads & Checklisten", text: "Stoffwechsel-Reset-Checkliste, Defizit-Phase-Checkliste, Alltags-Checkliste, Ernährungs-Beobachtungsblatt, Schlaf- & Erholungsprotokoll, Wochenübersicht Training & Energie, Makronährstoff-Übersicht, Kalorien-Startpunkt-Übersicht, Stoffwechsel-System-Übersicht." },

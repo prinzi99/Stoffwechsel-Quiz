@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=quizrabatt";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
 const AngebotAbschluss = () => {
   return (
