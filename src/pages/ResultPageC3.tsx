@@ -185,7 +185,7 @@ const ResultPageC3 = () => {
                   Dieses Buch zeigt Dir, warum Dein Körper gerade gegen Deine Disziplin arbeitet – und wie Du ihn Schritt für Schritt wieder in Bewegung bringst.
                 </p>
                 <p className="text-foreground leading-relaxed">
-                  Dieses Buch zeigt Dir, warum Chapeau und Kontrolle Deinen Fettstoffwechsel blockieren – und was Dein Körper stattdessen braucht, um wieder Fett zu verbrennen.
+                  Dieses Buch zeigt Dir, warum Disziplin und Kontrolle Deinen Fettstoffwechsel blockieren – und was Dein Körper stattdessen braucht, um wieder Fett zu verbrennen.
                 </p>
               </div>
             </div>
