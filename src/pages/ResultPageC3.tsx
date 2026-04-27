@@ -243,6 +243,29 @@ const ResultPageC3 = () => {
           {/* 10. Preis-Box + CTA */}
           <section className="mb-12">
             <div id="preis-box-1" className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
+              <h3 className="text-lg font-bold text-foreground mb-5">Das bekommst Du zusammen:</h3>
+              <div className="space-y-3 mb-6">
+                {[
+                  { text: 'Buch „Du bist nicht das Problem" (100+ Seiten)', value: '19,99 €' },
+                  { text: 'Online-Begleitbereich mit Tools & Trackern', value: '29,99 €' },
+                  { text: '9 Checklisten/PDF-Vorlagen, Protokolle, Beobachtungsblätter', value: '19,99 €' },
+                  { text: 'Persönlicher Kalorien- & Makro-Rechner', value: '9,99 €' },
+                  { text: 'Regelmäßige Updates & neue Inhalte', value: '–' },
+                ].map((item, i) => (
+                  <div key={i} className="flex justify-between items-start gap-4">
+                    <span className="text-foreground text-sm">✓ {item.text}</span>
+                    <span className="text-muted-foreground text-sm whitespace-nowrap">{item.value}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="border-t-2 border-primary/20 pt-4 mb-6">
+                <div className="flex justify-between items-center mb-1">
+                  <span className="text-lg font-bold text-foreground">Gesamtwert</span>
+                  <span className="text-xl font-extrabold text-primary line-through">~80&nbsp;€</span>
+                </div>
+              </div>
+
               <div className="text-center">
                 <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
                 <div className="flex items-center justify-center gap-3 mb-5">
