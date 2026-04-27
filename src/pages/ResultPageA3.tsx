@@ -134,6 +134,7 @@ const ResultPageA3 = () => {
           {/* Mini-Close #1 (mobile re-engagement) */}
           <div className="md:hidden">
             <A3MiniClose
+              id="mini-close-1"
               headline="Genau das löst dieses Buch."
               cta="Buch jetzt für 9,99 € sichern"
             />

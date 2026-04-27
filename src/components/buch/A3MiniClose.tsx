@@ -5,6 +5,7 @@ const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specia
 interface Props {
   headline?: string;
   cta?: string;
+  id?: string;
 }
 
 /**
@@ -14,9 +15,10 @@ interface Props {
 const A3MiniClose = ({
   headline = "Bereit, deinen Stoffwechsel zu verstehen?",
   cta = "Jetzt für 9,99 € sichern",
+  id,
 }: Props) => {
   return (
-    <section className="mb-10">
+    <section id={id} className="mb-10">
       <div className="bg-card border border-primary/20 rounded-2xl p-5 md:p-6 text-center shadow-md">
         <p className="text-sm md:text-base font-semibold text-foreground mb-3">
           {headline}
