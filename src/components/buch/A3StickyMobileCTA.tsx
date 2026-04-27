@@ -11,22 +11,20 @@ const A3StickyMobileCTA = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const target = document.getElementById("preis-box-1");
+    const target = document.getElementById("mini-close-1");
     if (!target) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Show as soon as the price box has been scrolled past (out of view, above viewport)
-          const rect = entry.boundingClientRect;
-          if (!entry.isIntersecting && rect.top < 0) {
+          // Activate as soon as the first price box enters the viewport — and stay visible.
+          if (entry.isIntersecting) {
             setVisible(true);
-          } else if (entry.isIntersecting) {
-            setVisible(false);
+            observer.disconnect();
           }
         });
       },
-      { threshold: 0 }
+      { threshold: 0.1 }
     );
 
     observer.observe(target);
