@@ -3,19 +3,20 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
-import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
-import AnbotTestHero from "@/components/anbot-test/AnbotTestHero";
+import Fs26TopBanner from "@/components/anbot-test-fs26/Fs26TopBanner";
+import Fs26Hero from "@/components/anbot-test-fs26/Fs26Hero";
+import Fs26Kapitel from "@/components/anbot-test-fs26/Fs26Kapitel";
+import Fs26Bonus from "@/components/anbot-test-fs26/Fs26Bonus";
+import Fs26Kauf from "@/components/anbot-test-fs26/Fs26Kauf";
+import Fs26StickyCTA from "@/components/anbot-test-fs26/Fs26StickyCTA";
 import AnbotTestProblemAnker from "@/components/anbot-test/AnbotTestProblemAnker";
-import AnbotTestKapitel from "@/components/anbot-test/AnbotTestKapitel";
-import AnbotTestBonus from "@/components/anbot-test/AnbotTestBonus";
 import AnbotTestZielgruppe from "@/components/anbot-test/AnbotTestZielgruppe";
 import AnbotTestSocialProof from "@/components/anbot-test/AnbotTestSocialProof";
 import AnbotTestAutor from "@/components/anbot-test/AnbotTestAutor";
-import AnbotTestKauf from "@/components/anbot-test/AnbotTestKauf";
 import AnbotTestFAQ from "@/components/anbot-test/AnbotTestFAQ";
 
-const BuchAnbotTest = () => {
-  useBonusPageView("/buch/anbot3g4a3e", "Buch Angebot Test");
+const BuchAnbotTestFs26 = () => {
+  useBonusPageView("/buch/anbot3g4a3e_fs26", "Buch Angebot Frühlings Special 2026");
   const mainRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -25,31 +26,32 @@ const BuchAnbotTest = () => {
   return (
     <>
       <Helmet>
-        <title>Du bist nicht das Problem – Jetzt sichern | Philipp's Biohack</title>
+        <title>Frühlings Special – Buch nur 9,99 € | Philipp's Biohack</title>
         <meta
           name="description"
-          content="Erfahre, warum dein Stoffwechsel blockiert und wie du ihn mit einem System statt einer Diät wieder in Bewegung bringst. E-Book inkl. Bonusbereich."
+          content="Frühlings Special: Das Buch 'Du bist nicht das Problem' für nur 9,99 € statt 34,99 €. Inkl. Online-Bonusbereich. Zeitlich begrenzt."
         />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
+      <Fs26TopBanner />
       <Header />
 
       <main ref={mainRef}>
-        <AnbotTestHero />
+        <Fs26Hero />
         <AnbotTestProblemAnker />
-        <AnbotTestKapitel />
-        <AnbotTestBonus />
+        <Fs26Kapitel />
+        <Fs26Bonus />
         <AnbotTestZielgruppe />
         <AnbotTestSocialProof />
         <AnbotTestAutor />
-        <AnbotTestKauf />
+        <Fs26Kauf />
         <AnbotTestFAQ />
       </main>
 
-      <AngebotStickyCTA />
+      <Fs26StickyCTA />
       <Footer />
     </>
   );
 };
 
-export default BuchAnbotTest;
+export default BuchAnbotTestFs26;
