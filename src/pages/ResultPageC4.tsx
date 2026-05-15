@@ -16,10 +16,6 @@ const ResultPageC4 = () => {
   const typicalSigns = [
     'Abnehmen wird trotz Disziplin immer schwieriger',
     'Gewicht stagniert – oder geht trotz Defizit hoch',
-    'Ständige Beschäftigung mit Essen und Kalorien',
-    'Kein Spielraum mehr bei der Ernährung',
-    'Frust trotz Kontrolle',
-    'Heißhunger trotz „satter" Mahlzeiten',
     'Das Gefühl, dass der eigene Körper nicht mehr mitmacht',
   ];
 
@@ -69,27 +65,16 @@ const ResultPageC4 = () => {
           </header>
 
           {/* 2. Validation */}
-          <section className="mb-10">
-            <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-8">
-              <p className="text-lg text-foreground leading-relaxed">
-                <strong className="text-primary">Dein Ergebnis zeigt kein Willenskraftproblem.</strong> Dein Körper zeigt ein typisches Muster nach wiederholten Diätphasen und dauerhafter Kontrolle: Er hat gelernt, mit immer weniger auszukommen. Noch eine Diät zu starten, kann den Stoffwechsel weiter blockieren.
+          <section className="mb-8">
+            <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-7">
+              <p className="text-base md:text-lg text-foreground leading-relaxed">
+                Dein Ergebnis zeigt kein Willenskraftproblem. Dein Körper hat sich an Jahre mit Kontrolle und Disziplin angepasst – metabolisch, hormonell, systemisch. <strong className="text-primary">Sein Grundumsatz ist heruntergeregelt, seine Effizienz maximiert.</strong> Er hat die Spielregeln geändert – und arbeitet jetzt gegen deine Anstrengung.
               </p>
             </div>
           </section>
 
-          {/* 3. Explanation – KÜRZER (2 Absätze statt 4) */}
-          <section className="mb-10">
-            <h2 className="text-xl font-bold text-foreground mb-4">
-              Was das bedeutet
-            </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>Dein Stoffwechsel ist nicht kaputt – er ist <strong className="text-foreground">überangepasst</strong>. Nach Monaten oder Jahren mit Kalorienreduktion und hoher Disziplin hat dein Körper die Spielregeln geändert: Er verbraucht weniger, speichert effizienter und gibt Reserven nicht mehr frei.</p>
-              <p>Studien zeigen: Nach wiederholten Diätzyklen kann der Grundumsatz <strong className="text-foreground">10–15 % unter dem erwarteten Wert</strong> liegen – selbst bei normalem Gewicht. Das Problem ist nicht zu wenig Disziplin. Das Problem ist, dass dein Körper deine Disziplin gegen dich verwendet.</p>
-            </div>
-          </section>
-
-          {/* 4. Typical Signs */}
-          <section className="mb-10">
+          {/* 3. Typische Anzeichen (3 Punkte) */}
+          <section className="mb-8">
             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
               <AlertCircle className="w-5 h-5 text-primary" />
               Typische Anzeichen
@@ -104,11 +89,26 @@ const ResultPageC4 = () => {
             </ul>
           </section>
 
-          {/* EARLY CTA – Preis-Box #1 mit Countdown */}
-          <section className="mb-12">
-            <div className="mb-4">
-              <C4CountdownTimer />
+          {/* 4. Was Dein Körper jetzt braucht (kurz) */}
+          <section className="mb-8">
+            <h2 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
+              <Lightbulb className="w-5 h-5 text-secondary" />
+              Was Dein Körper jetzt braucht
+            </h2>
+            <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-5">
+              <p className="text-foreground leading-relaxed">
+                Dein Körper braucht keine weitere Diät. Er braucht das Gegenteil: <strong className="text-secondary">Struktur und Flexibilität</strong>. Ein System, das ihm signalisiert – die Sparphase ist vorbei. Erst dann lässt er los, was er festhält.
+              </p>
             </div>
+          </section>
+
+          {/* 5. Countdown Timer */}
+          <section className="mb-4">
+            <C4CountdownTimer />
+          </section>
+
+          {/* EARLY CTA – Preis-Box #1 */}
+          <section className="mb-12">
             <div id="preis-box-1" className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
               <h3 className="text-lg font-bold text-foreground mb-5 text-center">
                 Das komplette Stoffwechsel-Reset System
