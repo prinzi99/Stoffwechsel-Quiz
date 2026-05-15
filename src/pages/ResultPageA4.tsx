@@ -40,12 +40,12 @@ const ResultPageA4 = () => {
         <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
         <div className="flex items-center justify-center gap-3 mb-5">
           <span className="relative text-lg text-muted-foreground">
-            <span>{PRICING.anchorPrice}&nbsp;{PRICING.currency}</span>
+            <span>96,99&nbsp;€</span>
             <span className="absolute left-0 top-1/2 w-full h-[2px] bg-destructive rotate-[-8deg]" />
           </span>
           <span className="text-3xl md:text-4xl font-extrabold text-secondary">{PRICING.price}&nbsp;{PRICING.currency}</span>
         </div>
-        <p className="text-sm font-semibold text-secondary mb-4">Du sparst über {PRICING.discount}</p>
+        <p className="text-sm font-semibold text-secondary mb-4">Du sparst 67€ (69% Rabatt)</p>
         <Button
           variant="cta"
           size="xl"
