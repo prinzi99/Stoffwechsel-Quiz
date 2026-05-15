@@ -19,12 +19,6 @@ const ResultPageB4 = () => {
     'Training bringt keine sichtbaren Ergebnisse',
   ];
 
-  const commonMistakes = [
-    'Noch weniger essen – der Körper schaltet weiter runter',
-    'Mehr Sport trotz Erschöpfung – verschärft den Mangel',
-    'Kalorien zählen ohne Nährstoffe zu beachten',
-  ];
-
   const learnings = [
     { title: 'Der große Denkfehler', desc: 'Warum „weniger essen" nicht funktioniert – und was die Forschung wirklich zeigt' },
     { title: 'Stoffwechsel ist kein Schicksal', desc: 'Wie Dein Körper auf Diäten, Einschränkungen und Stress reagiert – und warum er sich anpasst' },
