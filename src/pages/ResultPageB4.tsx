@@ -142,6 +142,11 @@ const ResultPageB4 = () => {
             </div>
           </section>
 
+          {/* Countdown vor erstem CTA */}
+          <div className="mb-4">
+            <B4CountdownTimer />
+          </div>
+
           {/* Mini-Close #1 (Desktop + Mobile, früher CTA) */}
           <B4MiniClose id="mini-close-1" />
 
