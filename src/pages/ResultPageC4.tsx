@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
 import C4StickyMobileCTA from '@/components/buch/C4StickyMobileCTA';
 import C4StickyDesktopCTA from '@/components/buch/C4StickyDesktopCTA';
-import C4MiniClose from '@/components/buch/C4MiniClose';
+
 import C4InactivityPopup from '@/components/buch/C4InactivityPopup';
 import C4ExitIntentPopup from '@/components/buch/C4ExitIntentPopup';
 import C4CountdownTimer from '@/components/buch/C4CountdownTimer';
@@ -16,6 +16,8 @@ const ResultPageC4 = () => {
   const typicalSigns = [
     'Abnehmen wird trotz Disziplin immer schwieriger',
     'Gewicht stagniert – oder geht trotz Defizit hoch',
+    'Ständige Beschäftigung mit Essen und Kalorien',
+    'Heißhunger trotz „satter" Mahlzeiten',
     'Das Gefühl, dass der eigene Körper nicht mehr mitmacht',
   ];
 
@@ -23,8 +25,6 @@ const ResultPageC4 = () => {
     'Neue Diät starten – der Körper kennt das Muster und reagiert noch schneller mit Anpassung',
     'Kalorien weiter senken – verstärkt den Spareffekt',
     'Mehr Cardio – verbrennt Struktur statt Fett',
-    'Immer neue Regeln aufstellen – erhöht die mentale Belastung ohne körperlichen Effekt',
-    'Angst vor Veränderung – das Bekannte fühlt sich sicher an, hält aber den Kreislauf am Laufen',
   ];
 
   const learnings = [
@@ -89,8 +89,26 @@ const ResultPageC4 = () => {
             </ul>
           </section>
 
-          {/* 4. Was Dein Körper jetzt braucht (kurz) */}
+          {/* 4. Häufige Fehler */}
           <section className="mb-8">
+            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+              <XCircle className="w-5 h-5 text-destructive" />
+              Häufige Fehler
+            </h2>
+            <div className="bg-destructive/5 border border-destructive/10 rounded-2xl p-5">
+              <ul className="space-y-3">
+                {commonMistakes.map((mistake, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <XCircle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" />
+                    <span className="text-foreground">{mistake}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+
+          {/* 5. Was Dein Körper jetzt braucht */}
+          <section className="mb-10">
             <h2 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
               <Lightbulb className="w-5 h-5 text-secondary" />
               Was Dein Körper jetzt braucht
@@ -102,7 +120,61 @@ const ResultPageC4 = () => {
             </div>
           </section>
 
-          {/* 5. Countdown Timer */}
+          {/* 6. Überleitung zum Buch */}
+          <section className="mb-10">
+            <div className="text-center mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+                Genau für diese Situation habe ich dieses Buch geschrieben.
+              </h2>
+              <p className="text-muted-foreground leading-relaxed max-w-lg mx-auto">
+                Kein neues Regelwerk. Kein Ernährungsplan. Sondern eine ehrliche Erklärung, warum dein Körper deine Disziplin gegen dich verwendet – und wie du aus diesem Kreislauf aussteigst.
+              </p>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
+              <div className="w-44 md:w-52 flex-shrink-0">
+                <img
+                  src={bookCover}
+                  alt="Buchcover: Du bist nicht das Problem"
+                  className="w-full h-auto rounded-lg shadow-xl"
+                  loading="lazy"
+                />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                  Du bist nicht das Problem
+                </h3>
+                <p className="text-lg text-secondary font-semibold mb-3">
+                  Warum dein Körper deine Disziplin gegen dich verwendet – und wie du ihn Schritt für Schritt wieder in Bewegung bringst.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Von Philipp Prinz · 100+ Seiten · 10 Kapitel · Über 60 wissenschaftliche Quellen
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* 7. Kapitel-Preview */}
+          <section className="mb-8 bg-muted/50 rounded-2xl p-5 md:p-6">
+            <h3 className="text-lg font-bold text-foreground mb-4 text-center">
+              Was dich in diesem Buch erwartet:
+            </h3>
+            <ul className="space-y-2">
+              {[
+                'Warum wiederholte Diäten deinen Grundumsatz dauerhaft senken – und wie du ihn wieder anhebst',
+                'Der große Denkfehler: Disziplin ist kein Stoffwechselhormon',
+                'Raus aus dem Sparmodus: Das konkrete 4-Phasen-Protokoll',
+                'Vom Plan zur Architektur: Ein System, das sich an dein Leben anpasst',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 text-primary flex items-center justify-center mt-0.5">✓</span>
+                  <span className="text-foreground text-sm leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* 8. Countdown Timer */}
           <section className="mb-4">
             <C4CountdownTimer />
           </section>
@@ -165,72 +237,6 @@ const ResultPageC4 = () => {
               </div>
             </div>
           </section>
-
-          {/* 5. Common Mistakes */}
-          <section className="mb-10">
-            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <XCircle className="w-5 h-5 text-destructive" />
-              Häufige Fehler
-            </h2>
-            <div className="bg-destructive/5 border border-destructive/10 rounded-2xl p-5">
-              <ul className="space-y-3">
-                {commonMistakes.map((mistake, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <XCircle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" />
-                    <span className="text-foreground">{mistake}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
-
-          {/* 6. Outlook */}
-          <section className="mb-12">
-            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <Lightbulb className="w-5 h-5 text-secondary" />
-              Was Dein Körper jetzt braucht
-            </h2>
-            <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-5">
-              <p className="text-foreground leading-relaxed">
-                Dein Körper braucht keine weitere Ernährungsumstellung – und erst recht nicht noch mehr Kontrolle. Er braucht <strong className="text-secondary">Struktur und Flexibilität</strong>. Ein System, das ihm zeigt, dass die Sparphase vorbei ist – und dass er wieder normal arbeiten darf.
-              </p>
-            </div>
-          </section>
-
-          {/* Mini-Close (mobile re-engagement) */}
-          <div className="md:hidden">
-            <C4MiniClose
-              id="mini-close-1"
-              headline="Genau das löst dieses Buch."
-              cta="Jetzt für 29,99 € sichern"
-            />
-          </div>
-
-          {/* 7. Buch-Intro mit Cover */}
-          <section className="mb-12">
-            <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
-              <div className="w-48 md:w-56 flex-shrink-0">
-                <img
-                  src={bookCover}
-                  alt="Buchcover: Du bist nicht das Problem"
-                  className="w-full h-auto rounded-lg shadow-xl"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex-1 text-center md:text-left">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                  Du bist nicht das Problem
-                </h2>
-                <p className="text-lg text-secondary font-semibold mb-4">
-                  Dieses Buch zeigt Dir, warum Dein Körper gerade gegen Deine Disziplin arbeitet – und wie Du ihn Schritt für Schritt wieder in Bewegung bringst.
-                </p>
-                <p className="text-foreground leading-relaxed">
-                  Dieses Buch zeigt Dir, warum Disziplin und Kontrolle Deinen Fettstoffwechsel blockieren – und was Dein Körper stattdessen braucht, um wieder Fett zu verbrennen.
-                </p>
-              </div>
-            </div>
-          </section>
-
           {/* 8. Was Du in diesem Buch lernst */}
           <section className="mb-12 bg-muted/50 rounded-2xl p-6 md:p-8">
             <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-8">
