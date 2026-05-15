@@ -60,9 +60,12 @@ const B4InactivityPopup = () => {
             <span className="text-base text-muted-foreground/60 line-through">69,99&nbsp;€</span>
             <span className="text-3xl font-extrabold text-secondary">29,99&nbsp;€</span>
           </div>
-          <p className="text-xs text-muted-foreground mb-4">
+          <p className="text-xs text-muted-foreground mb-3">
             Sofort verfügbar · Kein Abo · 100+ Seiten
           </p>
+
+          <p className="text-xs text-muted-foreground mb-1">Dein Sonderpreis läuft ab in:</p>
+          <div className="mb-3"><B4CountdownTimer variant="compact" className="text-base" /></div>
 
           <a
             href={DIGISTORE_URL}
