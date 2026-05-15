@@ -18,15 +18,6 @@ const ResultPageA4 = () => {
     'Erschöpfung trotz ausreichend Schlaf – Antrieb weg',
   ];
 
-  // Auf 5 Punkte gekürzt (von 7)
-  const learnings = [
-    'Warum dein Körper trotz Disziplin nicht mehr reagiert – und warum das kein Versagen ist',
-    'Wie Cortisol, Leptin und Ghrelin gerade gegen dich arbeiten – und wie du sie wieder auf deine Seite bringst',
-    'Warum „noch weniger essen" deinen Stoffwechsel weiter runterfährt – belegt mit über 60 wissenschaftlichen Quellen',
-    'Das konkrete 4-Phasen-Protokoll, das deinen Körper Schritt für Schritt aus dem Sparmodus führt',
-    'Ein System, das sich an DEIN Leben anpasst – nicht umgekehrt',
-  ];
-
   const valueStack = [
     { emoji: '📖', text: 'E-Book "Du bist nicht das Problem" (10 Kapitel + Bonuskapitel)', value: '29,99 €' },
     { emoji: '🔧', text: 'Online-Bonusbereich mit Tools & Rechnern', value: '20,00 €' },
