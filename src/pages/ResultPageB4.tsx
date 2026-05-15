@@ -26,8 +26,9 @@ const ResultPageB4 = () => {
     { title: 'Dein persönlicher Startpunkt', desc: 'Wie Du Deinen Kalorienbedarf, Deine Makros und Deinen Alltag so aufstellst, dass Dein Körper kooperiert' },
   ];
 
-  const valueStack = [
+  const valueStack: { emoji?: string; text: string; desc?: string; value: string }[] = [
     { text: 'E-Book „Du bist nicht das Problem" – Dein Fahrplan gegen den Stoffwechsel-Sparmodus (100+ Seiten)', value: '29,99 €' },
+    { emoji: '📋', text: 'Dein persönlicher Aktionsplan für unterversorgten Stoffwechsel', desc: 'Ein maßgeschneiderter Schritt-für-Schritt-Plan mit konkreten Ernährungs-, Supplement- und Lifestyle-Empfehlungen, um deinen unterversorgten Fettstoffwechsel gezielt zu unterstützen. Sofort umsetzbar, wissenschaftlich fundiert.', value: '27,00 €' },
     { text: 'Online-Bonusbereich mit exklusiven Videos, Tools & Trackern', value: '20,00 €' },
     { text: '9 Checklisten & PDF-Vorlagen – speziell für unterversorgten Stoffwechsel, Schilddrüsen-Checks & Nährstoff-Protokolle', value: '15,00 €' },
     { text: 'Persönlicher Kalorien- & Makro-Rechner', value: '5,00 €' },
@@ -198,8 +199,16 @@ const ResultPageB4 = () => {
               <div className="space-y-3 mb-2">
                 {valueStack.map((item, i) => (
                   <div key={i} className="flex justify-between items-start gap-4">
-                    <span className="text-foreground text-sm">✓ {item.text}</span>
-                    <span className="text-muted-foreground text-sm whitespace-nowrap">{item.value}</span>
+                    <div className="flex items-start gap-2 flex-1">
+                      <span className="flex-shrink-0 text-foreground text-sm leading-snug">{item.emoji ?? '✓'}</span>
+                      <div className="flex-1">
+                        <span className="text-foreground text-sm leading-snug block">{item.text}</span>
+                        {item.desc && (
+                          <span className="text-muted-foreground text-xs leading-snug block mt-0.5">{item.desc}</span>
+                        )}
+                      </div>
+                    </div>
+                    <span className="text-muted-foreground text-sm whitespace-nowrap self-start">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -207,12 +216,13 @@ const ResultPageB4 = () => {
               <div className="border-t border-border pt-4 mt-4 mb-6">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-foreground font-semibold">Gesamtwert</span>
-                  <span className="text-foreground font-semibold">69,99 €</span>
+                  <span className="text-foreground font-semibold">96,99 €</span>
                 </div>
+                <p className="text-sm font-semibold text-secondary text-right mb-2">Du sparst 67€ (69% Rabatt)</p>
                 <div className="flex justify-between items-center">
                   <span className="text-foreground font-bold text-lg">Dein Preis heute</span>
                   <div className="text-right">
-                    <span className="text-muted-foreground line-through text-sm mr-2">69,99 €</span>
+                    <span className="text-muted-foreground line-through text-sm mr-2">96,99 €</span>
                     <span className="text-primary font-bold text-2xl">29,99 €</span>
                   </div>
                 </div>
