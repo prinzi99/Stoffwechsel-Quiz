@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { trackButtonClick } from "@/hooks/useBonusTracking";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=promo";
 
 const BuchAllgemeinStickyCTA = () => {
   const [visible, setVisible] = useState(false);

@@ -27,7 +27,7 @@ const AnbotTestKauf = () => {
             Dein exklusiver Quiz-Teilnehmer-Preis
           </p>
           <a
-            href="https://www.digistore24.com/product/675804?voucher=specialdeal"
+            href="https://www.digistore24.com/product/675804?voucher=promo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
