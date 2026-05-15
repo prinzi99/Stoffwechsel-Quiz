@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
+import B4CountdownTimer from './B4CountdownTimer';
 
 const DIGISTORE_URL = 'https://www.digistore24.com/product/675804?voucher=specialdeal';
 
