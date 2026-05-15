@@ -19,6 +19,7 @@ import ResultPageA4 from "./pages/ResultPageA4";
 import ResultPageB from "./pages/ResultPageB";
 import ResultPageB2 from "./pages/ResultPageB2";
 import ResultPageB3 from "./pages/ResultPageB3";
+import ResultPageB4 from "./pages/ResultPageB4";
 import ResultPageC from "./pages/ResultPageC";
 import ResultPageC2 from "./pages/ResultPageC2";
 import ResultPageC3 from "./pages/ResultPageC3";
