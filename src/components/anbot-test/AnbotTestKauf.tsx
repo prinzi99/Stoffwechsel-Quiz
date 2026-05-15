@@ -18,10 +18,10 @@ const AnbotTestKauf = () => {
             Kein Abo. Kein Kleingedrucktes. Einmal kaufen, sofort loslegen.
           </p>
           <p className="text-xl text-primary-foreground/60 line-through mb-1">
-            34,99&nbsp;€
+            69,99&nbsp;€
           </p>
           <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-2">
-            19,99&nbsp;€
+            29,99&nbsp;€
           </p>
           <p className="text-sm text-primary-foreground/70 mb-8">
             Dein exklusiver Quiz-Teilnehmer-Preis
@@ -32,7 +32,7 @@ const AnbotTestKauf = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
           >
-            Jetzt für 19,99&nbsp;€ sichern
+            Jetzt für 29,99&nbsp;€ sichern
           </a>
 
           <div className="flex flex-wrap justify-center gap-6 mt-10">

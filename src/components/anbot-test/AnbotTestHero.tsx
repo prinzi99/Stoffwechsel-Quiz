@@ -35,7 +35,7 @@ const AnbotTestHero = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-accent text-accent-foreground shadow-lg hover:bg-accent/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
           >
-            Jetzt für 19,99&nbsp;€ statt <span className="line-through ml-1">34,99&nbsp;€</span> sichern
+            Jetzt für 29,99&nbsp;€ statt <span className="line-through ml-1">69,99&nbsp;€</span> sichern
           </a>
           <p className="text-primary-foreground/70 text-sm mt-3">
             Sofort-Download als PDF · Inkl. Online-Bonusbereich
