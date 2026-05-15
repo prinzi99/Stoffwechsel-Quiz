@@ -20,6 +20,7 @@ const ResultPageA4 = () => {
 
   const valueStack = [
     { emoji: '📖', text: 'E-Book "Du bist nicht das Problem" (10 Kapitel + Bonuskapitel)', value: '29,99 €' },
+    { emoji: '📋', text: 'Dein persönlicher Aktionsplan für gestressten Stoffwechsel', desc: 'Ein maßgeschneiderter Schritt-für-Schritt-Plan mit konkreten Ernährungs-, Supplement- und Lifestyle-Empfehlungen, um deinen gestressten Stoffwechsel wieder ins Gleichgewicht zu bringen. Sofort umsetzbar, wissenschaftlich fundiert.', value: '27 €' },
     { emoji: '🔧', text: 'Online-Bonusbereich mit Tools & Rechnern', value: '20,00 €' },
     { emoji: '🎁', text: '9 herunterladbare PDFs (Checklisten, Arbeitsblätter, Übersichten)', value: '15,00 €' },
     { emoji: '📱', text: 'Kuratierte App- & Tool-Empfehlungen', value: '5,00 €' },
