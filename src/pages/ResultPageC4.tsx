@@ -89,8 +89,26 @@ const ResultPageC4 = () => {
             </ul>
           </section>
 
-          {/* 4. Was Dein Körper jetzt braucht (kurz) */}
+          {/* 4. Häufige Fehler */}
           <section className="mb-8">
+            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+              <XCircle className="w-5 h-5 text-destructive" />
+              Häufige Fehler
+            </h2>
+            <div className="bg-destructive/5 border border-destructive/10 rounded-2xl p-5">
+              <ul className="space-y-3">
+                {commonMistakes.map((mistake, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <XCircle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" />
+                    <span className="text-foreground">{mistake}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+
+          {/* 5. Was Dein Körper jetzt braucht */}
+          <section className="mb-10">
             <h2 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
               <Lightbulb className="w-5 h-5 text-secondary" />
               Was Dein Körper jetzt braucht
@@ -102,7 +120,61 @@ const ResultPageC4 = () => {
             </div>
           </section>
 
-          {/* 5. Countdown Timer */}
+          {/* 6. Überleitung zum Buch */}
+          <section className="mb-10">
+            <div className="text-center mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+                Genau für diese Situation habe ich dieses Buch geschrieben.
+              </h2>
+              <p className="text-muted-foreground leading-relaxed max-w-lg mx-auto">
+                Kein neues Regelwerk. Kein Ernährungsplan. Sondern eine ehrliche Erklärung, warum dein Körper deine Disziplin gegen dich verwendet – und wie du aus diesem Kreislauf aussteigst.
+              </p>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
+              <div className="w-44 md:w-52 flex-shrink-0">
+                <img
+                  src={bookCover}
+                  alt="Buchcover: Du bist nicht das Problem"
+                  className="w-full h-auto rounded-lg shadow-xl"
+                  loading="lazy"
+                />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                  Du bist nicht das Problem
+                </h3>
+                <p className="text-lg text-secondary font-semibold mb-3">
+                  Warum dein Körper deine Disziplin gegen dich verwendet – und wie du ihn Schritt für Schritt wieder in Bewegung bringst.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Von Philipp Prinz · 100+ Seiten · 10 Kapitel · Über 60 wissenschaftliche Quellen
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* 7. Kapitel-Preview */}
+          <section className="mb-8 bg-muted/50 rounded-2xl p-5 md:p-6">
+            <h3 className="text-lg font-bold text-foreground mb-4 text-center">
+              Was dich in diesem Buch erwartet:
+            </h3>
+            <ul className="space-y-2">
+              {[
+                'Warum wiederholte Diäten deinen Grundumsatz dauerhaft senken – und wie du ihn wieder anhebst',
+                'Der große Denkfehler: Disziplin ist kein Stoffwechselhormon',
+                'Raus aus dem Sparmodus: Das konkrete 4-Phasen-Protokoll',
+                'Vom Plan zur Architektur: Ein System, das sich an dein Leben anpasst',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 text-primary flex items-center justify-center mt-0.5">✓</span>
+                  <span className="text-foreground text-sm leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* 8. Countdown Timer */}
           <section className="mb-4">
             <C4CountdownTimer />
           </section>
