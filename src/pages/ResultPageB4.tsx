@@ -26,8 +26,9 @@ const ResultPageB4 = () => {
     { title: 'Dein persönlicher Startpunkt', desc: 'Wie Du Deinen Kalorienbedarf, Deine Makros und Deinen Alltag so aufstellst, dass Dein Körper kooperiert' },
   ];
 
-  const valueStack = [
+  const valueStack: { emoji?: string; text: string; desc?: string; value: string }[] = [
     { text: 'E-Book „Du bist nicht das Problem" – Dein Fahrplan gegen den Stoffwechsel-Sparmodus (100+ Seiten)', value: '29,99 €' },
+    { emoji: '📋', text: 'Dein persönlicher Aktionsplan für unterversorgten Stoffwechsel', desc: 'Ein maßgeschneiderter Schritt-für-Schritt-Plan mit konkreten Ernährungs-, Supplement- und Lifestyle-Empfehlungen, um deinen unterversorgten Fettstoffwechsel gezielt zu unterstützen. Sofort umsetzbar, wissenschaftlich fundiert.', value: '27,00 €' },
     { text: 'Online-Bonusbereich mit exklusiven Videos, Tools & Trackern', value: '20,00 €' },
     { text: '9 Checklisten & PDF-Vorlagen – speziell für unterversorgten Stoffwechsel, Schilddrüsen-Checks & Nährstoff-Protokolle', value: '15,00 €' },
     { text: 'Persönlicher Kalorien- & Makro-Rechner', value: '5,00 €' },
