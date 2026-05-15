@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
 import C4StickyMobileCTA from '@/components/buch/C4StickyMobileCTA';
 import C4StickyDesktopCTA from '@/components/buch/C4StickyDesktopCTA';
-import C4MiniClose from '@/components/buch/C4MiniClose';
+
 import C4InactivityPopup from '@/components/buch/C4InactivityPopup';
 import C4ExitIntentPopup from '@/components/buch/C4ExitIntentPopup';
 import C4CountdownTimer from '@/components/buch/C4CountdownTimer';
