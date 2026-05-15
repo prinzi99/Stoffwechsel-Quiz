@@ -16,6 +16,8 @@ const ResultPageC4 = () => {
   const typicalSigns = [
     'Abnehmen wird trotz Disziplin immer schwieriger',
     'Gewicht stagniert – oder geht trotz Defizit hoch',
+    'Ständige Beschäftigung mit Essen und Kalorien',
+    'Heißhunger trotz „satter" Mahlzeiten',
     'Das Gefühl, dass der eigene Körper nicht mehr mitmacht',
   ];
 
@@ -23,8 +25,6 @@ const ResultPageC4 = () => {
     'Neue Diät starten – der Körper kennt das Muster und reagiert noch schneller mit Anpassung',
     'Kalorien weiter senken – verstärkt den Spareffekt',
     'Mehr Cardio – verbrennt Struktur statt Fett',
-    'Immer neue Regeln aufstellen – erhöht die mentale Belastung ohne körperlichen Effekt',
-    'Angst vor Veränderung – das Bekannte fühlt sich sicher an, hält aber den Kreislauf am Laufen',
   ];
 
   const learnings = [
