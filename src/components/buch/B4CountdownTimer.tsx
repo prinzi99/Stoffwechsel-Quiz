@@ -70,7 +70,7 @@ const B4CountdownTimer = ({ variant = 'full', className = '' }: Props) => {
             {label}
           </p>
           <p className={`text-xs mt-1 ${urgent ? 'text-destructive/80' : 'text-amber-700'}`}>
-            Danach steigt der Preis auf 69,99€
+            Danach steigt der Preis auf 96,99€
           </p>
         </>
       )}

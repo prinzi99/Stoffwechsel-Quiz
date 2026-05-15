@@ -25,7 +25,7 @@ const C4StickyDesktopCTA = () => {
               Quiz-Sonderpreis · <C4CountdownTimer variant="compact" className="text-xs" />
             </span>
             <div className="flex items-baseline gap-2">
-              <span className="text-base text-muted-foreground/60 line-through">69,99&nbsp;€</span>
+              <span className="text-base text-muted-foreground/60 line-through">96,99&nbsp;€</span>
               <span className="text-2xl font-extrabold text-secondary">29,99&nbsp;€</span>
             </div>
           </div>

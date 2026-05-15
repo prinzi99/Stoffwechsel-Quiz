@@ -46,7 +46,7 @@ const B4StickyMobileCTA = () => {
             Quiz-Sonderpreis · <B4CountdownTimer variant="compact" className="text-[11px]" />
           </span>
           <span className="text-sm font-semibold">
-            <span className="line-through opacity-60 mr-1.5 font-normal">69,99&nbsp;€</span>
+            <span className="line-through opacity-60 mr-1.5 font-normal">96,99&nbsp;€</span>
             29,99&nbsp;€ sichern
           </span>
         </div>

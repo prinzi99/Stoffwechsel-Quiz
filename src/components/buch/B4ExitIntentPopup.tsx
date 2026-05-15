@@ -68,7 +68,7 @@ const B4ExitIntentPopup = () => {
               Exklusiver Sonderpreis für Quiz-Teilnehmer:
             </p>
             <div className="flex items-center justify-center gap-3">
-              <span className="text-base text-muted-foreground/50 line-through">69,99&nbsp;€</span>
+              <span className="text-base text-muted-foreground/50 line-through">96,99&nbsp;€</span>
               <span className="text-3xl sm:text-4xl font-extrabold text-secondary">29,99&nbsp;€</span>
             </div>
           </div>
