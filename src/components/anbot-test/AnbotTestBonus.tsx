@@ -12,7 +12,7 @@ const tools = [
 ];
 
 const summary = [
-  { text: "E-Book (10 Kapitel + Bonuskapitel)", value: "34,99 €" },
+  { text: "E-Book (10 Kapitel + Bonuskapitel)", value: "69,99 €" },
   { text: "Online-Bonusbereich mit Tools & Rechnern", value: "29,00 €" },
   { text: "9 herunterladbare PDFs (Checklisten, Arbeitsblätter, Übersichten)", value: "19,00 €" },
   { text: "Kuratierte App- & Tool-Empfehlungen", value: "9,00 €" },
@@ -59,7 +59,7 @@ const AnbotTestBonus = () => {
                 Gesamtwert: 91,99&nbsp;€
               </p>
               <p className="text-2xl md:text-3xl font-bold text-primary mb-1">
-                Dein Preis: 19,99&nbsp;€
+                Dein Preis: 29,99&nbsp;€
               </p>
               <p className="text-sm text-muted-foreground">
                 Exklusiv für Quiz-Teilnehmer
@@ -71,7 +71,7 @@ const AnbotTestBonus = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-accent text-accent-foreground shadow-lg hover:bg-accent/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
             >
-              Jetzt für 19,99&nbsp;€ statt <span className="line-through ml-1">34,99&nbsp;€</span> sichern
+              Jetzt für 29,99&nbsp;€ statt <span className="line-through ml-1">69,99&nbsp;€</span> sichern
             </a>
           </div>
         </div>
