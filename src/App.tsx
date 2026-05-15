@@ -19,6 +19,7 @@ import ResultPageA4 from "./pages/ResultPageA4";
 import ResultPageB from "./pages/ResultPageB";
 import ResultPageB2 from "./pages/ResultPageB2";
 import ResultPageB3 from "./pages/ResultPageB3";
+import ResultPageB4 from "./pages/ResultPageB4";
 import ResultPageC from "./pages/ResultPageC";
 import ResultPageC2 from "./pages/ResultPageC2";
 import ResultPageC3 from "./pages/ResultPageC3";
@@ -65,7 +66,8 @@ const App = () => {
             <Route path="/dfgk34k-4" element={<ResultPageA4 />} />
             <Route path="/k93fda" element={<ResultPageB />} />
             <Route path="/k93fda-2" element={<ResultPageB2 />} />
-            <Route path="/k93fda-3" element={<ResultPageB3 />} />
+           <Route path="/k93fda-3" element={<ResultPageB3 />} />
+            <Route path="/k93fda-4" element={<ResultPageB4 />} />
             <Route path="/x7q9p2" element={<ResultPageC />} />
             <Route path="/x7q9p2-2" element={<ResultPageC2 />} />
             <Route path="/x7q9p2-3" element={<ResultPageC3 />} />

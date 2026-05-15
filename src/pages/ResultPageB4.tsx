@@ -1,0 +1,339 @@
+import { Helmet } from "react-helmet-async";
+import { Button } from '@/components/ui/button';
+import { ArrowRight, AlertCircle, XCircle, Lightbulb } from 'lucide-react';
+import Header from '@/components/Header';
+import bookCover from '@/assets/book-cover-mockup3.jpeg';
+import B4ExitIntentPopup from '@/components/buch/B4ExitIntentPopup';
+import B4StickyMobileCTA from '@/components/buch/B4StickyMobileCTA';
+import B4StickyDesktopCTA from '@/components/buch/B4StickyDesktopCTA';
+import B4InactivityPopup from '@/components/buch/B4InactivityPopup';
+import B4MiniClose from '@/components/buch/B4MiniClose';
+import B4CountdownTimer from '@/components/buch/B4CountdownTimer';
+
+const ResultPageB4 = () => {
+  const typicalSigns = [
+    'Ständige Müdigkeit – trotz genug Schlaf',
+    'Gewicht stagniert – obwohl du wenig isst',
+    'Ständiges Frieren, kalte Hände und Füße',
+    'Heißhunger auf Süßes oder Fettiges',
+    'Training bringt keine sichtbaren Ergebnisse',
+  ];
+
+  const commonMistakes = [
+    'Noch weniger essen – der Körper schaltet weiter runter',
+    'Mehr Sport trotz Erschöpfung – verschärft den Mangel',
+    'Kalorien zählen ohne Nährstoffe zu beachten',
+  ];
+
+  const learnings = [
+    { title: 'Der große Denkfehler', desc: 'Warum „weniger essen" nicht funktioniert – und was die Forschung wirklich zeigt' },
+    { title: 'Stoffwechsel ist kein Schicksal', desc: 'Wie Dein Körper auf Diäten, Einschränkungen und Stress reagiert – und warum er sich anpasst' },
+    { title: 'Kein Sport ≠ mehr Fettverbrennung?', desc: 'Warum mehr Bewegung ohne ausreichende Versorgung nach hinten losgeht' },
+    { title: 'Sicherheit statt Mangel', desc: 'Warum Dein Körper erst loslässt, wenn er genug bekommt – und wie Du dieses Signal sendest' },
+    { title: 'Signale statt Regeln', desc: 'Warum Hunger und Müdigkeit keine Schwäche sind – sondern Informationen, die Du nutzen kannst' },
+    { title: 'Dein persönlicher Startpunkt', desc: 'Wie Du Deinen Kalorienbedarf, Deine Makros und Deinen Alltag so aufstellst, dass Dein Körper kooperiert' },
+  ];
+
+  const valueStack = [
+    { text: 'E-Book „Du bist nicht das Problem" – Dein Fahrplan gegen den Stoffwechsel-Sparmodus (100+ Seiten)', value: '29,99 €' },
+    { text: 'Online-Bonusbereich mit exklusiven Videos, Tools & Trackern', value: '20,00 €' },
+    { text: '9 Checklisten & PDF-Vorlagen – speziell für unterversorgten Stoffwechsel, Schilddrüsen-Checks & Nährstoff-Protokolle', value: '15,00 €' },
+    { text: 'Persönlicher Kalorien- & Makro-Rechner', value: '5,00 €' },
+    { text: 'Regelmäßige Updates & neue Inhalte', value: 'gratis' },
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Helmet><meta name="robots" content="noindex, nofollow" /></Helmet>
+      <B4ExitIntentPopup />
+      <B4InactivityPopup />
+      <B4StickyMobileCTA />
+      <B4StickyDesktopCTA />
+      <Header />
+
+      <main className="container-wide px-3 sm:px-5 md:px-8 py-10 md:py-16 lg:py-24">
+        <div className="max-w-2xl mx-auto">
+
+          {/* 1. Headline */}
+          <header className="text-center mb-8">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight mb-2">
+              Du gibst Dir Mühe.
+            </h1>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary leading-tight mb-5">
+              Und genau das reicht gerade nicht.
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground">
+              Dein Stoffwechsel-Profil: <strong className="text-foreground">Unterversorgter Fettstoffwechsel</strong>
+            </p>
+            <p className="text-sm text-muted-foreground mt-2">
+              Dein Körper bekommt nicht genug von dem, was er braucht – und reagiert mit Stillstand statt Fortschritt.
+            </p>
+          </header>
+
+          {/* Countdown #1 */}
+          <div className="mb-8">
+            <B4CountdownTimer />
+          </div>
+
+          {/* 2. Validation */}
+          <section className="mb-10">
+            <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-8">
+              <p className="text-lg text-foreground leading-relaxed">
+                <strong className="text-primary">Dein Ergebnis zeigt kein Willenskraftproblem.</strong>
+              </p>
+              <p className="text-lg text-foreground leading-relaxed mt-3">
+                Dein Körper reagiert auf zu wenig Energie, zu wenig Nährstoffe oder beides gleichzeitig. Viele Menschen versuchen in dieser Situation noch weniger zu essen – doch genau das kann den Stoffwechsel weiter blockieren.
+              </p>
+            </div>
+          </section>
+
+          {/* 3. Explanation */}
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-foreground mb-4">
+              Was das bedeutet
+            </h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Dein Stoffwechsel ist nicht kaputt – er ist <strong className="text-foreground">unterversorgt</strong>. Zu wenig Energie, Fett oder Protein führt dazu, dass dein Körper seine Fettreserven nicht freigibt – sondern verteidigt.</p>
+              <p>Das Ergebnis: Dein Körper denkt, er muss sparen. Er reduziert den Grundumsatz, drosselt die Schilddrüsenaktivität und hält an allem fest, was er hat.</p>
+              <p>Studien zeigen: Schon bei einer Energieverfügbarkeit unter <strong className="text-foreground">30 kcal pro kg fettfreier Masse</strong> geraten hormonelle Prozesse ins Stocken – und dieser Schwellenwert liegt genau da, wo viele ambitionierte Diäter täglich drunter rutschen.</p>
+              <p>Das Problem ist nicht, dass du zu viel isst. Das Problem ist, dass dein Körper zu wenig bekommt, um loszulassen.</p>
+            </div>
+          </section>
+
+          {/* 4. Typical Signs (5) */}
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+              <AlertCircle className="w-5 h-5 text-primary" />
+              Typische Anzeichen
+            </h2>
+            <ul className="space-y-3">
+              {typicalSigns.map((sign, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0" />
+                  <span className="text-foreground">{sign}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* 5. Common Mistakes (3) */}
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+              <XCircle className="w-5 h-5 text-destructive" />
+              Häufige Fehler
+            </h2>
+            <div className="bg-destructive/5 border border-destructive/10 rounded-2xl p-5">
+              <ul className="space-y-3">
+                {commonMistakes.map((mistake, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <XCircle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" />
+                    <span className="text-foreground">{mistake}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+
+          {/* 6. Outlook */}
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+              <Lightbulb className="w-5 h-5 text-secondary" />
+              Was Dein Körper jetzt braucht
+            </h2>
+            <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-5">
+              <p className="text-foreground leading-relaxed">
+                Dein Körper braucht keine weitere Reduktion. Er braucht <strong className="text-secondary">Versorgung</strong>. Ausreichend Energie, genug Protein, essenzielle Fette. Erst wenn er sich sicher fühlt, hört er auf, seine Reserven zu verteidigen.
+              </p>
+            </div>
+          </section>
+
+          {/* Mini-Close #1 (Desktop + Mobile, früher CTA) */}
+          <B4MiniClose id="mini-close-1" />
+
+          {/* 6b. Emotionaler Kern – stark gekürzt */}
+          <section className="mb-10">
+            <div className="text-center mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+                Dein Körper hat nicht aufgehört zu funktionieren.
+              </h2>
+              <p className="text-lg md:text-xl font-bold text-secondary">
+                Er schützt sich.
+              </p>
+            </div>
+            <div className="space-y-3 text-muted-foreground leading-relaxed text-center">
+              <p>Wissenschaftlich nennt man das <strong className="text-foreground">adaptive Thermogenese</strong>: Dein Körper senkt den Verbrauch, drosselt Hormone und hält Fett fest – nicht weil er gegen dich arbeitet, sondern weil er dich schützen will.</p>
+              <p className="font-bold text-foreground">Dafür habe ich dieses Buch geschrieben.</p>
+            </div>
+          </section>
+
+          {/* 7. Buch-Intro mit Cover */}
+          <section className="mb-12">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
+              <div className="w-48 md:w-56 flex-shrink-0">
+                <img
+                  src={bookCover}
+                  alt="Buchcover: Du bist nicht das Problem"
+                  className="w-full h-auto rounded-lg shadow-xl"
+                  loading="lazy"
+                />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                  Du bist nicht das Problem
+                </h2>
+                <p className="text-lg text-secondary font-semibold mb-4">
+                  Dieses Buch zeigt Dir, warum Dein Körper gerade festhält statt loszulassen – und wie Du ihn Schritt für Schritt wieder in Bewegung bringst.
+                </p>
+                <p className="text-foreground leading-relaxed">
+                  Dieses Buch zeigt Dir, warum weniger essen bei unterversorgtem Stoffwechsel nach hinten losgeht – und was Dein Körper stattdessen braucht, um Fett wieder freizugeben.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* 8. Was Du in diesem Buch lernst */}
+          <section className="mb-12 bg-muted/50 rounded-2xl p-6 md:p-8">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-8">
+              Was Du in diesem Buch lernst
+            </h2>
+            <div className="space-y-5">
+              {learnings.map((ch, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3 className="font-semibold text-foreground">{ch.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{ch.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-center font-bold text-foreground mt-8">
+              100+ Seiten. Über 60 wissenschaftliche Quellen. Kein Blabla. Kein Guru. Geschrieben für Menschen mit genau deinem Ergebnis.
+            </p>
+          </section>
+
+          {/* 10. Preis-Box + CTA mit neuem Value Stack + Countdown #2 */}
+          <section className="mb-12">
+            <div id="preis-box-1" className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
+              <h3 className="text-lg font-bold text-foreground mb-5">Das bekommst Du zusammen:</h3>
+
+              {/* Countdown #2 */}
+              <div className="mb-4">
+                <B4CountdownTimer />
+              </div>
+
+              <div className="space-y-3 mb-2">
+                {valueStack.map((item, i) => (
+                  <div key={i} className="flex justify-between items-start gap-4">
+                    <span className="text-foreground text-sm">✓ {item.text}</span>
+                    <span className="text-muted-foreground text-sm whitespace-nowrap">{item.value}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="border-t border-border pt-4 mt-4 mb-6">
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-foreground font-semibold">Gesamtwert</span>
+                  <span className="text-foreground font-semibold">69,99 €</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-foreground font-bold text-lg">Dein Preis heute</span>
+                  <div className="text-right">
+                    <span className="text-muted-foreground line-through text-sm mr-2">69,99 €</span>
+                    <span className="text-primary font-bold text-2xl">29,99 €</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
+                <div className="flex items-center justify-center gap-3 mb-5">
+                  <span className="text-lg text-muted-foreground/50 line-through">69,99&nbsp;€</span>
+                  <span className="text-3xl md:text-4xl font-extrabold text-secondary">29,99&nbsp;€</span>
+                </div>
+                <Button
+                  variant="cta"
+                  size="xl"
+                  className="w-full h-auto min-h-[4.5rem] whitespace-normal leading-snug text-sm md:text-base py-4 px-4"
+                  asChild
+                >
+                  <a href="https://www.digistore24.com/product/675804?voucher=specialdeal" target="_blank" rel="noopener noreferrer">
+                    Jetzt für 29,99&nbsp;€ statt 69,99&nbsp;€ sichern →
+                    <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
+                  </a>
+                </Button>
+                <p className="text-sm text-muted-foreground mt-3">Sofort verfügbar als E-Book</p>
+                <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-muted-foreground">
+                  <span>🔒 Sicherer Checkout</span>
+                  <span>📥 Sofort-Download</span>
+                  <span>🔄 14-Tage-Garantie</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* 11. Für Dich, wenn… (3 Punkte) */}
+          <section className="mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+              Dieses Buch ist für Dich, wenn…
+            </h2>
+            <ul className="space-y-4">
+              {[
+                'Du schon alles versucht hast – Diäten, Sport, Verzicht – und trotzdem stagnierst',
+                'Du endlich verstehen willst, warum dein Körper sich wehrt',
+                'Du bereit bist, deinen Stoffwechsel wieder auf Versorgung umzustellen',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="text-secondary mt-0.5 flex-shrink-0">✅</span>
+                  <span className="text-foreground leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+        </div>
+      </main>
+
+      {/* 12. Finaler CTA */}
+      <section className="bg-[image:var(--hero-gradient)] py-14 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
+              Bereit, das Spiel zu verändern?
+            </h2>
+            <p className="text-lg text-primary-foreground/85 mb-6">
+              Kein Abo. Kein Hörensagen. Einmal kaufen, sofort loslegen.
+            </p>
+            <p className="text-xl text-primary-foreground/60 line-through mb-1">69,99&nbsp;€</p>
+            <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">29,99&nbsp;€</p>
+            <a
+              href="https://www.digistore24.com/product/675804?voucher=specialdeal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-normal text-center rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-auto min-h-[3.5rem] py-3 px-8"
+            >
+              Jetzt für 29,99&nbsp;€ statt <span className="line-through mx-1">69,99&nbsp;€</span> sichern →
+            </a>
+            <div className="flex flex-wrap justify-center gap-5 mt-8 text-sm text-primary-foreground/80">
+              <span>🔒 Sicherer Checkout</span>
+              <span>📥 Sofort-Download</span>
+              <span>🔄 14-Tage-Garantie</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="py-8 pb-24 md:pb-24 text-center">
+        <p className="text-sm text-muted-foreground">
+          <a href="/datenschutz" className="hover:text-foreground transition-colors">Datenschutz</a>
+          <span className="mx-2">·</span>
+          <a href="/impressum" className="hover:text-foreground transition-colors">Impressum</a>
+        </p>
+      </footer>
+    </div>
+  );
+};
+
+export default ResultPageB4;
