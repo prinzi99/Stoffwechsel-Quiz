@@ -41,6 +41,7 @@ const Buch = () => {
         <AnbotTestZielgruppe />
         <BuchAllgemeinSocialProof />
         <AnbotTestAutor />
+        <BuchAllgemeinValueStack />
         <BuchAllgemeinKauf />
         <AnbotTestFAQ />
 
