@@ -12,6 +12,7 @@ import AnbotTestZielgruppe from "@/components/anbot-test/AnbotTestZielgruppe";
 import BuchAllgemeinSocialProof from "@/components/buch/BuchAllgemeinSocialProof";
 import AnbotTestAutor from "@/components/anbot-test/AnbotTestAutor";
 import BuchAllgemeinKauf from "@/components/buch/BuchAllgemeinKauf";
+import BuchAllgemeinValueStack from "@/components/buch/BuchAllgemeinValueStack";
 import AnbotTestFAQ from "@/components/anbot-test/AnbotTestFAQ";
 import BuchAllgemeinStickyCTA from "@/components/buch/BuchAllgemeinStickyCTA";
 
@@ -40,6 +41,7 @@ const Buch = () => {
         <AnbotTestZielgruppe />
         <BuchAllgemeinSocialProof />
         <AnbotTestAutor />
+        <BuchAllgemeinValueStack />
         <BuchAllgemeinKauf />
         <AnbotTestFAQ />
 
