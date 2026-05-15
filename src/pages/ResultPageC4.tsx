@@ -186,25 +186,35 @@ const ResultPageC4 = () => {
                 Das komplette Stoffwechsel-Reset System
               </h3>
               <div className="space-y-3 mb-6">
-                {[
+                {([
                   { text: 'E-Book „Du bist nicht das Problem" (100+ Seiten)', value: '29,99 €' },
+                  { emoji: '📋', text: 'Dein persönlicher Aktionsplan für überangepassten Stoffwechsel', desc: 'Ein maßgeschneiderter Schritt-für-Schritt-Plan mit konkreten Ernährungs-, Supplement- und Lifestyle-Empfehlungen, um deinen überangepassten Diät-Stoffwechsel nachhaltig zu normalisieren. Sofort umsetzbar, wissenschaftlich fundiert.', value: '27,00 €' },
                   { text: 'Online-Bonusbereich mit Strategien & Mindset', value: '20,00 €' },
                   { text: '9 PDFs & Checklisten (u.a. 3-Phasen-Plan)', value: '15,00 €' },
                   { text: 'Kalorien-Rechner & Makro-Tools', value: '5,00 €' },
                   { text: 'Alle zukünftigen Updates', value: 'Kostenlos' },
-                ].map((item, i) => (
+                ] as { emoji?: string; text: string; desc?: string; value: string }[]).map((item, i) => (
                   <div key={i} className="flex justify-between items-start gap-4">
-                    <span className="text-foreground text-sm">✓ {item.text}</span>
-                    <span className="text-muted-foreground text-sm whitespace-nowrap font-semibold">{item.value}</span>
+                    <div className="flex items-start gap-2 flex-1">
+                      <span className="flex-shrink-0 text-foreground text-sm leading-snug">{item.emoji ?? '✓'}</span>
+                      <div className="flex-1">
+                        <span className="text-foreground text-sm leading-snug block">{item.text}</span>
+                        {item.desc && (
+                          <span className="text-muted-foreground text-xs leading-snug block mt-0.5">{item.desc}</span>
+                        )}
+                      </div>
+                    </div>
+                    <span className="text-muted-foreground text-sm whitespace-nowrap font-semibold self-start">{item.value}</span>
                   </div>
                 ))}
               </div>
 
               <div className="border-t-2 border-primary/20 pt-4 mb-6">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mb-2">
                   <span className="text-lg font-bold text-foreground">Gesamtwert</span>
-                  <span className="text-xl font-extrabold text-primary">69,99&nbsp;€</span>
+                  <span className="text-xl font-extrabold text-primary">96,99&nbsp;€</span>
                 </div>
+                <p className="text-sm font-semibold text-secondary text-right">Du sparst 67€ (69% Rabatt)</p>
               </div>
 
               <p className="text-sm text-muted-foreground text-center mb-4">
