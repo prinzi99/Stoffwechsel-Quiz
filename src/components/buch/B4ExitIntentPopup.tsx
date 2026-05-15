@@ -3,6 +3,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import bookCover from "@/assets/book-cover-mockup3.jpeg";
+import B4CountdownTimer from "./B4CountdownTimer";
 
 const STORAGE_KEY = "exitIntentShown_k93fda-4";
 
