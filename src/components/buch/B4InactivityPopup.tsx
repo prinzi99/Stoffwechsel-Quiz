@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { ArrowRight } from "lucide-react";
 import bookCover from "@/assets/book-cover-mockup3.jpeg";
+import B4CountdownTimer from "./B4CountdownTimer";
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 const STORAGE_KEY = "inactivityPopupShown_k93fda-4";
@@ -59,9 +60,12 @@ const B4InactivityPopup = () => {
             <span className="text-base text-muted-foreground/60 line-through">69,99&nbsp;€</span>
             <span className="text-3xl font-extrabold text-secondary">29,99&nbsp;€</span>
           </div>
-          <p className="text-xs text-muted-foreground mb-4">
+          <p className="text-xs text-muted-foreground mb-3">
             Sofort verfügbar · Kein Abo · 100+ Seiten
           </p>
+
+          <p className="text-xs text-muted-foreground mb-1">Dein Sonderpreis läuft ab in:</p>
+          <div className="mb-3"><B4CountdownTimer variant="compact" className="text-base" /></div>
 
           <a
             href={DIGISTORE_URL}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
+import B4CountdownTimer from "./B4CountdownTimer";
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
@@ -41,7 +42,9 @@ const B4StickyMobileCTA = () => {
         className="flex items-center justify-between gap-3 bg-accent text-accent-foreground rounded-md px-4 py-3 shadow-lg active:scale-[0.98] transition-transform"
       >
         <div className="flex flex-col items-start leading-tight">
-          <span className="text-[11px] opacity-80">Quiz-Sonderpreis</span>
+          <span className="text-[11px] opacity-80 flex items-center gap-2">
+            Quiz-Sonderpreis · <B4CountdownTimer variant="compact" className="text-[11px]" />
+          </span>
           <span className="text-sm font-semibold">
             <span className="line-through opacity-60 mr-1.5 font-normal">69,99&nbsp;€</span>
             29,99&nbsp;€ sichern

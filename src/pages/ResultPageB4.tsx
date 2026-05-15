@@ -70,11 +70,6 @@ const ResultPageB4 = () => {
             </p>
           </header>
 
-          {/* Countdown #1 */}
-          <div className="mb-8">
-            <B4CountdownTimer />
-          </div>
-
           {/* 2. Validation */}
           <section className="mb-10">
             <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-8">
@@ -147,6 +142,11 @@ const ResultPageB4 = () => {
             </div>
           </section>
 
+          {/* Countdown vor erstem CTA */}
+          <div className="mb-4">
+            <B4CountdownTimer />
+          </div>
+
           {/* Mini-Close #1 (Desktop + Mobile, früher CTA) */}
           <B4MiniClose id="mini-close-1" />
 
@@ -214,15 +214,15 @@ const ResultPageB4 = () => {
             </p>
           </section>
 
-          {/* 10. Preis-Box + CTA mit neuem Value Stack + Countdown #2 */}
+          {/* Countdown vor Preis-Box */}
+          <section className="mb-4">
+            <B4CountdownTimer />
+          </section>
+
+          {/* 10. Preis-Box + CTA mit neuem Value Stack */}
           <section className="mb-12">
             <div id="preis-box-1" className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
               <h3 className="text-lg font-bold text-foreground mb-5">Das bekommst Du zusammen:</h3>
-
-              {/* Countdown #2 */}
-              <div className="mb-4">
-                <B4CountdownTimer />
-              </div>
 
               <div className="space-y-3 mb-2">
                 {valueStack.map((item, i) => (
