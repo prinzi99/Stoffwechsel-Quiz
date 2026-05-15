@@ -70,11 +70,6 @@ const ResultPageB4 = () => {
             </p>
           </header>
 
-          {/* Countdown #1 */}
-          <div className="mb-8">
-            <B4CountdownTimer />
-          </div>
-
           {/* 2. Validation */}
           <section className="mb-10">
             <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-8">
