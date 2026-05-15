@@ -20,6 +20,7 @@ const ResultPageA4 = () => {
 
   const valueStack = [
     { emoji: '📖', text: 'E-Book "Du bist nicht das Problem" (10 Kapitel + Bonuskapitel)', value: '29,99 €' },
+    { emoji: '📋', text: 'Dein persönlicher Aktionsplan für gestressten Stoffwechsel', desc: 'Ein maßgeschneiderter Schritt-für-Schritt-Plan mit konkreten Ernährungs-, Supplement- und Lifestyle-Empfehlungen, um deinen gestressten Stoffwechsel wieder ins Gleichgewicht zu bringen. Sofort umsetzbar, wissenschaftlich fundiert.', value: '27 €' },
     { emoji: '🔧', text: 'Online-Bonusbereich mit Tools & Rechnern', value: '20,00 €' },
     { emoji: '🎁', text: '9 herunterladbare PDFs (Checklisten, Arbeitsblätter, Übersichten)', value: '15,00 €' },
     { emoji: '📱', text: 'Kuratierte App- & Tool-Empfehlungen', value: '5,00 €' },
@@ -39,12 +40,12 @@ const ResultPageA4 = () => {
         <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
         <div className="flex items-center justify-center gap-3 mb-5">
           <span className="relative text-lg text-muted-foreground">
-            <span>{PRICING.anchorPrice}&nbsp;{PRICING.currency}</span>
+            <span>96,99&nbsp;€</span>
             <span className="absolute left-0 top-1/2 w-full h-[2px] bg-destructive rotate-[-8deg]" />
           </span>
           <span className="text-3xl md:text-4xl font-extrabold text-secondary">{PRICING.price}&nbsp;{PRICING.currency}</span>
         </div>
-        <p className="text-sm font-semibold text-secondary mb-4">Du sparst über {PRICING.discount}</p>
+        <p className="text-sm font-semibold text-secondary mb-4">Du sparst 67€ (69% Rabatt)</p>
         <Button
           variant="cta"
           size="xl"
@@ -207,8 +208,13 @@ const ResultPageA4 = () => {
                 {valueStack.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-foreground">
                     <span className="flex-shrink-0 text-lg leading-none mt-0.5">{item.emoji}</span>
-                    <span className="flex-1 leading-snug">{item.text}</span>
-                    <span className="text-sm text-muted-foreground whitespace-nowrap font-medium">
+                    <div className="flex-1">
+                      <span className="leading-snug block">{item.text}</span>
+                      {item.desc && (
+                        <span className="text-sm text-muted-foreground leading-snug block mt-0.5">{item.desc}</span>
+                      )}
+                    </div>
+                    <span className="text-sm text-muted-foreground whitespace-nowrap font-medium self-start">
                       {item.value === 'kostenlos' ? 'kostenlos' : `Wert: ${item.value}`}
                     </span>
                   </li>
@@ -216,12 +222,12 @@ const ResultPageA4 = () => {
               </ul>
               <div className="border-t border-border pt-4 text-center">
                 <p className="text-sm text-muted-foreground line-through mb-1">
-                  Gesamtwert: {PRICING.totalValue}&nbsp;{PRICING.currency}
+                  Gesamtwert: 96,99&nbsp;€
                 </p>
                 <p className="text-3xl md:text-4xl font-extrabold text-secondary mb-1">
                   Dein Preis heute: {PRICING.price}&nbsp;{PRICING.currency}
                 </p>
-                <p className="text-sm font-semibold text-secondary">Du sparst über {PRICING.discount}</p>
+                <p className="text-sm font-semibold text-secondary">Du sparst 67€ (69% Rabatt)</p>
               </div>
             </div>
           </section>
@@ -244,7 +250,7 @@ const ResultPageA4 = () => {
             <p className="text-lg text-primary-foreground/85 mb-6">
               Kein Abo. Kein Mengenzählen. Einmal kaufen, sofort loslegen.
             </p>
-            <p className="text-xl text-primary-foreground/60 line-through mb-1">{PRICING.anchorPrice}&nbsp;{PRICING.currency}</p>
+            <p className="text-xl text-primary-foreground/60 line-through mb-1">96,99&nbsp;€</p>
             <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">{PRICING.price}&nbsp;{PRICING.currency}</p>
             <a
               href={PRICING.digistoreUrl}
@@ -252,7 +258,7 @@ const ResultPageA4 = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-normal text-center rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-auto min-h-[3.5rem] py-3 px-8"
             >
-              Jetzt für {PRICING.price}&nbsp;{PRICING.currency} statt <span className="line-through mx-1">{PRICING.anchorPrice}&nbsp;{PRICING.currency}</span> sichern →
+              Jetzt für {PRICING.price}&nbsp;{PRICING.currency} statt <span className="line-through mx-1">96,99&nbsp;€</span> sichern →
             </a>
             <div className="flex flex-wrap justify-center gap-5 mt-8 text-sm text-primary-foreground/80">
               <span>🔒 Sicherer Checkout</span>
