@@ -21,7 +21,7 @@ const BuchAllgemeinStickyCTA = () => {
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-card/95 backdrop-blur-sm border-t border-border px-4 py-3 shadow-lg">
       <Button variant="cta" size="lg" asChild className="w-full text-base py-5" onClick={() => trackButtonClick("/buch", "Sticky CTA Mobile", DIGISTORE_URL)}>
         <a href={DIGISTORE_URL} target="_blank" rel="noopener noreferrer">
-          Jetzt für 29,99&nbsp;€ sichern
+          Jetzt für 59,99&nbsp;€ sichern
         </a>
       </Button>
     </div>

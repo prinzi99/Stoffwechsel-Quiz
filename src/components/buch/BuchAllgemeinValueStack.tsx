@@ -36,9 +36,9 @@ const BuchAllgemeinValueStack = () => {
                 Gesamtwert: 69,99&nbsp;€
               </p>
               <p className="text-3xl md:text-4xl font-extrabold text-secondary mb-1">
-                Dein Preis heute: 29,99&nbsp;€
+                Dein Preis heute: 59,99&nbsp;€
               </p>
-              <p className="text-sm font-semibold text-secondary">Du sparst 40€ (57% Rabatt)</p>
+              <p className="text-sm font-semibold text-secondary">Du sparst 10€ (14% Rabatt)</p>
             </div>
           </div>
         </div>
