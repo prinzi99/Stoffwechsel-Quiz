@@ -131,18 +131,17 @@ const ResultPageA4 = () => {
             </div>
           </section>
 
-          {/* 5. Countdown Timer */}
-          <section className="mb-4">
-            <CountdownTimer />
-          </section>
-
-          {/* 6. Preis-Box #1 (FRÜHER CTA) */}
-          <section className="mb-12">
-            <PriceBox id="preis-box-1" />
-          </section>
-
-          {/* 7. Buch-Intro mit Cover */}
+          {/* 5. Überleitung zum Buch */}
           <section className="mb-10">
+            <div className="text-center mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+                Genau für diese Situation habe ich dieses Buch geschrieben.
+              </h2>
+              <p className="text-muted-foreground leading-relaxed max-w-lg mx-auto">
+                Nicht als nächste Diät-Empfehlung. Sondern als ehrliche Erklärung – warum dein Körper gerade so reagiert, und was du konkret tun kannst, damit er wieder loslässt.
+              </p>
+            </div>
+
             <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
               <div className="w-44 md:w-52 flex-shrink-0">
                 <img
@@ -153,38 +152,49 @@ const ResultPageA4 = () => {
                 />
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
                   Du bist nicht das Problem
-                </h2>
+                </h3>
                 <p className="text-lg text-secondary font-semibold mb-3">
-                  Warum wiederholte Diäten deinen Stoffwechsel blockieren – und wie du ihn wieder in Bewegung bringst.
+                  Warum dein Stoffwechsel blockiert – und wie du ihn wieder in Bewegung bringst.
                 </p>
-                <div className="space-y-3 text-muted-foreground leading-relaxed">
-                  <p>Dein Körper hat nicht aufgehört zu funktionieren. Er hat sich angepasst.</p>
-                  <p>Du hast kontrolliert gegessen, dich diszipliniert durchgezogen – und am Anfang hat es funktioniert. Jetzt: Stillstand. Genau das löst dieses Buch.</p>
-                </div>
+                <p className="text-sm text-muted-foreground">
+                  Von Philipp Prinz · 100+ Seiten · 10 Kapitel · Über 60 wissenschaftliche Quellen
+                </p>
               </div>
             </div>
           </section>
 
-          {/* 8. Was du in diesem Buch lernst (5 Punkte) */}
-          <section className="mb-10 bg-muted/50 rounded-2xl p-6 md:p-8">
-            <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-6">
-              Was du in diesem Buch lernst
-            </h2>
-            <ul className="space-y-3">
-              {learnings.map((item, i) => (
+          {/* 6. Kapitel-Preview */}
+          <section className="mb-8 bg-muted/50 rounded-2xl p-5 md:p-6">
+            <h3 className="text-lg font-bold text-foreground mb-4 text-center">
+              Was dich in diesem Buch erwartet:
+            </h3>
+            <ul className="space-y-2">
+              {[
+                'Warum Cortisol, Leptin und Ghrelin gegen dich arbeiten – und wie du sie wieder auf deine Seite bringst',
+                'Das konkrete 4-Phasen-Protokoll: Raus aus dem Sparmodus',
+                'Sicherheit statt Mangel – warum dein Körper erst loslässt, wenn er genug bekommt',
+                'Signale statt Regeln: Hunger und Müdigkeit als Information nutzen',
+              ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/15 text-primary flex items-center justify-center mt-0.5">
-                    <Check className="w-4 h-4" strokeWidth={3} />
+                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 text-primary flex items-center justify-center mt-0.5">
+                    <Check className="w-3 h-3" strokeWidth={3} />
                   </span>
-                  <span className="text-foreground leading-relaxed">{item}</span>
+                  <span className="text-foreground text-sm leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
-            <p className="text-center font-bold text-foreground mt-6">
-              100+ Seiten. Über 60 wissenschaftliche Quellen. Kein Blabla. Kein Guru.
-            </p>
+          </section>
+
+          {/* 7. Countdown Timer */}
+          <section className="mb-4">
+            <CountdownTimer />
+          </section>
+
+          {/* 8. Preis-Box #1 */}
+          <section className="mb-12">
+            <PriceBox id="preis-box-1" />
           </section>
 
           {/* 9. Value Stack */}
