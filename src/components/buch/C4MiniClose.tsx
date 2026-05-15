@@ -11,7 +11,7 @@ interface Props {
 
 const C4MiniClose = ({
   headline = "Genau das löst dieses Buch.",
-  subline = "Dein Weg raus aus dem Diät-Teufelskreis – für 29,99€ statt 69,99€",
+  subline = "Dein Weg raus aus dem Diät-Teufelskreis – für 29,99€ statt 96,99€",
   cta = "Jetzt sichern →",
   id,
 }: Props) => {
@@ -25,7 +25,7 @@ const C4MiniClose = ({
           <p className="text-xs md:text-sm text-muted-foreground mb-3">{subline}</p>
         )}
         <div className="flex items-baseline justify-center gap-2 mb-4">
-          <span className="text-sm text-muted-foreground/60 line-through">69,99&nbsp;€</span>
+          <span className="text-sm text-muted-foreground/60 line-through">96,99&nbsp;€</span>
           <span className="text-2xl md:text-3xl font-extrabold text-secondary">29,99&nbsp;€</span>
         </div>
         <a

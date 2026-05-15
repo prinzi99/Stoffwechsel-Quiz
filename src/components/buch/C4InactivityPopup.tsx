@@ -57,7 +57,7 @@ const C4InactivityPopup = () => {
 
         <div className="text-center">
           <div className="flex items-baseline justify-center gap-2 mb-1">
-            <span className="text-base text-muted-foreground/60 line-through">69,99&nbsp;€</span>
+            <span className="text-base text-muted-foreground/60 line-through">96,99&nbsp;€</span>
             <span className="text-3xl font-extrabold text-secondary">29,99&nbsp;€</span>
           </div>
           <p className="text-xs text-muted-foreground mb-3">

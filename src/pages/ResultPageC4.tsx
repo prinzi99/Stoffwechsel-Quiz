@@ -224,7 +224,7 @@ const ResultPageC4 = () => {
               <div className="text-center">
                 <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
                 <div className="flex items-center justify-center gap-3 mb-5">
-                  <span className="text-lg text-muted-foreground/50 line-through">69,99&nbsp;€</span>
+                  <span className="text-lg text-muted-foreground/50 line-through">96,99&nbsp;€</span>
                   <span className="text-3xl md:text-4xl font-extrabold text-secondary">29,99&nbsp;€</span>
                 </div>
                 <Button
@@ -308,7 +308,7 @@ const ResultPageC4 = () => {
             <p className="text-lg text-primary-foreground/85 mb-6">
               Kein Abo. Kein Hörensagen. Einmal kaufen, sofort loslegen.
             </p>
-            <p className="text-xl text-primary-foreground/60 line-through mb-1">69,99&nbsp;€</p>
+            <p className="text-xl text-primary-foreground/60 line-through mb-1">96,99&nbsp;€</p>
             <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">29,99&nbsp;€</p>
             <a
               href={DIGISTORE_URL}
