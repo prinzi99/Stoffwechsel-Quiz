@@ -14,9 +14,7 @@ const ResultPageB4 = () => {
   const typicalSigns = [
     'Ständige Müdigkeit – trotz genug Schlaf',
     'Gewicht stagniert – obwohl du wenig isst',
-    'Ständiges Frieren, kalte Hände und Füße',
     'Heißhunger auf Süßes oder Fettiges',
-    'Training bringt keine sichtbaren Ergebnisse',
   ];
 
   const learnings = [
@@ -59,33 +57,19 @@ const ResultPageB4 = () => {
             <p className="text-base md:text-lg text-muted-foreground">
               Dein Stoffwechsel-Profil: <strong className="text-foreground">Unterversorgter Fettstoffwechsel</strong>
             </p>
-            <p className="text-sm text-muted-foreground mt-2">
-              Dein Körper bekommt nicht genug von dem, was er braucht – und reagiert mit Stillstand statt Fortschritt.
-            </p>
           </header>
 
-          {/* 2. Validation */}
-          <section className="mb-10">
-            <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-8">
-              <p className="text-lg text-foreground leading-relaxed">
-                <strong className="text-primary">Dein Ergebnis zeigt kein Willenskraftproblem.</strong> Dein Körper reagiert auf zu wenig Energie und Nährstoffe – und hält deshalb an seinen Reserven fest.
+          {/* 2. Validation (kompakt) */}
+          <section className="mb-8">
+            <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-7">
+              <p className="text-base md:text-lg text-foreground leading-relaxed">
+                Dein Ergebnis zeigt kein Willenskraftproblem. Dein Körper ist <strong className="text-primary">unterversorgt</strong> – zu wenig Energie, Fett oder Protein. Er senkt den Grundumsatz, drosselt Hormone und verteidigt seine Reserven, statt sie freizugeben.
               </p>
             </div>
           </section>
 
-          {/* 3. Explanation */}
-          <section className="mb-10">
-            <h2 className="text-xl font-bold text-foreground mb-4">
-              Was das bedeutet
-            </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>Dein Stoffwechsel ist nicht kaputt – er ist <strong className="text-foreground">unterversorgt</strong>. Zu wenig Energie, Fett oder Protein führt dazu, dass dein Körper seine Fettreserven nicht freigibt, sondern verteidigt. Er senkt den Grundumsatz, drosselt Hormone und hält an allem fest, was er hat.</p>
-              <p>Das Problem ist nicht, dass du zu viel isst. Das Problem ist, dass dein Körper zu wenig bekommt, um loszulassen. Erst wenn er sich sicher und versorgt fühlt, hört er auf, seine Reserven zu verteidigen.</p>
-            </div>
-          </section>
-
-          {/* 4. Typical Signs (5) */}
-          <section className="mb-10">
+          {/* 3. Typische Anzeichen (3 Punkte) */}
+          <section className="mb-8">
             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
               <AlertCircle className="w-5 h-5 text-primary" />
               Typische Anzeichen
