@@ -222,12 +222,12 @@ const ResultPageA4 = () => {
               </ul>
               <div className="border-t border-border pt-4 text-center">
                 <p className="text-sm text-muted-foreground line-through mb-1">
-                  Gesamtwert: {PRICING.totalValue}&nbsp;{PRICING.currency}
+                  Gesamtwert: 96,99&nbsp;€
                 </p>
                 <p className="text-3xl md:text-4xl font-extrabold text-secondary mb-1">
                   Dein Preis heute: {PRICING.price}&nbsp;{PRICING.currency}
                 </p>
-                <p className="text-sm font-semibold text-secondary">Du sparst über {PRICING.discount}</p>
+                <p className="text-sm font-semibold text-secondary">Du sparst 67€ (69% Rabatt)</p>
               </div>
             </div>
           </section>
