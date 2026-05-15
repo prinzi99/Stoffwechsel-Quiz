@@ -106,24 +106,6 @@ const ResultPageB4 = () => {
             </ul>
           </section>
 
-          {/* 5. Common Mistakes (3) */}
-          <section className="mb-10">
-            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <XCircle className="w-5 h-5 text-destructive" />
-              Häufige Fehler
-            </h2>
-            <div className="bg-destructive/5 border border-destructive/10 rounded-2xl p-5">
-              <ul className="space-y-3">
-                {commonMistakes.map((mistake, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <XCircle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" />
-                    <span className="text-foreground">{mistake}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
-
           {/* 6. Outlook */}
           <section className="mb-10">
             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
