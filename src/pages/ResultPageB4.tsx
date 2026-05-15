@@ -97,34 +97,22 @@ const ResultPageB4 = () => {
             </div>
           </section>
 
-          {/* Countdown vor erstem CTA */}
-          <div className="mb-4">
-            <B4CountdownTimer />
-          </div>
-
-          {/* Mini-Close #1 (Desktop + Mobile, früher CTA) */}
-          <B4MiniClose id="mini-close-1" />
-
-          {/* 6b. Emotionaler Kern – stark gekürzt */}
+          {/* 7. Überleitung zum Buch */}
           <section className="mb-10">
-            <div className="text-center mb-4">
+            <div className="text-center mb-2">
               <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">
                 Dein Körper hat nicht aufgehört zu funktionieren.
               </h2>
-              <p className="text-lg md:text-xl font-bold text-secondary">
+              <p className="text-lg md:text-xl font-bold text-secondary mb-3">
                 Er schützt sich.
               </p>
+              <p className="text-muted-foreground leading-relaxed max-w-lg mx-auto">
+                Wissenschaftlich nennt man das adaptive Thermogenese. Genau für diese Situation habe ich dieses Buch geschrieben – nicht als weiterer „Iss einfach mehr"-Ratschlag, sondern als wissenschaftlich fundierter Fahrplan.
+              </p>
             </div>
-            <div className="space-y-3 text-muted-foreground leading-relaxed text-center">
-              <p>Wissenschaftlich nennt man das <strong className="text-foreground">adaptive Thermogenese</strong>: Dein Körper senkt den Verbrauch, drosselt Hormone und hält Fett fest – nicht weil er gegen dich arbeitet, sondern weil er dich schützen will.</p>
-              <p className="font-bold text-foreground">Dafür habe ich dieses Buch geschrieben.</p>
-            </div>
-          </section>
 
-          {/* 7. Buch-Intro mit Cover */}
-          <section className="mb-12">
-            <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
-              <div className="w-48 md:w-56 flex-shrink-0">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center mt-6">
+              <div className="w-44 md:w-52 flex-shrink-0">
                 <img
                   src={bookCover}
                   alt="Buchcover: Du bist nicht das Problem"
@@ -133,20 +121,48 @@ const ResultPageB4 = () => {
                 />
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
                   Du bist nicht das Problem
-                </h2>
-                <p className="text-lg text-secondary font-semibold mb-4">
-                  Dieses Buch zeigt Dir, warum Dein Körper gerade festhält statt loszulassen – und wie Du ihn Schritt für Schritt wieder in Bewegung bringst.
+                </h3>
+                <p className="text-lg text-secondary font-semibold mb-3">
+                  Warum weniger essen bei unterversorgtem Stoffwechsel nach hinten losgeht – und was dein Körper stattdessen braucht.
                 </p>
-                <p className="text-foreground leading-relaxed">
-                  Dieses Buch zeigt Dir, warum weniger essen bei unterversorgtem Stoffwechsel nach hinten losgeht – und was Dein Körper stattdessen braucht, um Fett wieder freizugeben.
+                <p className="text-sm text-muted-foreground">
+                  Von Philipp Prinz · 100+ Seiten · 10 Kapitel · Über 60 wissenschaftliche Quellen
                 </p>
               </div>
             </div>
           </section>
 
-          {/* 8. Was Du in diesem Buch lernst */}
+          {/* 8. Kapitel-Preview */}
+          <section className="mb-8 bg-muted/50 rounded-2xl p-5 md:p-6">
+            <h3 className="text-lg font-bold text-foreground mb-4 text-center">
+              Was dich in diesem Buch erwartet:
+            </h3>
+            <ul className="space-y-2">
+              {[
+                'Warum „weniger essen" deinen Stoffwechsel weiter blockiert – und was die Forschung wirklich zeigt',
+                'Was mit deiner Schilddrüse passiert, wenn die Energieverfügbarkeit unter 30 kcal/kg sinkt',
+                'Sicherheit statt Mangel: Wie du das richtige Signal an deinen Körper sendest',
+                'Dein persönlicher Startpunkt: Kalorien, Makros und ein System für deinen Alltag',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 text-primary flex items-center justify-center mt-0.5">✓</span>
+                  <span className="text-foreground text-sm leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* 9. Countdown vor erstem CTA */}
+          <div className="mb-4">
+            <B4CountdownTimer />
+          </div>
+
+          {/* 10. Mini-Close #1 */}
+          <B4MiniClose id="mini-close-1" />
+
+          {/* 11. Was Du in diesem Buch lernst */}
           <section className="mb-12 bg-muted/50 rounded-2xl p-6 md:p-8">
             <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-8">
               Was Du in diesem Buch lernst
