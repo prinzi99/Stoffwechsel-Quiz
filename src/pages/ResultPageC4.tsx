@@ -16,10 +16,6 @@ const ResultPageC4 = () => {
   const typicalSigns = [
     'Abnehmen wird trotz Disziplin immer schwieriger',
     'Gewicht stagniert – oder geht trotz Defizit hoch',
-    'Ständige Beschäftigung mit Essen und Kalorien',
-    'Kein Spielraum mehr bei der Ernährung',
-    'Frust trotz Kontrolle',
-    'Heißhunger trotz „satter" Mahlzeiten',
     'Das Gefühl, dass der eigene Körper nicht mehr mitmacht',
   ];
 
