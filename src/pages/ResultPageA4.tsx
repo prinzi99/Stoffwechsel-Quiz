@@ -208,8 +208,13 @@ const ResultPageA4 = () => {
                 {valueStack.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-foreground">
                     <span className="flex-shrink-0 text-lg leading-none mt-0.5">{item.emoji}</span>
-                    <span className="flex-1 leading-snug">{item.text}</span>
-                    <span className="text-sm text-muted-foreground whitespace-nowrap font-medium">
+                    <div className="flex-1">
+                      <span className="leading-snug block">{item.text}</span>
+                      {item.desc && (
+                        <span className="text-sm text-muted-foreground leading-snug block mt-0.5">{item.desc}</span>
+                      )}
+                    </div>
+                    <span className="text-sm text-muted-foreground whitespace-nowrap font-medium self-start">
                       {item.value === 'kostenlos' ? 'kostenlos' : `Wert: ${item.value}`}
                     </span>
                   </li>
