@@ -63,7 +63,7 @@ const B4ExitIntentPopup = () => {
             </div>
           </div>
 
-          <div className="text-center mb-5">
+          <div className="text-center mb-4">
             <p className="text-xs text-muted-foreground mb-1">
               Exklusiver Sonderpreis für Quiz-Teilnehmer:
             </p>
@@ -72,6 +72,9 @@ const B4ExitIntentPopup = () => {
               <span className="text-3xl sm:text-4xl font-extrabold text-secondary">29,99&nbsp;€</span>
             </div>
           </div>
+
+          <p className="text-xs text-muted-foreground text-center mb-1">Dein Sonderpreis läuft ab in:</p>
+          <div className="text-center mb-4"><B4CountdownTimer variant="compact" className="text-base" /></div>
 
           <Button
             variant="cta"
