@@ -250,7 +250,7 @@ const ResultPageA4 = () => {
             <p className="text-lg text-primary-foreground/85 mb-6">
               Kein Abo. Kein Mengenzählen. Einmal kaufen, sofort loslegen.
             </p>
-            <p className="text-xl text-primary-foreground/60 line-through mb-1">{PRICING.anchorPrice}&nbsp;{PRICING.currency}</p>
+            <p className="text-xl text-primary-foreground/60 line-through mb-1">96,99&nbsp;€</p>
             <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">{PRICING.price}&nbsp;{PRICING.currency}</p>
             <a
               href={PRICING.digistoreUrl}
@@ -258,7 +258,7 @@ const ResultPageA4 = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-normal text-center rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-auto min-h-[3.5rem] py-3 px-8"
             >
-              Jetzt für {PRICING.price}&nbsp;{PRICING.currency} statt <span className="line-through mx-1">{PRICING.anchorPrice}&nbsp;{PRICING.currency}</span> sichern →
+              Jetzt für {PRICING.price}&nbsp;{PRICING.currency} statt <span className="line-through mx-1">96,99&nbsp;€</span> sichern →
             </a>
             <div className="flex flex-wrap justify-center gap-5 mt-8 text-sm text-primary-foreground/80">
               <span>🔒 Sicherer Checkout</span>
