@@ -1,6 +1,6 @@
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=promo";
 
 const AnbotTestHero = () => {
 

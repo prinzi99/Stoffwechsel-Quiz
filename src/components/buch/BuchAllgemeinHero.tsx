@@ -1,7 +1,7 @@
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 import { trackButtonClick } from "@/hooks/useBonusTracking";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
+const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=promo";
 
 const BuchAllgemeinHero = () => {
   return (
