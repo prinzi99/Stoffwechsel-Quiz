@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Button } from '@/components/ui/button';
-import { ArrowRight, AlertCircle, XCircle, Lightbulb } from 'lucide-react';
+import { ArrowRight, AlertCircle, Lightbulb } from 'lucide-react';
 import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
 import B4ExitIntentPopup from '@/components/buch/B4ExitIntentPopup';
@@ -17,12 +17,6 @@ const ResultPageB4 = () => {
     'Ständiges Frieren, kalte Hände und Füße',
     'Heißhunger auf Süßes oder Fettiges',
     'Training bringt keine sichtbaren Ergebnisse',
-  ];
-
-  const commonMistakes = [
-    'Noch weniger essen – der Körper schaltet weiter runter',
-    'Mehr Sport trotz Erschöpfung – verschärft den Mangel',
-    'Kalorien zählen ohne Nährstoffe zu beachten',
   ];
 
   const learnings = [
@@ -74,10 +68,7 @@ const ResultPageB4 = () => {
           <section className="mb-10">
             <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-8">
               <p className="text-lg text-foreground leading-relaxed">
-                <strong className="text-primary">Dein Ergebnis zeigt kein Willenskraftproblem.</strong>
-              </p>
-              <p className="text-lg text-foreground leading-relaxed mt-3">
-                Dein Körper reagiert auf zu wenig Energie, zu wenig Nährstoffe oder beides gleichzeitig. Viele Menschen versuchen in dieser Situation noch weniger zu essen – doch genau das kann den Stoffwechsel weiter blockieren.
+                <strong className="text-primary">Dein Ergebnis zeigt kein Willenskraftproblem.</strong> Dein Körper reagiert auf zu wenig Energie und Nährstoffe – und hält deshalb an seinen Reserven fest.
               </p>
             </div>
           </section>
@@ -88,10 +79,8 @@ const ResultPageB4 = () => {
               Was das bedeutet
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>Dein Stoffwechsel ist nicht kaputt – er ist <strong className="text-foreground">unterversorgt</strong>. Zu wenig Energie, Fett oder Protein führt dazu, dass dein Körper seine Fettreserven nicht freigibt – sondern verteidigt.</p>
-              <p>Das Ergebnis: Dein Körper denkt, er muss sparen. Er reduziert den Grundumsatz, drosselt die Schilddrüsenaktivität und hält an allem fest, was er hat.</p>
-              <p>Studien zeigen: Schon bei einer Energieverfügbarkeit unter <strong className="text-foreground">30 kcal pro kg fettfreier Masse</strong> geraten hormonelle Prozesse ins Stocken – und dieser Schwellenwert liegt genau da, wo viele ambitionierte Diäter täglich drunter rutschen.</p>
-              <p>Das Problem ist nicht, dass du zu viel isst. Das Problem ist, dass dein Körper zu wenig bekommt, um loszulassen.</p>
+              <p>Dein Stoffwechsel ist nicht kaputt – er ist <strong className="text-foreground">unterversorgt</strong>. Zu wenig Energie, Fett oder Protein führt dazu, dass dein Körper seine Fettreserven nicht freigibt, sondern verteidigt. Er senkt den Grundumsatz, drosselt Hormone und hält an allem fest, was er hat.</p>
+              <p>Das Problem ist nicht, dass du zu viel isst. Das Problem ist, dass dein Körper zu wenig bekommt, um loszulassen. Erst wenn er sich sicher und versorgt fühlt, hört er auf, seine Reserven zu verteidigen.</p>
             </div>
           </section>
 
@@ -109,24 +98,6 @@ const ResultPageB4 = () => {
                 </li>
               ))}
             </ul>
-          </section>
-
-          {/* 5. Common Mistakes (3) */}
-          <section className="mb-10">
-            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <XCircle className="w-5 h-5 text-destructive" />
-              Häufige Fehler
-            </h2>
-            <div className="bg-destructive/5 border border-destructive/10 rounded-2xl p-5">
-              <ul className="space-y-3">
-                {commonMistakes.map((mistake, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <XCircle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" />
-                    <span className="text-foreground">{mistake}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </section>
 
           {/* 6. Outlook */}
