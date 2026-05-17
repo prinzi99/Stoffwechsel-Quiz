@@ -80,6 +80,9 @@ const App = () => {
             <Route path="/buch/angebot000z00-old" element={<BuchAnbotOld />} />
             <Route path="/buch/anbot3g4a3e" element={<BuchAnbotTest />} />
             <Route path="/buch/anbot3g4a3e_fs26" element={<BuchAnbotTestFs26 />} />
+            <Route path="/buch/anbot-prof-a" element={<BuchAnbotProfA />} />
+            <Route path="/buch/anbot-prof-b" element={<BuchAnbotProfB />} />
+            <Route path="/buch/anbot-prof-c" element={<BuchAnbotProfC />} />
             
             
             <Route path="/buch/bonus" element={<BuchBonus />} />
