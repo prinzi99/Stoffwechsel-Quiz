@@ -4,15 +4,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
-import AnbotTestHero from "@/components/anbot-test/AnbotTestHero";
-import AnbotTestProblemAnker from "@/components/anbot-test/AnbotTestProblemAnker";
-import AnbotTestKapitel from "@/components/anbot-test/AnbotTestKapitel";
-import AnbotTestBonus from "@/components/anbot-test/AnbotTestBonus";
-import AnbotTestZielgruppe from "@/components/anbot-test/AnbotTestZielgruppe";
-import AnbotTestSocialProof from "@/components/anbot-test/AnbotTestSocialProof";
-import AnbotTestAutor from "@/components/anbot-test/AnbotTestAutor";
-import AnbotTestKauf from "@/components/anbot-test/AnbotTestKauf";
-import AnbotTestFAQ from "@/components/anbot-test/AnbotTestFAQ";
+import ProfCHero from "@/components/anbot-prof-c/ProfCHero";
+import ProfCProblemAnker from "@/components/anbot-prof-c/ProfCProblemAnker";
+import ProfCKapitel from "@/components/anbot-prof-c/ProfCKapitel";
+import ProfCBonus from "@/components/anbot-prof-c/ProfCBonus";
+import ProfCZielgruppe from "@/components/anbot-prof-c/ProfCZielgruppe";
+import ProfCSocialProof from "@/components/anbot-prof-c/ProfCSocialProof";
+import ProfCAutor from "@/components/anbot-prof-c/ProfCAutor";
+import ProfCKauf from "@/components/anbot-prof-c/ProfCKauf";
+import ProfCFAQ from "@/components/anbot-prof-c/ProfCFAQ";
 
 const BuchAnbotProfC = () => {
   useBonusPageView("/buch/anbot-prof-c", "Buch Angebot Prof C");
@@ -35,15 +35,15 @@ const BuchAnbotProfC = () => {
       <Header />
 
       <main ref={mainRef}>
-        <AnbotTestHero />
-        <AnbotTestProblemAnker />
-        <AnbotTestKapitel />
-        <AnbotTestBonus />
-        <AnbotTestZielgruppe />
-        <AnbotTestSocialProof />
-        <AnbotTestAutor />
-        <AnbotTestKauf />
-        <AnbotTestFAQ />
+        <ProfCHero />
+        <ProfCProblemAnker />
+        <ProfCKapitel />
+        <ProfCBonus />
+        <ProfCZielgruppe />
+        <ProfCSocialProof />
+        <ProfCAutor />
+        <ProfCKauf />
+        <ProfCFAQ />
       </main>
 
       <AngebotStickyCTA />

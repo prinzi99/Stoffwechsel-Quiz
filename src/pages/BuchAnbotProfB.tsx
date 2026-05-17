@@ -4,15 +4,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import AngebotStickyCTA from "@/components/angebot/AngebotStickyCTA";
-import AnbotTestHero from "@/components/anbot-test/AnbotTestHero";
-import AnbotTestProblemAnker from "@/components/anbot-test/AnbotTestProblemAnker";
-import AnbotTestKapitel from "@/components/anbot-test/AnbotTestKapitel";
-import AnbotTestBonus from "@/components/anbot-test/AnbotTestBonus";
-import AnbotTestZielgruppe from "@/components/anbot-test/AnbotTestZielgruppe";
-import AnbotTestSocialProof from "@/components/anbot-test/AnbotTestSocialProof";
-import AnbotTestAutor from "@/components/anbot-test/AnbotTestAutor";
-import AnbotTestKauf from "@/components/anbot-test/AnbotTestKauf";
-import AnbotTestFAQ from "@/components/anbot-test/AnbotTestFAQ";
+import ProfBHero from "@/components/anbot-prof-b/ProfBHero";
+import ProfBProblemAnker from "@/components/anbot-prof-b/ProfBProblemAnker";
+import ProfBKapitel from "@/components/anbot-prof-b/ProfBKapitel";
+import ProfBBonus from "@/components/anbot-prof-b/ProfBBonus";
+import ProfBZielgruppe from "@/components/anbot-prof-b/ProfBZielgruppe";
+import ProfBSocialProof from "@/components/anbot-prof-b/ProfBSocialProof";
+import ProfBAutor from "@/components/anbot-prof-b/ProfBAutor";
+import ProfBKauf from "@/components/anbot-prof-b/ProfBKauf";
+import ProfBFAQ from "@/components/anbot-prof-b/ProfBFAQ";
 
 const BuchAnbotProfB = () => {
   useBonusPageView("/buch/anbot-prof-b", "Buch Angebot Prof B");
@@ -35,15 +35,15 @@ const BuchAnbotProfB = () => {
       <Header />
 
       <main ref={mainRef}>
-        <AnbotTestHero />
-        <AnbotTestProblemAnker />
-        <AnbotTestKapitel />
-        <AnbotTestBonus />
-        <AnbotTestZielgruppe />
-        <AnbotTestSocialProof />
-        <AnbotTestAutor />
-        <AnbotTestKauf />
-        <AnbotTestFAQ />
+        <ProfBHero />
+        <ProfBProblemAnker />
+        <ProfBKapitel />
+        <ProfBBonus />
+        <ProfBZielgruppe />
+        <ProfBSocialProof />
+        <ProfBAutor />
+        <ProfBKauf />
+        <ProfBFAQ />
       </main>
 
       <AngebotStickyCTA />
