@@ -22,6 +22,24 @@ const BuchAnbotProfA = () => {
     mainRef.current?.scrollIntoView({ behavior: "instant" });
   }, []);
 
+  // Digistore24 Promocode – nur auf dieser Seite aktiv
+  useEffect(() => {
+    const s = document.createElement("script");
+    s.src = "https://www.digistore24-scripts.com/service/digistore.js";
+    s.async = true;
+    s.onload = () => {
+      // @ts-ignore
+      if (typeof digistorePromocode === "function") {
+        // @ts-ignore
+        digistorePromocode({ product_id: 693088, adjust_domain: true });
+      }
+    };
+    document.head.appendChild(s);
+    return () => {
+      s.remove();
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
