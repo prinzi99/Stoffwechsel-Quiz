@@ -19,6 +19,8 @@ const config: SalesV2Config = {
   ],
   heroPositive:
     "✅ Dein Stoffwechsel ist nicht kaputt. Er ist heruntergefahren. Und wir können ihn wieder hochfahren.",
+  trustResearchText:
+    "Die Prinzipien in diesem Buch basieren auf wissenschaftlich belegten Mechanismen zu metabolischer Adaptation und Reverse Dieting – keine Trends, keine Hacks.",
   cta1: "JA! Ich will meinen Stoffwechsel wieder hochfahren →",
   problemCards: [
     { icon: "🥗", text: "Du isst 1.200 Kalorien am Tag – manchmal weniger – und nimmst trotzdem nicht ab." },
