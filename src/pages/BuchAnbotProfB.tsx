@@ -4,10 +4,12 @@ const config: SalesV2Config = {
   route: "/buch/anbot-prof-b",
   trackTitle: "Buch Angebot Profil B",
   digistoreUrl: "https://www.digistore24.com/product/675804?voucher=specialdeal",
+  digistoreProductId: 693088,
   overline: "FÜR MENSCHEN MIT UNTERVERSORGTEM STOFFWECHSEL",
   headline: "Du isst zu wenig – und nimmst trotzdem zu. Das ist kein Widerspruch.",
   subheadline:
     "Dein Körper hat gelernt, mit Wenig zu überleben. Jede Diät hat ihm beigebracht, noch sparsamer zu werden. Aber das lässt sich umkehren – mit dem richtigen Wissen.",
+  heroBulletIcon: "🚫",
   heroBullets: [
     "Du isst schon so wenig – und trotzdem tut sich nichts auf der Waage",
     "Du frierst ständig, bist müde und dein Haar wird dünner",
