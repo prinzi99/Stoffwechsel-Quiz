@@ -19,6 +19,7 @@ export type SalesV2Config = {
   headline: string;
   subheadline: string;
   heroBullets: string[];
+  heroBulletIcon?: string; // default ❌
   heroPositive: string;
 
   cta1: string;
@@ -26,11 +27,15 @@ export type SalesV2Config = {
   problemCards: { icon: string; text: string }[];
   problemFooter: string;
 
-  authorP1: string;
-  authorP2: string;
+  /** Legacy – not rendered anymore (authentic 7-paragraph story is hardcoded). */
+  authorP1?: string;
+  authorP2?: string;
 
   planText: string;
   planPhases: { icon: string; title: string; text: string }[];
+
+  /** Trust card 1 – profile-specific research note. */
+  trustResearchText?: string;
 
   imagineList: string[];
   imagineFooter: string;
