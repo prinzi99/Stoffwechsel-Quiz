@@ -19,6 +19,7 @@ export type SalesV2Config = {
   headline: string;
   subheadline: string;
   heroBullets: string[];
+  heroBulletIcon?: string; // default ❌
   heroPositive: string;
 
   cta1: string;
@@ -26,11 +27,15 @@ export type SalesV2Config = {
   problemCards: { icon: string; text: string }[];
   problemFooter: string;
 
-  authorP1: string;
-  authorP2: string;
+  /** Legacy – not rendered anymore (authentic 7-paragraph story is hardcoded). */
+  authorP1?: string;
+  authorP2?: string;
 
   planText: string;
   planPhases: { icon: string; title: string; text: string }[];
+
+  /** Trust card 1 – profile-specific research note. */
+  trustResearchText?: string;
 
   imagineList: string[];
   imagineFooter: string;
@@ -89,13 +94,10 @@ const SalesPageV2 = ({ config }: { config: SalesV2Config }) => {
                 {config.headline}
               </h1>
               <p className="text-xl text-gray-600 mb-5">{config.subheadline}</p>
-              <span className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-8">
-                📚 Auf Basis von 60+ wissenschaftlichen Studien
-              </span>
               <ul className="space-y-3 mb-6">
                 {config.heroBullets.map((b, i) => (
                   <li key={i} className="text-lg flex gap-2">
-                    <span>❌</span>
+                    <span>{config.heroBulletIcon ?? "❌"}</span>
                     <span>{b}</span>
                   </li>
                 ))}
@@ -139,10 +141,10 @@ const SalesPageV2 = ({ config }: { config: SalesV2Config }) => {
         </div>
       </section>
 
-      {/* 4. Autor-Sektion */}
+      {/* 4. Über mich – authentische Geschichte */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8">Deshalb habe ich dieses Buch geschrieben</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Wer schreibt das hier?</h2>
           <div className="flex flex-col sm:flex-row gap-6 items-start">
             <img
               src={philippAutor}
@@ -151,22 +153,58 @@ const SalesPageV2 = ({ config }: { config: SalesV2Config }) => {
             />
             <div>
               <p className="text-xl font-bold">Philipp Prinz</p>
-              <p className="text-gray-600">Stoffwechsel-Experte & Buchautor</p>
+              <p className="text-gray-600">50 Jahre alt, Familienvater, IT-Job</p>
             </div>
           </div>
-          <p className="text-lg text-gray-700 leading-relaxed mt-6">{config.authorP1}</p>
-          <p className="text-lg font-medium mt-4">{config.authorP2}</p>
-          <div className="flex flex-wrap gap-4 mt-6">
-            <span className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
-              📚 60+ Studien ausgewertet
-            </span>
-            <span className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-              🔬 Wissenschaftlich fundiert
-            </span>
-            <span className="bg-purple-50 text-purple-700 px-4 py-2 rounded-lg text-sm font-medium">
-              📖 10 Kapitel + Bonus
-            </span>
-          </div>
+          <p className="text-lg text-gray-700 leading-relaxed mt-6">
+            Mein Name ist Philipp, ich bin 50 Jahre alt – verheiratet, zwei erwachsene Kinder,
+            stressiger IT-Job plus Selbstständigkeit. Ich bin weder Arzt noch
+            Ernährungswissenschaftler und schon gar kein Influencer. Alles in diesem Buch stammt
+            aus eigener Recherche und Praxis – als jemand, der selbst fast jeden Fehler gemacht
+            hat, den das Buch beschreibt. Zu wenig gegessen, zu viel trainiert, eine Diät nach
+            der anderen. Irgendwann habe ich aufgehört, härter zu kämpfen, und angefangen, das
+            System zu verstehen.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            Mein Alltag ist kein Wellness-Retreat, sondern eher Küchentisch-Strategie mit
+            To-Do-Listen, Deadlines und gelegentlichen Versuchen, nebenbei noch ein paar Minuten
+            Sport einzubauen. Als jemand, der gern Probleme analysiert (Berufsrisiko: IT-Mensch),
+            habe ich ausprobiert, falsch gerechnet und nachjustiert. Ironischerweise dachte ich
+            zuerst: Fettverlust = Disziplin + richtige App. So viel zur Demut eines IT-Typen.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            Ich habe fast alle der Fehler selbst durchgemacht: zu wenig essen, zu viel
+            trainieren, akkurate Kalorienzähler-Besessenheit — und trotzdem Stagnation. Keine
+            dramatische Beichte, eher eine Aneinanderreihung guter Absichten mit mäßigem
+            Ergebnis. Meine Frau würde sagen: „Du hast alles ausprobiert, nur nicht die
+            Geduld." Sie hat nicht ganz unrecht.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            Mit der Zeit stellte sich nicht mehr die Frage, was Menschen falsch machen — sondern:
+            Was, wenn die Erklärung unvollständig ist? Genau dieser kleine Gedanke hat alles
+            verändert. Statt noch härter zu probieren, fing ich an, systematisch zu fragen, zu
+            lesen und zu prüfen: Wie reagiert der Körper wirklich auf Stress, auf Hunger, auf
+            Schlafmangel?
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            Meine Recherche war kein akademischer Spaziergang, sondern ein praktischer Baukasten:
+            Studien, Fachartikel, Gespräche mit Praktikern — und das ständige Abgleichen mit dem
+            eigenen Leben (und ja, mit meinen eigenen Fehlversuchen). Ich habe nicht die Weisheit
+            für alle Antworten, aber genug Zusammenhänge verstanden, dass sich bei mir etwas
+            geändert hat.
+          </p>
+          <p className="text-lg font-medium mt-6 bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+            Dieses Buch ist kein Patentrezept und keine Glaubensgemeinschaft. Es ist das Ergebnis
+            eines neugierigen, leicht widerspenstigen Versuchs, ein komplexes System besser zu
+            verstehen — mitten im echten Leben, nicht in einer idealisierten Laborwelt. Ich nehme
+            mich dabei nicht zu ernst, das Thema aber sehr wohl.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mt-4">
+            Am Ende habe ich etwas entdeckt, das mir geholfen hat — nichts Magisches, aber
+            praktikabel und nachvollziehbar. Ich teile es hier offen und direkt, so wie ich es am
+            Küchentisch erzählen würde: ehrlich, ohne falsche Bescheidenheit, und mit der
+            Hoffnung, dass es dir genauso nützen kann wie mir.
+          </p>
         </div>
       </section>
 
@@ -272,9 +310,25 @@ const SalesPageV2 = ({ config }: { config: SalesV2Config }) => {
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: "📚", title: "60+ wissenschaftliche Studien", text: "Jede Empfehlung in diesem Buch basiert auf aktueller Forschung. Keine Trends, keine Hypes – nur Wissenschaft." },
-              { icon: "👨‍🔬", title: "Von Philipp Prinz", text: "Stoffwechsel-Experte mit jahrelanger Erfahrung in der Recherche und Aufbereitung wissenschaftlicher Erkenntnisse für den Alltag." },
-              { icon: "🛡️", title: "14-Tage Geld-zurück-Garantie", text: "Kein Risiko für dich. Wenn du nicht zufrieden bist, bekommst du dein Geld zurück. Ohne Wenn und Aber." },
+              {
+                icon: "🔬",
+                title: "Basiert auf aktueller Stoffwechselforschung",
+                text:
+                  config.trustResearchText ??
+                  "Die Prinzipien in diesem Buch basieren auf wissenschaftlich belegten Mechanismen – keine Trends, keine Hacks, sondern Zusammenhänge, die seit Jahren erforscht sind.",
+              },
+              {
+                icon: "👥",
+                title: "Über 500 Menschen haben das Quiz gemacht",
+                text:
+                  "Über 500 Menschen haben bereits das Stoffwechsel-Quiz gemacht – und verstehen jetzt, warum es bisher nicht funktioniert hat.",
+              },
+              {
+                icon: "🛡️",
+                title: "14-Tage Geld-zurück-Garantie",
+                text:
+                  "Kein Risiko für dich. Wenn du nicht zufrieden bist, bekommst du dein Geld zurück. Ohne Wenn und Aber.",
+              },
             ].map((c, i) => (
               <div key={i} className="bg-white rounded-xl p-6 shadow-sm">
                 <div className="text-4xl mb-3">{c.icon}</div>
@@ -283,9 +337,6 @@ const SalesPageV2 = ({ config }: { config: SalesV2Config }) => {
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-600 mt-8">
-            Wissenschaftlich fundiert • Praxis-erprobt • Tausende zufriedene Leser
-          </p>
         </div>
       </section>
 

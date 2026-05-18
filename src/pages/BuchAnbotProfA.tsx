@@ -17,6 +17,8 @@ const config: SalesV2Config = {
     "Je weniger du isst, desto MEHR scheint dein Körper festzuhalten",
   ],
   heroPositive: "✅ Das ist nicht deine Schuld. Es ist dein Cortisol. Und wir können das ändern.",
+  trustResearchText:
+    "Die Prinzipien in diesem Buch basieren auf wissenschaftlich belegten Mechanismen zur HPA-Achse und Cortisol-Regulation – keine Trends, keine Hacks, sondern Zusammenhänge, die seit Jahren erforscht sind.",
   cta1: "JA! Ich will meinen Stoffwechsel aus dem Stressmodus befreien →",
   problemCards: [
     { icon: "😤", text: "Du zählst Kalorien, trackst jeden Bissen – aber dein Körper macht einfach nicht mit." },

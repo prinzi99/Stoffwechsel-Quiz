@@ -4,10 +4,12 @@ const config: SalesV2Config = {
   route: "/buch/anbot-prof-c",
   trackTitle: "Buch Angebot Profil C",
   digistoreUrl: "https://www.digistore24.com/product/675804?voucher=specialdeal",
+  digistoreProductId: 693088,
   overline: "FÜR MENSCHEN MIT ÜBERANGEPASSTEM STOFFWECHSEL",
   headline: "Dein Körper hat sich an jede Diät angepasst. Deshalb funktioniert keine mehr.",
   subheadline:
     "Du hast alles versucht: Low Carb, Intervallfasten, Keto. Am Anfang klappt es immer – und dann: Plateau. Dein Stoffwechsel hat gelernt, sich gegen Diäten zu wehren. Aber es gibt einen Ausweg.",
+  heroBulletIcon: "🚫",
   heroBullets: [
     "Jede Diät funktioniert 3-4 Wochen – dann ist Schluss",
     "Du kennst ALLE Ernährungsregeln – aber dein Körper spielt nicht mehr mit",
@@ -17,6 +19,8 @@ const config: SalesV2Config = {
   ],
   heroPositive:
     "✅ Dein Stoffwechsel ist nicht kaputt. Er ist überangepasst. Und genau dafür gibt es eine Strategie.",
+  trustResearchText:
+    "Die Prinzipien in diesem Buch basieren auf wissenschaftlich belegten Mechanismen – darunter die bahnbrechende MATADOR-Studie zu strategischen Diätpausen.",
   cta1: "JA! Ich will mein Stoffwechsel-Plateau endlich durchbrechen →",
   problemCards: [
     { icon: "📉", text: "Du startest eine neue Diät, es läuft super – und nach 3-4 Wochen: nichts mehr. Plateau." },
