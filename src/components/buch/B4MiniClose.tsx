@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
+const DIGISTORE_URL = "https://www.digistore24.com/product/693551?voucher=quizrabatt";
 
 interface Props {
   headline?: string;

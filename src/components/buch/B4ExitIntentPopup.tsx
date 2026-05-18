@@ -83,7 +83,7 @@ const B4ExitIntentPopup = () => {
             asChild
           >
             <a
-              href="https://www.digistore24.com/product/675804?voucher=specialdeal"
+              href="https://www.digistore24.com/product/693551?voucher=quizrabatt"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
