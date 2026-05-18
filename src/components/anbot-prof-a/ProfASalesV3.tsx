@@ -140,7 +140,8 @@ const faqs = [
 ];
 
 const ProfASalesV3 = () => {
-  const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const preisFaqIndex = faqs.findIndex((f) => f.q.startsWith("Warum kostet"));
+  const [openFaq, setOpenFaq] = useState<number | null>(preisFaqIndex);
 
   return (
     <div className="bg-white text-gray-900">
@@ -228,58 +229,7 @@ const ProfASalesV3 = () => {
         </div>
       </section>
 
-      {/* 4. AKTIONSPLAN HIGHLIGHT */}
-      <section className="bg-white py-16">
-        <div className="max-w-5xl mx-auto px-4">
-          <div
-            className="rounded-2xl shadow-2xl p-8 md:p-12"
-            style={{
-              background: "linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%)",
-              border: "3px solid #F59E0B",
-            }}
-          >
-            <span className="inline-block bg-orange-600 text-white px-4 py-2 rounded-full font-bold text-sm uppercase tracking-wide">
-              🎯 DEIN PERSÖNLICHER AKTIONSPLAN
-            </span>
-            <h2 className="text-3xl font-bold mt-6 text-gray-900">
-              Nicht irgendein Plan. DEIN Plan.
-            </h2>
-            <p className="text-lg text-gray-700 mt-4">
-              Basierend auf deiner Stoffwechsel-Analyse erhältst du einen maßgeschneiderten Aktionsplan für deinen gestressten Stoffwechsel. 10 Seiten, individuell auf dein Profil zugeschnitten. Kein Rätselraten. Kein 'probier mal dies'. Sondern Schritt-für-Schritt Anweisungen, die auf DEINE Situation abgestimmt sind.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              {[
-                {
-                  icon: "📋",
-                  title: "Phase 1: Cortisol-Reset",
-                  text: "Die ersten Wochen: Wir beruhigen deine HPA-Achse und stoppen den Teufelskreis.",
-                },
-                {
-                  icon: "🔥",
-                  title: "Phase 2: Stoffwechsel-Aktivierung",
-                  text: "Dein Körper lernt wieder, Fett als Energie zu nutzen statt einzulagern.",
-                },
-                {
-                  icon: "🎯",
-                  title: "Phase 3: Nachhaltige Ergebnisse",
-                  text: "Dein neuer Stoffwechsel-Rhythmus wird zur Gewohnheit.",
-                },
-              ].map((p, i) => (
-                <div key={i} className="bg-white/80 p-6 rounded-xl text-center">
-                  <div className="text-3xl mb-2">{p.icon}</div>
-                  <h3 className="font-bold text-lg">{p.title}</h3>
-                  <p className="text-gray-600 mt-2">{p.text}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-center mt-8 text-lg font-semibold text-gray-900">
-              Dieser 10-seitige Aktionsplan allein ist 27€ wert – du bekommst ihn INKLUSIVE.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 5. VALUE STACK + PREIS-BOX */}
+      {/* 4. VALUE STACK + PREIS-BOX (nach oben verschoben) */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-10">
@@ -330,10 +280,70 @@ const ProfASalesV3 = () => {
               Einmaliger Preis • Kein Abo • Sofortiger Download
             </p>
           </div>
+
+          {/* Zusatz-CTA direkt unter Value Stack – schließt CTA-Lücke */}
+          <div className="max-w-lg mx-auto text-center mt-10">
+            <p className="text-sm text-gray-500 mb-3">67% Ersparnis nur für Quiz-Teilnehmer</p>
+            <CtaLink
+              label="Value Stack Lücken-CTA"
+              className="block w-full bg-green-600 hover:bg-green-700 text-white text-lg font-bold py-4 px-8 rounded-xl text-center shadow-lg"
+            >
+              Jetzt für 29,99€ sichern
+            </CtaLink>
+          </div>
         </div>
       </section>
 
-      {/* 6. CTA #2 */}
+      {/* 5. AKTIONSPLAN HIGHLIGHT (= "Was du bekommst") */}
+      <section className="bg-white py-16">
+        <div className="max-w-5xl mx-auto px-4">
+          <div
+            className="rounded-2xl shadow-2xl p-8 md:p-12"
+            style={{
+              background: "linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%)",
+              border: "3px solid #F59E0B",
+            }}
+          >
+            <span className="inline-block bg-orange-600 text-white px-4 py-2 rounded-full font-bold text-sm uppercase tracking-wide">
+              🎯 DEIN PERSÖNLICHER AKTIONSPLAN
+            </span>
+            <h2 className="text-3xl font-bold mt-6 text-gray-900">
+              Nicht irgendein Plan. DEIN Plan.
+            </h2>
+            <p className="text-lg text-gray-700 mt-4">
+              Basierend auf deiner Stoffwechsel-Analyse erhältst du einen maßgeschneiderten Aktionsplan für deinen gestressten Stoffwechsel. 10 Seiten, individuell auf dein Profil zugeschnitten. Kein Rätselraten. Kein 'probier mal dies'. Sondern Schritt-für-Schritt Anweisungen, die auf DEINE Situation abgestimmt sind.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+              {[
+                {
+                  icon: "📋",
+                  title: "Phase 1: Cortisol-Reset",
+                  text: "Die ersten Wochen: Wir beruhigen deine HPA-Achse und stoppen den Teufelskreis.",
+                },
+                {
+                  icon: "🔥",
+                  title: "Phase 2: Stoffwechsel-Aktivierung",
+                  text: "Dein Körper lernt wieder, Fett als Energie zu nutzen statt einzulagern.",
+                },
+                {
+                  icon: "🎯",
+                  title: "Phase 3: Nachhaltige Ergebnisse",
+                  text: "Dein neuer Stoffwechsel-Rhythmus wird zur Gewohnheit.",
+                },
+              ].map((p, i) => (
+                <div key={i} className="bg-white/80 p-6 rounded-xl text-center">
+                  <div className="text-3xl mb-2">{p.icon}</div>
+                  <h3 className="font-bold text-lg">{p.title}</h3>
+                  <p className="text-gray-600 mt-2">{p.text}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-center mt-8 text-lg font-semibold text-gray-900">
+              Dieser 10-seitige Aktionsplan allein ist 27€ wert – du bekommst ihn INKLUSIVE.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="bg-green-700 py-12">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <p className="text-white text-2xl font-bold">
@@ -447,6 +457,20 @@ const ProfASalesV3 = () => {
           </p>
         </div>
       </section>
+
+      {/* STICKY MOBILE CTA */}
+      <div className="md:hidden h-20" aria-hidden="true" />
+      <div
+        className="fixed bottom-0 left-0 right-0 p-3 bg-white md:hidden z-50"
+        style={{ boxShadow: "0 -2px 10px rgba(0,0,0,0.1)" }}
+      >
+        <CtaLink
+          label="Sticky Mobile CTA"
+          className="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg transition"
+        >
+          Jetzt für 29,99€ sichern
+        </CtaLink>
+      </div>
     </div>
   );
 };
