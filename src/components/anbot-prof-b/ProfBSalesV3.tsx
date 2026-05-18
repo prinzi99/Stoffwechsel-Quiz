@@ -468,6 +468,9 @@ const ProfBSalesV3 = () => {
         </div>
       </section>
 
+      {/* FOOTER */}
+      <Footer />
+
       {/* STICKY MOBILE CTA */}
       {showSticky && (
         <>
