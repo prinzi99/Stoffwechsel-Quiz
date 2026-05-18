@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 import philippFoto from "@/assets/philipp-autor.png";
@@ -142,6 +142,24 @@ const faqs = [
 const ProfASalesV3 = () => {
   const preisFaqIndex = faqs.findIndex((f) => f.q.startsWith("Warum kostet"));
   const [openFaq, setOpenFaq] = useState<number | null>(preisFaqIndex);
+  const [showSticky, setShowSticky] = useState(false);
+  const firstCtaRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = firstCtaRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShowSticky(true);
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
 
   return (
     <div className="bg-white text-gray-900">
@@ -159,7 +177,7 @@ const ProfASalesV3 = () => {
               <p className="text-xl text-gray-600 mt-4 max-w-2xl">
                 Cortisol regiert deinen Stoffwechsel. Jede Diät hat den Stress verschlimmert. Aber dein Körper WILL heilen – er braucht nur den richtigen Plan.
               </p>
-              <div className="mt-8">
+              <div className="mt-8" ref={firstCtaRef}>
                 <CtaLink
                   label="Hero CTA"
                   className="inline-block bg-green-600 hover:bg-green-700 text-white text-xl font-bold py-5 px-10 rounded-xl shadow-xl transition-all duration-200"
