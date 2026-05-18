@@ -9,6 +9,7 @@ import B4StickyDesktopCTA from '@/components/buch/B4StickyDesktopCTA';
 import B4InactivityPopup from '@/components/buch/B4InactivityPopup';
 import B4MiniClose from '@/components/buch/B4MiniClose';
 import B4CountdownTimer from '@/components/buch/B4CountdownTimer';
+import ActionPlanHighlight from '@/components/buch/ActionPlanHighlight';
 
 const ResultPageB4 = () => {
   const typicalSigns = [
