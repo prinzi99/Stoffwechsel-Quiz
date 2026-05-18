@@ -58,7 +58,7 @@ const ResultPageA4 = () => {
             <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
           </a>
         </Button>
-        <p className="text-sm text-muted-foreground mt-3">Über 2.400 Leser vertrauen bereits auf dieses Buch</p>
+        
 
         {/* Trust Signals */}
         <div className="flex flex-col md:flex-row flex-wrap justify-center gap-2 md:gap-5 mt-4 text-xs md:text-sm text-muted-foreground">
