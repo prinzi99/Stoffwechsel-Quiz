@@ -73,7 +73,7 @@ const valueItems = [
   },
   {
     icon: "🎯",
-    title: "Persönlicher Aktionsplan – Profil A",
+    title: "Persönlicher Lifestyle Aktionsplan",
     desc: "10 Seiten, individuell auf deinen gestressten Stoffwechsel zugeschnitten.",
     value: "Wert: 27,00€",
     free: false,
