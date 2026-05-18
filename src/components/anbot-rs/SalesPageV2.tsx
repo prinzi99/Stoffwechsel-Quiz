@@ -94,13 +94,10 @@ const SalesPageV2 = ({ config }: { config: SalesV2Config }) => {
                 {config.headline}
               </h1>
               <p className="text-xl text-gray-600 mb-5">{config.subheadline}</p>
-              <span className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-8">
-                📚 Auf Basis von 60+ wissenschaftlichen Studien
-              </span>
               <ul className="space-y-3 mb-6">
                 {config.heroBullets.map((b, i) => (
                   <li key={i} className="text-lg flex gap-2">
-                    <span>❌</span>
+                    <span>{config.heroBulletIcon ?? "❌"}</span>
                     <span>{b}</span>
                   </li>
                 ))}
