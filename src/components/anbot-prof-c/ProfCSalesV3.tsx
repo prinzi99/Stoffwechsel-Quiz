@@ -359,23 +359,20 @@ const ProfCSalesV3 = () => {
       </section>
 
       {/* STICKY MOBILE CTA */}
-      <div className="md:hidden h-20" aria-hidden="true" />
+      <div className="md:hidden h-24" aria-hidden="true" />
       <div
-        className="fixed bottom-0 left-0 right-0 p-3 bg-white border-t border-gray-200 md:hidden z-50"
+        className="fixed bottom-0 left-0 right-0 p-3 bg-white md:hidden z-50"
         style={{ boxShadow: "0 -2px 10px rgba(0,0,0,0.1)" }}
       >
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex flex-col">
-            <span className="font-bold text-emerald-600 text-lg leading-none">29,99€</span>
-            <span className="text-gray-400 line-through text-xs">statt 96,99€</span>
-          </div>
-          <CtaLink
-            label="Sticky Mobile CTA"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg text-sm whitespace-nowrap"
-          >
-            Jetzt sichern →
-          </CtaLink>
-        </div>
+        <p className="text-center text-xs text-gray-500 mb-1">
+          Nur <span className="line-through">96,99€</span> <span className="font-bold text-gray-700">29,99€</span>
+        </p>
+        <CtaLink
+          label="Sticky Mobile CTA"
+          className="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg transition"
+        >
+          Jetzt für 29,99€ sichern
+        </CtaLink>
       </div>
     </div>
   );
