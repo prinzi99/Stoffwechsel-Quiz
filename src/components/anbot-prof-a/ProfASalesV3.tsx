@@ -110,6 +110,10 @@ const valueItems = [
 
 const faqs = [
   {
+    q: "Warum kostet es nur 29,99€?",
+    a: "Weil ich möchte, dass der Preis keine Ausrede ist. Der Gesamtwert liegt bei 96,99€ – aber mir ist wichtiger, dass möglichst viele Menschen Zugang bekommen, als den höchsten Preis zu erzielen.",
+  },
+  {
     q: "Funktioniert das auch bei mir?",
     a: "Wenn dein Stoffwechsel-Quiz Profil A (Gestresster Stoffwechsel) ergeben hat, dann ist dieses Buch und der dazugehörige Aktionsplan speziell für deine Situation entwickelt. Die Empfehlungen basieren auf wissenschaftlichen Erkenntnissen über die HPA-Achse und Cortisol-Regulation.",
   },
@@ -132,10 +136,6 @@ const faqs = [
   {
     q: "Wie bekomme ich Zugang?",
     a: "Sofort nach der Bestellung. Du erhältst das E-Book, den Aktionsplan und alle Bonusmaterialien als Download. Plus Zugang zum Online-Bonusbereich.",
-  },
-  {
-    q: "Warum kostet es nur 29,99€?",
-    a: "Weil ich möchte, dass der Preis keine Ausrede ist. Der Gesamtwert liegt bei 96,99€ – aber mir ist wichtiger, dass möglichst viele Menschen Zugang bekommen, als den höchsten Preis zu erzielen.",
   },
 ];
 
