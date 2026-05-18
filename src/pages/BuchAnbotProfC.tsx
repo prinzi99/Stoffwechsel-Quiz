@@ -19,6 +19,8 @@ const config: SalesV2Config = {
   ],
   heroPositive:
     "✅ Dein Stoffwechsel ist nicht kaputt. Er ist überangepasst. Und genau dafür gibt es eine Strategie.",
+  trustResearchText:
+    "Die Prinzipien in diesem Buch basieren auf wissenschaftlich belegten Mechanismen – darunter die bahnbrechende MATADOR-Studie zu strategischen Diätpausen.",
   cta1: "JA! Ich will mein Stoffwechsel-Plateau endlich durchbrechen →",
   problemCards: [
     { icon: "📉", text: "Du startest eine neue Diät, es läuft super – und nach 3-4 Wochen: nichts mehr. Plateau." },
