@@ -9,6 +9,7 @@ import B4StickyDesktopCTA from '@/components/buch/B4StickyDesktopCTA';
 import B4InactivityPopup from '@/components/buch/B4InactivityPopup';
 import B4MiniClose from '@/components/buch/B4MiniClose';
 import B4CountdownTimer from '@/components/buch/B4CountdownTimer';
+import ActionPlanHighlight from '@/components/buch/ActionPlanHighlight';
 
 const ResultPageB4 = () => {
   const typicalSigns = [
@@ -134,6 +135,9 @@ const ResultPageB4 = () => {
               </div>
             </div>
           </section>
+
+          {/* Aktionsplan Highlight */}
+          <ActionPlanHighlight profile="B" />
 
           {/* 8. Kapitel-Preview */}
           <section className="mb-8 bg-muted/50 rounded-2xl p-5 md:p-6">

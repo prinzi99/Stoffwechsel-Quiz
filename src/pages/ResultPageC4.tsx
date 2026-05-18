@@ -9,6 +9,7 @@ import C4StickyDesktopCTA from '@/components/buch/C4StickyDesktopCTA';
 import C4InactivityPopup from '@/components/buch/C4InactivityPopup';
 import C4ExitIntentPopup from '@/components/buch/C4ExitIntentPopup';
 import C4CountdownTimer from '@/components/buch/C4CountdownTimer';
+import ActionPlanHighlight from '@/components/buch/ActionPlanHighlight';
 
 const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
 
@@ -153,6 +154,9 @@ const ResultPageC4 = () => {
               </div>
             </div>
           </section>
+
+          {/* Aktionsplan Highlight */}
+          <ActionPlanHighlight profile="C" />
 
           {/* 7. Kapitel-Preview */}
           <section className="mb-8 bg-muted/50 rounded-2xl p-5 md:p-6">
