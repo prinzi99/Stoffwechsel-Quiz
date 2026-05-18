@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import B4CountdownTimer from "./B4CountdownTimer";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
+const DIGISTORE_URL = "https://www.digistore24.com/product/693551?voucher=quizrabatt";
 
 /**
  * Mobile-only sticky bottom CTA for /k93fda-4.

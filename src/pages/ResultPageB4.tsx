@@ -244,7 +244,7 @@ const ResultPageB4 = () => {
                   className="w-full h-auto min-h-[4.5rem] whitespace-normal leading-snug text-sm md:text-base py-4 px-4"
                   asChild
                 >
-                  <a href="https://www.digistore24.com/product/675804?voucher=specialdeal" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.digistore24.com/product/693551?voucher=quizrabatt" target="_blank" rel="noopener noreferrer">
                     Jetzt für 29,99&nbsp;€ statt 96,99&nbsp;€ sichern →
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
                   </a>
@@ -294,7 +294,7 @@ const ResultPageB4 = () => {
             <p className="text-xl text-primary-foreground/60 line-through mb-1">96,99&nbsp;€</p>
             <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">29,99&nbsp;€</p>
             <a
-              href="https://www.digistore24.com/product/675804?voucher=specialdeal"
+              href="https://www.digistore24.com/product/693551?voucher=quizrabatt"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-normal text-center rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-auto min-h-[3.5rem] py-3 px-8"
