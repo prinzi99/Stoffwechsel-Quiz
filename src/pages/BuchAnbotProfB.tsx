@@ -1,94 +1,64 @@
-import RsSalesPage, { RsConfig } from "@/components/anbot-rs/RsSalesPage";
+import SalesPageV2, { SalesV2Config } from "@/components/anbot-rs/SalesPageV2";
 
-const config: RsConfig = {
+const config: SalesV2Config = {
   route: "/buch/anbot-prof-b",
-  trackTitle: "Buch Angebot Prof B",
-  storageKey: "profB_timer_end",
+  trackTitle: "Buch Angebot Profil B",
   digistoreUrl: "https://www.digistore24.com/product/675804?voucher=specialdeal",
-  accent: "blue",
-  heroGradientFrom: "from-white",
-  heroGradientTo: "to-blue-50",
-  overline: "FÜR FRAUEN MIT UNTERVERSORGTEM STOFFWECHSEL",
-  headline: "Dein Körper hungert – obwohl du isst.",
+  overline: "FÜR MENSCHEN MIT UNTERVERSORGTEM STOFFWECHSEL",
+  headline: "Du isst zu wenig – und nimmst trotzdem zu. Das ist kein Widerspruch.",
   subheadline:
-    "Jahrelang zu wenig gegessen. Dein Stoffwechsel hat auf Sparflamme geschaltet. Jede Kalorie wird gehortet statt verbrannt. Aber mit der richtigen Strategie wacht dein Stoffwechsel wieder auf.",
+    "Dein Körper hat gelernt, mit Wenig zu überleben. Jede Diät hat ihm beigebracht, noch sparsamer zu werden. Aber das lässt sich umkehren – mit dem richtigen Wissen.",
   heroBullets: [
-    "Du isst schon so wenig – und nimmst TROTZDEM nicht ab",
-    "800, 1000, 1200 Kalorien... egal wie wenig, es passiert nichts",
-    "Du frierst ständig, bist müde und hast keinen Antrieb mehr",
-    "Schon ein 'normales' Essen am Wochenende zeigt sich sofort auf der Waage",
-    "Du hast Angst, MEHR zu essen – weil du dann sofort zunimmst",
+    "Du isst schon so wenig – und trotzdem tut sich nichts auf der Waage",
+    "Du frierst ständig, bist müde und dein Haar wird dünner",
+    "Jede Diät funktioniert 2 Wochen – dann geht nichts mehr",
+    "Du traust dich nicht, MEHR zu essen – obwohl es vielleicht genau das Richtige wäre",
+    "Dein Stoffwechsel fühlt sich an wie... eingeschlafen",
   ],
-  heroPositive: "✅ Dein Körper ist nicht kaputt. Er ist im Sparmodus. Und wir wissen genau, wie man ihn da rausholt.",
-  cta1: "JA! Ich will meinen Stoffwechsel aus dem Sparmodus aufwecken →",
-  urgencyText: "Sonderaktion endet in [TIMER] – Spare 69% auf dein Stoffwechsel-Reaktivierungs-Paket!",
-  problemTitle: "Kennst du diesen Teufelskreis?",
+  heroPositive:
+    "✅ Dein Stoffwechsel ist nicht kaputt. Er ist heruntergefahren. Und wir können ihn wieder hochfahren.",
+  cta1: "JA! Ich will meinen Stoffwechsel wieder hochfahren →",
   problemCards: [
-    { icon: "🥗", text: "Du isst einen Salat zum Mittagessen und denkst: 'Weniger geht nicht.' Aber die Waage sagt trotzdem +200g." },
-    { icon: "🥶", text: "Dir ist ständig kalt. Deine Hände und Füße fühlen sich an wie Eiszapfen – selbst im Sommer." },
-    { icon: "😰", text: "Du traust dich nicht, mehr zu essen. Die Angst vor der Waage kontrolliert jeden Bissen." },
-    { icon: "💤", text: "Deine Energie reicht gerade so für den Alltag. Sport? Hobbys? Freunde treffen? Fehlanzeige." },
+    { icon: "🥗", text: "Du isst 1.200 Kalorien am Tag – manchmal weniger – und nimmst trotzdem nicht ab." },
+    { icon: "🥶", text: "Dir ist ständig kalt, deine Energie ist am Boden und du fühlst dich ständig erschöpft." },
+    { icon: "😫", text: "Jede Diät hat kurz funktioniert – und dann kam der Stillstand. Oder sogar mehr Gewicht." },
+    { icon: "😨", text: "Der Gedanke, MEHR zu essen, macht dir Angst – obwohl du weißt, dass etwas nicht stimmt." },
   ],
   problemFooter:
-    "Das ist KEIN Mangel an Disziplin. Dein Stoffwechsel ist im Sparmodus – er verbrennt so wenig wie möglich, weil er denkt, eine Hungersnot wäre ausgebrochen.",
-  planBadge: "🎯 Dein persönlicher Aktionsplan",
-  planTitle: "Dein Reverse-Diet-Plan: Mehr essen, trotzdem abnehmen.",
-  planIntro:
-    "Klingt verrückt? Ist es nicht. Basierend auf deiner Analyse haben wir einen maßgeschneiderten 90-Tage-Plan erstellt, der deinen Stoffwechsel Schritt für Schritt aus dem Sparmodus holt. Wissenschaftlich fundiert. Tausendfach bewährt.",
+    "Das Problem ist NICHT, dass du zu viel isst. Das Problem ist, dass dein Körper im Sparmodus steckt – und jede weitere Diät macht es schlimmer.",
+  authorP1:
+    "Es gibt kaum etwas Frustrierenderes als zu wenig zu essen und trotzdem nicht abzunehmen. Ich habe über 60 wissenschaftliche Studien zum Thema metabolische Adaptation und Reverse Dieting ausgewertet. Das Ergebnis: Dein Körper ist nicht kaputt – er hat sich nur an zu wenig Energie angepasst. Und das lässt sich Schritt für Schritt umkehren.",
+  authorP2:
+    "Dieses Buch zeigt dir den Weg aus dem Sparmodus. Keine Crash-Diät, kein 'iss noch weniger'. Sondern ein wissenschaftlich fundierter Ansatz, der deinen Grundumsatz wieder anhebt – ohne unkontrollierte Gewichtszunahme.",
+  planText:
+    "Basierend auf deiner Stoffwechsel-Analyse erhältst du einen maßgeschneiderten Aktionsplan für deinen unterversorgten Stoffwechsel. 10 Seiten, individuell auf dein Profil zugeschnitten. Mit einem klaren Reverse-Dieting-Protokoll, das deinen Grundumsatz Schritt für Schritt wieder anhebt.",
   planPhases: [
-    { icon: "🔓", title: "Phase 1: Stoffwechsel entsperren", text: "Die ersten 30 Tage: Wir erhöhen behutsam deine Kalorien – ohne Gewichtszunahme." },
-    { icon: "🔥", title: "Phase 2: Verbrennungs-Boost", text: "Tag 31-60: Dein Grundumsatz steigt. Du isst mehr und der Körper beginnt, Fett freizugeben." },
-    { icon: "🚀", title: "Phase 3: Volle Power", text: "Tag 61-90: Dein Stoffwechsel läuft auf Hochtouren. Du isst normal und nimmst ab." },
+    { icon: "📋", title: "Phase 1: Stabilisierung", text: "Wir ermitteln dein aktuelles Kalorienniveau und stabilisieren deinen Stoffwechsel." },
+    { icon: "🔥", title: "Phase 2: Kontrollierter Aufbau", text: "Schrittweise Kalorienerhöhung – so, dass dein Körper verbrennt statt einlagert." },
+    { icon: "🎯", title: "Phase 3: Neues Gleichgewicht", text: "Dein Grundumsatz ist wieder auf einem gesunden Level. Abnehmen wird möglich." },
   ],
-  cta2: "Jetzt Reverse-Diet-Plan + Buch sichern – nur 29,99€ statt 96,99€ →",
   imagineList: [
-    "...du isst zum ersten Mal seit Jahren ein normales Mittagessen – OHNE schlechtes Gewissen",
-    "...du merkst, dass dir warm ist. Einfach so. Dein Körper produziert wieder Wärme.",
-    "...die Waage zeigt weniger an, obwohl du gestern Pizza gegessen hast",
-    "...du hast abends Energie für dich selbst – nicht nur für den Alltag",
-    "...du sagst 'Ja' zum Restaurantbesuch, ohne vorher 3 Stunden die Speisekarte zu googeln",
-    "...deine Freundin fragt: 'Wie kannst du SO VIEL essen und SO GUT aussehen?!'",
+    "...du isst endlich wieder eine normale Menge – und nimmst dabei sogar ab",
+    "...dir ist nicht mehr ständig kalt und du hast wieder Energie für den Tag",
+    "...du musst nicht mehr jede Kalorie zählen, weil dein Stoffwechsel wieder arbeitet",
+    "...die Angst vor dem Essen ist weg – du genießt Mahlzeiten wieder",
+    "...du verstehst endlich, warum 'weniger essen' bei dir nicht funktioniert hat",
+    "...du fühlst dich wieder lebendig, warm und voller Energie",
   ],
-  imagineFooter: "Das passiert, wenn dein Stoffwechsel endlich wieder die Energie bekommt, die er braucht.",
-  valueRows: [
-    { label: "Das komplette Stoffwechsel-Buch", value: "29,99€" },
-    { label: "Dein persönlicher 90-Tage Reverse-Diet-Plan (Profil B)", value: "47,00€" },
-    { label: "Detaillierte Stoffwechsel-Analyse", value: "20,00€" },
+  imagineFooter:
+    "Das ist keine Fantasie. Das ist das Ergebnis, wenn dein Stoffwechsel wieder genug Energie bekommt.",
+  faq: [
+    { q: "Funktioniert das auch bei mir?", a: "Wenn dein Stoffwechsel-Quiz Profil B (Unterversorgter Stoffwechsel) ergeben hat, dann ist dieses Buch und der dazugehörige Aktionsplan speziell für deine Situation entwickelt. Die Empfehlungen basieren auf wissenschaftlichen Erkenntnissen über metabolische Adaptation und Reverse Dieting." },
+    { q: "Nehme ich zu, wenn ich mehr esse?", a: "Das ist die häufigste Sorge – und gleichzeitig der wichtigste Punkt. Der Aktionsplan zeigt dir, wie du kontrolliert und schrittweise mehr essen kannst, OHNE unkontrolliert zuzunehmen. Reverse Dieting ist eine wissenschaftlich fundierte Methode genau dafür." },
+    { q: "Was ist der Aktionsplan genau?", a: "Ein 10-seitiges PDF, individuell auf Profil B (Unterversorgter Stoffwechsel) zugeschnitten. Mit einem Reverse-Dieting-Protokoll, konkreten Kalorienstufen und einem Phasenplan, den du sofort umsetzen kannst." },
+    { q: "Was wenn es mir nicht hilft?", a: "Dann nutze die 14-Tage Geld-zurück-Garantie. Eine einfache E-Mail genügt, und du bekommst dein Geld zurück. Ohne Wenn und Aber." },
+    { q: "Brauche ich Vorkenntnisse?", a: "Nein. Das Buch erklärt alles verständlich und Schritt für Schritt. Egal ob du dich zum ersten Mal mit dem Thema Stoffwechsel beschäftigst oder schon vieles ausprobiert hast." },
+    { q: "Wie bekomme ich Zugang?", a: "Sofort nach der Bestellung. Du erhältst das E-Book, den Aktionsplan und alle Bonusmaterialien als Download. Plus Zugang zum Online-Bonusbereich." },
   ],
-  testimonialTitle: "Das sagen Frauen, die ihren Stoffwechsel aufgeweckt haben:",
-  testimonials: [
-    {
-      initials: "JR", avatarBg: "bg-blue-500", name: "Julia R., 35",
-      text: "Ich habe vorher 1.000 Kalorien gegessen und zugenommen. Jetzt esse ich 1.800 und nehme ab. Klingt unmöglich, ist es aber nicht. Der Reverse-Diet-Plan hat mein Leben verändert.",
-      badge: "-7 kg bei MEHR Essen", badgeColor: "bg-green-100 text-green-700",
-    },
-    {
-      initials: "NW", avatarBg: "bg-indigo-500", name: "Nadine W., 44",
-      text: "Mir war jahrelang kalt. Müde. Antriebslos. Vier Wochen nach dem Start hatte ich zum ersten Mal wieder warme Hände. Nach 8 Wochen war ich ein neuer Mensch.",
-      badge: "Energie zurück nach 4 Wochen", badgeColor: "bg-blue-100 text-blue-700",
-    },
-    {
-      initials: "BF", avatarBg: "bg-emerald-500", name: "Birgit F., 52",
-      text: "Meine Ärztin konnte es nicht glauben: Schilddrüsenwerte normalisiert, 5 kg weniger, und ich esse endlich wieder wie ein normaler Mensch. Danke, dass ihr mir die Angst vor dem Essen genommen habt.",
-      badge: "Schilddrüse normalisiert", badgeColor: "bg-purple-100 text-purple-700",
-    },
-  ],
-  cta3: "Ich will meinen Stoffwechsel aufwecken! → Jetzt für nur 29,99€",
-  cta3Sub: "Über 2.000 Frauen vertrauen uns bereits",
-  objections: [
-    { q: "Wenn ich mehr esse, nehme ich sofort zu...", a: "Das passiert nur, wenn du es FALSCH machst. Ein Reverse Diet ist keine Fressattacke – es ist ein wissenschaftliches Protokoll, das deinen Stoffwechsel Schritt für Schritt hochfährt. Unser Plan zeigt dir EXAKT, wie viel mehr du wann essen darfst, damit dein Körper mitkommt." },
-    { q: "Mein Arzt sagt, ich soll einfach weniger essen...", a: "Viele Ärzte sind leider nicht auf metabolische Adaptation spezialisiert. Dein Körper hat sich an die niedrige Kalorienzufuhr ANGEPASST. Noch weniger essen verschlimmert das Problem. Wir zeigen dir den Weg raus – mit Studien belegt." },
-    { q: "Ich schaffe es nicht, mehr zu essen – ich habe gar keinen Hunger...", a: "Genau DAS ist ein Symptom des Sparmodus! Dein Körper hat das Hungergefühl herunterreguliert. Im Plan zeigen wir dir, wie du deinen Appetit sanft wieder aktivierst – ohne dich vollzustopfen." },
-    { q: "29,99€ ist mir zu viel...", a: "Eine Stunde beim Ernährungsberater kostet 80-150€ – und der kennt dein Stoffwechsel-Profil nicht. Für weniger als ein Abendessen bekommst du einen kompletten, auf DICH zugeschnittenen 90-Tage-Plan. Plus 30-Tage-Geld-zurück-Garantie." },
-  ],
-  finalTitle: "Dein Körper wartet auf dein Signal.",
-  finalText:
-    "Seit Monaten – vielleicht Jahren – hungert dein Stoffwechsel. Er WILL mehr. Er BRAUCHT mehr. Aber er braucht es auf die RICHTIGE Art. Gibst du ihm diese Chance?",
-  finalCta: "JA – MEIN STOFFWECHSEL VERDIENT DAS! Jetzt für 29,99€ statt 96,99€ →",
-  finalTimerColor: "text-yellow-400",
-  ps: "Weißt du, was das Traurigste ist? Dein Körper WILL abnehmen. Er KANN abnehmen. Aber er bekommt einfach nicht genug Energie, um den Stoffwechsel hochzufahren. Es ist, als würdest du versuchen, ein Auto zu fahren, ohne zu tanken. Gib deinem Körper endlich den Treibstoff, den er braucht.",
-  pps: "Der Aktionsplan ist auf 500 Exemplare limitiert, weil wir jede Analyse manuell überprüfen.",
+  finalTitle: "Bereit, deinen Stoffwechsel aus dem Sparmodus zu befreien?",
+  psText:
+    "Dein Körper ist nicht das Problem. Er hat nur gelernt, mit zu wenig auszukommen. Dieses Buch und dein persönlicher Aktionsplan zeigen dir, wie du das Schritt für Schritt umkehrst – wissenschaftlich fundiert, verständlich erklärt und sofort umsetzbar. Für 29,99€ statt 96,99€. Mit 14-Tage Geld-zurück-Garantie.",
 };
 
-const BuchAnbotProfB = () => <RsSalesPage config={config} />;
+const BuchAnbotProfB = () => <SalesPageV2 config={config} />;
 export default BuchAnbotProfB;
