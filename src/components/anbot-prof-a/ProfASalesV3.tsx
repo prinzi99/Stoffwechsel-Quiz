@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
+import Footer from "@/components/landing/Footer";
 import bookCover from "@/assets/book-cover-mockup2.jpeg";
 import philippFoto from "@/assets/philipp-autor.png";
 import { trackButtonClick } from "@/hooks/useBonusTracking";
@@ -464,6 +465,9 @@ const ProfASalesV3 = () => {
           </p>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <Footer />
 
       {/* STICKY MOBILE CTA */}
       {showSticky && (
