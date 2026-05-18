@@ -4,6 +4,7 @@ import { ArrowRight, AlertCircle, Lightbulb, Check, Flame } from 'lucide-react';
 import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
 import A4ExitIntentPopup from '@/components/buch/A4ExitIntentPopup';
+import ActionPlanHighlight from '@/components/buch/ActionPlanHighlight';
 import A4StickyMobileCTA from '@/components/buch/A4StickyMobileCTA';
 import A4InactivityPopup from '@/components/buch/A4InactivityPopup';
 import CountdownTimer from '@/components/buch/CountdownTimer';
@@ -166,26 +167,34 @@ const ResultPageA4 = () => {
             </div>
           </section>
 
-          {/* 6. Kapitel-Preview */}
-          <section className="mb-8 bg-muted/50 rounded-2xl p-5 md:p-6">
-            <h3 className="text-lg font-bold text-foreground mb-4 text-center">
-              Was dich in diesem Buch erwartet:
-            </h3>
-            <ul className="space-y-2">
+          {/* Aktionsplan Highlight */}
+          <ActionPlanHighlight profile="A" />
+
+          {/* 6. Was Du in diesem Buch lernst */}
+          <section className="mb-12 bg-muted/50 rounded-2xl p-6 md:p-8">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-8">
+              Was Du in diesem Buch lernst
+            </h2>
+            <div className="space-y-5">
               {[
-                'Warum Cortisol, Leptin und Ghrelin gegen dich arbeiten – und wie du sie wieder auf deine Seite bringst',
-                'Das konkrete 4-Phasen-Protokoll: Raus aus dem Sparmodus',
-                'Sicherheit statt Mangel – warum dein Körper erst loslässt, wenn er genug bekommt',
-                'Signale statt Regeln: Hunger und Müdigkeit als Information nutzen',
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 text-primary flex items-center justify-center mt-0.5">
-                    <Check className="w-3 h-3" strokeWidth={3} />
+                { title: 'Cortisol, Leptin und Ghrelin verstehen', desc: 'Warum diese Hormone gegen dich arbeiten – und wie du sie wieder auf deine Seite bringst.' },
+                { title: 'Das 4-Phasen-Protokoll', desc: 'Raus aus dem Sparmodus – konkret und Schritt für Schritt.' },
+                { title: 'Sicherheit statt Mangel', desc: 'Warum dein Körper erst loslässt, wenn er genug bekommt.' },
+                { title: 'Signale statt Regeln', desc: 'Hunger und Müdigkeit als Information nutzen – nicht als Gegner.' },
+                { title: 'Kein Willenskraftproblem', desc: 'Warum dein Stoffwechsel kein Willenskraftproblem ist – und was wirklich entscheidet.' },
+                { title: 'Dein persönlicher Startpunkt', desc: 'Kalorien, Makros und ein System für den Alltag – passgenau für dich.' },
+              ].map((ch, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
+                    {i + 1}
                   </span>
-                  <span className="text-foreground text-sm leading-relaxed">{item}</span>
-                </li>
+                  <div>
+                    <h3 className="font-semibold text-foreground">{ch.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{ch.desc}</p>
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
           </section>
 
           {/* 7. Countdown Timer */}

@@ -154,6 +154,9 @@ const ResultPageC4 = () => {
             </div>
           </section>
 
+          {/* Aktionsplan Highlight */}
+          <ActionPlanHighlight profile="C" />
+
           {/* 7. Kapitel-Preview */}
           <section className="mb-8 bg-muted/50 rounded-2xl p-5 md:p-6">
             <h3 className="text-lg font-bold text-foreground mb-4 text-center">
