@@ -3,7 +3,7 @@ import SalesPageV2, { SalesV2Config } from "@/components/anbot-rs/SalesPageV2";
 const config: SalesV2Config = {
   route: "/buch/anbot-prof-a",
   trackTitle: "Buch Angebot Profil A",
-  digistoreUrl: "https://www.digistore24.com/product/675804?voucher=specialdeal",
+  digistoreUrl: "https://www.digistore24.com/product/675804?voucher=quizrabatt",
   digistoreProductId: 693088,
   overline: "FÜR MENSCHEN MIT GESTRESSTEM STOFFWECHSEL",
   headline: "Dein Körper ist nicht kaputt – er ist im Überlebensmodus.",
