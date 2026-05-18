@@ -317,8 +317,8 @@ const ProfASalesV3 = () => {
               {[
                 {
                   icon: "📋",
-                  title: "Phase 1: Cortisol-Reset",
-                  text: "Die ersten Wochen: Wir beruhigen deine HPA-Achse und stoppen den Teufelskreis.",
+                  title: "Phase 1: Lifestyle-Strategien",
+                  text: "Die ersten Wochen: Wir beruhigen deine HPA-Achse durch Schlaf, Stressmanagement und kluge Entscheidungsarchitektur.",
                 },
                 {
                   icon: "🔥",
