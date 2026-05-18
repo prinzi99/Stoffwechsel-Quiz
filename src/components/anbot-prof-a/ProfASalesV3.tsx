@@ -140,7 +140,8 @@ const faqs = [
 ];
 
 const ProfASalesV3 = () => {
-  const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const preisFaqIndex = faqs.findIndex((f) => f.q.startsWith("Warum kostet"));
+  const [openFaq, setOpenFaq] = useState<number | null>(preisFaqIndex);
 
   return (
     <div className="bg-white text-gray-900">
