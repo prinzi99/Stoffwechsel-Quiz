@@ -3,7 +3,7 @@ import SalesPageV2, { SalesV2Config } from "@/components/anbot-rs/SalesPageV2";
 const config: SalesV2Config = {
   route: "/buch/anbot-prof-c",
   trackTitle: "Buch Angebot Profil C",
-  digistoreUrl: "https://www.digistore24.com/product/675804?voucher=quizrabatt",
+  digistoreUrl: "https://www.digistore24.com/product/693556?voucher=quizrabatt",
   digistoreProductId: 693556,
   overline: "FÜR MENSCHEN MIT ÜBERANGEPASSTEM STOFFWECHSEL",
   headline: "Dein Körper hat sich an jede Diät angepasst. Deshalb funktioniert keine mehr.",
