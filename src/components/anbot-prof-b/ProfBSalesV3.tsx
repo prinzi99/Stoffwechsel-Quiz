@@ -371,59 +371,6 @@ const ProfBSalesV3 = () => {
         </div>
       </section>
 
-      {/* 7. BONUS-BOX */}
-      <section className="bg-white py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <div
-            className="rounded-2xl shadow-xl p-8 md:p-10"
-            style={{
-              background: "linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%)",
-              border: "3px solid #F59E0B",
-            }}
-          >
-            <span className="inline-block bg-orange-600 text-white px-4 py-2 rounded-full font-bold text-sm uppercase tracking-wide">
-              🎁 GRATIS DAZU
-            </span>
-            <h2 className="text-2xl font-bold text-gray-900 mt-4">
-              Weil du gerade hier bist: GRATIS Bonus
-            </h2>
-            <div className="mt-6 space-y-4">
-              <div className="flex items-start gap-3">
-                <span className="text-2xl flex-shrink-0">📊</span>
-                <div>
-                  <p className="font-bold">Online-Bonusbereich mit Tools & Rechnern</p>
-                  <p className="text-gray-700">Interaktive Kalorienrechner, Tracking-Tools und Werkzeuge für dein Reverse Dieting. (Wert: 20€)</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-2xl flex-shrink-0">📄</span>
-                <div>
-                  <p className="font-bold">9 PDF-Checklisten zum Sofort-Download</p>
-                  <p className="text-gray-700">Einkaufslisten, Meal-Prep-Pläne, Kalorienaufbau-Tracker und mehr. (Wert: 15€)</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-2xl flex-shrink-0">📱</span>
-                <div>
-                  <p className="font-bold">App- & Tool-Empfehlungen</p>
-                  <p className="text-gray-700">Die besten Apps zum Kalorien-Tracking und Fortschritt messen. (Wert: 5€)</p>
-                </div>
-              </div>
-            </div>
-            <p className="font-bold text-lg text-center mt-6">
-              Gesamter Bonus-Wert: 40€ – für dich GRATIS inklusive.
-            </p>
-            <div className="text-center mt-6">
-              <CtaLink
-                label="Bonus CTA"
-                className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-lg"
-              >
-                Alles zusammen für nur 29,99€ sichern →
-              </CtaLink>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 8. GARANTIE */}
       <section className="bg-white py-16">
