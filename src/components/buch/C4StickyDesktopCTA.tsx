@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import C4CountdownTimer from './C4CountdownTimer';
 
-const DIGISTORE_URL = 'https://www.digistore24.com/product/675804?voucher=specialdeal';
+const DIGISTORE_URL = 'https://www.digistore24.com/product/693556?voucher=quizrabatt';
 
 const C4StickyDesktopCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
