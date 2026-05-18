@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Footer from "@/components/landing/Footer";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import { ChevronDown } from "lucide-react";
+import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
 export type RsConfig = {
   route: string;
