@@ -11,7 +11,7 @@ import C4ExitIntentPopup from '@/components/buch/C4ExitIntentPopup';
 import C4CountdownTimer from '@/components/buch/C4CountdownTimer';
 import ActionPlanHighlight from '@/components/buch/ActionPlanHighlight';
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
+const DIGISTORE_URL = "https://www.digistore24.com/product/693556?voucher=quizrabatt";
 
 const ResultPageC4 = () => {
   const typicalSigns = [

@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import bookCover from "@/assets/book-cover-mockup3.jpeg";
 import C4CountdownTimer from "./C4CountdownTimer";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/675804?voucher=specialdeal";
+const DIGISTORE_URL = "https://www.digistore24.com/product/693556?voucher=quizrabatt";
 const STORAGE_KEY = "inactivityPopupShown_x7q9p2-4";
 const INACTIVITY_MS = 20_000;
 
