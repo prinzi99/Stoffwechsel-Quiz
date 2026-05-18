@@ -280,17 +280,6 @@ const ProfASalesV3 = () => {
               Einmaliger Preis • Kein Abo • Sofortiger Download
             </p>
           </div>
-
-          {/* Zusatz-CTA direkt unter Value Stack – schließt CTA-Lücke */}
-          <div className="max-w-lg mx-auto text-center mt-10">
-            <p className="text-sm text-gray-500 mb-3">67% Ersparnis nur für Quiz-Teilnehmer</p>
-            <CtaLink
-              label="Value Stack Lücken-CTA"
-              className="block w-full bg-green-600 hover:bg-green-700 text-white text-lg font-bold py-4 px-8 rounded-xl text-center shadow-lg"
-            >
-              Jetzt für 29,99€ sichern
-            </CtaLink>
-          </div>
         </div>
       </section>
 
