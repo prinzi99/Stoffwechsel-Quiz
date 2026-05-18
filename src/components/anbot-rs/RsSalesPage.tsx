@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Footer from "@/components/landing/Footer";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import { ChevronDown } from "lucide-react";
+import bookCover from "@/assets/book-cover-mockup2.jpeg";
 
 export type RsConfig = {
   route: string;
@@ -229,9 +230,13 @@ const RsSalesPage = ({ config }: { config: RsConfig }) => {
               </p>
             </div>
             <div className="md:col-span-2 flex justify-center">
-              <div className="w-full max-w-sm aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl shadow-xl flex items-center justify-center text-7xl">
-                📖
-              </div>
+              <img
+                src={bookCover}
+                alt="Du bist nicht das Problem – Buchcover"
+                className="w-full max-w-sm h-auto rounded-2xl shadow-2xl"
+                width={800}
+                height={1067}
+              />
             </div>
           </div>
         </section>
