@@ -219,44 +219,41 @@ const ProfCSalesV3 = () => {
         </div>
       </section>
 
-      {/* 5. WAS DU BEKOMMST (Aktionsplan) */}
-      <section className="bg-gray-50 py-16">
+      {/* 5. AKTIONSPLAN HIGHLIGHT */}
+      <section className="bg-white py-16">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-8">
+          <div
+            className="rounded-2xl shadow-2xl p-8 md:p-12"
+            style={{
+              background: "linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%)",
+              border: "3px solid #F59E0B",
+            }}
+          >
             <span className="inline-block bg-orange-600 text-white px-4 py-2 rounded-full font-bold text-sm uppercase tracking-wide">
               ⚡ DEIN PERSÖNLICHER AKTIONSPLAN
             </span>
             <h2 className="text-3xl font-bold mt-6 text-gray-900">
               Das MATADOR-Protokoll – dein 10-Seiten-Plan
             </h2>
-            <p className="text-lg text-gray-700 mt-4 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-700 mt-4">
               Basierend auf deiner Stoffwechsel-Analyse erhältst du einen maßgeschneiderten Aktionsplan für deinen überangepassten Stoffwechsel. 10 Seiten, individuell auf dein Profil zugeschnitten. Mit dem MATADOR-Protokoll – einer wissenschaftlich erforschten Methode mit strategischen Diätpausen, die deine metabolische Anpassung durchbricht.
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            {[
-              { icon: "📅", title: "Phase 1: Reset-Phase", text: "Strategische Diätpause – dein Stoffwechsel bekommt das Signal: 'Keine Hungersnot mehr.' Die Anpassung wird unterbrochen." },
-              { icon: "🔥", title: "Phase 2: Gezielte Defizit-Phase", text: "Kontrolliertes Defizit für eine definierte Zeit. Dein Körper reagiert wieder – weil er nicht mehr angepasst ist." },
-              { icon: "🔄", title: "Phase 3: Zyklische Wiederholung", text: "Wechsel zwischen Pause und Defizit. So verhinderst du, dass dein Körper sich erneut anpasst. Nachhaltige Ergebnisse." },
-            ].map((p, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl shadow-sm border">
-                <div className="text-3xl">{p.icon}</div>
-                <h3 className="font-bold text-lg mt-3">{p.title}</h3>
-                <p className="text-gray-600 mt-2">{p.text}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-center mt-8 font-bold text-lg text-gray-800">
-            Dieser 10-seitige Aktionsplan allein ist 27€ wert – du bekommst ihn INKLUSIVE.
-          </p>
-          <div className="text-center mt-8">
-            <CtaLink
-              label="Aktionsplan CTA"
-              className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-lg"
-            >
-              Buch + Aktionsplan für 29,99€ sichern →
-            </CtaLink>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+              {[
+                { icon: "📅", title: "Phase 1: Reset-Phase", text: "Strategische Diätpause – dein Stoffwechsel bekommt das Signal: 'Keine Hungersnot mehr.' Die Anpassung wird unterbrochen." },
+                { icon: "🔥", title: "Phase 2: Gezielte Defizit-Phase", text: "Kontrolliertes Defizit für eine definierte Zeit. Dein Körper reagiert wieder – weil er nicht mehr angepasst ist." },
+                { icon: "🔄", title: "Phase 3: Zyklische Wiederholung", text: "Wechsel zwischen Pause und Defizit. So verhinderst du, dass dein Körper sich erneut anpasst. Nachhaltige Ergebnisse." },
+              ].map((p, i) => (
+                <div key={i} className="bg-white/80 p-6 rounded-xl text-center">
+                  <div className="text-3xl mb-2">{p.icon}</div>
+                  <h3 className="font-bold text-lg">{p.title}</h3>
+                  <p className="text-gray-600 mt-2">{p.text}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-center mt-8 text-lg font-semibold text-gray-900">
+              Dieser 10-seitige Aktionsplan allein ist 27€ wert – du bekommst ihn INKLUSIVE.
+            </p>
           </div>
         </div>
       </section>
