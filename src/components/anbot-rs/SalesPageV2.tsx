@@ -310,9 +310,25 @@ const SalesPageV2 = ({ config }: { config: SalesV2Config }) => {
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: "📚", title: "60+ wissenschaftliche Studien", text: "Jede Empfehlung in diesem Buch basiert auf aktueller Forschung. Keine Trends, keine Hypes – nur Wissenschaft." },
-              { icon: "👨‍🔬", title: "Von Philipp Prinz", text: "Stoffwechsel-Experte mit jahrelanger Erfahrung in der Recherche und Aufbereitung wissenschaftlicher Erkenntnisse für den Alltag." },
-              { icon: "🛡️", title: "14-Tage Geld-zurück-Garantie", text: "Kein Risiko für dich. Wenn du nicht zufrieden bist, bekommst du dein Geld zurück. Ohne Wenn und Aber." },
+              {
+                icon: "🔬",
+                title: "Basiert auf aktueller Stoffwechselforschung",
+                text:
+                  config.trustResearchText ??
+                  "Die Prinzipien in diesem Buch basieren auf wissenschaftlich belegten Mechanismen – keine Trends, keine Hacks, sondern Zusammenhänge, die seit Jahren erforscht sind.",
+              },
+              {
+                icon: "👥",
+                title: "Über 500 Menschen haben das Quiz gemacht",
+                text:
+                  "Über 500 Menschen haben bereits das Stoffwechsel-Quiz gemacht – und verstehen jetzt, warum es bisher nicht funktioniert hat.",
+              },
+              {
+                icon: "🛡️",
+                title: "14-Tage Geld-zurück-Garantie",
+                text:
+                  "Kein Risiko für dich. Wenn du nicht zufrieden bist, bekommst du dein Geld zurück. Ohne Wenn und Aber.",
+              },
             ].map((c, i) => (
               <div key={i} className="bg-white rounded-xl p-6 shadow-sm">
                 <div className="text-4xl mb-3">{c.icon}</div>
@@ -321,9 +337,6 @@ const SalesPageV2 = ({ config }: { config: SalesV2Config }) => {
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-600 mt-8">
-            Wissenschaftlich fundiert • Praxis-erprobt • Tausende zufriedene Leser
-          </p>
         </div>
       </section>
 
