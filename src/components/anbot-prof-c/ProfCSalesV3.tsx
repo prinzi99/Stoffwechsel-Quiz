@@ -364,9 +364,6 @@ const ProfCSalesV3 = () => {
         className="fixed bottom-0 left-0 right-0 p-3 bg-white md:hidden z-50"
         style={{ boxShadow: "0 -2px 10px rgba(0,0,0,0.1)" }}
       >
-        <p className="text-center text-xs text-gray-500 mb-1">
-          Nur <span className="line-through">96,99€</span> <span className="font-bold text-gray-700">29,99€</span>
-        </p>
         <CtaLink
           label="Sticky Mobile CTA"
           className="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg transition"
