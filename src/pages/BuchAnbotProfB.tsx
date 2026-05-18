@@ -3,8 +3,8 @@ import SalesPageV2, { SalesV2Config } from "@/components/anbot-rs/SalesPageV2";
 const config: SalesV2Config = {
   route: "/buch/anbot-prof-b",
   trackTitle: "Buch Angebot Profil B",
-  digistoreUrl: "https://www.digistore24.com/product/675804?voucher=specialdeal",
-  digistoreProductId: 693088,
+  digistoreUrl: "https://www.digistore24.com/product/675804?voucher=quizrabatt",
+  digistoreProductId: 693551,
   overline: "FÜR MENSCHEN MIT UNTERVERSORGTEM STOFFWECHSEL",
   headline: "Du isst zu wenig – und nimmst trotzdem zu. Das ist kein Widerspruch.",
   subheadline:
