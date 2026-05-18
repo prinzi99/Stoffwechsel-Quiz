@@ -280,7 +280,7 @@ const ProfASalesV3 = () => {
               Einmaliger Preis • Kein Abo • Sofortiger Download
             </p>
           </div>
-
+        </div>
       </section>
 
       {/* 5. AKTIONSPLAN HIGHLIGHT (= "Was du bekommst") */}
