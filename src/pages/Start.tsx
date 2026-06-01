@@ -109,10 +109,10 @@ const Start = () => {
             <section className="bg-gradient-to-b from-background to-muted/40 px-4 pt-4 pb-3 md:pt-12 md:pb-10">
               <div className="container max-w-2xl mx-auto text-center">
                 <h1 className="text-xl md:text-4xl font-bold text-foreground leading-tight">
-                  Warum reagiert Dein Stoffwechsel nicht – obwohl Du alles richtig machst?
+                  Verstehe Deinen Stoffwechsel – und was ihn beeinflusst
                 </h1>
                 <p className="text-sm md:text-lg text-muted-foreground mt-2 md:mt-4 leading-snug md:leading-relaxed">
-                  Drei typische Muster blockieren ihn. Finde in 2 Minuten heraus, welches auf Dich zutrifft.
+                  Finde in 2 Minuten heraus, welcher Stoffwechsel-Typ Du bist – und erhalte individuelle Ernährungstipps.
                 </p>
               </div>
             </section>
