@@ -203,10 +203,7 @@ const Start = () => {
                 </ul>
 
                 <p className="text-base text-muted-foreground leading-relaxed mb-8">
-                  Die meisten Ansätze ignorieren, wie Dein Körper individuell Energie verarbeitet.
-                  Dieses Quiz zeigt Dir, welches der drei Muster Deinen Stoffwechsel aktuell
-                  blockiert – und was daraus folgt. Kein Verkaufsgespräch. Keine Anmeldung.
-                  Einfach Klarheit.
+                  Jeder Körper verarbeitet Nährstoffe unterschiedlich. Dieses Quiz hilft Dir herauszufinden, welcher Stoffwechsel-Typ Du bist – und welche Ernährungsstrategie am besten zu Dir passt. Kostenlos. Unverbindlich. In 2 Minuten.
                 </p>
 
                 <div className="text-center">
