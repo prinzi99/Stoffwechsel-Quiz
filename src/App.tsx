@@ -10,6 +10,7 @@ import CookieBanner from "./components/CookieBanner";
 import CookieSettingsButton from "./components/CookieSettingsButton";
 import { captureUtmParams } from "./hooks/useUtmParams";
 import Index from "./pages/Index";
+import LpOld from "./pages/LpOld";
 import Quiz from "./pages/Quiz";
 import QuizP from "./pages/QuizP";
 import ThankYou from "./pages/ThankYou";
