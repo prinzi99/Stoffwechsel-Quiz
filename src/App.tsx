@@ -63,7 +63,7 @@ const App = () => {
         <BrowserRouter>
           <ScrollToTop />
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={<QuizP />} />
             <Route path="/lp-old" element={<LpOld />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/quiz-p" element={<QuizP />} />
