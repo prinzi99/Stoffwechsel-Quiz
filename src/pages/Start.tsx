@@ -190,10 +190,10 @@ const Start = () => {
                 </h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Du hältst Dich an Deinen Plan – aber die Waage bewegt sich nicht',
-                    'Keto, Intervallfasten, Low Carb – schon vieles versucht',
-                    'Du fühlst Dich müde, obwohl Du alles richtig machst',
-                    'Du fragst Dich, ob es an Deinem Stoffwechsel liegt',
+                    'Du möchtest Deine Ernährung verbessern, weißt aber nicht wo Du anfangen sollst',
+                    'Du hast verschiedene Ansätze ausprobiert und suchst den passenden für Dich',
+                    'Du wünschst Dir mehr Energie und Wohlbefinden im Alltag',
+                    'Du möchtest verstehen, wie Dein Körper auf verschiedene Nährstoffe reagiert',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0" />
