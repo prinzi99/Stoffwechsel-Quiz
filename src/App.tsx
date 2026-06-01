@@ -13,6 +13,7 @@ import Index from "./pages/Index";
 import LpOld from "./pages/LpOld";
 import Quiz from "./pages/Quiz";
 import QuizP from "./pages/QuizP";
+import Start from "./pages/Start";
 import ThankYou from "./pages/ThankYou";
 import ResultPage from "./pages/ResultPage";
 import ResultPageA2 from "./pages/ResultPageA2";
