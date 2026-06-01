@@ -11,6 +11,7 @@ import CookieSettingsButton from "./components/CookieSettingsButton";
 import { captureUtmParams } from "./hooks/useUtmParams";
 import Index from "./pages/Index";
 import Quiz from "./pages/Quiz";
+import QuizP from "./pages/QuizP";
 import ThankYou from "./pages/ThankYou";
 import ResultPage from "./pages/ResultPage";
 import ResultPageA2 from "./pages/ResultPageA2";
@@ -63,6 +64,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/quiz-p" element={<QuizP />} />
             <Route path="/danke" element={<ThankYou />} />
             <Route path="/dfgk34k" element={<ResultPage />} />
             <Route path="/dfgk34k-2" element={<ResultPageA2 />} />
