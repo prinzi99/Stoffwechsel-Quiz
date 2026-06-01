@@ -5,6 +5,9 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Header from '@/components/Header';
 import Footer from '@/components/landing/Footer';
+import IdentificationSection from '@/components/landing/IdentificationSection';
+import ReframingSection from '@/components/landing/ReframingSection';
+import { Target, Clock, Lightbulb, CheckCircle2 as Check2 } from 'lucide-react';
 import QuizProgress from '@/components/quiz/QuizProgress';
 import QuizQuestion from '@/components/quiz/QuizQuestion';
 import QuizResult from '@/components/quiz/QuizResult';
@@ -216,6 +219,79 @@ const QuizP = () => {
                     Test starten
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
+                </div>
+              </div>
+            </section>
+
+            {/* IDENTIFICATION & REFRAMING (von Root-Page übernommen) */}
+            <IdentificationSection />
+            <ReframingSection />
+
+            {/* WARUM DIESES QUIZ – CTA zurück zu Q1 */}
+            <section className="px-4 py-12 md:py-16 bg-section-alt">
+              <div className="container max-w-4xl mx-auto">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-4">
+                  Warum dieses Quiz ein guter Einstieg sein kann
+                </h2>
+                <p className="text-base md:text-lg text-muted-foreground text-center max-w-xl mx-auto mb-10">
+                  Ein besseres Verständnis des eigenen Körpers kann ein hilfreicher erster Schritt sein.
+                </p>
+
+                <div className="grid md:grid-cols-3 gap-5 mb-10">
+                  {[
+                    { icon: Target, title: 'Mögliche Stoffwechsel-Schwerpunkte', desc: 'Manche Menschen reagieren unterschiedlich auf Makronährstoffe – das Quiz gibt eine erste Orientierung.' },
+                    { icon: Lightbulb, title: 'Hinweise zur Selbstreflexion', desc: 'Keine Diagnose, sondern Anregungen zum Nachdenken über die eigene Situation.' },
+                    { icon: Clock, title: 'Nur 2 Minuten', desc: 'Kurze, gezielte Fragen – ohne Anmeldung, ohne Verpflichtung.' },
+                  ].map((b, i) => (
+                    <div key={i} className="text-center p-6 rounded-xl bg-card border border-border">
+                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <b.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">{b.title}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{b.desc}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="text-center">
+                  <Button onClick={scrollToQ1} variant="cta" size="xl" className="w-full md:w-auto">
+                    Test starten
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </div>
+              </div>
+            </section>
+
+            {/* FINALE TRANSITION – CTA zurück zu Q1 */}
+            <section className="px-4 py-12 md:py-16 bg-quiz-section text-quiz-section-foreground">
+              <div className="container max-w-3xl mx-auto text-center">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                  Mehr Verständnis für Deinen eigenen Stoffwechsel
+                </h2>
+                <p className="text-base md:text-lg text-quiz-section-foreground/80 max-w-xl mx-auto mb-2">
+                  Beantworte ein paar kurze Fragen und erhalte eine orientierende Einordnung mit Hinweisen zur Selbstreflexion.
+                </p>
+                <p className="text-sm text-quiz-section-foreground/60 mb-8">
+                  Allgemeine Informationen rund um Ernährung und Lebensstil.
+                </p>
+
+                <div className="max-w-xl mx-auto bg-background/10 backdrop-blur-sm rounded-2xl p-6 md:p-8">
+                  <h3 className="text-xl font-bold mb-3 text-quiz-section-foreground">
+                    Neugierig auf Deine Einordnung?
+                  </h3>
+                  <p className="text-quiz-section-foreground/80 mb-6">
+                    In nur 2 Minuten erhältst Du eine orientierende Einordnung mit Hinweisen zur Selbstreflexion.
+                  </p>
+                  <Button onClick={scrollToQ1} variant="cta" size="xl" className="w-full sm:w-auto">
+                    Jetzt Quiz starten
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </div>
+
+                <div className="flex flex-wrap justify-center gap-6 text-quiz-section-foreground/70 text-sm mt-8">
+                  <div className="flex items-center gap-2"><Check2 className="w-4 h-4" /><span>Kostenlos</span></div>
+                  <div className="flex items-center gap-2"><Check2 className="w-4 h-4" /><span>Keine Anmeldung</span></div>
+                  <div className="flex items-center gap-2"><Check2 className="w-4 h-4" /><span>Sofortige Auswertung</span></div>
                 </div>
               </div>
             </section>
