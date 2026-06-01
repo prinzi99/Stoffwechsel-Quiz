@@ -131,13 +131,20 @@ const QuizP = () => {
             {/* FRAGE 1 BOX */}
             <section ref={q1BoxRef} className="px-4 py-8 md:py-12">
               <div className="container max-w-2xl mx-auto">
-                <div className="bg-card border border-border rounded-2xl shadow-lg p-6 md:p-10">
-                  <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-3">
-                    Frage 1 von {totalQuestions}
-                  </p>
-                  <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6 leading-relaxed">
-                    {q1.question}
-                  </h2>
+              <div className="bg-card border border-border rounded-2xl shadow-lg p-6 md:p-10">
+                <div className="mb-8">
+                  <QuizProgress
+                    currentQuestion={0}
+                    totalQuestions={totalQuestions}
+                    progress={0}
+                  />
+                </div>
+                <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-3">
+                  Frage 1 von {totalQuestions}
+                </p>
+                <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6 leading-relaxed">
+                  {q1.question}
+                </h2>
 
                   <div className="space-y-3">
                     {q1.answers.map((answer) => (
