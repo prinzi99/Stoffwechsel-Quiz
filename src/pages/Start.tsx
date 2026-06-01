@@ -190,10 +190,10 @@ const Start = () => {
                 </h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Du hältst Dich an Deinen Plan – aber die Waage bewegt sich nicht',
-                    'Keto, Intervallfasten, Low Carb – schon vieles versucht',
-                    'Du fühlst Dich müde, obwohl Du alles richtig machst',
-                    'Du fragst Dich, ob es an Deinem Stoffwechsel liegt',
+                    'Du möchtest Deine Ernährung verbessern, weißt aber nicht wo Du anfangen sollst',
+                    'Du hast verschiedene Ansätze ausprobiert und suchst den passenden für Dich',
+                    'Du wünschst Dir mehr Energie und Wohlbefinden im Alltag',
+                    'Du möchtest verstehen, wie Dein Körper auf verschiedene Nährstoffe reagiert',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0" />
@@ -203,10 +203,7 @@ const Start = () => {
                 </ul>
 
                 <p className="text-base text-muted-foreground leading-relaxed mb-8">
-                  Die meisten Ansätze ignorieren, wie Dein Körper individuell Energie verarbeitet.
-                  Dieses Quiz zeigt Dir, welches der drei Muster Deinen Stoffwechsel aktuell
-                  blockiert – und was daraus folgt. Kein Verkaufsgespräch. Keine Anmeldung.
-                  Einfach Klarheit.
+                  Jeder Körper verarbeitet Nährstoffe unterschiedlich. Dieses Quiz hilft Dir herauszufinden, welcher Stoffwechsel-Typ Du bist – und welche Ernährungsstrategie am besten zu Dir passt. Kostenlos. Unverbindlich. In 2 Minuten.
                 </p>
 
                 <div className="text-center">
