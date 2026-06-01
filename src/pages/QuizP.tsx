@@ -102,47 +102,33 @@ const QuizP = () => {
       <main className="flex-grow">
         {step === 'landing' && (
           <>
-            {/* ABOVE THE FOLD */}
-            <section className="bg-gradient-to-b from-background to-muted/40 px-4 pt-8 pb-10 md:pt-14 md:pb-14">
+            {/* ABOVE THE FOLD – kompakt, damit Frage 1 auf dem Handy sichtbar wird */}
+            <section className="bg-gradient-to-b from-background to-muted/40 px-4 pt-4 pb-3 md:pt-12 md:pb-10">
               <div className="container max-w-2xl mx-auto text-center">
-                <h1 className="text-2xl md:text-4xl font-bold text-foreground leading-tight">
+                <h1 className="text-xl md:text-4xl font-bold text-foreground leading-tight">
                   Warum reagiert Dein Stoffwechsel nicht – obwohl Du alles richtig machst?
                 </h1>
-                <p className="text-base md:text-lg text-muted-foreground mt-4 leading-relaxed">
-                  Es gibt nicht einen Grund. Es gibt drei typische Muster. Finde in 2 Minuten heraus,
-                  welches auf Dich zutrifft – und was der nächste Schritt ist.
-                </p>
-
-                <Button
-                  onClick={scrollToQ1}
-                  variant="cta"
-                  size="xl"
-                  className="w-full md:w-auto mt-6"
-                >
-                  Test starten
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-                <p className="text-sm text-muted-foreground mt-3">
-                  Kostenlos · keine Anmeldung · 2 Minuten
+                <p className="text-sm md:text-lg text-muted-foreground mt-2 md:mt-4 leading-snug md:leading-relaxed">
+                  Drei typische Muster blockieren ihn. Finde in 2 Minuten heraus, welches auf Dich zutrifft.
                 </p>
               </div>
             </section>
 
-            {/* FRAGE 1 BOX */}
-            <section ref={q1BoxRef} className="px-4 py-8 md:py-12">
+            {/* FRAGE 1 BOX – direkt oben, ohne Sprung */}
+            <section ref={q1BoxRef} className="px-4 pt-2 pb-6 md:pt-4 md:py-10">
               <div className="container max-w-2xl mx-auto">
-              <div className="bg-card border border-border rounded-2xl shadow-lg p-6 md:p-10">
-                <div className="mb-8">
+              <div className="bg-card border border-border rounded-2xl shadow-lg p-4 md:p-10">
+                <div className="mb-4 md:mb-6">
                   <QuizProgress
                     currentQuestion={0}
                     totalQuestions={totalQuestions}
                     progress={0}
                   />
                 </div>
-                <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-3">
+                <p className="text-xs md:text-sm font-semibold text-primary uppercase tracking-wide mb-2 md:mb-3">
                   Frage 1 von {totalQuestions}
                 </p>
-                <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6 leading-relaxed">
+                <h2 className="text-lg md:text-2xl font-bold text-foreground mb-4 md:mb-6 leading-snug md:leading-relaxed">
                   {q1.question}
                 </h2>
 
