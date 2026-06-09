@@ -105,6 +105,56 @@ const Pin = () => {
               </div>
             </section>
 
+            {/* VERTIEFUNGS-SECTION */}
+            <section className="bg-background px-5 py-12 md:py-16">
+              <div className="max-w-2xl mx-auto">
+                <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-10 md:mb-14">
+                  Warum die meisten Ernährungstipps bei dir nicht funktionieren
+                </h2>
+
+                <div className="space-y-12 md:space-y-14">
+                  {/* Block 1 */}
+                  <div>
+                    <p className="text-lg md:text-xl font-bold text-foreground mb-3">
+                      Dein Körper ist nicht kaputt – er ist im Sparmodus
+                    </p>
+                    <p className="text-base text-foreground leading-relaxed">
+                      Wenn du über Wochen weniger isst, als dein Körper braucht, passiert etwas, das die wenigsten auf dem Schirm haben: Er fährt runter. Nicht weil er defekt ist. Sondern weil er denkt, es ist eine Hungersnot. Dein Grundumsatz sinkt. Deine Schilddrüse drosselt. Dein Körper verbrennt weniger – obwohl du weniger isst. Studien zeigen: Bei chronischem Kaloriendefizit kann der Energieverbrauch um bis zu 40 Prozent einbrechen. Das bedeutet: Die Diät, die vor drei Jahren funktioniert hat, funktioniert heute nicht mehr. Nicht weil du versagt hast. Sondern weil dein Körper dazugelernt hat.
+                    </p>
+                  </div>
+
+                  {/* Block 2 */}
+                  <div>
+                    <p className="text-lg md:text-xl font-bold text-foreground mb-3">
+                      Hormone entscheiden – nicht Kalorien
+                    </p>
+                    <p className="text-base text-foreground leading-relaxed">
+                      Du kannst perfekt Kalorien zählen und trotzdem nicht abnehmen. Weil Kalorien nur ein Teil der Geschichte sind. Insulin bestimmt, ob dein Körper Fett einlagert oder verbrennt. Wenn es dauerhaft erhöht ist – durch ständiges Snacken, Zucker, Stress – verbrennt dein Körper gar kein Fett. Gar keins. Cortisol, dein Stresshormon, entscheidet, wo Fett landet. Bei Dauerstress: am Bauch. Leptin sagt deinem Gehirn, wann du satt bist – aber wenn die Signale nicht mehr ankommen, hast du Hunger, obwohl deine Fettzellen voll sind. Und ab Mitte 35 sinkt Östrogen. Fett wandert von Hüfte und Oberschenkeln zum Bauch. Der Stoffwechsel wird langsamer. Heißhunger stärker. Das ist keine Einbildung – das ist Biochemie. Das Zusammenspiel dieser Hormone ist bei jedem Menschen anders. Deshalb funktioniert, was bei deiner Freundin klappt, bei dir vielleicht überhaupt nicht.
+                    </p>
+                  </div>
+
+                  {/* Block 3 */}
+                  <div>
+                    <p className="text-lg md:text-xl font-bold text-foreground mb-3">
+                      Der erste Schritt: Verstehen, was bei dir los ist
+                    </p>
+                    <p className="text-base text-foreground leading-relaxed">
+                      ‚Iss weniger, beweg dich mehr' – das ignoriert alles, was du gerade gelesen hast. Dein Stoffwechsel ist kein Taschenrechner. Er reagiert auf Schlaf, Stress, Hormone, Vorgeschichte. Und er reagiert bei dir anders als bei jeder anderen Person. Bevor du die nächste Diät startest, lohnt sich eine Frage: Welches Muster steckt bei dir dahinter?
+                    </p>
+                    <div className="mt-6">
+                      <button
+                        onClick={startQuiz}
+                        className="inline-flex items-center text-primary font-semibold hover:underline text-base"
+                      >
+                        <span className="mr-2">→</span>
+                        Finde in 2 Minuten heraus, welcher Stoffwechseltyp du bist
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* VERTRAUENS-SECTION */}
             <section className="px-4 py-10 md:py-14 bg-muted/40">
               <div className="container max-w-4xl mx-auto">
