@@ -1,13 +1,10 @@
 import { useState, useCallback, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/landing/Footer';
-import IdentificationSection from '@/components/landing/IdentificationSection';
-import ReframingSection from '@/components/landing/ReframingSection';
-import { Target, Clock, Lightbulb, CheckCircle2 as Check2 } from 'lucide-react';
+import { Target, Clock, BookOpen, User } from 'lucide-react';
 import QuizProgress from '@/components/quiz/QuizProgress';
 import QuizQuestion from '@/components/quiz/QuizQuestion';
 import QuizResult from '@/components/quiz/QuizResult';
