@@ -14,6 +14,7 @@ import LpOld from "./pages/LpOld";
 import Quiz from "./pages/Quiz";
 import QuizP from "./pages/QuizP";
 import Start from "./pages/Start";
+import Pin from "./pages/Pin";
 import ThankYou from "./pages/ThankYou";
 import ResultPage from "./pages/ResultPage";
 import ResultPageA2 from "./pages/ResultPageA2";
@@ -66,6 +67,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<QuizP />} />
             <Route path="/start" element={<Start />} />
+            <Route path="/pin" element={<Pin />} />
             <Route path="/lp-old" element={<LpOld />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/quiz-p" element={<QuizP />} />
