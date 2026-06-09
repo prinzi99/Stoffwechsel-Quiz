@@ -38,25 +38,12 @@ const Pin = () => {
     ? (currentQuestionIndex / totalQuestions) * 100
     : step === 'landing' ? 0 : 100;
 
-  const scrollToQ1 = () => {
-    q1BoxRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
-  const handleQ1Answer = (answerId: string, profile: ProfileType) => {
-    if (isTransitioning) return;
+  const startQuiz = () => {
     trackQuizStartConversion();
-    setSelectedQ1(answerId);
-    setIsTransitioning(true);
-
-    setTimeout(() => {
-      const newScores = { ...scores, [profile]: scores[profile] + 1 };
-      setScores(newScores);
-      setCurrentQuestionIndex(1);
-      setStep('questions');
-      setIsTransitioning(false);
-      setSelectedQ1(null);
-      window.scrollTo({ top: 0, behavior: 'instant' });
-    }, 400);
+    setCurrentQuestionIndex(0);
+    setScores({ A: 0, B: 0, C: 0 });
+    setStep('questions');
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   const handleAnswerQuestion = useCallback((profile: ProfileType) => {
