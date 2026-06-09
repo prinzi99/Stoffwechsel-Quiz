@@ -22,17 +22,12 @@ type QuizStep = 'landing' | 'questions' | 'result' | 'complete';
 
 const Pin = () => {
   const [step, setStep] = useState<QuizStep>('landing');
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [scores, setScores] = useState<QuizScores>({ A: 0, B: 0, C: 0 });
   const [result, setResult] = useState<ProfileResult | null>(null);
   const [email, setEmail] = useState('');
-  const [selectedQ1, setSelectedQ1] = useState<string | null>(null);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-
-  const q1BoxRef = useRef<HTMLDivElement>(null);
 
   const totalQuestions = quizQuestions.length;
-  const q1 = quizQuestions[0];
   const currentQuestion = quizQuestions[currentQuestionIndex];
   const progress = step === 'questions'
     ? (currentQuestionIndex / totalQuestions) * 100
