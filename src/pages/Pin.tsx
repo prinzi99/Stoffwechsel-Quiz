@@ -84,52 +84,19 @@ const Pin = () => {
       <main className="flex-grow">
         {step === 'landing' && (
           <>
-            {/* ABOVE THE FOLD – kompakt, damit Frage 1 auf dem Handy sichtbar wird */}
-            {/* HERO – Bridge für Pinterest-Traffic */}
-            <section className="bg-background px-4 pt-8 pb-6 md:pt-14 md:pb-10">
+            {/* HERO – kompakt: Headline + Kurztext + CTA above the fold (iPhone SE) */}
+            <section className="bg-background px-4 pt-4 pb-6 md:pt-12 md:pb-10">
               <div className="container max-w-2xl mx-auto">
-                <div className="flex items-center gap-4 md:gap-6">
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-muted border border-border flex items-center justify-center flex-shrink-0 overflow-hidden">
-                    <User className="w-10 h-10 md:w-12 md:h-12 text-muted-foreground" />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-xs md:text-sm text-muted-foreground mb-1">
-                      Philipp's Biohack
-                    </p>
-                    <h1 className="text-xl md:text-3xl font-bold text-foreground leading-tight">
-                      Dein Stoffwechsel reagiert nicht so, wie er sollte?
-                    </h1>
-                    <p className="text-sm md:text-base text-muted-foreground mt-2 leading-snug">
-                      Ich erkläre die Muster dahinter. Wissenschaftlich fundiert, ohne Bullshit.
-                    </p>
-                  </div>
-                </div>
-                <div className="border-t border-border mt-6 md:mt-8" />
-              </div>
-            </section>
-
-            {/* KURZARTIKEL */}
-            <section className="px-4 pb-6 md:pb-10">
-              <div className="container max-w-2xl mx-auto">
-                <h2 className="text-lg md:text-2xl font-bold text-foreground mb-4 md:mb-6">
-                  Was die meisten nicht wissen
-                </h2>
-                <div className="space-y-4 text-base md:text-lg text-foreground leading-relaxed">
-                  <p>
-                    Du isst weniger als früher – und nimmst trotzdem nicht ab. Du hast Keto probiert, Intervallfasten, Low Carb. Nichts hat langfristig funktioniert.
-                  </p>
-                  <p>
-                    Das Problem ist nicht deine Disziplin. Dein Stoffwechsel hat sich angepasst – an zu wenig Essen, zu viel Stress, zu wenig Schlaf. Er läuft auf Sparflamme.
-                  </p>
-                  <p>
-                    Was für eine Person funktioniert, muss nicht für alle passen. Dein Körper reagiert anders auf Nahrung, Stress und Bewegung als der einer Freundin.
-                  </p>
-                  <p className="font-bold text-foreground">
-                    Die Frage ist nicht OB dein Stoffwechsel blockiert ist – sondern WARUM. Und genau das findest du in 2 Minuten heraus.
-                  </p>
-                </div>
-
-                <div className="mt-8 text-center">
+                <p className="text-xs md:text-sm text-muted-foreground mb-2">
+                  Philipp's Biohack
+                </p>
+                <h1 className="text-2xl md:text-4xl font-bold text-foreground leading-tight">
+                  Dein Stoffwechsel reagiert nicht so, wie er sollte?
+                </h1>
+                <p className="text-base md:text-lg text-foreground mt-3 md:mt-4 leading-snug">
+                  Du isst weniger, bewegst dich mehr – und trotzdem passiert nichts. Das Problem ist nicht deine Disziplin. Dein Stoffwechsel hat sich angepasst. Finde in 2 Minuten heraus, WARUM – und was du konkret ändern kannst.
+                </p>
+                <div className="mt-5 md:mt-6">
                   <Button onClick={startQuiz} variant="cta" size="xl" className="w-full md:w-auto">
                     Jetzt herausfinden
                     <ArrowRight className="w-5 h-5 ml-2" />
