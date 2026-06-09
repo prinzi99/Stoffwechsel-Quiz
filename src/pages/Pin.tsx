@@ -62,7 +62,7 @@ const Pin = () => {
 
   const handleReset = () => {
     setStep('landing');
-    setCurrentQuestionIndex(1);
+    setCurrentQuestionIndex(0);
     setScores({ A: 0, B: 0, C: 0 });
     setResult(null);
     setEmail('');
