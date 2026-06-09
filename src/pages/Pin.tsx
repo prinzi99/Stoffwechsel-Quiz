@@ -90,197 +90,90 @@ const Pin = () => {
         {step === 'landing' && (
           <>
             {/* ABOVE THE FOLD – kompakt, damit Frage 1 auf dem Handy sichtbar wird */}
-            <section className="bg-gradient-to-b from-background to-muted/40 px-4 pt-4 pb-3 md:pt-12 md:pb-10">
-              <div className="container max-w-2xl mx-auto text-center">
-                <h1 className="text-xl md:text-4xl font-bold text-foreground leading-tight">
-                  Warum reagiert Dein Stoffwechsel nicht – obwohl Du alles richtig machst?
-                </h1>
-                <p className="text-sm md:text-lg text-muted-foreground mt-2 md:mt-4 leading-snug md:leading-relaxed">
-                  Drei typische Muster blockieren ihn. Finde in 2 Minuten heraus, welches auf Dich zutrifft.
-                </p>
-              </div>
-            </section>
-
-            {/* FRAGE 1 BOX – direkt oben, ohne Sprung */}
-            <section ref={q1BoxRef} className="px-4 pt-2 pb-6 md:pt-4 md:py-10">
+            {/* HERO – Bridge für Pinterest-Traffic */}
+            <section className="bg-background px-4 pt-8 pb-6 md:pt-14 md:pb-10">
               <div className="container max-w-2xl mx-auto">
-              <div className="bg-card border border-border rounded-2xl shadow-lg p-4 md:p-10">
-                <div className="mb-4 md:mb-6">
-                  <QuizProgress
-                    currentQuestion={0}
-                    totalQuestions={totalQuestions}
-                    progress={0}
-                  />
-                </div>
-                <p className="text-xs md:text-sm font-semibold text-primary uppercase tracking-wide mb-2 md:mb-3">
-                  Frage 1 von {totalQuestions}
-                </p>
-                <h2 className="text-lg md:text-2xl font-bold text-foreground mb-4 md:mb-6 leading-snug md:leading-relaxed">
-                  {q1.question}
-                </h2>
-
-                  <div className="space-y-3">
-                    {q1.answers.map((answer) => (
-                      <button
-                        key={answer.id}
-                        onClick={() => handleQ1Answer(answer.id, answer.profile)}
-                        disabled={isTransitioning}
-                        className={cn(
-                          'w-full text-left p-5 rounded-xl border-2 transition-all duration-200',
-                          'hover:border-secondary hover:bg-secondary/10 hover:shadow-md',
-                          'focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2',
-                          'disabled:cursor-not-allowed',
-                          selectedQ1 === answer.id
-                            ? 'border-secondary bg-secondary text-secondary-foreground scale-[0.98] shadow-lg'
-                            : 'border-border bg-card shadow-sm hover:border-primary/30'
-                        )}
-                      >
-                        <div className="flex items-center gap-4">
-                          <div
-                            className={cn(
-                              'w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all',
-                              selectedQ1 === answer.id
-                                ? 'border-secondary-foreground bg-secondary-foreground/20'
-                                : 'border-muted-foreground/30'
-                            )}
-                          >
-                            {selectedQ1 === answer.id && (
-                              <CheckCircle2 className="w-5 h-5 text-secondary-foreground" />
-                            )}
-                          </div>
-                          <span
-                            className={cn(
-                              'text-base md:text-lg leading-relaxed font-medium',
-                              selectedQ1 === answer.id
-                                ? 'text-secondary-foreground'
-                                : 'text-foreground'
-                            )}
-                          >
-                            {answer.text}
-                          </span>
-                        </div>
-                      </button>
-                    ))}
+                <div className="flex items-center gap-4 md:gap-6">
+                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-muted border border-border flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    <User className="w-10 h-10 md:w-12 md:h-12 text-muted-foreground" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs md:text-sm text-muted-foreground mb-1">
+                      Philipp's Biohack
+                    </p>
+                    <h1 className="text-xl md:text-3xl font-bold text-foreground leading-tight">
+                      Dein Stoffwechsel reagiert nicht so, wie er sollte?
+                    </h1>
+                    <p className="text-sm md:text-base text-muted-foreground mt-2 leading-snug">
+                      Ich erkläre die Muster dahinter. Wissenschaftlich fundiert, ohne Bullshit.
+                    </p>
                   </div>
                 </div>
+                <div className="border-t border-border mt-6 md:mt-8" />
               </div>
             </section>
 
-            {/* SCROLLABLE CONTEXT */}
-            <section className="px-4 py-10 md:py-14 bg-muted/30">
+            {/* KURZARTIKEL */}
+            <section className="px-4 pb-6 md:pb-10">
               <div className="container max-w-2xl mx-auto">
-                <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6">
-                  Kommt Dir das bekannt vor?
+                <h2 className="text-lg md:text-2xl font-bold text-foreground mb-4 md:mb-6">
+                  Was die meisten nicht wissen
                 </h2>
-                <ul className="space-y-3 mb-8">
-                  {[
-                    'Du hältst Dich an Deinen Plan – aber die Waage bewegt sich nicht',
-                    'Keto, Intervallfasten, Low Carb – schon vieles versucht',
-                    'Du fühlst Dich müde, obwohl Du alles richtig machst',
-                    'Du fragst Dich, ob es an Deinem Stoffwechsel liegt',
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0" />
-                      <span className="text-base text-foreground leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="space-y-4 text-base md:text-lg text-foreground leading-relaxed">
+                  <p>
+                    Du isst weniger als früher – und nimmst trotzdem nicht ab. Du hast Keto probiert, Intervallfasten, Low Carb. Nichts hat langfristig funktioniert.
+                  </p>
+                  <p>
+                    Das Problem ist nicht deine Disziplin. Dein Stoffwechsel hat sich angepasst – an zu wenig Essen, zu viel Stress, zu wenig Schlaf. Er läuft auf Sparflamme.
+                  </p>
+                  <p>
+                    Was für eine Person funktioniert, muss nicht für alle passen. Dein Körper reagiert anders auf Nahrung, Stress und Bewegung als der einer Freundin.
+                  </p>
+                  <p className="font-bold text-foreground">
+                    Die Frage ist nicht OB dein Stoffwechsel blockiert ist – sondern WARUM. Und genau das findest du in 2 Minuten heraus.
+                  </p>
+                </div>
 
-                <p className="text-base text-muted-foreground leading-relaxed mb-8">
-                  Die meisten Ansätze ignorieren, wie Dein Körper individuell Energie verarbeitet.
-                  Dieses Quiz zeigt Dir, welches der drei Muster Deinen Stoffwechsel aktuell
-                  blockiert – und was daraus folgt. Kein Verkaufsgespräch. Keine Anmeldung.
-                  Einfach Klarheit.
-                </p>
-
-                <div className="text-center">
-                  <Button
-                    onClick={scrollToQ1}
-                    variant="cta"
-                    size="xl"
-                    className="w-full md:w-auto"
-                  >
-                    Test starten
+                <div className="mt-8 text-center">
+                  <Button onClick={startQuiz} variant="cta" size="xl" className="w-full md:w-auto">
+                    Jetzt herausfinden
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </div>
               </div>
             </section>
 
-            {/* IDENTIFICATION & REFRAMING (von Root-Page übernommen) */}
-            <IdentificationSection />
-            <ReframingSection />
-
-            {/* WARUM DIESES QUIZ – CTA zurück zu Q1 */}
-            <section className="px-4 py-12 md:py-16 bg-section-alt">
+            {/* VERTRAUENS-SECTION */}
+            <section className="px-4 py-10 md:py-14 bg-muted/40">
               <div className="container max-w-4xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-4">
-                  Warum dieses Quiz ein guter Einstieg sein kann
-                </h2>
-                <p className="text-base md:text-lg text-muted-foreground text-center max-w-xl mx-auto mb-10">
-                  Ein besseres Verständnis des eigenen Körpers kann ein hilfreicher erster Schritt sein.
-                </p>
-
-                <div className="grid md:grid-cols-3 gap-5 mb-10">
+                <div className="grid md:grid-cols-3 gap-4 md:gap-5">
                   {[
-                    { icon: Target, title: 'Mögliche Stoffwechsel-Schwerpunkte', desc: 'Manche Menschen reagieren unterschiedlich auf Makronährstoffe – das Quiz gibt eine erste Orientierung.' },
-                    { icon: Lightbulb, title: 'Hinweise zur Selbstreflexion', desc: 'Keine Diagnose, sondern Anregungen zum Nachdenken über die eigene Situation.' },
-                    { icon: Clock, title: 'Nur 2 Minuten', desc: 'Kurze, gezielte Fragen – ohne Anmeldung, ohne Verpflichtung.' },
+                    { icon: BookOpen, title: 'Wissenschaftlich fundiert', desc: 'Basierend auf aktueller Stoffwechselforschung' },
+                    { icon: Clock, title: 'Nur 2 Minuten', desc: 'Kurz, anonym, ohne Anmeldung' },
+                    { icon: Target, title: 'Persönliche Einordnung', desc: 'Keine generischen Tipps – zugeschnitten auf deinen Typ' },
                   ].map((b, i) => (
-                    <div key={i} className="text-center p-6 rounded-xl bg-card border border-border">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                        <b.icon className="w-7 h-7 text-primary" />
+                    <div key={i} className="text-center p-5 md:p-6 rounded-xl bg-card border border-border">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                        <b.icon className="w-6 h-6 text-primary" />
                       </div>
-                      <h3 className="text-lg font-semibold text-foreground mb-2">{b.title}</h3>
+                      <h3 className="text-base md:text-lg font-semibold text-foreground mb-1">{b.title}</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">{b.desc}</p>
                     </div>
                   ))}
                 </div>
 
-                <div className="text-center">
-                  <Button onClick={scrollToQ1} variant="cta" size="xl" className="w-full md:w-auto">
-                    Test starten
+                <div className="mt-8 md:mt-10 text-center">
+                  <Button onClick={startQuiz} variant="cta" size="xl" className="w-full md:w-auto">
+                    Kostenlos starten
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
-                </div>
-              </div>
-            </section>
-
-            {/* FINALE TRANSITION – CTA zurück zu Q1 */}
-            <section className="px-4 py-12 md:py-16 bg-quiz-section text-quiz-section-foreground">
-              <div className="container max-w-3xl mx-auto text-center">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                  Mehr Verständnis für Deinen eigenen Stoffwechsel
-                </h2>
-                <p className="text-base md:text-lg text-quiz-section-foreground/80 max-w-xl mx-auto mb-2">
-                  Beantworte ein paar kurze Fragen und erhalte eine orientierende Einordnung mit Hinweisen zur Selbstreflexion.
-                </p>
-                <p className="text-sm text-quiz-section-foreground/60 mb-8">
-                  Allgemeine Informationen rund um Ernährung und Lebensstil.
-                </p>
-
-                <div className="max-w-xl mx-auto bg-background/10 backdrop-blur-sm rounded-2xl p-6 md:p-8">
-                  <h3 className="text-xl font-bold mb-3 text-quiz-section-foreground">
-                    Neugierig auf Deine Einordnung?
-                  </h3>
-                  <p className="text-quiz-section-foreground/80 mb-6">
-                    In nur 2 Minuten erhältst Du eine orientierende Einordnung mit Hinweisen zur Selbstreflexion.
-                  </p>
-                  <Button onClick={scrollToQ1} variant="cta" size="xl" className="w-full sm:w-auto">
-                    Jetzt Quiz starten
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Button>
-                </div>
-
-                <div className="flex flex-wrap justify-center gap-6 text-quiz-section-foreground/70 text-sm mt-8">
-                  <div className="flex items-center gap-2"><Check2 className="w-4 h-4" /><span>Kostenlos</span></div>
-                  <div className="flex items-center gap-2"><Check2 className="w-4 h-4" /><span>Keine Anmeldung</span></div>
-                  <div className="flex items-center gap-2"><Check2 className="w-4 h-4" /><span>Sofortige Auswertung</span></div>
                 </div>
               </div>
             </section>
           </>
         )}
+
+
 
         {step === 'questions' && currentQuestion && (
           <div className="container max-w-2xl mx-auto px-4 py-8 md:py-12">
