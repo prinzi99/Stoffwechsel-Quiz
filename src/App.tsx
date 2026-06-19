@@ -43,6 +43,7 @@ import BuchAnbot2Old from "./pages/BuchAnbot2Old";
 import BuchBonus from "./pages/BuchBonus";
 import Analyse from "./pages/Analyse";
 import BuchBonusIntern from "./pages/BuchBonusIntern";
+import Kompass from "./pages/Kompass";
 import BiohackingTools from "./pages/BiohackingTools";
 import DownloadsChecklisten from "./pages/DownloadsChecklisten";
 import KalorienRechner from "./pages/KalorienRechner";
@@ -104,6 +105,7 @@ const App = () => {
             <Route path="/buch/bonus/intern/stoffwechsel-check" element={<StoffwechselCheck />} />
             <Route path="/tools" element={<Navigate to="/buch/bonus" replace />} />
             <Route path="/analyse" element={<Analyse />} />
+            <Route path="/kompass" element={<Kompass />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
