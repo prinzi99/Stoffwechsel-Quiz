@@ -44,6 +44,10 @@ import BuchBonus from "./pages/BuchBonus";
 import Analyse from "./pages/Analyse";
 import BuchBonusIntern from "./pages/BuchBonusIntern";
 import Kompass from "./pages/Kompass";
+import KompassKalorienRechner from "./pages/KompassKalorienRechner";
+import KompassStoffwechselCheck from "./pages/KompassStoffwechselCheck";
+import KompassBiohackingTools from "./pages/KompassBiohackingTools";
+import KompassDownloads from "./pages/KompassDownloads";
 import BiohackingTools from "./pages/BiohackingTools";
 import DownloadsChecklisten from "./pages/DownloadsChecklisten";
 import KalorienRechner from "./pages/KalorienRechner";
@@ -106,6 +110,10 @@ const App = () => {
             <Route path="/tools" element={<Navigate to="/buch/bonus" replace />} />
             <Route path="/analyse" element={<Analyse />} />
             <Route path="/kompass" element={<Kompass />} />
+            <Route path="/kompass/kalorienrechner" element={<KompassKalorienRechner />} />
+            <Route path="/kompass/stoffwechsel-check" element={<KompassStoffwechselCheck />} />
+            <Route path="/kompass/biohacking-tools" element={<KompassBiohackingTools />} />
+            <Route path="/kompass/downloads" element={<KompassDownloads />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
