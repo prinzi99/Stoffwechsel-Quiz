@@ -31,7 +31,7 @@ const toolCards: { icon: React.ElementType; title: string; text: string; button:
     text: "Prüfe, ob dein Stoffwechsel aktuell eher unter Stress, Anpassung oder Stabilität läuft.",
     button: "Tool öffnen",
     badge: "Verfügbar",
-    link: "/buch/bonus/intern/stoffwechsel-check",
+    link: "/kompass/stoffwechsel-check",
   },
   {
     icon: Calculator,
@@ -39,7 +39,7 @@ const toolCards: { icon: React.ElementType; title: string; text: string; button:
     text: "Berechne deinen Kalorienbedarf und eine mögliche Makroverteilung.",
     button: "Tool öffnen",
     badge: "Verfügbar",
-    link: "/buch/bonus/intern/kalorienrechner",
+    link: "/kompass/kalorienrechner",
   },
   {
     icon: Wrench,
@@ -47,7 +47,7 @@ const toolCards: { icon: React.ElementType; title: string; text: string; button:
     text: "Apps, Tracker und Geräte, die beim Messen und Verstehen des eigenen Systems helfen.",
     button: "Bereich öffnen",
     badge: "Verfügbar",
-    link: "/buch/bonus/intern/biohacking-tools",
+    link: "/kompass/biohacking-tools",
   },
   {
     icon: FileDown,
@@ -55,7 +55,7 @@ const toolCards: { icon: React.ElementType; title: string; text: string; button:
     text: "Praktische Materialien und Ergänzungen zum Buch.",
     button: "Bereich öffnen",
     badge: "Verfügbar",
-    link: "/buch/bonus/intern/downloads",
+    link: "/kompass/downloads",
   },
   {
     icon: Utensils,
