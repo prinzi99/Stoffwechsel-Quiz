@@ -14,6 +14,7 @@ Disallow: /buch
 Disallow: /buch/
 Disallow: /analyse
 Disallow: /tools
+Disallow: /kompass
 
 User-agent: Bingbot
 Allow: /
@@ -31,6 +32,7 @@ Disallow: /buch
 Disallow: /buch/
 Disallow: /analyse
 Disallow: /tools
+Disallow: /kompass
 
 User-agent: Twitterbot
 Allow: /
@@ -53,5 +55,6 @@ Disallow: /buch
 Disallow: /buch/
 Disallow: /analyse
 Disallow: /tools
+Disallow: /kompass
 
 Sitemap: https://stoffwechsel.philippsbiohack.de/sitemap.xml
