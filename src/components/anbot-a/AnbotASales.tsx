@@ -10,26 +10,6 @@ const handleCta = (label: string) => {
   trackButtonClick(PAGE_PATH, label, DIGISTORE_URL);
 };
 
-const CtaLink = ({
-  children,
-  label,
-  className,
-}: {
-  children: React.ReactNode;
-  label: string;
-  className?: string;
-}) => (
-  <a
-    href={DIGISTORE_URL}
-    target="_blank"
-    rel="noopener noreferrer"
-    onClick={() => handleCta(label)}
-    className={className}
-  >
-    {children}
-  </a>
-);
-
 const painCards = [
   {
     icon: "😒",
@@ -51,7 +31,7 @@ const painCards = [
 const whyBullets = [
   {
     title: "Dein Stoffwechsel ist im Stressmodus.",
-    text: "Cortisol signalisiert deinem Körper: „Gefahr! Energie speichern!" Abnehmen wird zur Unmöglichkeit.",
+    text: `Cortisol signalisiert deinem Körper: „Gefahr! Energie speichern!“ Abnehmen wird zur Unmöglichkeit.`,
   },
   {
     title: "Jede Diät verschlimmert es.",
@@ -74,7 +54,7 @@ const faqs = [
   },
   {
     q: "Ist das nur eine weitere Diät?",
-    a: "Nein. Es geht nicht um Verzicht oder Kalorienzählen – das würde deinen Stoffwechsel nur noch mehr stressen. Der Aktionsplan zeigt dir, wie du deinen Körper wieder in den „Sicherheitsmodus" bringst. Erst dann kann er loslassen. Keine Diät, sondern ein System-Reset.",
+    a: `Nein. Es geht nicht um Verzicht oder Kalorienzählen – das würde deinen Stoffwechsel nur noch mehr stressen. Der Aktionsplan zeigt dir, wie du deinen Körper wieder in den „Sicherheitsmodus“ bringst. Erst dann kann er loslassen. Keine Diät, sondern ein System-Reset.`,
   },
   {
     q: "Was, wenn es mir nicht hilft?",
@@ -84,15 +64,21 @@ const faqs = [
 
 const TRUST = "🔒 Sichere Bestellung · Sofortiger Zugang · 14-Tage Geld-zurück-Garantie";
 
+const GREEN = "rgb(22,163,74)";
+const GREEN_LIGHT = "rgb(220,252,231)";
+const OFFWHITE = "rgb(249,247,246)";
+const GRAY_BG = "rgb(243,244,246)";
+const DARK = "rgb(17,24,39)";
+
 const AnbotASales = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
-    <div style={{ background: "rgb(249,247,246)" }} className="text-gray-900">
+    <div style={{ background: OFFWHITE }} className="text-gray-900">
       {/* 1. HERO */}
       <section className="bg-white py-14 md:py-20">
         <div className="max-w-3xl mx-auto px-5 text-center">
-          <p className="text-sm uppercase tracking-wide font-semibold mb-4" style={{ color: "rgb(22,163,74)" }}>
+          <p className="text-sm uppercase tracking-wide font-semibold mb-4" style={{ color: GREEN }}>
             FÜR MENSCHEN MIT GESTRESSTEM STOFFWECHSEL
           </p>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight text-gray-900">
@@ -109,12 +95,12 @@ const AnbotASales = () => {
               className="relative w-40 h-52 md:w-48 md:h-64 rounded-xl shadow-2xl flex flex-col p-5 text-left"
               style={{
                 background: "linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%)",
-                border: "2px solid rgb(22,163,74)",
+                border: `2px solid ${GREEN}`,
               }}
             >
               <span
                 className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-wider text-white px-3 py-1 rounded-full whitespace-nowrap"
-                style={{ background: "rgb(22,163,74)" }}
+                style={{ background: GREEN }}
               >
                 Profil A
               </span>
@@ -123,13 +109,13 @@ const AnbotASales = () => {
               <p className="text-[11px] text-gray-500 mt-0.5">Gestresster Stoffwechsel</p>
               <ul className="mt-4 space-y-2 text-[11px] text-gray-700">
                 <li className="flex items-start gap-1.5">
-                  <span style={{ color: "rgb(22,163,74)" }}>✓</span> HPA-Achse beruhigen
+                  <span style={{ color: GREEN }}>✓</span> HPA-Achse beruhigen
                 </li>
                 <li className="flex items-start gap-1.5">
-                  <span style={{ color: "rgb(22,163,74)" }}>✓</span> Stoffwechsel aktivieren
+                  <span style={{ color: GREEN }}>✓</span> Stoffwechsel aktivieren
                 </li>
                 <li className="flex items-start gap-1.5">
-                  <span style={{ color: "rgb(22,163,74)" }}>✓</span> Nachhaltige Routine
+                  <span style={{ color: GREEN }}>✓</span> Nachhaltige Routine
                 </li>
               </ul>
             </div>
@@ -138,7 +124,7 @@ const AnbotASales = () => {
       </section>
 
       {/* 2. PAIN POINTS */}
-      <section className="py-14 md:py-16" style={{ background: "rgb(243,244,246)" }}>
+      <section className="py-14 md:py-16" style={{ background: GRAY_BG }}>
         <div className="max-w-5xl mx-auto px-5">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-gray-900">Kennst du das auch?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -153,10 +139,7 @@ const AnbotASales = () => {
               </div>
             ))}
           </div>
-          <p
-            className="text-center mt-8 text-lg font-medium"
-            style={{ color: "rgb(22,163,74)" }}
-          >
+          <p className="text-center mt-8 text-lg font-medium" style={{ color: GREEN }}>
             ✓ Das ist nicht deine Schuld. Es ist dein Cortisol.
           </p>
         </div>
@@ -171,9 +154,7 @@ const AnbotASales = () => {
           <div className="space-y-6">
             {whyBullets.map((b, i) => (
               <div key={i} className="flex items-start gap-4">
-                <span className="text-2xl flex-shrink-0" style={{ color: "rgb(22,163,74)" }}>
-                  ♦
-                </span>
+                <span className="text-2xl flex-shrink-0" style={{ color: GREEN }}>♦</span>
                 <div>
                   <p className="font-bold text-gray-900 text-base md:text-lg">{b.title}</p>
                   <p className="text-gray-700 mt-1 leading-relaxed">{b.text}</p>
@@ -185,7 +166,7 @@ const AnbotASales = () => {
       </section>
 
       {/* 4. CONTRAST */}
-      <section className="py-14 md:py-16" style={{ background: "rgb(249,247,246)" }}>
+      <section className="py-14 md:py-16" style={{ background: OFFWHITE }}>
         <div className="max-w-5xl mx-auto px-5">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-gray-900">
             Du hast jetzt zwei Möglichkeiten:
@@ -220,14 +201,11 @@ const AnbotASales = () => {
             {/* Option 2 */}
             <div
               className="rounded-xl p-7 shadow-md"
-              style={{
-                background: "rgb(220,252,231)",
-                border: "2px solid rgb(22,163,74)",
-              }}
+              style={{ background: GREEN_LIGHT, border: `2px solid ${GREEN}` }}
             >
               <span
                 className="inline-block text-xs uppercase tracking-wider font-bold mb-2 text-white px-2 py-1 rounded"
-                style={{ background: "rgb(22,163,74)" }}
+                style={{ background: GREEN }}
               >
                 Option 2 – Empfohlen
               </span>
@@ -238,15 +216,15 @@ const AnbotASales = () => {
               </p>
               <ul className="mt-5 space-y-3 text-gray-800">
                 <li>
-                  <span style={{ color: "rgb(22,163,74)" }} className="font-bold">✓ Phase 1 – HPA-Achse beruhigen: </span>
+                  <span style={{ color: GREEN }} className="font-bold">✓ Phase 1 – HPA-Achse beruhigen: </span>
                   Lifestyle-Strategien, die Cortisol senken (ohne Verzicht oder Zwang)
                 </li>
                 <li>
-                  <span style={{ color: "rgb(22,163,74)" }} className="font-bold">✓ Phase 2 – Stoffwechsel aktivieren: </span>
-                  Gezielte Impulse, die deinen Körper wieder in den „Sicherheitsmodus" bringen
+                  <span style={{ color: GREEN }} className="font-bold">✓ Phase 2 – Stoffwechsel aktivieren: </span>
+                  Gezielte Impulse, die deinen Körper wieder in den „Sicherheitsmodus“ bringen
                 </li>
                 <li>
-                  <span style={{ color: "rgb(22,163,74)" }} className="font-bold">✓ Phase 3 – Nachhaltige Routine: </span>
+                  <span style={{ color: GREEN }} className="font-bold">✓ Phase 3 – Nachhaltige Routine: </span>
                   Wie du langfristig dran bleibst – ohne Rückfall in alte Muster
                 </li>
               </ul>
@@ -255,17 +233,16 @@ const AnbotASales = () => {
 
           {/* CTA #1 */}
           <div className="text-center mt-10">
-            <CtaLink
-              label="Contrast CTA"
-              className="inline-block text-white text-lg md:text-xl font-bold py-4 px-8 md:py-5 md:px-10 rounded-xl shadow-xl transition-all duration-200 hover:opacity-95"
-              {...{} as any}
+            <a
+              href={DIGISTORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => handleCta("Contrast CTA")}
+              className="inline-block text-white text-lg md:text-xl font-bold py-4 px-8 md:py-5 md:px-10 rounded-xl shadow-xl transition-all hover:opacity-95"
+              style={{ background: GREEN }}
             >
-              <span style={{ background: "rgb(22,163,74)" }} />
               Ja, ich will meinen Aktionsplan – für 4,99€ →
-            </CtaLink>
-            <style>{`
-              a[href="${DIGISTORE_URL}"] { }
-            `}</style>
+            </a>
             <p className="text-sm text-gray-500 mt-3">{TRUST}</p>
           </div>
         </div>
@@ -274,7 +251,10 @@ const AnbotASales = () => {
       {/* 5. ANGEBOT */}
       <section className="bg-white py-14 md:py-16">
         <div className="max-w-2xl mx-auto px-5">
-          <div className="rounded-2xl p-8 md:p-10 text-center shadow-lg" style={{ border: "2px solid rgb(22,163,74)" }}>
+          <div
+            className="rounded-2xl p-8 md:p-10 text-center shadow-lg bg-white"
+            style={{ border: `2px solid ${GREEN}` }}
+          >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
               Dein Aktionsplan – für einmalig 4,99€
             </h2>
@@ -283,26 +263,26 @@ const AnbotASales = () => {
             </p>
             <ul className="mt-4 space-y-2 text-left text-gray-700">
               <li className="flex items-start gap-2">
-                <span style={{ color: "rgb(22,163,74)" }} className="mt-1">✓</span>
+                <span style={{ color: GREEN }} className="mt-1">✓</span>
                 Welche konkreten Schritte dein Stoffwechsel-Typ JETZT braucht
               </li>
               <li className="flex items-start gap-2">
-                <span style={{ color: "rgb(22,163,74)" }} className="mt-1">✓</span>
+                <span style={{ color: GREEN }} className="mt-1">✓</span>
                 Wie du Cortisol senkst, ohne dein Leben auf den Kopf zu stellen
               </li>
               <li className="flex items-start gap-2">
-                <span style={{ color: "rgb(22,163,74)" }} className="mt-1">✓</span>
+                <span style={{ color: GREEN }} className="mt-1">✓</span>
                 Welche Fehler du unbedingt vermeiden musst (sonst wird's schlimmer)
               </li>
               <li className="flex items-start gap-2">
-                <span style={{ color: "rgb(22,163,74)" }} className="mt-1">✓</span>
-                Wie du in 3 Phasen von „Überlebensmodus" zu „Stoffwechsel läuft" kommst
+                <span style={{ color: GREEN }} className="mt-1">✓</span>
+                Wie du in 3 Phasen von „Überlebensmodus“ zu „Stoffwechsel läuft“ kommst
               </li>
             </ul>
 
-            <div className="mt-8 py-5 rounded-xl" style={{ background: "rgb(220,252,231)" }}>
+            <div className="mt-8 py-5 rounded-xl" style={{ background: GREEN_LIGHT }}>
               <p className="text-lg font-semibold text-gray-900">Einmalig</p>
-              <p className="text-5xl font-bold mt-1" style={{ color: "rgb(22,163,74)" }}>4,99€</p>
+              <p className="text-5xl font-bold mt-1" style={{ color: GREEN }}>4,99€</p>
               <p className="text-sm text-gray-600 mt-1">kein Abo, kein Haken</p>
             </div>
 
@@ -312,7 +292,7 @@ const AnbotASales = () => {
               rel="noopener noreferrer"
               onClick={() => handleCta("Angebot CTA")}
               className="mt-6 inline-block w-full text-white text-lg font-bold py-4 px-8 rounded-xl shadow-lg transition-all hover:opacity-95"
-              style={{ background: "rgb(22,163,74)" }}
+              style={{ background: GREEN }}
             >
               Jetzt für 4,99€ sichern und sofort starten →
             </a>
@@ -322,7 +302,7 @@ const AnbotASales = () => {
       </section>
 
       {/* 6. FAQ */}
-      <section className="py-14 md:py-16" style={{ background: "rgb(243,244,246)" }}>
+      <section className="py-14 md:py-16" style={{ background: GRAY_BG }}>
         <div className="max-w-2xl mx-auto px-5">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">Häufige Fragen</h2>
           <div className="space-y-3">
@@ -341,9 +321,7 @@ const AnbotASales = () => {
                       size={20}
                     />
                   </button>
-                  {isOpen && (
-                    <div className="px-5 pb-5 text-gray-700 leading-relaxed">{f.a}</div>
-                  )}
+                  {isOpen && <div className="px-5 pb-5 text-gray-700 leading-relaxed">{f.a}</div>}
                 </div>
               );
             })}
@@ -352,7 +330,7 @@ const AnbotASales = () => {
       </section>
 
       {/* 7. FINAL CTA */}
-      <section className="py-16 md:py-20" style={{ background: "rgb(17,24,39)" }}>
+      <section className="py-16 md:py-20" style={{ background: DARK }}>
         <div className="max-w-2xl mx-auto px-5 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold leading-tight">
             Bereit, deinen Stoffwechsel aus dem Überlebensmodus zu befreien?
@@ -364,7 +342,7 @@ const AnbotASales = () => {
             rel="noopener noreferrer"
             onClick={() => handleCta("Final CTA")}
             className="mt-6 inline-block text-white text-lg md:text-xl font-bold py-4 px-8 md:py-5 md:px-10 rounded-xl shadow-xl transition-all hover:opacity-95"
-            style={{ background: "rgb(22,163,74)" }}
+            style={{ background: GREEN }}
           >
             Jetzt Aktionsplan sichern →
           </a>
