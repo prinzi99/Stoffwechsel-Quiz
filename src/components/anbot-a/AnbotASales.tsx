@@ -47,10 +47,90 @@ const whyBullets = [
   },
 ];
 
+// Variante C: Tool-fokussierte Inhalte
+const planContents = [
+  {
+    icon: "📅",
+    title: "2-Phasen-Roadmap über 14+ Tage",
+    points: [
+      "Woche-für-Woche wissen: Was ist JETZT wichtig?",
+      "Phase 1: Stabilisierung (KEIN Defizit!) – Nervensystem beruhigen",
+      "Phase 2: Moderates Defizit (max. 300–400 kcal) – erst wenn dein Körper bereit ist",
+    ],
+  },
+  {
+    icon: "🔢",
+    title: "Kennzahlen-Dashboard (keine Wischi-Waschi-Aussagen)",
+    points: [
+      "1,6–2,0 g Protein pro kg Körpergewicht",
+      "Max. 300–400 kcal Defizit (erst Phase 2!)",
+      "7,5–8h Schlaf täglich",
+      "Max. 3–4x Training pro Woche",
+    ],
+  },
+  {
+    icon: "✅",
+    title: "Quick-Check-Listen (täglich & wöchentlich)",
+    points: [
+      "Täglich: Schlaf, Protein, Entspannung, 7.000 Schritte",
+      "Wöchentlich: Training, Ruhetage, Meal Prep, Stress-Review",
+      "4 Kennzahlen auf einen Blick: Schlaf, Protein, Training, Defizit",
+    ],
+  },
+  {
+    icon: "🧬",
+    title: "HPA-Achsen-Reset – wissenschaftlich fundiert",
+    points: [
+      "Verstehe WARUM dein Körper blockiert: Cortisol, Insulinresistenz, Bauchfett",
+      "Echte Studien (Epel ES, Arnsten AFT, Spiegel K) – keine Pseudo-Wissenschaft",
+      "4 Hauptsymptome visuell erklärt",
+    ],
+  },
+  {
+    icon: "🍽️",
+    title: "Anti-Stress-Ernährungs-Protokoll",
+    points: [
+      "3 Kernprinzipien statt „iss gesund“",
+      "Konkrete Anti-Stress-Nährstoffe mit Lebensmittel-Beispielen (Magnesium, Omega-3, B-Vitamine)",
+      "Refeed-Tage alle 2 Wochen – hormonelle Stabilisierung",
+    ],
+  },
+  {
+    icon: "🏋️",
+    title: "Lifestyle-Strategien",
+    points: [
+      "Schlaf-Ritual mit konkreten Einschlaf-Strategien",
+      "Training intelligent dosieren – mehr ist NICHT besser!",
+      "Stressmanagement: 5–10 Min. Meditation/Atemübungen (senkt Cortisol nachweislich)",
+      "Entscheidungsarchitektur: Meal Prep, Morgenroutine, To-Do-Listen",
+    ],
+  },
+  {
+    icon: "🎯",
+    title: "3-Stufen-Roadmap + Kompass-Zugang",
+    points: [
+      "Woche 1–2: Stabilisieren · Woche 3–4: Beobachten · Langfristig: Integrieren",
+      "Bonus: Kalorienrechner, FAQ, Stoffwechsel-Check, bewährte Tools",
+    ],
+  },
+];
+
 const faqs = [
   {
     q: "Was genau bekomme ich für 4,99€?",
-    a: "Einen 10-seitigen PDF-Aktionsplan, der speziell auf dein Profil (Gestresster Stoffwechsel) zugeschnitten ist. Darin findest du konkrete Lifestyle-Strategien, Ernährungsimpulse und Routinen, um deinen Cortisol-Spiegel zu senken und deinen Stoffwechsel aus dem Stressmodus zu holen. Du kannst ihn sofort nach dem Kauf herunterladen.",
+    a: `Du bekommst deinen profil-spezifischen Stoffwechsel-Aktionsplan für „Gestresster Stoffwechsel“: eine 2-Phasen-Roadmap über 14+ Tage, ein Kennzahlen-Dashboard (Protein, Defizit, Schlaf, Training), tägliche & wöchentliche Quick-Check-Listen, das HPA-Achsen-Reset-Protokoll mit wissenschaftlichen Quellen, ein Anti-Stress-Ernährungs-Protokoll, Lifestyle-Strategien für Schlaf, Training und Stressmanagement – plus Zugang zum Kompass-Bereich mit Kalorienrechner, Stoffwechsel-Check und bewährten Tools. Sofortiger Download nach Kauf.`,
+  },
+  {
+    q: "Was ist die HPA-Achse und warum ist sie wichtig?",
+    a: `Die HPA-Achse (Hypothalamus-Hypophysen-Nebennieren-Achse) ist dein zentrales Stresssystem. Bei chronischer Belastung (Job, Familie, Schlafmangel) bleibt sie dauerhaft aktiv und schüttet kontinuierlich Cortisol aus. Folgen: Fettspeicherung im Bauchbereich (viszerales Fett), Insulinresistenz, Heißhunger auf Zucker & Fett, reduzierte Impulskontrolle und blockierte Fettverbrennung. Deshalb reicht „mehr Disziplin“ nicht – du musst dein Nervensystem beruhigen.`,
+  },
+  {
+    q: "Warum soll ich 14 Tage OHNE Defizit essen – verliere ich da keine Zeit?",
+    a: `Nein – du gewinnst Zeit. Bei chronischem Stress ist dein Körper im Alarmzustand. Ein Defizit obendrauf interpretiert er als zusätzliche Bedrohung: Cortisol steigt weiter, der Stoffwechsel drosselt, Heißhunger wird stärker. Die 14-Tage-Stabilisierung senkt Cortisol, stabilisiert Leptin & T3 (Schilddrüsenhormon), reduziert Heißhunger und verbessert Schlaf & Energie. Erst dann kann dein Körper Fett abgeben.`,
+  },
+  {
+    q: "Ich trainiere 6x/Woche – warum auf 3–4x reduzieren?",
+    a: `Weil Training Stress für deinen Körper ist. Bei chronischem Stress ist dein „Stress-Eimer“ schon voll. Mehr Training = mehr Cortisol, längere Recovery, schlechterer Schlaf, stärkerer Heißhunger, blockierter Stoffwechsel. Intelligente Dosierung: Max. 3–4x/Woche Krafttraining, 2 komplette Ruhetage, 7.000 Schritte täglich (NEAT), KEIN exzessives Cardio oder HIIT. Weniger ist mehr – gib deinem Körper Zeit zur Regeneration.`,
   },
   {
     q: "Ist das nur eine weitere Diät?",
@@ -92,7 +172,7 @@ const AnbotASales = () => {
           {/* Aktionsplan Visual */}
           <div className="mt-10 inline-flex flex-col items-center">
             <div
-              className="relative w-40 h-52 md:w-48 md:h-64 rounded-xl shadow-2xl flex flex-col p-5 text-left"
+              className="relative w-44 h-56 md:w-52 md:h-72 rounded-xl shadow-2xl flex flex-col p-5 text-left"
               style={{
                 background: "linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%)",
                 border: `2px solid ${GREEN}`,
@@ -104,18 +184,21 @@ const AnbotASales = () => {
               >
                 Profil A
               </span>
-              <p className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mt-2">PDF · 10 Seiten</p>
-              <p className="font-bold text-sm text-gray-900 mt-1 leading-snug">Dein Aktionsplan</p>
+              <p className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mt-2">Aktionsplan PDF</p>
+              <p className="font-bold text-sm text-gray-900 mt-1 leading-snug">Dein Stoffwechsel-Plan</p>
               <p className="text-[11px] text-gray-500 mt-0.5">Gestresster Stoffwechsel</p>
               <ul className="mt-4 space-y-2 text-[11px] text-gray-700">
                 <li className="flex items-start gap-1.5">
-                  <span style={{ color: GREEN }}>✓</span> HPA-Achse beruhigen
+                  <span style={{ color: GREEN }}>✓</span> 2-Phasen-Roadmap
                 </li>
                 <li className="flex items-start gap-1.5">
-                  <span style={{ color: GREEN }}>✓</span> Stoffwechsel aktivieren
+                  <span style={{ color: GREEN }}>✓</span> Kennzahlen-Dashboard
                 </li>
                 <li className="flex items-start gap-1.5">
-                  <span style={{ color: GREEN }}>✓</span> Nachhaltige Routine
+                  <span style={{ color: GREEN }}>✓</span> Quick-Check-Listen
+                </li>
+                <li className="flex items-start gap-1.5">
+                  <span style={{ color: GREEN }}>✓</span> HPA-Achsen-Reset
                 </li>
               </ul>
             </div>
@@ -165,79 +248,56 @@ const AnbotASales = () => {
         </div>
       </section>
 
-      {/* 4. CONTRAST */}
+      {/* 4. WHAT'S INSIDE (Variante C – Tool-fokussiert) */}
       <section className="py-14 md:py-16" style={{ background: OFFWHITE }}>
-        <div className="max-w-5xl mx-auto px-5">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-gray-900">
-            Du hast jetzt zwei Möglichkeiten:
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Option 1 */}
-            <div className="bg-gray-100 rounded-xl p-7 border border-gray-200">
-              <span className="inline-block text-xs uppercase tracking-wider font-semibold text-gray-500 mb-2">
-                Option 1
-              </span>
-              <h3 className="text-xl font-bold text-gray-700">Allein weitermachen</h3>
-              <ul className="mt-5 space-y-3 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-gray-400 mt-1">✕</span>
-                  Weiter raten, was bei dir funktioniert
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gray-400 mt-1">✕</span>
-                  Trial & Error mit Diäten, die vielleicht passen – oder alles schlimmer machen
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gray-400 mt-1">✕</span>
-                  Riskieren, dass dein Körper noch tiefer in den Stressmodus rutscht
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gray-400 mt-1">✕</span>
-                  Monate oder Jahre verlieren
-                </li>
-              </ul>
-            </div>
-
-            {/* Option 2 */}
-            <div
-              className="rounded-xl p-7 shadow-md"
-              style={{ background: GREEN_LIGHT, border: `2px solid ${GREEN}` }}
-            >
-              <span
-                className="inline-block text-xs uppercase tracking-wider font-bold mb-2 text-white px-2 py-1 rounded"
-                style={{ background: GREEN }}
-              >
-                Option 2 – Empfohlen
-              </span>
-              <h3 className="text-xl font-bold text-gray-900">Deinen persönlichen Aktionsplan nutzen</h3>
-              <p className="text-gray-700 mt-3 text-sm leading-relaxed">
-                Ein kompakter, auf dein Profil zugeschnittener Plan, der deinen Stoffwechsel Schritt für Schritt aus dem
-                Überlebensmodus holt:
-              </p>
-              <ul className="mt-5 space-y-3 text-gray-800">
-                <li>
-                  <span style={{ color: GREEN }} className="font-bold">✓ Phase 1 – HPA-Achse beruhigen: </span>
-                  Lifestyle-Strategien, die Cortisol senken (ohne Verzicht oder Zwang)
-                </li>
-                <li>
-                  <span style={{ color: GREEN }} className="font-bold">✓ Phase 2 – Stoffwechsel aktivieren: </span>
-                  Gezielte Impulse, die deinen Körper wieder in den „Sicherheitsmodus“ bringen
-                </li>
-                <li>
-                  <span style={{ color: GREEN }} className="font-bold">✓ Phase 3 – Nachhaltige Routine: </span>
-                  Wie du langfristig dran bleibst – ohne Rückfall in alte Muster
-                </li>
-              </ul>
-            </div>
+        <div className="max-w-4xl mx-auto px-5">
+          <div className="text-center mb-10">
+            <p className="text-sm uppercase tracking-wide font-semibold" style={{ color: GREEN }}>
+              Das ist drin
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold mt-2 text-gray-900">
+              Dein umsetzbarer Stoffwechsel-Aktionsplan mit sofort nutzbaren Tools
+            </h2>
+            <p className="text-gray-600 mt-3">
+              Keine vagen Tipps. Konkrete Zahlen, klare Schritte, wissenschaftlich fundiert.
+            </p>
           </div>
 
-          {/* CTA #1 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {planContents.map((block, i) => (
+              <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">{block.icon}</span>
+                  <h3 className="font-bold text-gray-900 text-base md:text-lg leading-snug">{block.title}</h3>
+                </div>
+                <ul className="mt-4 space-y-2">
+                  {block.points.map((p, j) => (
+                    <li key={j} className="flex items-start gap-2 text-sm text-gray-700 leading-relaxed">
+                      <span style={{ color: GREEN }} className="mt-1 flex-shrink-0">✓</span>
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div
+            className="mt-8 text-center py-5 px-6 rounded-xl border-y"
+            style={{ borderColor: `${GREEN}33`, background: GREEN_LIGHT }}
+          >
+            <p className="text-base md:text-lg font-extrabold text-gray-900">
+              💚 Dein neues Mantra: „Mein Körper ist kein Gegner, sondern ein Partner.“
+            </p>
+          </div>
+
+          {/* CTA */}
           <div className="text-center mt-10">
             <a
               href={DIGISTORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => handleCta("Contrast CTA")}
+              onClick={() => handleCta("Inhalte CTA")}
               className="inline-block text-white text-lg md:text-xl font-bold py-4 px-8 md:py-5 md:px-10 rounded-xl shadow-xl transition-all hover:opacity-95"
               style={{ background: GREEN }}
             >
@@ -259,24 +319,33 @@ const AnbotASales = () => {
               Dein Aktionsplan – für einmalig 4,99€
             </h2>
             <p className="text-gray-700 mt-5 text-left leading-relaxed">
-              Du bekommst einen <strong>10-seitigen, profil-spezifischen PDF-Aktionsplan</strong>, der dir zeigt:
+              Du bekommst deinen <strong>profil-spezifischen Stoffwechsel-Aktionsplan</strong> für „Gestresster
+              Stoffwechsel“ – mit allem, was du sofort umsetzen kannst:
             </p>
             <ul className="mt-4 space-y-2 text-left text-gray-700">
               <li className="flex items-start gap-2">
                 <span style={{ color: GREEN }} className="mt-1">✓</span>
-                Welche konkreten Schritte dein Stoffwechsel-Typ JETZT braucht
+                2-Phasen-Roadmap über 14+ Tage (Stabilisierung → moderates Defizit)
               </li>
               <li className="flex items-start gap-2">
                 <span style={{ color: GREEN }} className="mt-1">✓</span>
-                Wie du Cortisol senkst, ohne dein Leben auf den Kopf zu stellen
+                Kennzahlen-Dashboard: Protein, Defizit, Schlaf, Training – konkrete Zahlen statt Floskeln
               </li>
               <li className="flex items-start gap-2">
                 <span style={{ color: GREEN }} className="mt-1">✓</span>
-                Welche Fehler du unbedingt vermeiden musst (sonst wird's schlimmer)
+                Tägliche & wöchentliche Quick-Check-Listen
               </li>
               <li className="flex items-start gap-2">
                 <span style={{ color: GREEN }} className="mt-1">✓</span>
-                Wie du in 3 Phasen von „Überlebensmodus“ zu „Stoffwechsel läuft“ kommst
+                HPA-Achsen-Reset-Protokoll mit wissenschaftlichen Quellen
+              </li>
+              <li className="flex items-start gap-2">
+                <span style={{ color: GREEN }} className="mt-1">✓</span>
+                Anti-Stress-Ernährung & Lifestyle-Strategien (Schlaf, Training, Stressmanagement)
+              </li>
+              <li className="flex items-start gap-2">
+                <span style={{ color: GREEN }} className="mt-1">✓</span>
+                Bonus: Kompass-Zugang mit Kalorienrechner, Stoffwechsel-Check & Tools
               </li>
             </ul>
 
