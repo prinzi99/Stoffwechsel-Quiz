@@ -139,10 +139,10 @@ const AnbotBSales = () => {
               <p className="font-bold text-gray-900 mb-1">7-Tage Unterversorgter-Stoffwechsel Reset-Plan</p>
               <p className="text-sm font-semibold mb-4" style={{ color: GREEN }}>Empfohlen</p>
               <ul className="space-y-3 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Energieverfügbarkeit zurück auf 30–35 kcal/kg FFM bringen (mit Formel + Beispielrechnung)</span></li>
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Training auf max. 2–3x/Woche reduzieren, kein Cardio, kein HIIT</span></li>
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Protein auf 2,0–2,2 g/kg erhöhen + Kohlenhydrate als Leptin-/T3-Signal rehabilitieren</span></li>
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Schlaf auf 8–9 Stunden hochfahren + Zyklusüberwachung starten</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Energieaufbau-Plan für deinen Stoffwechseltyp</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Trainings-Reset ohne Rätselraten</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Makro- und Mahlzeitenstruktur für mehr Stabilität</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Tracking-Vorlage für Energie, Hunger, Schlaf und Zyklus</span></li>
               </ul>
               <p className="mt-5 text-sm font-semibold text-gray-900">
                 Preis: <span style={{ color: GREEN }}>4,99€</span> (einmalig, sofort-Download)
