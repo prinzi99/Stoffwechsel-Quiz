@@ -37,6 +37,8 @@ import BuchAnbotTest from "./pages/BuchAnbotTest";
 import BuchAnbotTestFs26 from "./pages/BuchAnbotTestFs26";
 import BuchAnbotProfA from "./pages/BuchAnbotProfA";
 import AnbotA from "./pages/AnbotA";
+import AnbotB from "./pages/AnbotB";
+import AnbotC from "./pages/AnbotC";
 import BuchAnbotProfB from "./pages/BuchAnbotProfB";
 import BuchAnbotProfC from "./pages/BuchAnbotProfC";
 import BuchAnbotOld from "./pages/BuchAnbotOld";
@@ -99,6 +101,8 @@ const App = () => {
             <Route path="/buch/anbot3g4a3e_fs26" element={<BuchAnbotTestFs26 />} />
             <Route path="/buch/anbot-prof-a" element={<BuchAnbotProfA />} />
             <Route path="/anbot-a" element={<AnbotA />} />
+            <Route path="/anbot-b" element={<AnbotB />} />
+            <Route path="/anbot-c" element={<AnbotC />} />
             <Route path="/buch/anbot-prof-b" element={<BuchAnbotProfB />} />
             <Route path="/buch/anbot-prof-c" element={<BuchAnbotProfC />} />
             
