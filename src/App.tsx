@@ -56,6 +56,7 @@ import DownloadsChecklisten from "./pages/DownloadsChecklisten";
 import KalorienRechner from "./pages/KalorienRechner";
 import StoffwechselCheck from "./pages/StoffwechselCheck";
 import NotFound from "./pages/NotFound";
+import DankeAktionsplan from "./pages/DankeAktionsplan";
 
 const queryClient = new QueryClient();
 
