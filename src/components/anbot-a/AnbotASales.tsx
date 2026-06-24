@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 import Footer from "@/components/landing/Footer";
 import { trackButtonClick } from "@/hooks/useBonusTracking";
 
-const DIGISTORE_URL = "https://www.digistore24.com/product/693088?voucher=quizrabatt";
+const DIGISTORE_URL = "https://www.digistore24.com/product/705642?voucher=quizrabatt";
 const PAGE_PATH = "/anbot-a";
 
 const handleCta = (label: string) => {
