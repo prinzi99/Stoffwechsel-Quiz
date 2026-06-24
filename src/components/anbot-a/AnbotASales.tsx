@@ -110,7 +110,9 @@ const AnbotASales = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {failCards.map((c, i) => (
               <div key={i} className="bg-red-50 rounded-xl p-5 border border-red-100">
-                <p className="font-bold text-gray-900 mb-2">❌ {c.title}</p>
+                <p className="font-bold text-gray-900 mb-2 flex items-center">
+                  <FailX />{c.title}
+                </p>
                 <p className="text-gray-700 text-sm leading-relaxed">{c.text}</p>
               </div>
             ))}
