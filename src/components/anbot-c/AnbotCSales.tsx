@@ -139,10 +139,10 @@ const AnbotCSales = () => {
               <p className="font-bold text-gray-900 mb-1">7-Tage Überangepasster-Stoffwechsel Reset-Plan</p>
               <p className="text-sm font-semibold mb-4" style={{ color: GREEN }}>Empfohlen</p>
               <ul className="space-y-3 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>MATADOR-Protokoll verstehen: Zyklisches Defizit (2 Wochen Defizit → 2 Wochen Erhaltung) statt Dauer-Restriktion</span></li>
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Kohlenhydrate rehabilitieren: Mind. 100–150g täglich + Refeed-Tage alle 7–10 Tage mit 200–250g</span></li>
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Restriktion loslassen: 80/20-Regel, keine verbotenen Lebensmittel, soziales Essen wieder genießen</span></li>
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>4-Phasen-Roadmap über 21+ Wochen: Stabilisierung → Re-Kalibrierung → Zyklisches Defizit → Erhaltung</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>7-Tage-Startplan gegen Diät-Anpassung und Stillstand</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Pausen- und Defizitstruktur ohne komplizierte Planung</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Kohlenhydrat- und Refeed-Leitfaden ohne starre Verbote</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Roadmap für nachhaltigen Fortschritt statt Jojo-Kreislauf</span></li>
               </ul>
               <p className="mt-5 text-sm font-semibold text-gray-900">
                 Preis: <span style={{ color: GREEN }}>4,99€</span> (einmalig, sofort-Download)
