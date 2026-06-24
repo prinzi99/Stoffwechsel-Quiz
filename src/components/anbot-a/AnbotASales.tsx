@@ -32,6 +32,15 @@ const failCards = [
   },
 ];
 
+const FailX = () => (
+  <span
+    className="inline-flex items-center justify-center w-5 h-5 rounded-full text-xs font-bold mr-2 flex-shrink-0"
+    style={{ background: "rgb(254,226,226)", color: "rgb(220,38,38)" }}
+  >
+    ✕
+  </span>
+);
+
 const faqs = [
   {
     q: "Ich sehe nach 7 Tagen keine Veränderung – funktioniert es nicht?",
