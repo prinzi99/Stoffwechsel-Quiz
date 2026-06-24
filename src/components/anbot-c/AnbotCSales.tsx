@@ -11,24 +11,24 @@ const handleCta = (label: string) => {
 };
 
 const meaningBullets = [
-  "Dein Körper reagiert auf Stress (physisch UND psychisch) mit Stoffwechsel-Verlangsamung",
-  "Cortisol blockiert Fettverbrennung – egal wie wenig du isst",
-  "Schilddrüse fährt runter (T3 sinkt), um Energie zu sparen",
-  "Je härter du versuchst (weniger essen, mehr Sport) → desto mehr Stress → desto schlimmer",
+  "Dein Grundumsatz ist durch wiederholte Diäten stärker gedrosselt als durch Gewichtsverlust erklärbar (Adaptive Thermogenese)",
+  "NEAT ist unbewusst um 300–400 kcal/Tag gesunken – du wirst automatisch träger, ohne es zu merken",
+  "Dein Set-Point verteidigt dein aktuelles Gewicht aktiv mit Hormonen: Leptin ↓, Ghrelin ↑, T3 ↓",
+  "Die Diätspirale: Strenges Defizit → Anfangserfolg → Plateau → Abbruch → Zunahme über Ausgangswert",
 ];
 
 const failCards = [
   {
-    title: "Mehr Kalorien reduzieren",
-    text: "Körper interpretiert als Hungersnot → schaltet weiter runter",
+    title: "Nächste Crash-Diät",
+    text: "Adaptive Thermogenese wird stärker, Biggest-Loser-Effekt: Grundumsatz bleibt Monate bis Jahre gedrosselt",
   },
   {
-    title: "Mehr Cardio / Intensives Training",
-    text: "Erhöht Cortisol → verschlimmert das Problem",
+    title: "Dauerhaftes Kaloriendefizit",
+    text: "Dein Körper passt sich an, NEAT kollabiert, Set-Point-Verteidigung wird aggressiver",
   },
   {
-    title: "Low-Carb / Keto (ohne Anpassung)",
-    text: "Kann Schilddrüse weiter drosseln",
+    title: "Mehr Disziplin & Verbote",
+    text: "Psychischer Stress erzeugt Heißhunger, Frustrationszyklus wird verstärkt, Jojo-Effekt garantiert",
   },
 ];
 
@@ -43,16 +43,16 @@ const FailX = () => (
 
 const faqs = [
   {
-    q: "Ich sehe nach 7 Tagen keine Veränderung – funktioniert es nicht?",
-    a: "Das ist normal. Dein Körper braucht 5–14 Tage. Erste Anzeichen (ab Tag 3–5): Bessere Energie, tieferer Schlaf. Körperliche Veränderungen: Ab Woche 2–3.",
+    q: "Was ist das MATADOR-Protokoll?",
+    a: "Wissenschaftliche Studie: 2 Wochen moderates Defizit (300 kcal) → 2 Wochen Erhaltung, im Wechsel über 16–24 Wochen. Ergebnis: Mehr Gewichtsverlust und weniger Stoffwechsel-Anpassung als bei Dauer-Diäten. Der Plan zeigt dir den genauen Zyklus.",
   },
   {
-    q: "Ich soll MEHR essen? Das erscheint mir falsch!",
-    a: "Wenn dein Stoffwechsel bereits im Sparmodus ist, verschlimmert weniger Essen das Problem. Der Reset funktioniert: Genug Kalorien = Körper fühlt sich sicher → Stoffwechsel aktiviert sich.",
+    q: "Warum habe ich nach jeder Diät mehr zugenommen als vorher?",
+    a: "Adaptive Thermogenese bleibt Monate bis Jahre bestehen. Dein Grundumsatz ist gedrosselt, NEAT niedrig, Leptin niedrig, Ghrelin hoch – dein Körper will das alte Gewicht zurück. Das ist Biologie, kein Versagen. Der Plan durchbricht diesen Kreislauf durch Stabilität statt Härte.",
   },
   {
-    q: "Muss ich teure Supplements kaufen?",
-    a: "Nein. Die Basics (Schlaf, Stressmanagement, Ernährung) sind 80% des Erfolgs. Supplements sind nice to have, nicht must have.",
+    q: "Was bedeutet 80/20-Regel?",
+    a: "80% nährstoffreich, 20% Flexibilität. Keine verbotenen Lebensmittel – das erzeugt nur psychischen Stress und Heißhunger. Der Plan zeigt dir, wie du Restriktion loslässt und trotzdem Ergebnisse bekommst.",
   },
 ];
 
@@ -67,27 +67,30 @@ const AnbotCSales = () => {
 
   return (
     <div style={{ background: OFFWHITE }} className="text-gray-900">
+      {/* 1. HERO */}
       <section className="bg-white py-12 md:py-16">
         <div className="max-w-3xl mx-auto px-5 text-center">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight text-gray-900">
-            Dein Stoffwechsel ist im Dauerstress
+            Schon wieder eine Diät – und danach wieder mehr drauf als vorher?
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mt-5 leading-relaxed">
-            Selbst wenn du „alles richtig" machst – Kaloriendefizit, Sport, gesunde Ernährung – schaltet dein Körper auf
-            Sparflamme. Das liegt nicht an dir. Das liegt an einer biologischen Schutzreaktion.
+            Dein Stoffwechsel hat sich an Jahre von Diäten angepasst. Adaptive Thermogenese, Biggest-Loser-Effekt, Set-Point verteidigt – härtere Restriktion macht es nur schlimmer.
           </p>
         </div>
       </section>
 
+      {/* 2. WAS BEDEUTET DAS? */}
       <section className="py-12 md:py-14" style={{ background: GRAY_BG }}>
         <div className="max-w-3xl mx-auto px-5">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">
-            Was bedeutet gestresster Stoffwechsel?
+            Überangepasster Stoffwechsel
           </h2>
           <div className="bg-white rounded-xl p-6 shadow-sm space-y-4">
             {meaningBullets.map((b, i) => (
               <div key={i} className="flex items-start gap-3">
-                <span className="text-xl flex-shrink-0" style={{ color: GREEN }}>♦</span>
+                <span className="text-xl flex-shrink-0" style={{ color: GREEN }}>
+                  ♦
+                </span>
                 <p className="text-gray-800 leading-relaxed">{b}</p>
               </div>
             ))}
@@ -95,6 +98,7 @@ const AnbotCSales = () => {
         </div>
       </section>
 
+      {/* 3. WARUM NORMALE ANSÄTZE SCHEITERN */}
       <section className="bg-white py-12 md:py-14">
         <div className="max-w-5xl mx-auto px-5">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">
@@ -113,31 +117,32 @@ const AnbotCSales = () => {
         </div>
       </section>
 
+      {/* 4. WAS DU JETZT BRAUCHST */}
       <section className="py-12 md:py-14" style={{ background: OFFWHITE }}>
         <div className="max-w-4xl mx-auto px-5">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Was du jetzt brauchst</h2>
-            <p className="text-gray-600 mt-3">Einen Ansatz, der den Stress REDUZIERT, nicht erhöht.</p>
+            <p className="text-gray-600 mt-3">Einen Ansatz, der die Diätspirale durchbricht – mit strategischen Pausen statt Härte.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <p className="font-bold text-gray-900 mb-4">Mach es selbst (kostenlos, aber Trial & Error)</p>
               <ul className="space-y-3 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span className="mt-0.5">•</span><span>Suche dir Infos zusammen</span></li>
-                <li className="flex items-start gap-2"><span className="mt-0.5">•</span><span>Probiere aus, messe, passe an</span></li>
-                <li className="flex items-start gap-2"><span className="mt-0.5">•</span><span>Risiko: 80% scheitern nach 2–3 Wochen</span></li>
+                <li className="flex items-start gap-2"><span className="mt-0.5">•</span><span>MATADOR-Studie finden und adaptieren</span></li>
+                <li className="flex items-start gap-2"><span className="mt-0.5">•</span><span>Refeed-Tage, Erhaltungsphasen und Defizitzyklus selbst planen</span></li>
+                <li className="flex items-start gap-2"><span className="mt-0.5">•</span><span>Risiko: Monate im Jojo-Kreislauf bleiben</span></li>
               </ul>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-sm border-2" style={{ borderColor: GREEN }}>
-              <p className="font-bold text-gray-900 mb-1">7-Tage Gestresster-Stoffwechsel Reset-Plan</p>
+              <p className="font-bold text-gray-900 mb-1">7-Tage Überangepasster-Stoffwechsel Reset-Plan</p>
               <p className="text-sm font-semibold mb-4" style={{ color: GREEN }}>Empfohlen</p>
               <ul className="space-y-3 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Tag-für-Tag Mahlzeiten-Timing</span></li>
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Makro-Aufteilung für deinen Typ</span></li>
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Stress-Reduktions-Protokoll</span></li>
-                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Tracking-Vorlage</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>MATADOR-Protokoll verstehen: Zyklisches Defizit (2 Wochen Defizit → 2 Wochen Erhaltung) statt Dauer-Restriktion</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Kohlenhydrate rehabilitieren: Mind. 100–150g täglich + Refeed-Tage alle 7–10 Tage mit 200–250g</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>Restriktion loslassen: 80/20-Regel, keine verbotenen Lebensmittel, soziales Essen wieder genießen</span></li>
+                <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">✓</span><span>4-Phasen-Roadmap über 21+ Wochen: Stabilisierung → Re-Kalibrierung → Zyklisches Defizit → Erhaltung</span></li>
               </ul>
               <p className="mt-5 text-sm font-semibold text-gray-900">
                 Preis: <span style={{ color: GREEN }}>4,99€</span> (einmalig, sofort-Download)
@@ -161,21 +166,13 @@ const AnbotCSales = () => {
         </div>
       </section>
 
+      {/* 5. WARUM 7 TAGE? */}
       <section className="bg-white py-12 md:py-14">
         <div className="max-w-3xl mx-auto px-5 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Warum 7 Tage?</h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Dein Körper braucht 5–7 Tage, um zu „merken", dass es sicher ist.
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            Dein Stoffwechsel hat sich durch Jahre von Diäten angepasst – Adaptive Thermogenese hat deinen Grundumsatz gedrosselt, NEAT ist um 300–400 kcal gesunken, Leptin ist im Keller. In 7 Tagen kannst du die Diätspirale stoppen: Erhaltungskalorien stabilisieren Leptin und T3, Refeed-Tage senden das Signal "Keine Hungersnot". Das MATADOR-Prinzip zeigt: Nicht Härte durchbricht die Spirale – sondern strategische Pausen.
           </p>
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-left mb-8">
-            <p className="text-gray-700 mb-4">In den ersten 7 Tagen sendest du die richtigen Signale:</p>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">→</span><span>Genug Kalorien (kein Hungerdefizit)</span></li>
-              <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">→</span><span>Richtiges Timing (Cortisol-Management)</span></li>
-              <li className="flex items-start gap-2"><span style={{ color: GREEN }} className="mt-0.5 flex-shrink-0">→</span><span>Richtige Makros (Schilddrüse unterstützen)</span></li>
-            </ul>
-            <p className="mt-5 text-gray-900 font-semibold">Nach 7 Tagen: Du WEISST, wie dein Körper reagiert.</p>
-          </div>
           <a
             href={DIGISTORE_URL}
             target="_blank"
@@ -190,6 +187,7 @@ const AnbotCSales = () => {
         </div>
       </section>
 
+      {/* 6. FAQ */}
       <section className="py-12 md:py-14" style={{ background: GRAY_BG }}>
         <div className="max-w-2xl mx-auto px-5">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">Häufige Fragen</h2>
