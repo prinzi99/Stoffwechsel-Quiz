@@ -230,12 +230,24 @@ const DankeAktionsplan = () => {
         <section style={{ textAlign: "center", marginBottom: "60px" }}>
           <a
             href={SKIP_URL}
+            onClick={(e) => {
+              e.preventDefault();
+              const confirmed = window.confirm(
+                "Bist du sicher, dass du dieses Angebot nicht nutzen möchtest? Du verpasst die Umsetzungshilfen für nur 3,99€."
+              );
+              if (confirmed) {
+                window.close();
+                // Fallback, wenn das Browser-Fenster nicht geschlossen werden darf
+                window.location.href = SKIP_URL;
+              }
+            }}
             style={{
               fontSize: "14px",
               color: "#999999",
               textDecoration: "underline",
               display: "block",
               transition: "color 0.2s",
+              cursor: "pointer",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.color = "#666666")}
             onMouseLeave={(e) => (e.currentTarget.style.color = "#999999")}
