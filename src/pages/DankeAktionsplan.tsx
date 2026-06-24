@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 
-const UPSELL_CHECKOUT_URL = "https://www.digistore24.com/product/675804";
+const UPSELL_CHECKOUT_URL = "https://www.digistore24.com/product/705783";
 const SKIP_URL = "/";
+
+let digistorePromoLoaded = false;
 
 const DankeAktionsplan = () => {
   const [stickyVisible, setStickyVisible] = useState(false);
@@ -11,6 +13,23 @@ const DankeAktionsplan = () => {
     const onScroll = () => setStickyVisible(window.scrollY > 500);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Digistore promocode script
+  useEffect(() => {
+    if (digistorePromoLoaded) return;
+    digistorePromoLoaded = true;
+
+    const dsScript = document.createElement("script");
+    dsScript.src = "https://www.digistore24-scripts.com/service/digistore.js";
+    dsScript.async = true;
+    dsScript.onload = () => {
+      const promoScript = document.createElement("script");
+      promoScript.type = "text/javascript";
+      promoScript.text = `digistorePromocode({ "product_id": 705783, "adjust_domain": true });`;
+      document.body.appendChild(promoScript);
+    };
+    document.head.appendChild(dsScript);
   }, []);
 
   // Preserve email param if present
