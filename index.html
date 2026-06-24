@@ -39,6 +39,7 @@
     <meta name="twitter:image" content="https://stoffwechsel.philippsbiohack.de/og-image.png" />
 
     <!-- Google Tag with Consent Mode v2 (default denied for GDPR) -->
+    <!-- gtag.js wird verzögert nach First Interaction / Idle geladen, um TBT & LCP zu schonen -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -54,8 +55,27 @@
 
       gtag('js', new Date());
       gtag('config', 'AW-17032247359');
+
+      (function loadGtagDeferred() {
+        var loaded = false;
+        function load() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17032247359';
+          document.head.appendChild(s);
+        }
+        ['scroll','keydown','mousemove','touchstart','click'].forEach(function(ev){
+          window.addEventListener(ev, load, { once: true, passive: true });
+        });
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(function(){ setTimeout(load, 4000); });
+        } else {
+          setTimeout(load, 5000);
+        }
+      })();
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17032247359"></script>
 
     <!-- Event snippet for conversion tracking -->
     <script>
