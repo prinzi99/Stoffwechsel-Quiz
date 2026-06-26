@@ -59,6 +59,7 @@ const KalorienRechner = lazy(() => import("./pages/KalorienRechner"));
 const StoffwechselCheck = lazy(() => import("./pages/StoffwechselCheck"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const DankeAktionsplan = lazy(() => import("./pages/DankeAktionsplan"));
+const Umsetzungshilfen = lazy(() => import("./pages/Umsetzungshilfen"));
 
 const queryClient = new QueryClient();
 
@@ -85,6 +86,7 @@ const App = () => {
               <Route path="/quiz-p" element={<QuizP />} />
               <Route path="/danke" element={<ThankYou />} />
               <Route path="/danke-aktionsplan" element={<DankeAktionsplan />} />
+              <Route path="/umsetzungshilfen" element={<Umsetzungshilfen />} />
               <Route path="/dfgk34k" element={<ResultPage />} />
               <Route path="/dfgk34k-2" element={<ResultPageA2 />} />
               <Route path="/dfgk34k-3" element={<ResultPageA3 />} />
