@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const UPSELL_CHECKOUT_URL = "https://www.digistore24.com/product/705783";
+const UPSELL_CHECKOUT_URL = "https://www.digistore24.com/product/705783?voucher=promo2";
 const SKIP_URL = "/";
 
 let digistorePromoLoaded = false;
