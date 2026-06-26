@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useBonusPageView } from "@/hooks/useBonusTracking";
+import Header from "@/components/Header";
+import Footer from "@/components/landing/Footer";
 
 const CHECKOUT_URL = "https://www.digistore24.com/product/705783";
 
@@ -23,7 +25,6 @@ const Umsetzungshilfen = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Email param mitnehmen
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const email = params.get("email");
@@ -34,7 +35,6 @@ const Umsetzungshilfen = () => {
     }
   }, []);
 
-  // Digistore Promocode Script (analog zu /anbot-a/b/c)
   useEffect(() => {
     if (digistorePromoLoaded) return;
     digistorePromoLoaded = true;
@@ -65,38 +65,45 @@ const Umsetzungshilfen = () => {
         paddingBottom: stickyVisible ? "100px" : "0",
       }}
     >
+      <Header />
+
       <div style={{ maxWidth: "600px", margin: "0 auto", padding: "40px 20px" }}>
-        {/* HERO */}
+        {/* 1. HERO */}
         <section style={{ textAlign: "center", marginBottom: "50px" }}>
           <h1
             className="text-[32px] md:text-[40px]"
             style={{ fontWeight: 700, color: "#1A1A1A", marginBottom: "20px", lineHeight: 1.2 }}
           >
-            Die Umsetzungshilfen zu deinem Reset-Plan
+            Du hast einen 7-Tage Stoffwechsel-Reset Plan?
           </h1>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "#4A4A4A" }}>
-            Der Plan zeigt dir <strong>WAS</strong> zu tun ist.
-            <br />
-            Die Umsetzungshilfen zeigen dir <strong>WIE</strong> du es wirklich durchziehst.
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "#4A4A4A", marginBottom: "16px" }}>
+            Dann brauchst du die Umsetzungshilfen – sonst fliegst du blind.
+          </p>
+          <p style={{ fontSize: "13px", color: "#888888" }}>
+            Die Abbuchung erfolgt durch Digistore24.com
           </p>
         </section>
 
-        {/* HOOK */}
+        {/* 2. HOOK */}
         <section style={{ marginBottom: "50px", textAlign: "center" }}>
           <h2
             className="text-[28px] md:text-[36px]"
             style={{ fontWeight: 700, color: "#1A1A1A", marginBottom: "24px", lineHeight: 1.2 }}
           >
-            Warum 95% diese Hilfen dazunehmen
+            Warum du die Umsetzungshilfen brauchst
           </h2>
           <p style={{ fontSize: "18px", lineHeight: 1.7, color: "#4A4A4A" }}>
-            Ohne die richtigen Tracking-Vorlagen wird's schwierig umzusetzen.
+            Der Plan zeigt dir <strong>WAS</strong> zu tun ist.
             <br />
-            <strong>95%</strong> meiner Kunden holen sich deshalb direkt die Umsetzungshilfen dazu.
+            <br />
+            Aber OHNE die richtigen Tracking-Vorlagen wird's schwierig umzusetzen.
+            <br />
+            <br />
+            <strong>95%</strong> meiner Kunden nutzen die Umsetzungshilfen parallel zum Plan.
           </p>
         </section>
 
-        {/* PROBLEM */}
+        {/* 3. PROBLEM */}
         <section style={{ marginBottom: "50px" }}>
           <h3 style={{ fontSize: "22px", fontWeight: 600, color: "#1A1A1A", marginBottom: "20px" }}>
             Ohne Tracking passiert das:
@@ -124,7 +131,7 @@ const Umsetzungshilfen = () => {
           ))}
         </section>
 
-        {/* LÖSUNG */}
+        {/* 4. LÖSUNG */}
         <section style={{ marginBottom: "50px" }}>
           <h3 style={{ fontSize: "22px", fontWeight: 600, color: "#1A1A1A", marginBottom: "20px" }}>
             Das bekommst du:
@@ -160,7 +167,7 @@ const Umsetzungshilfen = () => {
           </p>
         </section>
 
-        {/* PREIS + CTA */}
+        {/* 5. PREIS + CTA */}
         <section style={{ marginBottom: "40px", textAlign: "center" }}>
           <h2
             style={{
@@ -212,12 +219,25 @@ const Umsetzungshilfen = () => {
             Ja, ich will die Umsetzungshilfen für 3,99€
           </a>
 
-          <p style={{ fontSize: "14px", color: "#888888", marginBottom: "40px" }}>
+          <p style={{ fontSize: "14px", color: "#888888", marginBottom: "20px" }}>
             Sichere Bestellung · Sofortiger Zugang · Einmalig 3,99€
           </p>
+
+          <a
+            href="/"
+            style={{
+              display: "inline-block",
+              fontSize: "14px",
+              color: "#888888",
+              textDecoration: "underline",
+              marginBottom: "20px",
+            }}
+          >
+            Zurück zur Startseite
+          </a>
         </section>
 
-        {/* FAQ */}
+        {/* 6. FAQ */}
         <section style={{ maxWidth: "500px", margin: "0 auto", marginBottom: "80px" }}>
           <h3 style={{ fontSize: "22px", fontWeight: 600, color: "#1A1A1A", marginBottom: "24px" }}>
             Häufige Fragen
@@ -242,6 +262,8 @@ const Umsetzungshilfen = () => {
           </div>
         </section>
       </div>
+
+      <Footer />
 
       {/* Sticky Mobile CTA */}
       {stickyVisible && (
