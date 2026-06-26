@@ -3,7 +3,7 @@ import { useBonusPageView } from "@/hooks/useBonusTracking";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 
-const CHECKOUT_URL = "https://www.digistore24.com/product/705783";
+const CHECKOUT_URL = "https://www.digistore24.com/product/705783?voucher=promo2";
 
 let digistorePromoLoaded = false;
 
