@@ -97,7 +97,8 @@ const App = () => {
               <Route path="/k93fda" element={<ResultPageB />} />
               <Route path="/k93fda-2" element={<ResultPageB2 />} />
               <Route path="/k93fda-3" element={<ResultPageB3 />} />
-              <Route path="/k93fda-4" element={<ResultPageB4 />} />
+          <Route path="/k93fda-4" element={<ResultPageB4 />} />
+          <Route path="/k93fda-5" element={<ResultPageB5 />} />
               <Route path="/x7q9p2" element={<ResultPageC />} />
               <Route path="/x7q9p2-2" element={<ResultPageC2 />} />
               <Route path="/x7q9p2-3" element={<ResultPageC3 />} />
