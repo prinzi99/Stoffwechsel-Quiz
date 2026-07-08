@@ -24,6 +24,7 @@ const ResultPage = lazy(() => import("./pages/ResultPage"));
 const ResultPageA2 = lazy(() => import("./pages/ResultPageA2"));
 const ResultPageA3 = lazy(() => import("./pages/ResultPageA3"));
 const ResultPageA4 = lazy(() => import("./pages/ResultPageA4"));
+const ResultPageA5 = lazy(() => import("./pages/ResultPageA5"));
 const ResultPageB = lazy(() => import("./pages/ResultPageB"));
 const ResultPageB2 = lazy(() => import("./pages/ResultPageB2"));
 const ResultPageB3 = lazy(() => import("./pages/ResultPageB3"));
@@ -90,7 +91,8 @@ const App = () => {
               <Route path="/dfgk34k" element={<ResultPage />} />
               <Route path="/dfgk34k-2" element={<ResultPageA2 />} />
               <Route path="/dfgk34k-3" element={<ResultPageA3 />} />
-              <Route path="/dfgk34k-4" element={<ResultPageA4 />} />
+          <Route path="/dfgk34k-4" element={<ResultPageA4 />} />
+          <Route path="/dfgk34k-5" element={<ResultPageA5 />} />
               <Route path="/k93fda" element={<ResultPageB />} />
               <Route path="/k93fda-2" element={<ResultPageB2 />} />
               <Route path="/k93fda-3" element={<ResultPageB3 />} />
