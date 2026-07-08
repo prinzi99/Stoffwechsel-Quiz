@@ -223,4 +223,4 @@ const ResultPageA5 = () => {
   );
 };
 
-export default ResultPageA2;
+export default ResultPageA5;
