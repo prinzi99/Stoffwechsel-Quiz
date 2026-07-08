@@ -23,6 +23,7 @@ const ThankYou = lazy(() => import("./pages/ThankYou"));
 const ResultPage = lazy(() => import("./pages/ResultPage"));
 const ResultPageA2 = lazy(() => import("./pages/ResultPageA2"));
 const ResultPageA3 = lazy(() => import("./pages/ResultPageA3"));
+const ResultPageA4 = lazy(() => import("./pages/ResultPageA4"));
 const ResultPageA5 = lazy(() => import("./pages/ResultPageA5"));
 const ResultPageB = lazy(() => import("./pages/ResultPageB"));
 const ResultPageB2 = lazy(() => import("./pages/ResultPageB2"));
