@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Button } from '@/components/ui/button';
-import { ArrowRight, AlertCircle, XCircle, Lightbulb } from 'lucide-react';
+import { AlertCircle, XCircle, Lightbulb } from 'lucide-react';
 import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
 
