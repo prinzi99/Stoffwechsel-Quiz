@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Button } from '@/components/ui/button';
-import { ArrowRight, AlertCircle, XCircle, Lightbulb } from 'lucide-react';
+import { AlertCircle, XCircle, Lightbulb } from 'lucide-react';
 import Header from '@/components/Header';
 import bookCover from '@/assets/book-cover-mockup3.jpeg';
 
@@ -175,162 +174,23 @@ const ResultPageC5 = () => {
             </div>
           </section>
 
-          {/* 8. Was Du in diesem Buch lernst */}
-          <section className="mb-12 bg-muted/50 rounded-2xl p-6 md:p-8">
-            <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-8">
-              Was Du in diesem Buch lernst
-            </h2>
-            <div className="space-y-5">
-              {[
-                { title: 'Der große Denkfehler', desc: 'Warum „weniger essen = abnehmen" nicht funktioniert – und was die Forschung wirklich zeigt.' },
-                { title: 'Stoffwechsel ist kein Schicksal', desc: 'Wie Dein System auf Stress, Schlafmangel und Diäten reagiert – und warum es sich anpasst.' },
-                { title: 'Kein Sport = mehr Fettverbrennung?', desc: 'Warum das richtige Maß an Bewegung wichtiger ist als hartes Training.' },
-                { title: 'Dein System entschlüsselt', desc: 'Wie Du erkennst, was Dein Körper gerade braucht – statt blind dem nächsten Plan zu folgen.' },
-                { title: 'Sicherheit statt Kampf', desc: 'Warum Dein Körper erst loslässt, wenn er sich sicher fühlt – und wie Du das erreichst.' },
-                { title: 'Signale statt Regeln', desc: 'Wie Du lernst, Deinem Körper wieder zu vertrauen – statt gegen ihn zu arbeiten.' },
-              ].map((ch, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
-                    {i + 1}
-                  </span>
-                  <div>
-                    <h3 className="font-semibold text-foreground">{ch.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{ch.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* 9. Nicht nur lesen – direkt anwenden */}
+          {/* 8. Abschluss */}
           <section className="mb-12">
-            <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-2">
-              Nicht nur lesen – direkt anwenden
-            </h2>
-            <p className="text-center text-muted-foreground mb-8">
-              Zum Buch bekommst Du kostenlose Online-Tools – entwickelt für Deinen Alltag.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {[
-                { icon: '📋', title: '11 Downloads & Checklisten', desc: 'Ernährungs-Beobachtungsblatt, Makronährstoff-Übersicht, Defizit-Phase-Checkliste, Stoffwechsel-Reset-Checkliste u.v.m.' },
-                { icon: '🧮', title: 'Kalorien- & Makro-Rechner', desc: 'Dein persönlicher Startpunkt, individuell berechnet. Kein Rätselraten.' },
-                { icon: '✅', title: 'Wöchentlicher Bereich', desc: 'Wochenübersicht für Training & Energie, Schlaf- und Erholungsprotokoll, Alltags-Checkliste.' },
-              ].map((card, i) => (
-                <div key={i} className="bg-card border border-border rounded-xl p-5 md:py-8 text-center">
-                  <span className="text-3xl mb-3 block">{card.icon}</span>
-                  <h3 className="font-semibold text-foreground mb-2">{card.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
-                </div>
-              ))}
+            <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 md:p-8">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                Dein persönlicher Aktionsplan kommt jetzt per E-Mail
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Du hast gerade verstanden, WAS bei deinem Stoffwechsel passiert. Den genauen Fahrplan – deinen kompletten Aktionsplan für den überangepassten Diät-Stoffwechsel, mit Phasen, Kennzahlen und täglicher Struktur – schicke ich dir gleich per E-Mail. Kostenlos.
+              </p>
+              <p className="text-foreground font-medium">
+                Schau in den nächsten Minuten in dein Postfach (auch im Spam-Ordner).
+              </p>
             </div>
-          </section>
-
-          {/* 10. Wert-Übersicht + CTA */}
-          <section className="mb-12">
-            <div className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
-              <h3 className="text-lg font-bold text-foreground mb-5">Das bekommst Du zusammen:</h3>
-              <div className="space-y-3 mb-6">
-                {[
-                  { text: 'Buch (10 Kapitel + Bonuskapitel)', value: '34,99 €' },
-                  { text: 'Online-Begleitbereich mit Tools & Rechnern', value: '29,99 €' },
-                  { text: '11 Downloads (PDF-Checklisten, Protokolle, Übersichten)', value: '19,99 €' },
-                  { text: 'Persönliche Kalorien- & Makro-Berechnung', value: '14,99 €' },
-                  { text: 'Regelmäßige Updates & neue Inhalte', value: 'Gratis' },
-                ].map((item, i) => (
-                  <div key={i} className="flex justify-between items-start gap-4">
-                    <span className="text-foreground text-sm">✓ {item.text}</span>
-                    <span className="text-muted-foreground text-sm whitespace-nowrap">{item.value}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="border-t-2 border-primary/20 pt-4 mb-6">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="text-lg font-bold text-foreground">Gesamtwert</span>
-                  <span className="text-xl font-extrabold text-primary line-through">~100&nbsp;€</span>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <p className="text-sm text-muted-foreground mb-1">Exklusiver Sonderpreis für Quiz-Teilnehmer:</p>
-                <div className="flex items-center justify-center gap-3 mb-5">
-                  <span className="text-lg text-muted-foreground/50 line-through">34,99&nbsp;€</span>
-                  <span className="text-3xl md:text-4xl font-extrabold text-foreground">19,99&nbsp;€</span>
-                </div>
-                <Button
-                  variant="cta"
-                  size="xl"
-                  className="w-full h-auto min-h-[4.5rem] whitespace-normal leading-snug text-sm md:text-base py-4 px-4"
-                  asChild
-                >
-                  <a href="https://www.digistore24.com/product/675804?voucher=specialdeal" target="_blank" rel="noopener noreferrer">
-                    Ja – ich will endlich wieder Fortschritt sehen
-                    <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0 self-center" />
-                  </a>
-                </Button>
-                <p className="text-sm text-muted-foreground mt-3">Sofort verfügbar als E-Book</p>
-                <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-muted-foreground">
-                  <span>🔒 Sicherer Checkout</span>
-                  <span>📱 Auf allen Geräten</span>
-                  <span>⚡ Sofortige Lieferung</span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* 11. Dieses Buch ist für Dich, wenn… */}
-          <section className="mb-12">
-            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6">
-              Dieses Buch ist für Dich, wenn…
-            </h2>
-            <ul className="space-y-4">
-              {[
-                'Du schon alles versucht hast – weniger essen, mehr Sport, Intervallfasten, Low Carb – und trotzdem nicht weiterkommst.',
-                'Du das Gefühl hast, Dein Stoffwechsel arbeitet gegen Dich.',
-                'Du verstehen willst, warum es nicht funktioniert hat – statt Dich zu fragen, was mit Dir nicht stimmt.',
-                'Du einen Weg suchst, der ohne extreme Diäten, tägliches Wiegen oder ständige Kontrolle funktioniert.',
-                'Du bereit bist, Deinen Körper zu verstehen – statt ihn weiter zu bekämpfen.',
-                'Du endlich einen klaren Blick auf Ernährung und Stoffwechsel bekommen willst.',
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="text-secondary mt-0.5 flex-shrink-0">✅</span>
-                  <span className="text-foreground leading-relaxed">{item}</span>
-                </li>
-              ))}
-            </ul>
           </section>
 
         </div>
       </main>
-
-      {/* 12. Finaler CTA */}
-      <section className="bg-[image:var(--hero-gradient)] py-14 md:py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Bereit, das Spiel zu verändern?
-            </h2>
-            <p className="text-lg text-primary-foreground/85 mb-6">
-              Kein Abo. Kein Mengenzählen. Einmal kaufen, sofort loslegen.
-            </p>
-            <p className="text-xl text-primary-foreground/60 line-through mb-1">34,99&nbsp;€</p>
-            <p className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">19,99&nbsp;€</p>
-            <a
-              href="https://www.digistore24.com/product/675804?voucher=specialdeal"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-semibold bg-primary-foreground text-primary shadow-lg hover:bg-primary-foreground/90 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 h-14 px-10"
-            >
-              Jetzt für 19,99&nbsp;€ statt <span className="line-through mx-1">34,99&nbsp;€</span> sichern
-            </a>
-            <div className="flex flex-wrap justify-center gap-5 mt-8 text-sm text-primary-foreground/80">
-              <span>🔒 Sicherer Checkout</span>
-              <span>📱 Auf allen Geräten</span>
-              <span>⚡ Sofortige Lieferung</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Minimal Footer */}
       <footer className="py-8 text-center">
