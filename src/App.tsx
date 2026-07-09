@@ -34,6 +34,7 @@ const ResultPageC = lazy(() => import("./pages/ResultPageC"));
 const ResultPageC2 = lazy(() => import("./pages/ResultPageC2"));
 const ResultPageC3 = lazy(() => import("./pages/ResultPageC3"));
 const ResultPageC4 = lazy(() => import("./pages/ResultPageC4"));
+const ResultPageC5 = lazy(() => import("./pages/ResultPageC5"));
 const Impressum = lazy(() => import("./pages/Impressum"));
 const Datenschutz = lazy(() => import("./pages/Datenschutz"));
 const Buch = lazy(() => import("./pages/Buch"));
@@ -103,6 +104,7 @@ const App = () => {
               <Route path="/x7q9p2-2" element={<ResultPageC2 />} />
               <Route path="/x7q9p2-3" element={<ResultPageC3 />} />
               <Route path="/x7q9p2-4" element={<ResultPageC4 />} />
+              <Route path="/x7q9p2-5" element={<ResultPageC5 />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/datenschutz" element={<Datenschutz />} />
               <Route path="/buch" element={<Buch />} />
