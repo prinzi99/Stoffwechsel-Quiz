@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
-import BuchQuizHinweis from "@/components/buch/BuchQuizHinweis";
+
 import { useBonusPageView } from "@/hooks/useBonusTracking";
 import BuchAllgemeinHero from "@/components/buch/BuchAllgemeinHero";
 import AnbotTestProblemAnker from "@/components/anbot-test/AnbotTestProblemAnker";
@@ -45,7 +45,7 @@ const Buch = () => {
         <BuchAllgemeinKauf />
         <AnbotTestFAQ />
 
-        <BuchQuizHinweis />
+        
 
         {/* Medizinischer Hinweis */}
         <div className="bg-muted py-6">
