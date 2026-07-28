@@ -7,7 +7,204 @@ import { defineMcp } from "npm:@lovable.dev/mcp-js@0.25.0";
 
 // src/lib/mcp/tools/get-quiz.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.25.0";
-import { quizQuestions, profiles } from "npm:@/lib/quizData";
+
+// src/lib/quizData.ts
+var profiles = {
+  A: {
+    id: "A",
+    name: "Der gestresste Stoffwechsel",
+    teaser: {
+      headline: "Dein Stoffwechsel steht aktuell unter Stress.",
+      description: "Das erkl\xE4rt, warum Disziplin und Keto bei Dir nicht greifen."
+    },
+    fullResult: {
+      headline: "Der gestresste Stoffwechsel",
+      description: 'Dein K\xF6rper befindet sich in einem dauerhaften Stressmodus. Cortisol und andere Stresshormone beeinflussen Deinen Stoffwechsel so stark, dass selbst die beste Ern\xE4hrung nicht greift. Dein K\xF6rper ist auf "\xDCberleben" programmiert \u2013 nicht auf Fettverbrennung.',
+      keyPoints: [
+        "Chronischer Stress blockiert die Fettverbrennung",
+        "Schlafqualit\xE4t und Regeneration sind entscheidend",
+        "Standarddi\xE4ten verst\xE4rken oft den Stresspegel",
+        "Dein K\xF6rper braucht Signale der Sicherheit"
+      ],
+      nextSteps: "Der erste Schritt ist nicht weniger essen, sondern Deinem K\xF6rper zu zeigen, dass er nicht mehr im \xDCberlebensmodus sein muss."
+    }
+  },
+  B: {
+    id: "B",
+    name: "Der unterversorgte Fettstoffwechsel",
+    teaser: {
+      headline: "Dein K\xF6rper bekommt nicht das, was er braucht.",
+      description: "Deshalb h\xE4lt er Energie \u2013 und Fett \u2013 zur\xFCck."
+    },
+    fullResult: {
+      headline: "Der unterversorgte Fettstoffwechsel",
+      description: "Dein Stoffwechsel l\xE4uft auf Sparflamme, weil er nicht die richtigen N\xE4hrstoffe zur richtigen Zeit bekommt. Trotz vermeintlich gesunder Ern\xE4hrung fehlen Deinem K\xF6rper essentielle Bausteine f\xFCr einen aktiven Fettstoffwechsel.",
+      keyPoints: [
+        "N\xE4hrstoffm\xE4ngel bremsen den Stoffwechsel",
+        "Zu wenig Energie f\xFChrt zum Sparmodus",
+        "Die richtigen Fette aktivieren den Fettstoffwechsel",
+        "Timing und N\xE4hrstoffqualit\xE4t sind entscheidend"
+      ],
+      nextSteps: "Dein K\xF6rper braucht keine weitere Einschr\xE4nkung, sondern die richtigen Signale durch gezielte N\xE4hrstoffversorgung."
+    }
+  },
+  C: {
+    id: "C",
+    name: "Der \xFCberangepasste Di\xE4t-Stoffwechsel",
+    teaser: {
+      headline: "Dein Stoffwechsel hat gelernt zu sparen.",
+      description: "Klassische Di\xE4ten versch\xE4rfen dieses Problem oft."
+    },
+    fullResult: {
+      headline: "Der \xFCberangepasste Di\xE4t-Stoffwechsel",
+      description: "Durch viele Di\xE4tversuche hat sich Dein Stoffwechsel angepasst und ist extrem effizient geworden. Was fr\xFCher funktioniert hat, bringt heute keine Ergebnisse mehr. Dein K\xF6rper hat gelernt, mit immer weniger auszukommen.",
+      keyPoints: [
+        "Metabolische Anpassung durch h\xE4ufige Di\xE4ten",
+        "Der Grundumsatz ist herunterreguliert",
+        "Mehr vom Gleichen f\xFChrt nicht zum Ziel",
+        'Der Stoffwechsel muss wieder "hochgefahren" werden'
+      ],
+      nextSteps: "Das Ziel ist nicht noch weniger zu essen, sondern Deinen Stoffwechsel strategisch wieder zu aktivieren."
+    }
+  }
+};
+var quizQuestions = [
+  {
+    id: 1,
+    question: "Wie w\xFCrdest Du Deine bisherigen Abnehm-Erfahrungen beschreiben?",
+    answers: [
+      {
+        id: "1a",
+        text: "Anfangs Erfolg, dann Stillstand oder R\xFCckschritt",
+        profile: "C"
+      },
+      {
+        id: "1b",
+        text: "Kaum Ver\xE4nderung, egal was ich mache",
+        profile: "A"
+      },
+      {
+        id: "1c",
+        text: "Kurzfristige Abnahme, dann extreme M\xFCdigkeit oder Hunger",
+        profile: "B"
+      }
+    ]
+  },
+  {
+    id: 2,
+    question: "Wann f\xFChlst Du Dich am h\xE4ufigsten ersch\xF6pft?",
+    answers: [
+      {
+        id: "2a",
+        text: "Morgens nach dem Aufstehen",
+        profile: "A"
+      },
+      {
+        id: "2b",
+        text: "Nach dem Essen",
+        profile: "B"
+      },
+      {
+        id: "2c",
+        text: "Abends oder nach sportlicher Aktivit\xE4t",
+        profile: "C"
+      }
+    ]
+  },
+  {
+    id: 3,
+    question: "Was trifft am ehesten auf Dich zu?",
+    answers: [
+      {
+        id: "3a",
+        text: "Hei\xDFhunger, vor allem unter Stress",
+        profile: "A"
+      },
+      {
+        id: "3b",
+        text: "Ich esse wenig, bin aber trotzdem oft m\xFCde",
+        profile: "B"
+      },
+      {
+        id: "3c",
+        text: "Ich esse kontrolliert, aber mein Gewicht bewegt sich kaum",
+        profile: "C"
+      }
+    ]
+  },
+  {
+    id: 4,
+    question: "Wie ern\xE4hrst Du Dich aktuell \xFCberwiegend?",
+    answers: [
+      {
+        id: "4a",
+        text: 'Sehr \u201Egesund", viele Einschr\xE4nkungen',
+        profile: "B"
+      },
+      {
+        id: "4b",
+        text: "Low Carb oder Keto, aber ohne klaren Plan",
+        profile: "C"
+      },
+      {
+        id: "4c",
+        text: "Unregelm\xE4\xDFig, oft unter Zeitdruck",
+        profile: "A"
+      }
+    ]
+  },
+  {
+    id: 5,
+    question: "Wie w\xFCrdest Du Deinen Schlaf beschreiben?",
+    answers: [
+      {
+        id: "5a",
+        text: "Einschlafen schwer oder h\xE4ufiges Aufwachen",
+        profile: "A"
+      },
+      {
+        id: "5b",
+        text: "Ich schlafe viel, f\xFChle mich aber nicht erholt",
+        profile: "C"
+      },
+      {
+        id: "5c",
+        text: "Schlaf ist okay, aber ich bin tags\xFCber trotzdem m\xFCde",
+        profile: "B"
+      }
+    ]
+  },
+  {
+    id: 6,
+    question: "Was empfindest Du aktuell als Dein gr\xF6\xDFtes Problem?",
+    answers: [
+      {
+        id: "6a",
+        text: "Dauerstress, innere Unruhe",
+        profile: "A"
+      },
+      {
+        id: "6b",
+        text: "Energielosigkeit trotz Disziplin",
+        profile: "B"
+      },
+      {
+        id: "6c",
+        text: "Mein K\xF6rper reagiert einfach nicht mehr",
+        profile: "C"
+      }
+    ]
+  }
+];
+var calculateResult = (scores) => {
+  const { A, B, C } = scores;
+  const maxScore = Math.max(A, B, C);
+  if (C >= maxScore) return "C";
+  if (A >= maxScore) return "A";
+  return "B";
+};
+
+// src/lib/mcp/tools/get-quiz.ts
 var get_quiz_default = defineTool({
   name: "get_stoffwechsel_quiz",
   title: "Get Stoffwechsel Quiz",
@@ -28,7 +225,6 @@ var get_quiz_default = defineTool({
 // src/lib/mcp/tools/evaluate-quiz.ts
 import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.25.0";
 import { z } from "npm:zod@^4.4.3";
-import { calculateResult, profiles as profiles2 } from "npm:@/lib/quizData";
 var evaluate_quiz_default = defineTool2({
   name: "evaluate_stoffwechsel_quiz",
   title: "Evaluate Stoffwechsel Quiz",
@@ -42,7 +238,7 @@ var evaluate_quiz_default = defineTool2({
   handler: ({ a, b, c }) => {
     const scores = { A: a, B: b, C: c };
     const winner = calculateResult(scores);
-    const profile = profiles2[winner];
+    const profile = profiles[winner];
     return {
       content: [
         {
@@ -60,7 +256,71 @@ ${profile.fullResult.description}`
 // src/lib/mcp/tools/calorie-calculator.ts
 import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.25.0";
 import { z as z2 } from "npm:zod@^4.4.3";
-import { calculateAll } from "npm:@/lib/calorieCalculator";
+
+// src/lib/calorieCalculator.ts
+function calcBMI(weight, heightCm) {
+  const heightM = heightCm / 100;
+  return weight / (heightM * heightM);
+}
+function calcBMR1(gender, weight, height, age) {
+  const base = 10 * weight + 6.25 * height - 5 * age;
+  return gender === "male" ? base + 5 : base - 161;
+}
+function calcBMR2(gender, weight, height, age) {
+  if (gender === "male") {
+    return 88.362 + 13.397 * weight + 4.799 * height - 5.677 * age;
+  }
+  return 447.593 + 9.247 * weight + 3.098 * height - 4.33 * age;
+}
+function calculateAll(input) {
+  const { gender, age, weight, height, targetWeight, activityFactor, goal, proteinFactor, fatMode } = input;
+  const bmi = calcBMI(weight, height);
+  const useTargetWeight = bmi >= 30 && targetWeight !== void 0 && targetWeight > 0;
+  const proteinWeight = useTargetWeight ? targetWeight : weight;
+  const bmr1 = calcBMR1(gender, weight, height, age);
+  const bmr2 = calcBMR2(gender, weight, height, age);
+  const bmrAvg = (bmr1 + bmr2) / 2;
+  const tdee = bmrAvg * activityFactor;
+  const deficitModerate = tdee * 0.8;
+  const deficitAggressive = tdee * 0.7;
+  const deficitMinus500 = tdee - 500;
+  const targetCalories = goal === "maintenance" ? tdee : goal === "moderate" ? deficitModerate : deficitAggressive;
+  const proteinG = proteinWeight * proteinFactor;
+  const proteinKcal = proteinG * 4;
+  let fatKcal;
+  let fatG;
+  if (fatMode === "minimum") {
+    fatG = weight * 0.5;
+    fatKcal = fatG * 9;
+  } else {
+    const fatPct = gender === "male" ? 0.2 : 0.3;
+    fatKcal = targetCalories * fatPct;
+    fatG = fatKcal / 9;
+  }
+  const carbsKcal = Math.max(0, targetCalories - proteinKcal - fatKcal);
+  const carbsG = carbsKcal / 4;
+  return {
+    bmi,
+    usedProteinWeight: proteinWeight,
+    useTargetWeight,
+    bmr1,
+    bmr2,
+    bmrAvg,
+    tdee,
+    deficitModerate,
+    deficitAggressive,
+    deficitMinus500,
+    targetCalories,
+    proteinG,
+    proteinKcal,
+    fatG,
+    fatKcal,
+    carbsG,
+    carbsKcal
+  };
+}
+
+// src/lib/mcp/tools/calorie-calculator.ts
 var calorie_calculator_default = defineTool3({
   name: "calorie_calculator",
   title: "Kalorienrechner (Mifflin-St Jeor + Harris-Benedict)",
@@ -89,7 +349,85 @@ var calorie_calculator_default = defineTool3({
 // src/lib/mcp/tools/metabolism-check.ts
 import { defineTool as defineTool4 } from "npm:@lovable.dev/mcp-js@0.25.0";
 import { z as z3 } from "npm:zod@^4.4.3";
-import { evaluateCheck, questions, levelData } from "npm:@/lib/metabolicCheck";
+
+// src/lib/metabolicCheck.ts
+var questions = [
+  "Wachst du morgens oft ersch\xF6pft auf, obwohl du ausreichend geschlafen hast?",
+  "Hast du regelm\xE4\xDFig starken Hei\xDFhunger, besonders abends?",
+  "Stagniert dein Gewicht seit mehr als 3 Wochen trotz Kaloriendefizit?",
+  "Ist deine Trainingsleistung in den letzten Wochen gesunken?",
+  "Denkst du h\xE4ufig und obsessiv an Essen?",
+  "Bist du oft gereizt, antriebslos oder emotional ersch\xF6pft?",
+  "Hast du deinen Kalorienplan in letzter Zeit mehrfach weiter versch\xE4rft?",
+  "Schl\xE4fst du weniger als 7 Stunden pro Nacht?"
+];
+var areas = [
+  { label: "Energie & Hunger", questions: [1, 4, 6, 7] },
+  // Fragen 2,5,7,8 (0-indexed)
+  { label: "Leistung & Regulation", questions: [0, 2, 3] },
+  // Fragen 1,3,4
+  { label: "Stress & Belastung", questions: [5] }
+  // Frage 6
+];
+function getAreaStatus(yesCount, total) {
+  const ratio = yesCount / total;
+  if (ratio === 0) return "unauff\xE4llig";
+  if (ratio < 0.5) return "im Blick behalten";
+  return "auff\xE4llig";
+}
+function evaluateCheck(answers) {
+  const totalScore = Object.values(answers).filter((v) => v === true).length;
+  let level = 0;
+  if (totalScore >= 6) level = 2;
+  else if (totalScore >= 3) level = 1;
+  const areaResults = areas.map((area) => {
+    const yesCount = area.questions.filter((q) => answers[q] === true).length;
+    return {
+      label: area.label,
+      questions: area.questions,
+      yesCount,
+      total: area.questions.length,
+      status: getAreaStatus(yesCount, area.questions.length)
+    };
+  });
+  return { totalScore, level, areas: areaResults };
+}
+var levelData = [
+  {
+    title: "Dein System wirkt aktuell eher stabil",
+    text: "Deine Antworten zeigen derzeit keine deutlichen Hinweise auf einen ausgepr\xE4gten Reset-Bedarf. Das bedeutet nicht, dass alles perfekt ist \u2013 aber dein System sendet aktuell keine starke Alarmmeldung.",
+    hint: "Beobachte dein System weiter, ohne unn\xF6tig zu eskalieren. Stabilit\xE4t ist ein guter Ausgangspunkt.",
+    steps: [
+      "Alltag weiter beobachten",
+      "Defizite nicht unn\xF6tig versch\xE4rfen",
+      "Schlaf und Struktur beibehalten"
+    ]
+  },
+  {
+    title: "Dein System zeigt erste Anpassungssignale",
+    text: "Deine Antworten deuten darauf hin, dass dein Stoffwechsel unter Druck stehen k\xF6nnte. Es kann sinnvoll sein, Regeneration, Schlaf, Energiezufuhr und Trainingsbelastung genauer zu betrachten.",
+    hint: "Es k\xF6nnte sinnvoll sein, Training, Schlaf, Kalorienh\xF6he und Alltagsstress bewusst zu \xFCberpr\xFCfen.",
+    steps: [
+      "Schlaf pr\xFCfen",
+      "Kalorienh\xF6he pr\xFCfen",
+      "Training nicht reflexartig erh\xF6hen",
+      "Hunger und Energie ernst nehmen"
+    ]
+  },
+  {
+    title: "Dein System steht wahrscheinlich deutlich unter Belastung",
+    text: "Deine Antworten sprechen f\xFCr einen erh\xF6hten metabolischen Stress. Ein strukturierter Reset oder eine Phase mit mehr Stabilit\xE4t kann sinnvoll sein, bevor weiterer Druck aufgebaut wird.",
+    hint: "Mehr Druck ist hier wahrscheinlich nicht die beste Antwort. Oft ist zuerst Stabilisierung sinnvoller als weitere Restriktion.",
+    steps: [
+      "Belastung reduzieren",
+      "Mehr Stabilit\xE4t vor mehr Druck",
+      "Eine Reset-Phase in Betracht ziehen",
+      "Ern\xE4hrung und Regeneration priorisieren"
+    ]
+  }
+];
+
+// src/lib/mcp/tools/metabolism-check.ts
 var metabolism_check_default = defineTool4({
   name: "metabolism_reset_check",
   title: "Stoffwechsel-Reset Check",

@@ -1,5 +1,5 @@
 import { defineTool } from "@lovable.dev/mcp-js";
-import { quizQuestions, profiles } from "@/lib/quizData";
+import { quizQuestions, profiles } from "../../quizData";
 
 export default defineTool({
   name: "get_stoffwechsel_quiz",

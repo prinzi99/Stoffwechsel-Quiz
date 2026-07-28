@@ -1,6 +1,6 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { calculateAll } from "@/lib/calorieCalculator";
+import { calculateAll } from "../../calorieCalculator";
 
 export default defineTool({
   name: "calorie_calculator",

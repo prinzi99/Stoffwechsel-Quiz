@@ -1,6 +1,6 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { calculateResult, profiles, type QuizScores } from "@/lib/quizData";
+import { calculateResult, profiles, type QuizScores } from "../../quizData";
 
 export default defineTool({
   name: "evaluate_stoffwechsel_quiz",

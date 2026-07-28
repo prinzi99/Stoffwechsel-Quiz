@@ -1,6 +1,6 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { evaluateCheck, questions, levelData } from "@/lib/metabolicCheck";
+import { evaluateCheck, questions, levelData } from "../../metabolicCheck";
 
 export default defineTool({
   name: "metabolism_reset_check",
