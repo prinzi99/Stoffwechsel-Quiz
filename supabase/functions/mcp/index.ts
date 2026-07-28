@@ -81,7 +81,7 @@ var calorie_calculator_default = defineTool3({
     const result = calculateAll(input);
     return {
       content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
-      structuredContent: result
+      structuredContent: { ...result }
     };
   }
 });

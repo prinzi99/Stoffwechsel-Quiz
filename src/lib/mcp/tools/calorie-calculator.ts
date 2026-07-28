@@ -26,7 +26,7 @@ export default defineTool({
     const result = calculateAll(input);
     return {
       content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
-      structuredContent: result,
+      structuredContent: { ...result },
     };
   },
 });
