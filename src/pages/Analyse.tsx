@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
-import { Lock, LogIn, Eye, TrendingUp, Calendar, BarChart3, ShoppingCart, MousePointerClick } from "lucide-react";
+import { Lock, LogIn, Eye, TrendingUp, Calendar, BarChart3, ShoppingCart, MousePointerClick, Globe } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
@@ -22,6 +22,7 @@ interface PageViewRow {
   id: string;
   page_path: string;
   page_title: string | null;
+  hostname?: string | null;
   viewed_at: string;
   user_agent: string | null;
   referrer: string | null;
@@ -113,6 +114,16 @@ const Analyse = () => {
       .sort((a, b) => b.count - a.count);
   }, [pageViews]);
 
+const viewsByDomain = useMemo(() => {
+    const map: Record<string, number> = {};
+    pageViews.forEach((v) => {
+      const host = v.hostname;
+      if (!host) return;
+      map[host] = (map[host] || 0) + 1;
+    });
+    return Object.entries(map).sort(([, a], [, b]) => b - a);
+  }, [pageViews]);
+
   const loginsByDay = useMemo(() => {
     const map: Record<string, number> = {};
     logins.forEach((l) => {
@@ -199,7 +210,35 @@ const Analyse = () => {
                   <KpiCard icon={ShoppingCart} label="Angebotsseite heute" value={anbotViewsToday} />
                   <KpiCard icon={MousePointerClick} label="Kaufklicks gesamt" value={totalClicks} />
                   <KpiCard icon={MousePointerClick} label="Kaufklicks heute" value={clicksToday} />
-                </div>
+</div>
+
+                {/* Views by Domain */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg flex items-center gap-2">
+                      <Globe className="w-5 h-5 text-secondary" />
+                      Zugriffe nach Domain
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    {viewsByDomain.length === 0 ? (
+                      <p className="text-sm text-muted-foreground">Noch keine Daten vorhanden. Die Erfassung startet ab 03.09.2026.</p>
+                    ) : (
+                      <div className="space-y-3">
+                        {viewsByDomain.map(([host, count]) => (
+                          <div key={host} className="flex items-center justify-between gap-4">
+                            <div className="min-w-0">
+                              <p className="text-sm font-medium text-foreground truncate">{host}</p>
+                            </div>
+                            <Badge variant="secondary" className="shrink-0">
+                              {count} Aufrufe
+                            </Badge>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
 
                 {/* Conversion Funnel */}
                 <Card>
