@@ -30,12 +30,13 @@ export const useBonusPageView = (pagePath: string, pageTitle: string) => {
   useEffect(() => {
     const track = async () => {
       try {
-        await supabase.from("bonus_page_views").insert({
+await supabase.from("bonus_page_views").insert({
           page_path: pagePath,
           page_title: pageTitle,
+          hostname: window.location.hostname,
           user_agent: navigator.userAgent,
           referrer: document.referrer || null,
-        });
+        } as any);
       } catch (e) {
         console.error("Tracking page view failed", e);
       }
